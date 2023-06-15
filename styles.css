@@ -1,78 +1,175 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('./fonts/Roboto/Roboto-Regular.ttf');
+  src: local('Roboto Thin'), local('Roboto-Thin'), url('./fonts/Roboto/Robotothin.woff2') format('woff2'), url('./fonts/Roboto/Robotothin.woff') format('woff'), url('./fonts/Roboto/Robotothin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Thin Italic'), local('Roboto-ThinItalic'), url('./fonts/Roboto/Robotothinitalic.woff2') format('woff2'), url('./fonts/Roboto/Robotothinitalic.woff') format('woff'), url('./fonts/Roboto/Robotothinitalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Light'), local('Roboto-Light'), url('./fonts/Roboto/Robotolight.woff2') format('woff2'), url('./fonts/Roboto/Robotolight.woff') format('woff'), url('./fonts/Roboto/Robotolight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url('./fonts/Roboto/Robotolightitalic.woff2') format('woff2'), url('./fonts/Roboto/Robotolightitalic.woff') format('woff'), url('./fonts/Roboto/Robotolightitalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), local('Roboto-Regular'), url('./fonts/Roboto/Roboto.woff2') format('woff2'), url('./fonts/Roboto/Roboto.woff') format('woff'), url('./fonts/Roboto/Roboto.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Italic'), local('Roboto-Italic'), url('./fonts/Roboto/Robotoitalic.woff2') format('woff2'), url('./fonts/Roboto/Robotoitalic.woff') format('woff'), url('./fonts/Roboto/Robotoitalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Medium'), local('Roboto-Medium'), url('./fonts/Roboto/Robotomedium.woff2') format('woff2'), url('./fonts/Roboto/Robotomedium.woff') format('woff'), url('./fonts/Roboto/Robotomedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url('./fonts/Roboto/Robotomediumitalic.woff2') format('woff2'), url('./fonts/Roboto/Robotomediumitalic.woff') format('woff'), url('./fonts/Roboto/Robotomediumitalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Bold'), local('Roboto-Bold'), url('./fonts/Roboto/Robotobold.woff2') format('woff2'), url('./fonts/Roboto/Robotobold.woff') format('woff'), url('./fonts/Roboto/Robotobold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url('./fonts/Roboto/Robotobolditalic.woff2') format('woff2'), url('./fonts/Roboto/Robotobolditalic.woff') format('woff'), url('./fonts/Roboto/Robotobolditalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Black'), local('Roboto-Black'), url('./fonts/Roboto/Robotoblack.woff2') format('woff2'), url('./fonts/Roboto/Robotoblack.woff') format('woff'), url('./fonts/Roboto/Robotoblack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url('./fonts/Roboto/Robotoblackitalic.woff2') format('woff2'), url('./fonts/Roboto/Robotoblackitalic.woff') format('woff'), url('./fonts/Roboto/Robotoblackitalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
 }
 
+
+:root {
+  --main-background: #111223;
+}
+
+.body {
+  margin: 0;
+}
+
+
+/* HEADER START */
+
 .head {
+  position: fixed;
+ 
+  left: 0;
+  right: 0;
+  top: 0;
+  
   box-sizing: border-box;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 90px;
 
-  position: fixed;
- 
-  right: 0;
-  left: 0;
-  top: 0;
-  
-  height: 82px;
-
-  background: #111223;
+  background: var(--main-background);
   border-bottom: 1px solid #595959;
   backdrop-filter: blur(8px);
 }
 
 .div-logo {
-  flex: 1 1 0;
   display: flex;
+
+  flex: 1 1 0;
   align-items: center;
+
   height: 100%;
   width: 100%;
 }
 
 .logo-header {
-  margin-left: 161px;
   justify-content: center;
-  max-width: 54px;
+
+  margin-left: 202px;
+
+  max-width: 50px;
   height: auto;
 }
 
 .logo-name-header {
-  margin-left: 15px;
+  margin-left: 20px;
+
+  height: 30px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 30px;
+
+  color: #FFFFFF;
 }
 
 .nav {
-  flex: 1 1 0;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  flex: 1 1 0;
+
   height: 100%;
   width: 100%;
 }
 
 .nav-ul {
-  list-style: none;
   display: flex;
   align-items: center;
-  height: 100%;
+  
   margin: 0;
   padding: 0;
+
+  height: 100%;
+
+  list-style: none;
 }
 
 .nav-ul li {
-  margin: 0 24px;
-  height: 19px;
+  margin: 0 20px;
+
+  width: max-content;
+  max-width: 12vw;
+  height: 22px;
 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 120%;
-  width: max-content;
-  max-width: 12vw;
-  /* or 19px */
-
+  line-height: 20px;
 
   color: #EBEBEB;
 }
@@ -92,19 +189,39 @@
   justify-content: end;
 }
 
-.image-button {
-  padding: 0;
-  margin-right: 161px;
+.right-button-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 202px;
+
+  width: 201px;
+  height: 50px;
+
+  border: 1px solid #EBEBEB;
+
+  text-decoration: none;
 }
 
-.button {
-  background-color: #111223;
-  border: none;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
+.right-button-header-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+
+  color: #EBEBEB;
 }
 
-.button:hover {
-  background-color: #222244;
+/* HEADER END */
+
+.main {
+  margin-top: 90px;
+}
+
+.section-about-me {
+  height: 2109px;
+
+  background-color: var(--main-background);
 }
