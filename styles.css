@@ -1,85 +1,20 @@
-@font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Thin'), local('Roboto-Thin'), url('./fonts/Roboto/Robotothin.woff2') format('woff2'), url('./fonts/Roboto/Robotothin.woff') format('woff'), url('./fonts/Roboto/Robotothin.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Thin Italic'), local('Roboto-ThinItalic'), url('./fonts/Roboto/Robotothinitalic.woff2') format('woff2'), url('./fonts/Roboto/Robotothinitalic.woff') format('woff'), url('./fonts/Roboto/Robotothinitalic.ttf') format('truetype');
-  font-weight: 100;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Light'), local('Roboto-Light'), url('./fonts/Roboto/Robotolight.woff2') format('woff2'), url('./fonts/Roboto/Robotolight.woff') format('woff'), url('./fonts/Roboto/Robotolight.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url('./fonts/Roboto/Robotolightitalic.woff2') format('woff2'), url('./fonts/Roboto/Robotolightitalic.woff') format('woff'), url('./fonts/Roboto/Robotolightitalic.ttf') format('truetype');
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Roboto';
-  src: local('Roboto'), local('Roboto-Regular'), url('./fonts/Roboto/Roboto.woff2') format('woff2'), url('./fonts/Roboto/Roboto.woff') format('woff'), url('./fonts/Roboto/Roboto.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Italic'), local('Roboto-Italic'), url('./fonts/Roboto/Robotoitalic.woff2') format('woff2'), url('./fonts/Roboto/Robotoitalic.woff') format('woff'), url('./fonts/Roboto/Robotoitalic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Medium'), local('Roboto-Medium'), url('./fonts/Roboto/Robotomedium.woff2') format('woff2'), url('./fonts/Roboto/Robotomedium.woff') format('woff'), url('./fonts/Roboto/Robotomedium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url('./fonts/Roboto/Robotomediumitalic.woff2') format('woff2'), url('./fonts/Roboto/Robotomediumitalic.woff') format('woff'), url('./fonts/Roboto/Robotomediumitalic.ttf') format('truetype');
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Bold'), local('Roboto-Bold'), url('./fonts/Roboto/Robotobold.woff2') format('woff2'), url('./fonts/Roboto/Robotobold.woff') format('woff'), url('./fonts/Roboto/Robotobold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url('./fonts/Roboto/Robotobolditalic.woff2') format('woff2'), url('./fonts/Roboto/Robotobolditalic.woff') format('woff'), url('./fonts/Roboto/Robotobolditalic.ttf') format('truetype');
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Black'), local('Roboto-Black'), url('./fonts/Roboto/Robotoblack.woff2') format('woff2'), url('./fonts/Roboto/Robotoblack.woff') format('woff'), url('./fonts/Roboto/Robotoblack.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url('./fonts/Roboto/Robotoblackitalic.woff2') format('woff2'), url('./fonts/Roboto/Robotoblackitalic.woff') format('woff'), url('./fonts/Roboto/Robotoblackitalic.ttf') format('truetype');
-  font-weight: 900;
-  font-style: italic;
-}
-
+@import "./fonts.css";
 
 :root {
   --main-background: #111223;
+  --dark-grey-background: #1D1E2E;
+  --yellow: #FFCB5A;
+  --dark-grey-elements-1: #444444;
+  --dark-grey-elements-2: #41414F;
+  --light-grey: #888891;
+  --dark-white: #D2D2D2;
+  --white-1: #FFFFFF;
+  --white-2: #EBEBEB;
 }
 
 .body {
   margin: 0;
 }
-
 
 /* HEADER START */
 
@@ -98,23 +33,23 @@
   height: 90px;
 
   background: var(--main-background);
-  border-bottom: 1px solid #595959;
+  border-bottom: 1px solid var(--dark-grey-elements-1);
   backdrop-filter: blur(8px);
+
+  z-index: 100;
 }
 
 .div-logo {
   display: flex;
+  align-items: center;
 
   flex: 1 1 0;
-  align-items: center;
 
   height: 100%;
   width: 100%;
 }
 
 .logo-header {
-  justify-content: center;
-
   margin-left: 202px;
 
   max-width: 50px;
@@ -126,13 +61,7 @@
 
   height: 30px;
   
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 28px;
-  line-height: 30px;
-
-  color: #FFFFFF;
+  color: var(--white-1);
 }
 
 .nav {
@@ -165,28 +94,23 @@
   max-width: 12vw;
   height: 22px;
 
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-
-  color: #EBEBEB;
+  color: var(--white-2);
 }
 
 .nav-ul li a {
-  color: #fff;
+  color: var(--white-1);
   text-decoration: none;
 }
 
 .div-button-block {
-  flex: 1 1 0;
-  height: 100%;
-  width: 100%;
-
   display: flex;
   align-items: center;
   justify-content: end;
+
+  height: 100%;
+  width: 100%;
+  
+  flex: 1 1 0;
 }
 
 .right-button-header {
@@ -199,29 +123,309 @@
   width: 201px;
   height: 50px;
 
-  border: 1px solid #EBEBEB;
+  border: 1px solid var(--white-2);
 
   text-decoration: none;
 }
 
 .right-button-header-text {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 120%;
-
-  color: #EBEBEB;
+  color: var(--white-2);
 }
 
 /* HEADER END */
 
 .main {
+  display: flex;
+  flex-direction: column;
+
   margin-top: 90px;
 }
 
-.section-about-me {
-  height: 2109px;
+.section-main {
+  display: flex;
+  position: relative;
+
+  margin-top: 0;
+
+  height: 960px;
 
   background-color: var(--main-background);
+}
+
+.section-main-text {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 302px;
+  margin-left: 202px;
+
+  height: 88px;
+
+  z-index: 10;
+}
+
+.h1 {
+  margin: 0;
+  
+  height: 88px;
+
+  color: var(--yellow);
+}
+
+.section-main-lower-text-div {
+  display: flex;
+  align-items: center;
+}
+
+.h2 {
+  margin: 0;
+  
+  height: 88px;
+
+  color: var(--white-2);
+}
+
+.section-main-lower-text-span {
+  margin-left: 50px;
+
+  width: 325px;
+  height: 76px;
+
+  color: var(--white-1);
+}
+
+.section-main-header-circles {
+  position: absolute;
+
+  left: 54px;
+  top: 218px;
+}
+
+.section-main-video {
+  margin-top: 75px;
+  margin-left: 28px;
+}
+
+.section-about {
+  display: flex;
+  flex-direction: column;
+
+  height: 1173px;
+
+  background-color: var(--main-background);
+}
+
+.section-about-main {
+  display: flex;
+}
+
+.scrolling-text-section-about {
+  height: 182px;
+  color: var(--white-2);
+  /* FIXME СДЕЛАТЬ СКРОЛЛИНГ ТЕКСТ*/
+}
+
+.left-photos-section-about {
+  display: flex;
+
+  margin-top: 100px;
+  margin-left: 74px;
+
+  width: 566px;
+}
+
+.info-block-photo-1 {
+  max-width: 100%;
+  height: auto;
+}
+
+.info-block-photo-2 {
+  margin-left: 20px;
+
+  max-width: 100%;
+  height: auto;
+}
+
+.right-section-about {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-text-right-section-about {
+  display: flex;
+
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.main-text-right-section-about-1 {
+  margin-left: 28px;
+
+  width: 310px;
+
+  text-align: justify;
+}
+
+.text-indent-120 {
+  text-indent: 120px;
+}
+
+.main-text-right-section-about-2 {
+  margin-left: 74px;
+
+  width: 310px;
+
+  text-align: justify;
+}
+
+.text-indent-193 {
+  text-indent: 193px;
+}
+
+.text-indent-86 {
+  text-indent: 86px;
+}
+
+.lower-right-section-about {
+  display: flex;
+
+  height: 100%;
+}
+
+.info-block-arrow {
+  margin-left: 24px;
+  margin-top: 340px;
+}
+
+.lower-right-section-about-text {
+  margin-top: 303px;
+
+  width: 330px;
+  height: 120px;
+
+  color: var(--white-1)
+}
+
+.lower-right-section-about-images {
+  position: relative;
+}
+
+.info-block-image-goldenrec {
+  position: absolute;
+
+  top: 301px;
+  left: 256px;
+
+  z-index: 10;
+}
+
+.info-block-image-Ivan {
+  position: absolute;
+
+  top: 183px;
+  left: 384px;
+}
+
+.section-playlists {
+  display: flex;
+
+  height: 600px;
+
+  background-color: var(--yellow);
+}
+
+.section-playlists-video-div {
+  width: 840px;
+}
+
+.section-playlists-right-div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  flex: 1;
+}
+
+.section-playlists-right-header {
+  display: flex;
+  flex-direction: column;
+  
+  margin: 0;
+  margin-top: 72px;
+  gap: 12px;
+
+  width: 767px;
+  height: 216px;
+
+  color: var(--main-background);
+}
+
+.section-playlists-right-header span {
+  /* FIXME: НИЖЕ ЕСТЬ 1, 2, 3 С ОДИНАКОВОЙ НАСТРОЙКОЙ */
+  margin-bottom: 0;
+}
+
+.section-playlists-right-header-1 {
+  /* margin-top: 90px; */
+  margin-top: 0;
+
+  text-indent: 320px;
+}
+
+.section-playlists-right-header-2 {
+  margin-top: 0;
+}
+
+.section-playlists-right-header-low {
+  margin-top: 10px;
+  margin-bottom: 0;
+
+  color: var(--main-background);
+}
+
+.section-playlists-right-images {
+  display: flex;
+
+  margin-top: 24px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.section-playlists-right-images img {
+  margin-right: 24px;
+}
+
+.playlists-block-image-yandex {
+  width: 32px;
+  height: 32px;
+
+  border-radius: 12px;
+  background-color: var(--white-1);
+}
+
+.section-playlists-right-text {
+  position: absolute;
+  left: 460px;
+  top: 244px;
+
+  width: 384px;
+  height: 280px;
+
+  color: var(--dark-grey-elements-1);
+}
+
+.section-playlists-right-text p {
+  margin: 0;
+}
+
+.section-works {
+  height: 1145px;
+
+  background-color: var(--main-background);
+}
+
+.main-text-right-section-about p {
+  /* FIXME: УДАЛИТЬ */
+  color: var(--white-2);
 }
