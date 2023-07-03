@@ -34,8 +34,9 @@
     font-display: swap;
     font-weight: 400;
     src:
-      url(./fonts/NotoSans/noto-sans-cyrillic-400-normal.woff2) format('woff2'),
-      url(./fonts/NotoSans/noto-sans-cyrillic-400-normal.woff) format('woff');
+      /* url(./fonts/NotoSans/noto-sans-cyrillic-400-normal.woff2) format('woff2'),
+      url(./fonts/NotoSans/noto-sans-cyrillic-400-normal.woff) format('woff'), */
+      url(./fonts/NotoSans/NotoSans-Regular.ttf);
   }
   
   @font-face {
@@ -275,6 +276,7 @@
   font-weight: 700;
   font-size: 56px;
   line-height: 64px;
+  letter-spacing: 2px;
 }
 
 .font-h5-56m {
@@ -283,6 +285,9 @@
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
+  letter-spacing: 2px;
+
+  /* -webkit-text-stroke: 1px var(--white-2); */
 }
 
 .font-h6-48b {
@@ -355,7 +360,7 @@
   font-weight: 400;
   font-size: 28px;
   line-height: 38px;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.28px;
 }
 
 .font-24m {

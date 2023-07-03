@@ -2,8 +2,6 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
   </head>
@@ -24,29 +22,46 @@
         </ul>
       </nav>
       <div class="div-button-block">
-        <a href="#" class="right-button-header small-button">
-          <span class="right-button-header-text font-16r">Оставить заявку</span>
+        <a href="#" class="right-button-header middle-button secondary-button">
+          <span class="font-16r">Оставить заявку</span>
         </a>
       </div>
     </header>
     <main class="main">
       <section class="section-main">
-        <div class="section-main-text">
-          <h1 class="h1 font-h3-88b">
-            АВТОРСКАЯ ПЕСНЯ
-          </h1>
-          <div class="section-main-lower-text-div">
-            <h2 class="h2 font-h3-88b">
-              НА ЗАКАЗ
-            </h2>
-            <span class="section-main-lower-text-span font-h9-28l">
-              от саундпродюсера Ивана Губанова
-            </span>
+        <div class="section-main-left">
+          <div class="section-main-text">
+            <h1 class="h1 font-h3-88b">
+              АВТОРСКАЯ ПЕСНЯ
+            </h1>
+            <div class="section-main-lower-text-div">
+              <h2 class="h2 font-h3-88b">
+                НА ЗАКАЗ
+              </h2>
+              <span class="section-main-lower-text-span font-h9-28l">
+                от саундпродюсера Ивана Губанова
+              </span>
+            </div>
+          </div>
+          <div class="section-main-buttons">
+            <a href="#" class="large-button main-button">
+              <span class="font-16s">Заказать песню</span>
+            </a>
+            <a href="#" class="large-button secondary-button section-main-button-2">
+              <span class="font-16r">Попробовать бесплатно</span>
+            </a>
           </div>
         </div>
         <img src="./media/header-circles.svg" alt="" class="section-main-header-circles">
-        <div class="section-main-video-container">
+        <div class="section-main-right">
           <video autoplay muted loop preload="auto" src="./media/section-main-video.mp4" class="section-main-video"></video>
+          <div>
+            <div class="section-main-right-text font-h8-28r">
+              <span>я работал</span>
+              <span class="section-main-right-text-2">с ними</span>
+            </div>
+          </div>
+          <img src="./media/section-main-arrow.svg" alt="" class="section-main-arrow">
         </div>
       </section>
       <section class="section-about">
@@ -80,7 +95,7 @@
                 <img src="./media/info-block-arrow.svg" alt="" class="info-block-arrow">
               </div>
               <div class="lower-right-section-about-text font-h7-32r">
-                Меня зовут Ваня 
+                Меня зовут Ваня<br>
                 я пишу музыку артистам
               </div>
               <div class="lower-right-section-about-images">
@@ -99,7 +114,7 @@
           <h2 class="section-playlists-right-header font-h5-56bl">
             <span class="section-playlists-right-header-1">МОИ РАБОТЫ</span>
             <span class="section-playlists-right-header-2">РЕГУЛЯРНО ПОПАДАЮТ</span>
-            <span class="section-playlists-right-header-3 font-h5-56bl">В ТОП ЧАРТЫ</span>
+            <span class="section-playlists-right-header-3">В ТОП ЧАРТЫ</span>
           </h2>
           <ul class="section-playlists-right-images">
             <li><a href="#"><img src="./media/playlists-block-image-yandex.png" alt="" class="playlists-block-image-yandex"></a></li>
@@ -112,15 +127,203 @@
               Треки над которыми я работал отправляются на дистрибуцию в стриминговые платформы. Где, совместно с лейблом Captain Drake rec., мы пишем рекомендательные письма музыкальным платформам, что увеличивает шанс попадания твоей песни в официальные плейлисты. Всё очень просто, быстро и без лишних шагов, так как мы работаем напрямую с теми кто загружает твой трек на цифровые площадки.
             </p>
             <p>
-              Зачем нужна дистрибуция? Дело в том, что музыкальные сервисы платят за прослушивания артисту, что дает возможность зарабатывать на своём творчестве.
+              <br>Зачем нужна дистрибуция? Дело в том, что музыкальные сервисы платят за прослушивания артисту, что дает возможность зарабатывать на своём творчестве.
             </p>
           </div>
         </div>
       </section>
       <section class="section-works">
-
+        <div class="section-works-upper">
+          <h1 class="sections-works-header font-h5-56m">
+            <span class="sections-works-header-1">ПОСЛУШАЙ</span>
+            <span class="sections-works-header-2">ПРИМЕРЫ &#160;РАБОТ&#160;&#160;<div class="sections-works-header-inside font-24m">до &#160;&#160;&#160;и после</div> &#160;-</span>
+            <span>ПОЧУВСТВУЙ &#160;РАЗНИЦУ</span>
+          </h1>
+          <div class="section-works-upper-right-text font-16rr">КАЧЕСТВЕННАЯ МУЗЫКА ОЧЕНЬ СИЛЬНО ВЛИЯЕТ НА ВОСПРИЯТИЕ ТРЕКА.</div>
+          <img src="./media/section-works-line.svg" alt="" class="section-works-line">
+        </div>
+        <audio controls src="./media/Tokyo 3.mp3" class="audio-test"></audio> 
+        <!-- тут будут карточки с аудио -->
+      </section>
+      <section class="section-stages">
+        <h1 class="sections-stages-header font-h5-56m">
+          <span class="sections-stages-header-1">СОЗДАНИЕ ПЕСНИ - ТВОРЧЕСКИЙ</span>
+          <span>ПРОЦЕСС, КОТОРЫЙ ПРОХОДИТ</span>
+          <span>ЧЕРЕЗ 5 ЭТАПОВ</span>
+        </h1>
+        <div class="section-stages-lower-container">
+          <ul>
+            <li class="mt0">
+              <span class="section-stages-ul-numbers font-40l">01</span>
+              <span class="font-20rr">ДЕМО</span>
+              <div class="section-stages-lower-container-ul-li-img"></div>
+              <div class="section-stages-ul-description font-16r">Основа будущей песни <a href="" class="section-stages-ul-a font-16m">Попробуй бесплатно <img src="./media/section-stages-a-arrow.svg" alt=""></a></div></li>
+            <li>
+              <span class="section-stages-ul-numbers font-40l">02</span>
+              <span class="font-20rr">АРАНЖИРОВКА</span>
+              <div class="section-stages-lower-container-ul-li-img"></div>
+              <div class="section-stages-ul-description font-16r">Полноценный минус радиоформата</div>
+            </li>
+            <li>
+              <span class="section-stages-ul-numbers font-40l">03</span>
+              <span class="font-20rr">ЗАПИСЬ</span>
+              <div class="section-stages-lower-container-ul-li-img"></div>
+              <div class="section-stages-ul-description font-16r">Запись вокала на студии звукозаписи</div>
+            </li>
+            <li>
+              <span class="section-stages-ul-numbers font-40l">04</span>
+              <span class="font-20rr">СВЕДЕНИЕ</span>
+              <div class="section-stages-lower-container-ul-li-img"></div>
+              <div class="section-stages-ul-description font-16r">Процесс доведения звука до проф уровня</div>
+            </li>
+            <li>
+              <span class="section-stages-ul-numbers font-40l">05</span>
+              <span class="font-20rr">ДИСТРИБУЦИЯ</span>
+              <div class="section-stages-lower-container-ul-li-img"></div>
+              <div class="section-stages-ul-description font-16r">Публикация трека на цифровых площадках</div>
+            </li>
+          </ul>
+          <video src="./media/section-stages-video-cassette.mp4" class="section-stages-video-cassette"></video>
+        </div>
+      </section>
+      <section class="section-prices">
+        <div class="section-prices-header">
+          <!-- ЗДЕСЬ БУДЕТ СКРОЛИТЬСЯ ЗАГОЛОВОК -->
+        </div>
+        <div class="section-prices-lists-container">
+          <div class="section-prices-list-container-1">
+            <h3 class="section-prices-lists-header font-28bb">ПО РЕФЕРЕНСУ</h3>
+            <ul class="section-prices-ul font-16r">
+              <li class="section-prices-li section-prices-li-active">Аранжировка по референсу</li>
+              <li class="section-prices-li section-prices-li-active">Без ограничения на правки</li>
+              <li class="section-prices-li section-prices-li-active">Передача авторских прав</li>
+              <li class="section-prices-li section-prices-li-inactive">Рекомендация в плейлисты</li>
+              <li class="section-prices-li section-prices-li-inactive">Дистрибуция</li>
+              <li class="section-prices-li section-prices-li-inactive">Вокальная линия</li>
+              <li class="section-prices-li section-prices-li-inactive">Текст песни</li>
+              <li class="section-prices-li section-prices-li-inactive">Запись вокала</li>
+              <li class="section-prices-li section-prices-li-inactive">Сведение / мастеринг</li>
+            </ul>
+            <span class="section-prices-price font-40m">20 000 ₽</span>
+            <div class="section-prices-warning-container">
+              <img src="./media/section-prices-warning.svg" alt="" class="section-prices-warning-img">
+              <span class="section-prices-warning-text font-12m">Поэтапная оплата</span>
+              <img src="./media/section-prices-warning-lower-part.svg" alt="" class="section-prices-warning-hover-img">
+              <div class="section-prices-warning-hover-text font-12r">
+                Работа начинается по предоплате в 5000 ₽. Остаток вы доплачиваете когда утвердите что вам все нравится.
+              </div>
+            </div>
+            <a href="" class="section-prices-button large-button main-button">
+              <span class="font-16s">Оставить заявку</span>
+            </a>
+          </div>
+          <div class="section-prices-list-container-2">
+            <h3 class="section-prices-lists-header font-28bb">ПРОДЮСИРОВАНИЕ</h3>
+            <ul class="section-prices-ul font-16r">
+              <li class="section-prices-li section-prices-li-active">3 варианта аранжировки</li>
+              <li class="section-prices-li section-prices-li-active">Без ограничения на правки</li>
+              <li class="section-prices-li section-prices-li-active">Передача авторских прав</li>
+              <li class="section-prices-li section-prices-li-active">Рекомендация в плейлисты</li>
+              <li class="section-prices-li section-prices-li-active">Дистрибуция</li>
+              <li class="section-prices-li section-prices-li-active">Вокальная линия</li>
+              <li class="section-prices-li section-prices-li-inactive">Текст песни</li>
+              <li class="section-prices-li section-prices-li-inactive">Запись вокала</li>
+              <li class="section-prices-li section-prices-li-inactive">Сведение / мастеринг</li>
+            </ul>
+            <span class="section-prices-price font-40m">30 000 ₽</span>
+            <div class="section-prices-warning-container">
+              <img src="./media/section-prices-warning.svg" alt="" class="section-prices-warning-img">
+              <span class="section-prices-warning-text font-12m">Поэтапная оплата</span>
+              <div class="section-prices-warning-hover-text font-12r">
+                Работа начинается по предоплате в 5000 ₽. Остаток вы доплачиваете когда утвердите что вам все нравится.
+              </div>
+            </div>
+            <a href="" class="section-prices-button large-button main-button">
+              <span class="font-16s">Оставить заявку</span>
+            </a>
+          </div>
+          <div class="section-prices-list-container-3">
+            <h3 class="section-prices-lists-header font-28bb">ПОД КЛЮЧ</h3>
+            <ul class="section-prices-ul font-16r">
+              <li class="section-prices-li section-prices-li-active">3 варианта аранжировки</li>
+              <li class="section-prices-li section-prices-li-active">Без ограничения на правки</li>
+              <li class="section-prices-li section-prices-li-active">Передача авторских прав</li>
+              <li class="section-prices-li section-prices-li-active">Рекомендация в плейлисты</li>
+              <li class="section-prices-li section-prices-li-active">Дистрибуция</li>
+              <li class="section-prices-li section-prices-li-active">Вокальная линия</li>
+              <li class="section-prices-li section-prices-li-active">Текст песни</li>
+              <li class="section-prices-li section-prices-li-active">Запись вокала</li>
+              <li class="section-prices-li section-prices-li-active">Сведение / мастеринг</li>
+            </ul>
+            <span class="section-prices-price font-40m">65 000 ₽</span>
+            <div class="section-prices-warning-container">
+              <img src="./media/section-prices-warning.svg" alt="" class="section-prices-warning-img">
+              <span class="section-prices-warning-text font-12m">Поэтапная оплата</span>
+              <div class="section-prices-warning-hover-text font-12r">
+                Работа начинается по предоплате в 5000 ₽. Остаток вы доплачиваете когда утвердите что вам все нравится.
+              </div>
+            </div>
+            <a href="" class="section-prices-button large-button main-button">
+              <span class="font-16s">Оставить заявку</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section-reviews">
+        <div class="section-reviews-upper-part">
+          <div class="section-reviews-upper-part-left-container">
+            <img src="./media/section-reviews-quotes.svg" alt="" class="section-reviews-quotes-img">
+            <blockquote class="section-reviews-quote font-16rr">
+              Я С ТРЕПЕТОМ ОТНОШУСЬ К СВОИМ КЛИЕНТАМ И РАБОТАЮ ДО ТОГО РЕЗУЛЬТАТА - КОТОРЫМ АРТИСТ ОСТАНЕТСЯ ДОВОЛЕН.
+            </blockquote>
+          </div>
+          <h1 class="section-reviews-header font-h5-56m">
+            <span class="section-reviews-header-1">ЧТО ОБО МНЕ ГОВОРЯТ</span>
+            <span>ЛЮДИ С КОТОРЫМИ МЫ</span>
+            <span>РАБОТАЛИ</span>
+          </h1>
+        </div>
+      </section>
+      <section class="section-communication">
+        <div class="section-communication-left-container">
+          <h3 class="section-communication-header font-h6-48b">ОСТАЛИСЬ ВОПРОСЫ ?</h3>
+          <p class="section-communication-header-p font-22r">Оставь свои данные и я свяжусь с тобой для уточнения деталей</p>
+          <div class="section-communication-a-container">
+            <a href=""><img src="./media/section-communication-telegram.svg" alt=""></a>
+            <a href=""><img src="./media/section-communication-instagram.svg" alt=""></a>
+            <a href=""><img src="./media/section-communication-vk.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="section-communication-right-container">
+          <form action="" class="section-communication-form">
+            <div class="section-communication-form-upper-container">
+              <fieldset class="section-communication-fieldset section-communication-fieldset-name">
+                <legend class="section-communication-form-legend font-h10-12r">ИМЯ *</legend>
+                <input name="" id="" class="font-16r"></input>
+              </fieldset>
+              <fieldset class="section-communication-fieldset section-communication-fieldset-phone">
+                <legend class="section-communication-form-legend font-h10-12r">ТЕЛЕФОН *</legend>
+                <input name="" id="" class="font-16r"></input>
+              </fieldset>
+            </div>
+            <fieldset class="section-communication-fieldset section-communication-fieldset-message">
+              <legend class="section-communication-form-legend font-h10-12r">СООБЩЕНИЕ</legend>
+              <textarea name="" id="" class="font-16r"></textarea>
+            </fieldset>
+            <div class="section-communication-form-lower-container">
+              <div class="section-communication-form-agreement-container">
+                <input type="checkbox" name="" value="" id="agreement" class="section-communication-form-agreement-input">
+                <label for="agreement" class="section-communication-form-agreement-label font-14r">
+                  Я даю согласие на обработку персональных данных и соглашаюсь с <a href="" class="section-communication-form-agreement-label-a">Политикой конфиденциальности.</a>
+                </label>
+              </div>
+              <button class="section-communication-form-button large-button main-button font-16s">Отправить</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
+    <footer class="footer"></footer>
   </body>
 </html>
 
@@ -128,15 +331,20 @@
   TASKS:
 
   linter
+  sass
+  bootstrap
+  gulp
+  babel
+  webpack
 
   head:
   <title>Заголовок страницы</title>
-  <meta name="description" content="Описание страницы"> - задает описание страницы для поисковых систем.
-  <meta name="keywords" content="ключевые слова"> - задает ключевые слова страницы для поисковых систем.
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> - определяет настройки просмотра для мобильных устройств.
-  http-equiv="X-UA-Compatible": Указывает совместимость браузера с определенной версией Internet Explorer. Пример: <meta http-equiv="X-UA-Compatible" content="IE=edge">.
-  Другие теги meta
-  Иконка сайта (фавиконка): <link rel="icon" href="favicon.ico" type="image/x-icon">. Этот элемент задает иконку, которая отображается во вкладке браузера.
-
+  
+  
+  <meta name="description" content="Описание страницы"> - задает описание страницы для поисковых систем
+  <meta name="keywords" content="ключевые слова"> - задает ключевые слова страницы для поисковых систем
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> - определяет настройки просмотра для мобильных устройств
+  http-equiv="X-UA-Compatible": Указывает совместимость браузера с определенной версией Internet Explorer. Пример: <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  Иконка сайта (фавиконка): <link rel="icon" href="favicon.ico" type="image/x-icon">. Этот элемент задает иконку, которая отображается во вкладке браузера
 
 -->
