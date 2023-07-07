@@ -12,10 +12,12 @@
   --white-2: #EBEBEB;
 }
 
+html {
+  background-color: var(--main-background);
+}
+
 .body {
   margin: 0;
-
-  background-color: var(--main-background);
 }
 
 /* HEADER START */
@@ -96,13 +98,6 @@
   width: max-content;
   max-width: 12vw;
   height: 22px;
-
-  color: var(--white-2);
-}
-
-.nav-ul li a {
-  color: var(--white-1);
-  text-decoration: none;
 }
 
 .div-button-block {
@@ -388,6 +383,14 @@
   flex: 1;
 }
 
+.sections-playlists-video {
+  margin-top: 112px;
+  margin-left: 202px;
+
+  width: 364px;
+  height: 376px;
+}
+
 .section-playlists-right-header {
   display: flex;
   flex-direction: column;
@@ -645,10 +648,19 @@
 }
 
 .section-stages-ul-a {
-  padding-top: 7px;
+  display: flex;
+  align-items: center;
+
+  margin-top: 7px;
+
+  width: 173px;
 
   color: var(--yellow);
   text-decoration: none;
+}
+
+.section-stages-ul-a-img {
+  margin-left: 8px;
 }
 
 .section-stages-video-cassette {
@@ -923,7 +935,15 @@
   padding: 0;
 
   border-radius: 4px;
-  border: 1px solid var(--white-1);
+  border: 1px solid var(--light-grey);
+}
+
+.section-communication-fieldset:hover {
+  border-color: var(--white-1);
+}
+
+.section-communication-fieldset:focus {
+  border-color: var(--white-1);
 }
 
 .section-communication-fieldset-name {
@@ -958,6 +978,10 @@
   background-color: var(--main-background);
 }
 
+.section-communication-fieldset:has(input:focus, textarea:focus) {
+  border-color: var(--white-1);
+}
+
 .section-communication-form-legend {
   margin-left: 20px;
   padding: 0 8px;
@@ -986,7 +1010,7 @@
   width: 20px;
   height: 20px;
   appearance: none;
-  background-image: url('./media/section-communication-checkbox.svg');
+  background-image: url('./media/section-communication-checkbox-unchecked.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -995,8 +1019,16 @@
   cursor: pointer;
 }
 
+.section-communication-form-agreement-input:not(:checked):hover {
+  background-image: url('./media/section-communication-checkbox-unchecked-hover.svg');
+}
+
 .section-communication-form-agreement-input:checked {
-  background-image: url('./media/section-communication-checkbox.svg');
+  background-image: url('./media/section-communication-checkbox-checked.svg');
+}
+
+.section-communication-form-agreement-input:checked:hover {
+  background-image: url('./media/section-communication-checkbox-checked-hover.svg');
 }
 
 .section-communication-form-agreement-label {
@@ -1133,6 +1165,13 @@
   height: 40px;
 }
 
+.icon:hover path{
+  fill: var(--yellow);
+}
+
+.icon:hover circle{
+  stroke: var(--yellow);
+}
 
 
 
@@ -1175,9 +1214,45 @@
   border-radius: 2px;
 }
 
+.main-button:hover {
+  background-color: var(--white-1);
+}
+
 .secondary-button {
   color: var(--white-2);
 
   border: 1px solid var(--white-2);
   border-radius: 2px;
+}
+
+.secondary-button:hover {
+  background-color: var(--dark-white);
+  color: var(--main-background);
+}
+
+.text-button-1 {
+  color: var(--white-1);
+  text-decoration: none;
+}
+
+.text-button-1:hover {
+  color: var(--yellow);
+}
+
+.text-button-2:hover {
+  background-color: var(--yellow);
+  color: var(--main-background);
+}
+
+.text-button-2:hover .text-button-2-svg-path {
+  stroke: var(--main-background);
+}
+
+.text-button-3 {
+  color: var(--yellow);
+}
+
+.text-button-3:hover {
+  color: var(--main-background);
+  background-color: var(--yellow);
 }
