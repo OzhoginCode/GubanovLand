@@ -955,12 +955,14 @@ html {
   border: 1px solid var(--light-grey);
 }
 
-.section-communication-fieldset:hover {
+.section-communication-fieldset:hover,
+.section-communication-fieldset:focus {
   border-color: var(--white-1);
 }
 
-.section-communication-fieldset:focus {
-  border-color: var(--white-1);
+.section-communication-fieldset:hover .section-communication-form-legend,
+.section-communication-fieldset:focus .section-communication-form-legend {
+  color: var(--white-1);
 }
 
 .section-communication-fieldset-name {
@@ -999,11 +1001,15 @@ html {
   border-color: var(--white-1);
 }
 
+.section-communication-fieldset:has(input:focus, textarea:focus) .section-communication-form-legend {
+  color: var(--white-1);
+}
+
 .section-communication-form-legend {
   margin-left: 20px;
   padding: 0 8px;
 
-  color: var(--white-1);
+  color: var(--light-grey);
 }
 
 .section-communication-form-lower-container {
