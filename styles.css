@@ -508,6 +508,8 @@ html {
   
   gap: 12px;
   color: var(--white-2);
+
+  -webkit-text-stroke: 1px var(--white-2);
 }
 
 .sections-works-header-1 {
@@ -592,6 +594,8 @@ html {
   
   gap: 12px;
   color: var(--yellow);
+
+  -webkit-text-stroke: 1px var(--yellow);
 }
 
 .sections-stages-header-1 {
