@@ -1,237 +1,5 @@
-@font-face {
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 100;
-    src:
-      url(./fonts/NotoSans/noto-sans-cyrillic-100-normal.woff2) format('woff2'),
-      url(./fonts/NotoSans/noto-sans-cyrillic-100-normal.woff) format('woff');
-  }
-  
-  @font-face {
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 200;
-    src:
-      url(./fonts/NotoSans/noto-sans-cyrillic-200-normal.woff2) format('woff2'),
-      url(./fonts/NotoSans/noto-sans-cyrillic-200-normal.woff) format('woff');
-  }
-  
-  @font-face {
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 300;
-    src:
-      url(./fonts/NotoSans/noto-sans-cyrillic-300-normal.woff2) format('woff2'),
-      url(./fonts/NotoSans/noto-sans-cyrillic-300-normal.woff) format('woff');
-  }
-  
-  @font-face {
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 400;
-    src:
-      /* url(./fonts/NotoSans/noto-sans-cyrillic-400-normal.woff2) format('woff2'),
-      url(./fonts/NotoSans/noto-sans-cyrillic-400-normal.woff) format('woff'), */
-      url(./fonts/NotoSans/NotoSans-Regular.ttf);
-  }
-  
-  @font-face {
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 500;
-    src:
-      url(./fonts/NotoSans/noto-sans-cyrillic-500-normal.woff2) format('woff2'),
-      url(./fonts/NotoSans/noto-sans-cyrillic-500-normal.woff) format('woff');
-  }
-  
-  @font-face {
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 600;
-    src:
-      url(./fonts/NotoSans/noto-sans-cyrillic-600-normal.woff2) format('woff2'),
-      url(./fonts/NotoSans/noto-sans-cyrillic-600-normal.woff) format('woff');
-  }
-  
-  @font-face {
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 700;
-    src:
-      url(./fonts/NotoSans/noto-sans-cyrillic-700-normal.woff2) format('woff2'),
-      url(./fonts/NotoSans/noto-sans-cyrillic-700-normal.woff) format('woff');
-  }
-  
-  @font-face {
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 800;
-    src:
-      url(./fonts/NotoSans/noto-sans-cyrillic-800-normal.woff2) format('woff2'),
-      url(./fonts/NotoSans/noto-sans-cyrillic-800-normal.woff) format('woff');
-  }
-  
-  @font-face {
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 900;
-    src:
-      url(./fonts/NotoSans/noto-sans-cyrillic-900-normal.woff2) format('woff2'),
-      url(./fonts/NotoSans/noto-sans-cyrillic-900-normal.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src:
-    local('Roboto Thin'), 
-    local('Roboto-Thin'),
-    url('./fonts/Roboto/Robotothin.woff2') format('woff2'),
-    url('./fonts/Roboto/Robotothin.woff') format('woff'),
-    url('./fonts/Roboto/Robotothin.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: 
-    local('Roboto Thin Italic'),
-    local('Roboto-ThinItalic'),
-    url('./fonts/Roboto/Robotothinitalic.woff2') format('woff2'),
-    url('./fonts/Roboto/Robotothinitalic.woff') format('woff'),
-    url('./fonts/Roboto/Robotothinitalic.ttf') format('truetype');
-  font-weight: 100;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src:
-    local('Roboto Light'),
-    local('Roboto-Light'),
-    url('./fonts/Roboto/Robotolight.woff2') format('woff2'),
-    url('./fonts/Roboto/Robotolight.woff') format('woff'), 
-    url('./fonts/Roboto/Robotolight.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src:
-    local('Roboto Light Italic'), 
-    local('Roboto-LightItalic'),
-    url('./fonts/Roboto/Robotolightitalic.woff2') format('woff2'),
-    url('./fonts/Roboto/Robotolightitalic.woff') format('woff'),
-    url('./fonts/Roboto/Robotolightitalic.ttf') format('truetype');
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src:
-    local('Roboto'),
-    local('Roboto-Regular'),
-    url('./fonts/Roboto/Roboto.woff2') format('woff2'),
-    url('./fonts/Roboto/Roboto.woff') format('woff'),
-    url('./fonts/Roboto/Roboto.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src:
-    local('Roboto Italic'),
-    local('Roboto-Italic'),
-    url('./fonts/Roboto/Robotoitalic.woff2') format('woff2'),
-    url('./fonts/Roboto/Robotoitalic.woff') format('woff'),
-    url('./fonts/Roboto/Robotoitalic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src:
-    local('Roboto Medium'),
-    local('Roboto-Medium'),
-    url('./fonts/Roboto/Robotomedium.woff2') format('woff2'),
-    url('./fonts/Roboto/Robotomedium.woff') format('woff'),
-    url('./fonts/Roboto/Robotomedium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src:
-    local('Roboto Medium Italic'),
-    local('Roboto-MediumItalic'),
-    url('./fonts/Roboto/Robotomediumitalic.woff2') format('woff2'),
-    url('./fonts/Roboto/Robotomediumitalic.woff') format('woff'),
-    url('./fonts/Roboto/Robotomediumitalic.ttf') format('truetype');
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src:
-    local('Roboto Bold'),
-    local('Roboto-Bold'),
-    url('./fonts/Roboto/Robotobold.woff2') format('woff2'),
-    url('./fonts/Roboto/Robotobold.woff') format('woff'),
-    url('./fonts/Roboto/Robotobold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src:
-    local('Roboto Bold Italic'),
-    local('Roboto-BoldItalic'),
-    url('./fonts/Roboto/Robotobolditalic.woff2') format('woff2'),
-    url('./fonts/Roboto/Robotobolditalic.woff') format('woff'),
-    url('./fonts/Roboto/Robotobolditalic.ttf') format('truetype');
-  font-weight: 700;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src:
-    local('Roboto Black'),
-    local('Roboto-Black'),
-    url('./fonts/Roboto/Robotoblack.woff2') format('woff2'),
-    url('./fonts/Roboto/Robotoblack.woff') format('woff'),
-    url('./fonts/Roboto/Robotoblack.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src:
-    local('Roboto Black Italic'),
-    local('Roboto-BlackItalic'),
-    url('./fonts/Roboto/Robotoblackitalic.woff2') format('woff2'),
-    url('./fonts/Roboto/Robotoblackitalic.woff') format('woff'), 
-    url('./fonts/Roboto/Robotoblackitalic.ttf') format('truetype');
-  font-weight: 900;
-  font-style: italic;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @font-face {
   font-family: 'VoronovFont';
@@ -257,7 +25,8 @@
 .font-h3-88b {
   font-family: 'Noto Sans';
   font-style: normal;
-  font-weight: 600;
+  /* font-weight: 600; */
+  font-weight: 500;
   font-size: 88px;
   line-height: 92px;
 }
@@ -309,7 +78,8 @@
 .font-40m {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 500;
+  /* font-weight: 500; */
+  font-weight: 400;
   font-size: 40px;
   line-height: 48px;
 }
@@ -333,7 +103,8 @@
 .font-28bb {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 700;
+  /* font-weight: 700; */
+  font-weight: 500;
   font-size: 28px;
   line-height: 120%;
 }
@@ -357,7 +128,8 @@
 .font-h9-28l {
   font-family: 'Noto Sans';
   font-style: normal;
-  font-weight: 400;
+  /* font-weight: 400; */
+  font-weight: 300;
   font-size: 28px;
   line-height: 38px;
   letter-spacing: 0.28px;
@@ -366,7 +138,7 @@
 .font-24m {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 24px;
   line-height: 28px;
 }
@@ -390,7 +162,8 @@
 .font-20r {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
+  /* font-weight: 400; */
   font-size: 20px;
   line-height: 20px;
 }
@@ -398,7 +171,7 @@
 .font-20rr {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
   line-height: 20px;
 }
@@ -406,7 +179,8 @@
 .font-18r {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
+  /* font-weight: 400; */
   font-size: 18px;
   line-height: 22px;
 }
@@ -422,7 +196,8 @@
 .font-16r {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
+  /* font-weight: 400; */
+  font-weight: 300;
   font-size: 16px;
   line-height: 20px;
 }
@@ -430,7 +205,7 @@
 .font-16rr {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   line-height: 24px;
 }
@@ -438,7 +213,8 @@
 .font-16m {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
+  /* font-weight: 500; */
   font-size: 16px;
   line-height: 20px;
 }
@@ -446,7 +222,8 @@
 .font-16s {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 600;
+  /* font-weight: 600; */
+  font-weight: 500;
   font-size: 16px;
   line-height: 120%;
 }
@@ -470,7 +247,8 @@
 .font-12r {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
+  /* font-weight: 400; */
+  font-weight: 300;
   font-size: 12px;
   line-height: 18px;
 }
