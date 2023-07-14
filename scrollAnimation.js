@@ -55,7 +55,7 @@ sectionReviewsContainer.addEventListener('scroll', () => {
     scrollButtonRight.classList.remove(classDisabledName);
   }
 
-  if (sectionReviewsContainer.scrollLeft === 0) {
+  if (sectionReviewsContainer.scrollLeft <= 0) {
     scrollButtonLeft.classList.add(classDisabledName);
     scrollButtonLeft.classList.remove(classEnabledName);
   } else {
@@ -79,7 +79,7 @@ sectionWorksContainer.addEventListener('scroll', () => {
     scrollButtonRight.classList.remove(classDisabledName);
   }
 
-  if (sectionWorksContainer.scrollLeft === 0) {
+  if (sectionWorksContainer.scrollLeft <= 0) {
     scrollButtonLeft.classList.add(classDisabledName);
     scrollButtonLeft.classList.remove(classEnabledName);
   } else {
