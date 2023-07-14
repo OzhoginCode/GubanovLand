@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Песня на заказ</title>
+    <link rel="icon" href="./media/favicon.png" type="image/x-icon">
   </head>
   <body class="body">
     <header class="head">
@@ -54,7 +55,7 @@
         </div>
         <img src="./media/header-circles.svg" alt="" class="section-main-header-circles">
         <div class="section-main-right">
-          <video autoplay muted loop preload="auto" src="./media/section-main-video.mp4" class="section-main-video"></video>
+          <video autoplay muted loop preload="auto" playsinline src="./media/section-main-video.mp4" class="section-main-video"></video>
           <div>
             <div class="section-main-right-text font-h8-28r">
               <span>я работал</span>
@@ -115,7 +116,7 @@
       </section>
       <section class="section-playlists">
         <div class="section-playlists-video-div">
-          <video autoplay muted loop preload="auto" src="./media/section-playlists-video.mp4" class="sections-playlists-video"></video>
+          <video autoplay muted loop preload="auto" playsinline src="./media/section-playlists-video.mp4" class="sections-playlists-video"></video>
         </div>
         <div class="section-playlists-right-div">
           <h2 class="section-playlists-right-header font-h5-56bl">
@@ -124,10 +125,10 @@
             <span class="section-playlists-right-header-3">В ТОП ЧАРТЫ</span>
           </h2>
           <ul class="section-playlists-right-images">
-            <li><a href="#"><img src="./media/playlists-block-image-yandex.png" alt="" class="playlists-block-image-yandex"></a></li>
-            <li><a href="#"><img src="./media/playlists-block-image-boom.png" alt=""></a></li>
-            <li><a href="#"><img src="./media/playlists-block-image-zvuk.png" alt=""></a></li>
-            <li><a href="#"><img src="./media/playlists-block-image-spotify.png" alt=""></a></li>
+            <li><img src="./media/playlists-block-image-yandex.png" alt="" class="playlists-block-image-yandex"></li>
+            <li><img src="./media/playlists-block-image-boom.png" alt=""></li>
+            <li><img src="./media/playlists-block-image-zvuk.png" alt=""></li>
+            <li><img src="./media/playlists-block-image-spotify.png" alt=""></li>
           </ul>
           <div class="section-playlists-right-text font-16m">
             <p>
@@ -149,8 +150,348 @@
           <div class="section-works-upper-right-text font-16rr">КАЧЕСТВЕННАЯ МУЗЫКА ОЧЕНЬ СИЛЬНО ВЛИЯЕТ НА ВОСПРИЯТИЕ ТРЕКА.</div>
           <img src="./media/section-works-line.svg" alt="" class="section-works-line">
         </div>
-        <audio controls src="./media/Tokyo 3.mp3" class="audio-test"></audio> 
-        <!-- тут будут карточки с аудио -->
+        <div id="section-works-audio-cards-container" class="section-works-audio-cards-container">
+          <div class="section-works-audio-card card-1">
+            <audio class="section-works-audio-card-player" src="./media/Ксема - огонь.mp3" preload="auto"></audio>
+            <div class="section-works-audio-card-head">
+              <img src="./media/section-works-audio-card-img-1.png" alt="" class="section-works-audio-card-img">
+              <div class="section-works-audio-card-head-title-container font-16s">
+                <span class="section-works-audio-card-head-title font-24r">Огонь</span>
+                <span class="section-works-audio-card-head-artist-name font-16rr">KSEMA</span>
+              </div>
+              <div class="section-works-audio-card-site-container font-14r">
+                <img src="./media/section-works-audio-card-site-img.svg" alt="" class="section-works-audio-card-site-img">
+                <span>Яндекс музыка</span>
+              </div>
+            </div>
+            <div class="section-works-audio-card-controls">
+              <button class="section-works-audio-card-controls-backward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="6" y="32" width="6" height="32" rx="2.22272" transform="rotate(-180 6 32)" fill="white"/>
+                  <path d="M8.68174 16.7563C7.77276 16.1656 7.77276 14.8344 8.68174 14.2437L28.687 1.2442C29.6832 0.596907 31 1.31212 31 2.50047L31 28.4995C31 29.6879 29.6832 30.4031 28.687 29.7558L8.68174 16.7563Z" fill="white"/>
+                </svg>                  
+              </button>
+              <button class="section-works-audio-card-controls-play section-works-audio-card-controls-button">
+                <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.3183 13.2437C23.2272 13.8344 23.2272 15.1656 22.3183 15.7563L2.31295 28.7558C1.31681 29.4031 -5.09473e-08 28.6879 9.96796e-10 27.4995L1.13745e-06 1.50047C1.1894e-06 0.312126 1.31682 -0.403091 2.31296 0.244205L22.3183 13.2437Z" fill="white"/>
+                </svg>
+              </button>
+              <button class="section-works-audio-card-controls-forward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="25" width="6" height="32" rx="2.22272" fill="white"/>
+                  <path d="M22.3183 14.2437C23.2272 14.8344 23.2272 16.1656 22.3183 16.7563L2.31295 29.7558C1.31681 30.4031 -5.09473e-08 29.6879 9.96796e-10 28.4995L1.13745e-06 2.50047C1.1894e-06 1.31213 1.31682 0.596909 2.31296 1.2442L22.3183 14.2437Z" fill="white"/>
+                </svg>
+              </button>
+            </div>
+            <div class="section-works-audio-card-progress-bar-container">
+              <div class="section-works-audio-card-progress-bar"></div>
+              <svg id="slider" class="section-works-audio-card-progress-bar-circle" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                <circle class="section-works-audio-card-progress-bar-circle-inner" cx="8.90039" cy="8" r="8" fill="#FFF"/>
+              </svg>
+            </div>
+            <div class="section-works-audio-card-time-container">
+              <span class="section-works-audio-card-current-time font-14r">00:00</span>
+              <span class="section-works-audio-card-duration font-14r">00:15</span>
+            </div>
+            <div class="section-works-audio-card-before-after font-14r">
+              <span class="section-works-audio-card-span-before">до</span>
+              <div class="section-works-audio-card-progress-bar-vertical-line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
+                  <path d="M1 0L1 42" stroke="white"/>
+                </svg>
+              </div>
+              <span class="section-works-audio-card-span-after">после</span>
+            </div>
+          </div>
+          <!-- ВТОРАЯ КАРТОЧКА -->
+          <div class="section-works-audio-card card-2">
+            <audio class="section-works-audio-card-player" src="./media/Kate Rogalski - Громкий трек.mp3" preload="auto"></audio>
+            <div class="section-works-audio-card-head">
+              <img src="./media/section-works-audio-card-img-2.png" alt="" class="section-works-audio-card-img">
+              <div class="section-works-audio-card-head-title-container font-16s">
+                <span class="section-works-audio-card-head-title font-24r">Громкий трек</span>
+                <span class="section-works-audio-card-head-artist-name font-16rr">KATE ROGALSKI</span>
+              </div>
+              <div class="section-works-audio-card-site-container font-14r">
+                <img src="./media/section-works-audio-card-site-img.svg" alt="" class="section-works-audio-card-site-img">
+                <span>Яндекс музыка</span>
+              </div>
+            </div>
+            <div class="section-works-audio-card-controls">
+              <button class="section-works-audio-card-controls-backward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="6" y="32" width="6" height="32" rx="2.22272" transform="rotate(-180 6 32)" fill="white"/>
+                  <path d="M8.68174 16.7563C7.77276 16.1656 7.77276 14.8344 8.68174 14.2437L28.687 1.2442C29.6832 0.596907 31 1.31212 31 2.50047L31 28.4995C31 29.6879 29.6832 30.4031 28.687 29.7558L8.68174 16.7563Z" fill="white"/>
+                </svg>                  
+              </button>
+              <button class="section-works-audio-card-controls-play section-works-audio-card-controls-button">
+                <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.3183 13.2437C23.2272 13.8344 23.2272 15.1656 22.3183 15.7563L2.31295 28.7558C1.31681 29.4031 -5.09473e-08 28.6879 9.96796e-10 27.4995L1.13745e-06 1.50047C1.1894e-06 0.312126 1.31682 -0.403091 2.31296 0.244205L22.3183 13.2437Z" fill="white"/>
+                </svg>
+              </button>
+              <button class="section-works-audio-card-controls-forward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="25" width="6" height="32" rx="2.22272" fill="white"/>
+                  <path d="M22.3183 14.2437C23.2272 14.8344 23.2272 16.1656 22.3183 16.7563L2.31295 29.7558C1.31681 30.4031 -5.09473e-08 29.6879 9.96796e-10 28.4995L1.13745e-06 2.50047C1.1894e-06 1.31213 1.31682 0.596909 2.31296 1.2442L22.3183 14.2437Z" fill="white"/>
+                </svg>
+              </button>
+            </div>
+            <div class="section-works-audio-card-progress-bar-container">
+              <div class="section-works-audio-card-progress-bar"></div>
+              <svg id="slider" class="section-works-audio-card-progress-bar-circle" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                <circle class="section-works-audio-card-progress-bar-circle-inner" cx="8.90039" cy="8" r="8" fill="#FFF"/>
+              </svg>
+            </div>
+            <div class="section-works-audio-card-time-container">
+              <span class="section-works-audio-card-current-time font-14r">00:00</span>
+              <span class="section-works-audio-card-duration font-14r">00:15</span>
+            </div>
+            <div class="section-works-audio-card-before-after font-14r">
+              <span class="section-works-audio-card-span-before">до</span>
+              <div class="section-works-audio-card-progress-bar-vertical-line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
+                  <path d="M1 0L1 42" stroke="white"/>
+                </svg>
+              </div>
+              <span class="section-works-audio-card-span-after">после</span>
+            </div>
+          </div>
+          <div class="section-works-audio-card card-3">
+            <audio class="section-works-audio-card-player" src="./media/Луканова - Вечная история.mp3" preload="auto"></audio>
+            <div class="section-works-audio-card-head">
+              <img src="./media/section-works-audio-card-img-3.png" alt="" class="section-works-audio-card-img">
+              <div class="section-works-audio-card-head-title-container font-16s">
+                <span class="section-works-audio-card-head-title font-24r">Вечная история</span>
+                <span class="section-works-audio-card-head-artist-name font-16rr">TONYA</span>
+              </div>
+              <div class="section-works-audio-card-site-container font-14r">
+                <img src="./media/section-works-audio-card-site-img.svg" alt="" class="section-works-audio-card-site-img">
+                <span>Яндекс музыка</span>
+              </div>
+            </div>
+            <div class="section-works-audio-card-controls">
+              <button class="section-works-audio-card-controls-backward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="6" y="32" width="6" height="32" rx="2.22272" transform="rotate(-180 6 32)" fill="white"/>
+                  <path d="M8.68174 16.7563C7.77276 16.1656 7.77276 14.8344 8.68174 14.2437L28.687 1.2442C29.6832 0.596907 31 1.31212 31 2.50047L31 28.4995C31 29.6879 29.6832 30.4031 28.687 29.7558L8.68174 16.7563Z" fill="white"/>
+                </svg>                  
+              </button>
+              <button class="section-works-audio-card-controls-play section-works-audio-card-controls-button">
+                <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.3183 13.2437C23.2272 13.8344 23.2272 15.1656 22.3183 15.7563L2.31295 28.7558C1.31681 29.4031 -5.09473e-08 28.6879 9.96796e-10 27.4995L1.13745e-06 1.50047C1.1894e-06 0.312126 1.31682 -0.403091 2.31296 0.244205L22.3183 13.2437Z" fill="white"/>
+                </svg>
+              </button>
+              <button class="section-works-audio-card-controls-forward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="25" width="6" height="32" rx="2.22272" fill="white"/>
+                  <path d="M22.3183 14.2437C23.2272 14.8344 23.2272 16.1656 22.3183 16.7563L2.31295 29.7558C1.31681 30.4031 -5.09473e-08 29.6879 9.96796e-10 28.4995L1.13745e-06 2.50047C1.1894e-06 1.31213 1.31682 0.596909 2.31296 1.2442L22.3183 14.2437Z" fill="white"/>
+                </svg>
+              </button>
+            </div>
+            <div class="section-works-audio-card-progress-bar-container">
+              <div class="section-works-audio-card-progress-bar"></div>
+              <svg id="slider" class="section-works-audio-card-progress-bar-circle" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                <circle class="section-works-audio-card-progress-bar-circle-inner" cx="8.90039" cy="8" r="8" fill="#FFF"/>
+              </svg>
+            </div>
+            <div class="section-works-audio-card-time-container">
+              <span class="section-works-audio-card-current-time font-14r">00:00</span>
+              <span class="section-works-audio-card-duration font-14r">00:15</span>
+            </div>
+            <div class="section-works-audio-card-before-after font-14r">
+              <span class="section-works-audio-card-span-before">до</span>
+              <div class="section-works-audio-card-progress-bar-vertical-line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
+                  <path d="M1 0L1 42" stroke="white"/>
+                </svg>
+              </div>
+              <span class="section-works-audio-card-span-after">после</span>
+            </div>
+          </div>
+          <div class="section-works-audio-card card-4">
+            <audio class="section-works-audio-card-player" src="./media/Ksesha - Улетай.mp3" preload="auto"></audio>
+            <div class="section-works-audio-card-head">
+              <img src="./media/section-works-audio-card-img-4.png" alt="" class="section-works-audio-card-img">
+              <div class="section-works-audio-card-head-title-container font-16s">
+                <span class="section-works-audio-card-head-title font-24r">Улетай</span>
+                <span class="section-works-audio-card-head-artist-name font-16rr">KSESHA</span>
+              </div>
+              <div class="section-works-audio-card-site-container font-14r">
+                <img src="./media/section-works-audio-card-site-img.svg" alt="" class="section-works-audio-card-site-img">
+                <span>Яндекс музыка</span>
+              </div>
+            </div>
+            <div class="section-works-audio-card-controls">
+              <button class="section-works-audio-card-controls-backward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="6" y="32" width="6" height="32" rx="2.22272" transform="rotate(-180 6 32)" fill="white"/>
+                  <path d="M8.68174 16.7563C7.77276 16.1656 7.77276 14.8344 8.68174 14.2437L28.687 1.2442C29.6832 0.596907 31 1.31212 31 2.50047L31 28.4995C31 29.6879 29.6832 30.4031 28.687 29.7558L8.68174 16.7563Z" fill="white"/>
+                </svg>                  
+              </button>
+              <button class="section-works-audio-card-controls-play section-works-audio-card-controls-button">
+                <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.3183 13.2437C23.2272 13.8344 23.2272 15.1656 22.3183 15.7563L2.31295 28.7558C1.31681 29.4031 -5.09473e-08 28.6879 9.96796e-10 27.4995L1.13745e-06 1.50047C1.1894e-06 0.312126 1.31682 -0.403091 2.31296 0.244205L22.3183 13.2437Z" fill="white"/>
+                </svg>
+              </button>
+              <button class="section-works-audio-card-controls-forward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="25" width="6" height="32" rx="2.22272" fill="white"/>
+                  <path d="M22.3183 14.2437C23.2272 14.8344 23.2272 16.1656 22.3183 16.7563L2.31295 29.7558C1.31681 30.4031 -5.09473e-08 29.6879 9.96796e-10 28.4995L1.13745e-06 2.50047C1.1894e-06 1.31213 1.31682 0.596909 2.31296 1.2442L22.3183 14.2437Z" fill="white"/>
+                </svg>
+              </button>
+            </div>
+            <div class="section-works-audio-card-progress-bar-container">
+              <div class="section-works-audio-card-progress-bar"></div>
+              <svg id="slider" class="section-works-audio-card-progress-bar-circle" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                <circle class="section-works-audio-card-progress-bar-circle-inner" cx="8.90039" cy="8" r="8" fill="#FFF"/>
+              </svg>
+            </div>
+            <div class="section-works-audio-card-time-container">
+              <span class="section-works-audio-card-current-time font-14r">00:00</span>
+              <span class="section-works-audio-card-duration font-14r">00:15</span>
+            </div>
+            <div class="section-works-audio-card-before-after font-14r">
+              <span class="section-works-audio-card-span-before">до</span>
+              <div class="section-works-audio-card-progress-bar-vertical-line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
+                  <path d="M1 0L1 42" stroke="white"/>
+                </svg>
+              </div>
+              <span class="section-works-audio-card-span-after">после</span>
+            </div>
+          </div>
+          <div class="section-works-audio-card card-5">
+            <audio class="section-works-audio-card-player" src="./media/Твоя бывшая - алло.mp3" preload="auto"></audio>
+            <div class="section-works-audio-card-head">
+              <img src="./media/section-works-audio-card-img-5.png" alt="" class="section-works-audio-card-img">
+              <div class="section-works-audio-card-head-title-container font-16s">
+                <span class="section-works-audio-card-head-title font-24r">Алло</span>
+                <span class="section-works-audio-card-head-artist-name font-16rr">ТВОЯ БЫВШАЯ</span>
+              </div>
+              <div class="section-works-audio-card-site-container font-14r">
+                <img src="./media/section-works-audio-card-site-img.svg" alt="" class="section-works-audio-card-site-img">
+                <span>Яндекс музыка</span>
+              </div>
+            </div>
+            <div class="section-works-audio-card-controls">
+              <button class="section-works-audio-card-controls-backward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="6" y="32" width="6" height="32" rx="2.22272" transform="rotate(-180 6 32)" fill="white"/>
+                  <path d="M8.68174 16.7563C7.77276 16.1656 7.77276 14.8344 8.68174 14.2437L28.687 1.2442C29.6832 0.596907 31 1.31212 31 2.50047L31 28.4995C31 29.6879 29.6832 30.4031 28.687 29.7558L8.68174 16.7563Z" fill="white"/>
+                </svg>                  
+              </button>
+              <button class="section-works-audio-card-controls-play section-works-audio-card-controls-button">
+                <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.3183 13.2437C23.2272 13.8344 23.2272 15.1656 22.3183 15.7563L2.31295 28.7558C1.31681 29.4031 -5.09473e-08 28.6879 9.96796e-10 27.4995L1.13745e-06 1.50047C1.1894e-06 0.312126 1.31682 -0.403091 2.31296 0.244205L22.3183 13.2437Z" fill="white"/>
+                </svg>
+              </button>
+              <button class="section-works-audio-card-controls-forward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="25" width="6" height="32" rx="2.22272" fill="white"/>
+                  <path d="M22.3183 14.2437C23.2272 14.8344 23.2272 16.1656 22.3183 16.7563L2.31295 29.7558C1.31681 30.4031 -5.09473e-08 29.6879 9.96796e-10 28.4995L1.13745e-06 2.50047C1.1894e-06 1.31213 1.31682 0.596909 2.31296 1.2442L22.3183 14.2437Z" fill="white"/>
+                </svg>
+              </button>
+            </div>
+            <div class="section-works-audio-card-progress-bar-container">
+              <div class="section-works-audio-card-progress-bar"></div>
+              <svg id="slider" class="section-works-audio-card-progress-bar-circle" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                <circle class="section-works-audio-card-progress-bar-circle-inner" cx="8.90039" cy="8" r="8" fill="#FFF"/>
+              </svg>
+            </div>
+            <div class="section-works-audio-card-time-container">
+              <span class="section-works-audio-card-current-time font-14r">00:00</span>
+              <span class="section-works-audio-card-duration font-14r">00:15</span>
+            </div>
+            <div class="section-works-audio-card-before-after font-14r">
+              <span class="section-works-audio-card-span-before">до</span>
+              <div class="section-works-audio-card-progress-bar-vertical-line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
+                  <path d="M1 0L1 42" stroke="white"/>
+                </svg>
+              </div>
+              <span class="section-works-audio-card-span-after">после</span>
+            </div>
+          </div>
+          <div class="section-works-audio-card card-6">
+            <audio class="section-works-audio-card-player" src="./media/Тори - Твоя.mp3" preload="auto"></audio>
+            <div class="section-works-audio-card-head">
+              <img src="./media/section-works-audio-card-img-6.png" alt="" class="section-works-audio-card-img">
+              <div class="section-works-audio-card-head-title-container font-16s">
+                <span class="section-works-audio-card-head-title font-24r">Твоя</span>
+                <span class="section-works-audio-card-head-artist-name font-16rr">TORY</span>
+              </div>
+              <div class="section-works-audio-card-site-container font-14r">
+                <img src="./media/section-works-audio-card-site-img.svg" alt="" class="section-works-audio-card-site-img">
+                <span>Яндекс музыка</span>
+              </div>
+            </div>
+            <div class="section-works-audio-card-controls">
+              <button class="section-works-audio-card-controls-backward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="6" y="32" width="6" height="32" rx="2.22272" transform="rotate(-180 6 32)" fill="white"/>
+                  <path d="M8.68174 16.7563C7.77276 16.1656 7.77276 14.8344 8.68174 14.2437L28.687 1.2442C29.6832 0.596907 31 1.31212 31 2.50047L31 28.4995C31 29.6879 29.6832 30.4031 28.687 29.7558L8.68174 16.7563Z" fill="white"/>
+                </svg>                  
+              </button>
+              <button class="section-works-audio-card-controls-play section-works-audio-card-controls-button">
+                <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.3183 13.2437C23.2272 13.8344 23.2272 15.1656 22.3183 15.7563L2.31295 28.7558C1.31681 29.4031 -5.09473e-08 28.6879 9.96796e-10 27.4995L1.13745e-06 1.50047C1.1894e-06 0.312126 1.31682 -0.403091 2.31296 0.244205L22.3183 13.2437Z" fill="white"/>
+                </svg>
+              </button>
+              <button class="section-works-audio-card-controls-forward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="25" width="6" height="32" rx="2.22272" fill="white"/>
+                  <path d="M22.3183 14.2437C23.2272 14.8344 23.2272 16.1656 22.3183 16.7563L2.31295 29.7558C1.31681 30.4031 -5.09473e-08 29.6879 9.96796e-10 28.4995L1.13745e-06 2.50047C1.1894e-06 1.31213 1.31682 0.596909 2.31296 1.2442L22.3183 14.2437Z" fill="white"/>
+                </svg>
+              </button>
+            </div>
+            <div class="section-works-audio-card-progress-bar-container">
+              <div class="section-works-audio-card-progress-bar"></div>
+              <svg id="slider" class="section-works-audio-card-progress-bar-circle" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                <circle class="section-works-audio-card-progress-bar-circle-inner" cx="8.90039" cy="8" r="8" fill="#FFF"/>
+              </svg>
+            </div>
+            <div class="section-works-audio-card-time-container">
+              <span class="section-works-audio-card-current-time font-14r">00:00</span>
+              <span class="section-works-audio-card-duration font-14r">00:15</span>
+            </div>
+            <div class="section-works-audio-card-before-after font-14r">
+              <span class="section-works-audio-card-span-before">до</span>
+              <div class="section-works-audio-card-progress-bar-vertical-line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
+                  <path d="M1 0L1 42" stroke="white"/>
+                </svg>
+              </div>
+              <span class="section-works-audio-card-span-after">после</span>
+            </div>
+          </div>
+          <div class="fixer">
+          </div>
+        </div>
+        <div class="section-works-scroll-buttons-container">
+          <button id="sectionWorksScrollButtonLeft" class="scroll-button-left scroll-button scroll-button-disabled">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="19.5" stroke="#fff"/>
+              <path d="M23 12L15 20L23 28" stroke="#fff" stroke-width="2"/>
+            </svg>
+          </button>
+          <button id="sectionWorksScrollButtonRight" class="scroll-button scroll-button-enabled">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="19.5" stroke="#fff"/>
+              <path d="M17 12L25 20L17 28" stroke="#fff" stroke-width="2"/>
+            </svg>
+          </button>
+        </div>
+        <div class="section-works-lower-text-container font-16rr">
+          <div>ПОСЛУШАТЬ ВСЕ<br>МОИ РАБОТЫ ТЫ<br>МОЖЕШЬ 
+            <div class="section-works-lower-text-container-button text-button-3">
+              <a href="https://vk.com/music/playlist/40895579_65097748" target="_blank">ЗДЕСЬ</a>
+              <svg class="section-works-lower-text-line" xmlns="http://www.w3.org/2000/svg" width="51" height="2" viewBox="0 0 51 2" fill="none">
+                <path d="M0 1H51" stroke="#FFCB5A"/>
+              </svg>
+            </div>
+          </div>
+          <div>В МОЕМ<br>ПОРТФОЛИО<br>БОЛЕЕ 150 РАБОТ</div>
+        </div>
       </section>
       <section class="section-stages">
         <h1 class="sections-stages-header font-h5-56m">
@@ -199,7 +540,7 @@
               <div class="section-stages-ul-description font-16r">Публикация трека на цифровых площадках</div>
             </li>
           </ul>
-          <video src="./media/section-stages-video-cassette.mp4" class="section-stages-video-cassette"></video>
+          <video autoplay muted loop preload="auto" playsinline src="./media/section-stages-video-cassette.mp4" class="section-stages-video-cassette"></video>
         </div>
       </section>
       <section class="section-prices" id="section-prices">
@@ -367,13 +708,13 @@
             </div>
           </div>
           <div class="section-reviews-scroll-buttons-container">
-            <button id="scrollButtonLeft" class="scroll-button-left scroll-button scroll-button-disabled">
+            <button id="sectionReviewsScrollButtonLeft" class="scroll-button-left scroll-button scroll-button-disabled">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                 <circle cx="20" cy="20" r="19.5" stroke="#fff"/>
                 <path d="M23 12L15 20L23 28" stroke="#fff" stroke-width="2"/>
               </svg>
             </button>
-            <button id="scrollButtonRight" class="scroll-button scroll-button-enabled">
+            <button id="sectionReviewsScrollButtonRight" class="scroll-button scroll-button-enabled">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                 <circle cx="20" cy="20" r="19.5" stroke="#fff"/>
                 <path d="M17 12L25 20L17 28" stroke="#fff" stroke-width="2"/>
@@ -387,13 +728,13 @@
           <h3 class="section-communication-header font-h6-48b">ОСТАЛИСЬ ВОПРОСЫ ?</h3>
           <p class="section-communication-header-p font-22r">Оставь свои данные и я свяжусь с тобой для уточнения деталей</p>
           <div class="section-communication-a-container">
-            <a href="">
+            <a href="https://t.me/VanyaSolminor" target="_blank">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
                 <path d="M20.506 8.83887C14.756 8.83887 10.0893 13.5055 10.0893 19.2555C10.0893 25.0055 14.756 29.6722 20.506 29.6722C26.256 29.6722 30.9226 25.0055 30.9226 19.2555C30.9226 13.5055 26.256 8.83887 20.506 8.83887ZM25.3393 15.9222C25.183 17.568 24.506 21.568 24.1622 23.4118C24.0164 24.193 23.7247 24.4535 23.4539 24.4847C22.8497 24.5368 22.3914 24.0889 21.808 23.7035C20.8914 23.0993 20.3705 22.7243 19.4851 22.141C18.4539 21.4639 19.1205 21.0889 19.7143 20.4847C19.8705 20.3285 22.5372 17.9014 22.5893 17.6826C22.5965 17.6495 22.5956 17.6151 22.5865 17.5824C22.5774 17.5497 22.5605 17.5198 22.5372 17.4951C22.4747 17.443 22.3914 17.4639 22.3185 17.4743C22.2247 17.4951 20.7664 18.4639 17.9226 20.3805C17.506 20.6618 17.131 20.8076 16.7976 20.7972C16.4226 20.7868 15.7143 20.5889 15.183 20.4118C14.5268 20.2035 14.0164 20.0889 14.058 19.7243C14.0789 19.5368 14.3393 19.3493 14.8289 19.1514C17.8705 17.8285 19.8914 16.9535 20.9018 16.5368C23.7976 15.3285 24.3914 15.1201 24.7872 15.1201C24.8705 15.1201 25.0685 15.141 25.1935 15.2451C25.2976 15.3285 25.3289 15.443 25.3393 15.5264C25.3289 15.5889 25.3497 15.7764 25.3393 15.9222Z" fill="white"/>
                 <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098"/>
               </svg>
             </a>
-            <a href="">
+            <a href="https://instagram.com/gubanovmusic?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
                 <mask id="mask0_450_582" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="11" y="9" width="18" height="19">
                   <path d="M13.3819 13.071C14.3944 13.071 15.2153 12.2502 15.2153 11.2376C15.2153 10.2251 14.3944 9.4043 13.3819 9.4043C12.3694 9.4043 11.5486 10.2251 11.5486 11.2376C11.5486 12.2502 12.3694 13.071 13.3819 13.071Z" fill="white"/>
@@ -405,7 +746,7 @@
                 <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098"/>
                 </svg>
             </a>
-            <a href="">
+            <a href="https://vk.com/gubanovmusic" target="_blank">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
                 <path d="M29.0279 27.1521H26.6518C25.7529 27.1521 25.482 26.4239 23.8706 24.8114C22.4622 23.4541 21.8674 23.2854 21.5112 23.2854C21.0185 23.2854 20.8841 23.4208 20.8841 24.0989V26.2364C20.8841 26.8146 20.6966 27.1531 19.1862 27.1531C17.7209 27.0547 16.2999 26.6095 15.0403 25.8543C13.7808 25.0991 12.7186 24.0555 11.9414 22.8094C10.096 20.5125 8.81193 17.8167 8.19141 14.9364C8.19141 14.5802 8.32682 14.2573 9.00599 14.2573H11.381C11.9914 14.2573 12.2112 14.5291 12.4508 15.1573C13.6039 18.551 15.5716 21.5031 16.3706 21.5031C16.6768 21.5031 16.8102 21.3677 16.8102 20.6041V17.1083C16.7091 15.5135 15.8622 15.3791 15.8622 14.8021C15.873 14.6498 15.9426 14.5077 16.0564 14.406C16.1702 14.3043 16.3191 14.2509 16.4716 14.2573H20.2049C20.7154 14.2573 20.8841 14.5114 20.8841 15.1219V19.8406C20.8841 20.35 21.1029 20.5187 21.257 20.5187C21.5633 20.5187 21.7987 20.35 22.3602 19.7896C23.5637 18.3218 24.5469 16.6866 25.2789 14.9354C25.3538 14.7251 25.4955 14.5452 25.6822 14.4229C25.869 14.3007 26.0906 14.2429 26.3133 14.2583H28.6893C29.4018 14.2583 29.5529 14.6146 29.4018 15.1229C28.5376 17.0587 27.4683 18.8963 26.2122 20.6041C25.956 20.9948 25.8539 21.1979 26.2122 21.6562C26.4477 22.0125 27.281 22.7083 27.8404 23.3698C28.655 24.1823 29.331 25.1219 29.8424 26.151C30.0466 26.8135 29.706 27.1521 29.0279 27.1521Z" fill="white"/>
                 <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098"/>
@@ -419,12 +760,12 @@
               <fieldset class="section-communication-fieldset section-communication-fieldset-name">
                 <legend class="section-communication-form-legend font-h10-12r">ИМЯ *</legend>
                 <label for="name"></label>
-                <input required name="name" id="name" class="font-16r"></input>
+                <input required autocomplete="given-name" name="name" id="name" class="font-16r"></input>
               </fieldset>
               <fieldset class="section-communication-fieldset section-communication-fieldset-phone">
                 <legend class="section-communication-form-legend font-h10-12r">ТЕЛЕФОН *</legend>
                 <label for="phone"></label>
-                <input name="phone" id="phone" class="font-16r"></input>
+                <input required autocomplete ="tel" name="phone" id="phone" class="font-16r"></input>
               </fieldset>
             </div>
             <fieldset class="section-communication-fieldset section-communication-fieldset-message">
@@ -490,13 +831,13 @@
             Gubanovmusic@yandex.ru
           </div>
           <div class="footer-right-container-img-container">
-            <a href="">
+            <a href="https://t.me/VanyaSolminor" target="_blank">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
                 <path d="M20.506 8.83887C14.756 8.83887 10.0893 13.5055 10.0893 19.2555C10.0893 25.0055 14.756 29.6722 20.506 29.6722C26.256 29.6722 30.9226 25.0055 30.9226 19.2555C30.9226 13.5055 26.256 8.83887 20.506 8.83887ZM25.3393 15.9222C25.183 17.568 24.506 21.568 24.1622 23.4118C24.0164 24.193 23.7247 24.4535 23.4539 24.4847C22.8497 24.5368 22.3914 24.0889 21.808 23.7035C20.8914 23.0993 20.3705 22.7243 19.4851 22.141C18.4539 21.4639 19.1205 21.0889 19.7143 20.4847C19.8705 20.3285 22.5372 17.9014 22.5893 17.6826C22.5965 17.6495 22.5956 17.6151 22.5865 17.5824C22.5774 17.5497 22.5605 17.5198 22.5372 17.4951C22.4747 17.443 22.3914 17.4639 22.3185 17.4743C22.2247 17.4951 20.7664 18.4639 17.9226 20.3805C17.506 20.6618 17.131 20.8076 16.7976 20.7972C16.4226 20.7868 15.7143 20.5889 15.183 20.4118C14.5268 20.2035 14.0164 20.0889 14.058 19.7243C14.0789 19.5368 14.3393 19.3493 14.8289 19.1514C17.8705 17.8285 19.8914 16.9535 20.9018 16.5368C23.7976 15.3285 24.3914 15.1201 24.7872 15.1201C24.8705 15.1201 25.0685 15.141 25.1935 15.2451C25.2976 15.3285 25.3289 15.443 25.3393 15.5264C25.3289 15.5889 25.3497 15.7764 25.3393 15.9222Z" fill="white"/>
                 <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098"/>
               </svg>
             </a>
-            <a href="">
+            <a href="https://instagram.com/gubanovmusic?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
                 <mask id="mask0_450_582" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="11" y="9" width="18" height="19">
                   <path d="M13.3819 13.071C14.3944 13.071 15.2153 12.2502 15.2153 11.2376C15.2153 10.2251 14.3944 9.4043 13.3819 9.4043C12.3694 9.4043 11.5486 10.2251 11.5486 11.2376C11.5486 12.2502 12.3694 13.071 13.3819 13.071Z" fill="white"/>
@@ -508,7 +849,7 @@
                 <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098"/>
                 </svg>
             </a>
-            <a href="">
+            <a href="https://vk.com/gubanovmusic" target="_blank">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
                 <path d="M29.0279 27.1521H26.6518C25.7529 27.1521 25.482 26.4239 23.8706 24.8114C22.4622 23.4541 21.8674 23.2854 21.5112 23.2854C21.0185 23.2854 20.8841 23.4208 20.8841 24.0989V26.2364C20.8841 26.8146 20.6966 27.1531 19.1862 27.1531C17.7209 27.0547 16.2999 26.6095 15.0403 25.8543C13.7808 25.0991 12.7186 24.0555 11.9414 22.8094C10.096 20.5125 8.81193 17.8167 8.19141 14.9364C8.19141 14.5802 8.32682 14.2573 9.00599 14.2573H11.381C11.9914 14.2573 12.2112 14.5291 12.4508 15.1573C13.6039 18.551 15.5716 21.5031 16.3706 21.5031C16.6768 21.5031 16.8102 21.3677 16.8102 20.6041V17.1083C16.7091 15.5135 15.8622 15.3791 15.8622 14.8021C15.873 14.6498 15.9426 14.5077 16.0564 14.406C16.1702 14.3043 16.3191 14.2509 16.4716 14.2573H20.2049C20.7154 14.2573 20.8841 14.5114 20.8841 15.1219V19.8406C20.8841 20.35 21.1029 20.5187 21.257 20.5187C21.5633 20.5187 21.7987 20.35 22.3602 19.7896C23.5637 18.3218 24.5469 16.6866 25.2789 14.9354C25.3538 14.7251 25.4955 14.5452 25.6822 14.4229C25.869 14.3007 26.0906 14.2429 26.3133 14.2583H28.6893C29.4018 14.2583 29.5529 14.6146 29.4018 15.1229C28.5376 17.0587 27.4683 18.8963 26.2122 20.6041C25.956 20.9948 25.8539 21.1979 26.2122 21.6562C26.4477 22.0125 27.281 22.7083 27.8404 23.3698C28.655 24.1823 29.331 25.1219 29.8424 26.151C30.0466 26.8135 29.706 27.1521 29.0279 27.1521Z" fill="white"/>
                 <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098"/>
@@ -519,6 +860,7 @@
       </div>
     </footer>
     <script src="scrollAnimation.js"></script>
+    <script src="audio.js"></script>
   </body>
 </html>
 
@@ -533,14 +875,10 @@
   webpack
 
   head:
-  <title>Заголовок страницы</title>
-  
-  
   <meta name="description" content="Описание страницы"> - задает описание страницы для поисковых систем
   <meta name="keywords" content="ключевые слова"> - задает ключевые слова страницы для поисковых систем
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> - определяет настройки просмотра для мобильных устройств
   http-equiv="X-UA-Compatible": Указывает совместимость браузера с определенной версией Internet Explorer. Пример: <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  Иконка сайта (фавиконка): <link rel="icon" href="favicon.ico" type="image/x-icon">. Этот элемент задает иконку, которая отображается во вкладке браузера
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 -->

@@ -13,6 +13,12 @@
 }
 
 html {
+  color-scheme: dark light;
+  &[data-theme=light] { color-scheme: light; }
+  &[data-theme=dark] { color-scheme: dark; }
+}
+
+html {
   scroll-behavior: smooth;
 
   background-color: var(--main-background);
@@ -321,6 +327,8 @@ html {
 
   margin-top: 100px;
   margin-left: 100px;
+
+  color: var(--white-2);
 }
 
 .main-text-right-section-about-1 {
@@ -480,7 +488,7 @@ html {
   list-style: none;
 }
 
-.section-playlists-right-images img {
+.section-playlists-right-images li {
   margin-right: 24px;
 }
 
@@ -567,7 +575,6 @@ html {
   display: flex;
   flex-direction: column;
   
-
   margin-left: auto;
   margin-right: 202px;
   margin-top: 269px;
@@ -584,20 +591,239 @@ html {
   right: 202px;
   top: 373px;
 
-  /* width: 620px; */
-  /* height: 0px; */
   flex-shrink: 0;
 }
 
-.main-text-right-section-about p {
-  /* FIXME: УДАЛИТЬ */
+.section-works-audio-cards-container {
+  display: flex;
+
+  overflow-x: scroll;
+  
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+}
+
+.section-works-audio-cards-container::-webkit-scrollbar {
+  width: 0;
+}
+
+.section-works-audio-card {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  position: relative;
+
+  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 38px;
+  box-sizing: border-box;
+
+  width: 492px;
+  height: 300px;
+
+  border-radius: 12px;
+  border: 0.5px solid var(--light-grey);
+  background: var(--dark-grey-elements-2);
+
+  box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+}
+
+.section-works-audio-card-head {
+  display: flex;
+}
+
+.section-works-audio-card-img {
+  width: 80px;
+  height: 80px;
+
+  border-radius: 10px;
+  background: lightgray 50% / cover no-repeat;
+}
+
+.section-works-audio-card-head-title-container {
+  display: flex;
+  flex-direction: column;
+  
+  margin-left: 12px;
+}
+
+.section-works-audio-card-head-title {
+  color: var(--white-1);
+}
+
+.section-works-audio-card-head-artist-name {
+  margin-top: 4px;
+
   color: var(--white-2);
 }
 
-.audio-test {
-  /* background-color: #fff; */
-  width: 500px;
-  height: 100px;
+.section-works-audio-card-site-container {
+  display: flex;
+
+  margin-left: auto;
+  height: 18px;
+
+  color: var(--white-1);
+}
+
+.section-works-audio-card-site-img {
+  margin-right: 8px;
+  margin-top: 1px;
+  
+  width: 14px;
+  height: 14px;
+}
+
+.section-works-audio-card-controls {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 32px;
+
+  width: 164px;
+  height: 32px;
+
+  align-self: center;
+}
+
+.section-works-audio-card-controls button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  background-color: unset;
+}
+
+.section-works-audio-card-progress-bar-container {
+  position: relative;
+  display: flex;
+  align-self: center;
+
+  margin-top: 64px;
+
+  width: 100%;
+  height: 4px;
+
+  border-radius: 3.334px;
+  background: var(--light-grey);
+}
+
+.section-works-audio-card-progress-bar-container::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: -8px;
+  right: -8px;
+  bottom: -12px;
+  pointer-events: auto;
+  opacity: 0;
+}
+
+.section-works-audio-card-progress-bar-container:hover::before {
+  opacity: 1;
+}
+
+.section-works-audio-card-progress-bar {
+  height: 4px;
+
+  border-radius: 3.334px;
+  background: var(--white-1);
+}
+
+.section-works-audio-card-progress-bar-circle {
+  position: relative;
+
+  margin-left: -1px;
+  margin-top: -6px;
+  
+  width: 16px;
+  height: 16px;
+
+  z-index: 20;
+}
+
+.section-works-audio-card-time-container {
+  display: flex;
+  justify-content: space-between;
+  
+  margin-top: auto;
+
+  color: var(--white-1);
+  user-select: none;
+}
+
+.section-works-audio-card-before-after {
+  display: flex;
+
+  position: absolute;
+  left: 42.4796748%;
+  bottom: 38px;
+  
+  width: 96px;
+  height: 50px;
+
+  color: var(--white-1);
+  align-items: end;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.section-works-audio-card-progress-bar-vertical-line {
+  margin-bottom: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.card-1  {
+  margin-left: 202px;
+}
+
+.fixer {
+  transform: translateX(1000000px);
+  height: 1px;
+  min-width: 1px;
+}
+
+.section-works-scroll-buttons-container {
+  display: flex;
+
+  margin-left: auto;
+  margin-right: 202px;
+  margin-top: 60px;
+}
+
+.section-works-scroll-buttons-container button {
+  background-color: var(--main-background);
+}
+
+.section-works-lower-text-container {
+  display: flex;
+
+  margin-left: 202px;
+
+  color: var(--white-2);
+}
+
+.section-works-lower-text-container > div {
+  width: 182px;
+}
+
+.section-works-lower-text-container-button {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.section-works-lower-text-container-button a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section-works-lower-text-line {
+  margin-top: -3px;
 }
 
 .section-stages {
@@ -978,6 +1204,7 @@ html {
 
 .section-reviews-review {
   position: relative;
+  flex-shrink: 0;
 
   padding-left: 54px;
   padding-right: 54px;
@@ -1040,12 +1267,7 @@ html {
   margin-top: 60px;
 }
 
-.scroll-button-left {
-  border: none;
-  padding: 0;
-
-  margin-right: 40px;
-
+.section-reviews-scroll-buttons-container button {
   background-color: var(--dark-grey-background);
 }
 
@@ -1131,7 +1353,7 @@ html {
   height: 106px;
 }
 
-.section-communication-form input, textarea {
+.section-communication-form input:not([type="checkbox"]), textarea {
   border: none;
   outline: none;
   resize: none;
@@ -1143,6 +1365,17 @@ html {
   width: 90%;
 
   color: var(--white-2);
+  background-color: var(--main-background);
+
+  box-shadow: inset 0 0 0 50px var(--main-background);
+  -webkit-text-fill-color: var(--white-2);
+}
+
+:-webkit-autofill {
+  background-color: var(--main-background) !important;
+}
+
+:autofill {
   background-color: var(--main-background);
 }
 
@@ -1204,7 +1437,7 @@ html {
 }
 
 .section-communication-form-agreement-label {
-  margin-left: 12px;
+  padding-left: 12px;
 
   width: 372px;
 
@@ -1429,11 +1662,20 @@ html {
   background-color: var(--yellow);
 }
 
+.text-button-3:hover path{
+  stroke: var(--main-background)
+}
+
 .scroll-button {
   border: none;
   padding: 0;
+}
 
-  background-color: var(--dark-grey-background);
+.scroll-button-left {
+  border: none;
+  padding: 0;
+
+  margin-right: 40px; 
 }
 
 .scroll-button.scroll-button-enabled:hover circle {
@@ -1451,4 +1693,11 @@ html {
 
 .scroll-button.scroll-button-disabled path {
   stroke: var(--light-grey);
+}
+
+.section-works-audio-card-controls-button:hover object rect,
+.section-works-audio-card-controls-button:hover object path,
+.section-works-audio-card-controls-button:hover rect,
+.section-works-audio-card-controls-button:hover path{
+  fill: var(--light-grey);
 }
