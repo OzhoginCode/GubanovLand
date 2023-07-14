@@ -5,17 +5,15 @@ window.addEventListener('scroll', () => {
   const scrollingUpperTextSectionAbout = document.querySelector('.section-about-scrolling-text-upper');
   const scrollingLowerTextSectionAbout = document.querySelector('.section-about-scrolling-text-lower');
 
-  scrollingUpperTextSectionAbout.style.transform = 'translateX(' + (+offset) + 'px)';
-  scrollingLowerTextSectionAbout.style.transform = 'translateX(' + (-offset) + 'px)';
+  scrollingUpperTextSectionAbout.style.transform = `translateX(${offset}px)`;
+  scrollingLowerTextSectionAbout.style.transform = `translateX(${-offset}px)`;
 
   const scrollingUpperTextSectionPrices = document.querySelector('.section-prices-header-scrolling-text-upper');
   const scrollingLowerTextSectionPrices = document.querySelector('.section-prices-header-scrolling-text-lower');
 
   if (scrollPosition < 3600) return;
-  else {
-    scrollingUpperTextSectionPrices.style.transform = 'translateX(' + (+offset - 600) + 'px)';
-    scrollingLowerTextSectionPrices.style.transform = 'translateX(' + (-offset - 600) + 'px)';
-  }
+  scrollingUpperTextSectionPrices.style.transform = `translateX(${offset - 600}px)`;
+  scrollingLowerTextSectionPrices.style.transform = `translateX(${-offset - 600}px)`;
 });
 
 const sectionWorksContainer = document.getElementById('section-works-audio-cards-container');
@@ -48,21 +46,22 @@ sectionReviewsContainer.addEventListener('scroll', () => {
   const classEnabledName = 'scroll-button-enabled';
   const classDisabledName = 'scroll-button-disabled';
 
-    if (sectionReviewsContainer.scrollLeft >= sectionReviewsContainer.scrollWidth - sectionReviewsContainer.clientWidth - 5) {
-      scrollButtonRight.classList.add(classDisabledName);
-      scrollButtonRight.classList.remove(classEnabledName);
-    } else {
-      scrollButtonRight.classList.add(classEnabledName);
-      scrollButtonRight.classList.remove(classDisabledName);
-    }
+  // eslint-disable-next-line max-len
+  if (sectionReviewsContainer.scrollLeft >= sectionReviewsContainer.scrollWidth - sectionReviewsContainer.clientWidth - 5) {
+    scrollButtonRight.classList.add(classDisabledName);
+    scrollButtonRight.classList.remove(classEnabledName);
+  } else {
+    scrollButtonRight.classList.add(classEnabledName);
+    scrollButtonRight.classList.remove(classDisabledName);
+  }
 
-    if (sectionReviewsContainer.scrollLeft === 0) {
-      scrollButtonLeft.classList.add(classDisabledName);
-      scrollButtonLeft.classList.remove(classEnabledName);
-    } else {
-      scrollButtonLeft.classList.remove(classDisabledName);
-      scrollButtonLeft.classList.add(classEnabledName);
-    }
+  if (sectionReviewsContainer.scrollLeft === 0) {
+    scrollButtonLeft.classList.add(classDisabledName);
+    scrollButtonLeft.classList.remove(classEnabledName);
+  } else {
+    scrollButtonLeft.classList.remove(classDisabledName);
+    scrollButtonLeft.classList.add(classEnabledName);
+  }
 });
 
 sectionWorksContainer.addEventListener('scroll', () => {
@@ -71,21 +70,22 @@ sectionWorksContainer.addEventListener('scroll', () => {
   const classEnabledName = 'scroll-button-enabled';
   const classDisabledName = 'scroll-button-disabled';
 
-    if (sectionWorksContainer.scrollLeft >= sectionWorksContainer.scrollWidth - sectionWorksContainer.clientWidth - 5) {
-      scrollButtonRight.classList.add(classDisabledName);
-      scrollButtonRight.classList.remove(classEnabledName);
-    } else {
-      scrollButtonRight.classList.add(classEnabledName);
-      scrollButtonRight.classList.remove(classDisabledName);
-    }
+  // eslint-disable-next-line max-len
+  if (sectionWorksContainer.scrollLeft >= sectionWorksContainer.scrollWidth - sectionWorksContainer.clientWidth - 5) {
+    scrollButtonRight.classList.add(classDisabledName);
+    scrollButtonRight.classList.remove(classEnabledName);
+  } else {
+    scrollButtonRight.classList.add(classEnabledName);
+    scrollButtonRight.classList.remove(classDisabledName);
+  }
 
-    if (sectionWorksContainer.scrollLeft === 0) {
-      scrollButtonLeft.classList.add(classDisabledName);
-      scrollButtonLeft.classList.remove(classEnabledName);
-    } else {
-      scrollButtonLeft.classList.remove(classDisabledName);
-      scrollButtonLeft.classList.add(classEnabledName);
-    }
+  if (sectionWorksContainer.scrollLeft === 0) {
+    scrollButtonLeft.classList.add(classDisabledName);
+    scrollButtonLeft.classList.remove(classEnabledName);
+  } else {
+    scrollButtonLeft.classList.remove(classDisabledName);
+    scrollButtonLeft.classList.add(classEnabledName);
+  }
 });
 
 // БЕСКОНЕЧНЫЙ СКРОЛЛ
@@ -98,7 +98,7 @@ let previousPosition = 0;
 let positionSet = 0;
 
 carouselContainer.addEventListener('scroll', () => {
-  const scrollLeft = carouselContainer.scrollLeft;
+  const { scrollLeft } = carouselContainer;
   previousPosition = currentPosition;
   currentPosition = Math.floor(scrollLeft / cardWidth) - (carouselCount * positionSet);
 
@@ -115,7 +115,7 @@ carouselContainer.addEventListener('scroll', () => {
     previousPosition += carouselCount;
     positionSet -= 1;
   }
-  
+
   if (delta > 0) {
     if (currentPosition === 1 && positionSet === 0) return;
     if (currentPosition === 1) {
@@ -126,7 +126,7 @@ carouselContainer.addEventListener('scroll', () => {
     const leftmostCard = carouselCards[currentPosition - 2];
     leftmostCard.style.transform = `translateX(${cardWidth * carouselCount * (positionSet + 1)}px)`;
   }
-  
+
   if (delta < 0) {
     if (currentPosition === 0 && positionSet === 0) return;
     if (currentPosition === 0) {
@@ -137,5 +137,4 @@ carouselContainer.addEventListener('scroll', () => {
     const rightmostCard = carouselCards[currentPosition - 1];
     rightmostCard.style.transform = `translateX(${(cardWidth * carouselCount * (positionSet + 1)) - cardWidth * carouselCount}px)`;
   }
-
 });

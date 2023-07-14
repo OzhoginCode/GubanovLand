@@ -23,7 +23,7 @@ const audioCardObjects = Array.from(audioCards).map((audioCard, index) => {
     progressBarCircle,
     currentTimeElem,
     isDragging,
-    songIndex
+    songIndex,
   };
 });
 
@@ -41,76 +41,84 @@ const formatTime = (time) => {
   const formattedSeconds = String(seconds).padStart(2, '0');
   const result = `00:${formattedSeconds}`;
   return result;
-}
+};
 
 const updateProgress = (audioCard) => {
   const { audio, currentTimeElem, progressBar } = audioCard;
   const { duration, currentTime } = audio;
   const isPlaying = audio.classList.contains('playing');
-  
-  const progressPercent = ( currentTime / duration ) * 100;
-  
+
+  const progressPercent = (currentTime / duration) * 100;
+
   const formattedCurrentTime = formatTime(currentTime);
   currentTimeElem.innerHTML = formattedCurrentTime;
   progressBar.style.width = `${progressPercent}%`;
-  
+
   if (!isPlaying) return;
   requestAnimationFrame(() => updateProgress(audioCard));
-}
+};
 
 const pauseSong = (audioCard) => {
-  const { audio, playBtn, progressBar, progressBarCircle } = audioCard;
+  const {
+    audio, playBtn, progressBar, progressBarCircle,
+  } = audioCard;
 
   audio.pause();
   playBtn.innerHTML = playImg;
   audio.classList.remove('playing');
   playingSong = null;
-  progressBar.style.background = `var(--white-1)`;
+  progressBar.style.background = 'var(--white-1)';
   progressBarCircle.setAttribute('fill', 'var(--white-1)');
-}
+};
 
 const pauseAllSongs = () => {
   audioCardObjects.forEach((audioCard) => pauseSong(audioCard));
-}
+};
 
 const playSong = (audioCard) => {
-  const { audio, playBtn, progressBar, progressBarCircle } = audioCard;
-  
+  const {
+    audio, playBtn, progressBar, progressBarCircle,
+  } = audioCard;
+
   pauseAllSongs();
   audio.play();
   playBtn.innerHTML = pauseImg;
   audio.classList.add('playing');
   playingSong = audioCard.songIndex;
-  progressBar.style.background = `var(--yellow)`;
+  progressBar.style.background = 'var(--yellow)';
   progressBarCircle.setAttribute('fill', 'var(--yellow)');
 
   requestAnimationFrame(() => updateProgress(audioCard));
-}
+};
 
 const setProgress = (e, audioCard) => {
-  const { audio, progressBarContainer, } = audioCard;
+  const { audio, progressBarContainer } = audioCard;
+  const { duration } = audio;
 
   const width = progressBarContainer.clientWidth;
   const clickX = e.clientX - progressBarContainer.getBoundingClientRect().left;
-  const duration = audio.duration;
 
   audio.currentTime = (clickX / width) * duration;
   updateProgress(audioCard);
-}
+};
 
 const playSongFromStart = (audioCard) => {
   const { audio } = audioCard;
   audio.currentTime = 0;
   playSong(audioCard);
-}
+};
 
 const playNextSong = (audioCard) => {
   if (audioCard.songIndex !== playingSong) return;
-  if (playingSong + 1 === audioCardObjects.length) return playSong(audioCardObjects[0]);
+  if (playingSong + 1 === audioCardObjects.length) {
+    playSong(audioCardObjects[0]);
+    return;
+  }
   playSong(audioCardObjects[playingSong + 1]);
-}
+};
 
 const dragStart = (audioCard) => {
+  // eslint-disable-next-line no-param-reassign
   audioCard.isDragging = true;
   pauseAllSongs();
 };
@@ -121,6 +129,7 @@ const drag = (e, audioCard) => {
 
 const dragEnd = (audioCard) => {
   if (audioCard.isDragging) {
+    // eslint-disable-next-line no-param-reassign
     audioCard.isDragging = false;
     pauseAllSongs();
     playSong(audioCard);
@@ -128,10 +137,13 @@ const dragEnd = (audioCard) => {
 };
 
 audioCardObjects.forEach((audioCard) => {
-  const { audio, playBtn, backwardBtn, forwardBtn, progressBarContainer, progressBarCircle } = audioCard;
+  const {
+    audio, playBtn, backwardBtn, forwardBtn, progressBarContainer, progressBarCircle,
+  } = audioCard;
   playBtn.addEventListener('click', () => {
     const isPlaying = audio.classList.contains('playing');
-    isPlaying ? pauseSong(audioCard) : playSong(audioCard);
+    // eslint-disable-next-line no-unused-expressions
+    isPlaying ? (pauseSong(audioCard)) : (playSong(audioCard));
   });
   audio.addEventListener('ended', () => pauseSong(audioCard));
   backwardBtn.addEventListener('click', () => playSongFromStart(audioCard));
