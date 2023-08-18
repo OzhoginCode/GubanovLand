@@ -1,4 +1,5 @@
 @import "./fonts.css";
+/* @import "./1440x900.css"; */
 
 :root {
   --main-background: #111223;
@@ -63,7 +64,8 @@ html {
 }
 
 .logo-header {
-  margin-left: 202px;
+  margin-left: 10.52083333vw;
+  /* margin-left: 202px; */
 
   max-width: 50px;
   height: auto;
@@ -71,10 +73,10 @@ html {
 
 .logo-name-header {
   margin-left: 20px;
-
-  height: 30px;
   
   color: var(--white-1);
+
+  font: var(--font-28l);
 }
 
 .nav {
@@ -98,6 +100,8 @@ html {
   height: 100%;
 
   list-style: none;
+
+  font: var(--font-16m);
 }
 
 .nav-ul li {
@@ -120,7 +124,8 @@ html {
 }
 
 .right-button-header {
-  margin-right: 202px;
+  /* margin-right: 202px; */
+  margin-right: 10.52083333vw;
 
   width: 201px;
 }
@@ -133,13 +138,15 @@ html {
   flex-direction: column;
 
   margin-top: 90px;
+
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-main {
   display: flex;
   position: relative;
-
-  margin-top: 0;
 
   height: 960px;
 }
@@ -147,6 +154,9 @@ html {
 .section-main-left {
   display: flex;
   flex-direction: column;
+
+  padding-left: 202px;
+  /* padding-left: 10.52083333vw; */
 }
 
 .section-main-text {
@@ -154,7 +164,6 @@ html {
   flex-direction: column;
 
   margin-top: 302px;
-  margin-left: 202px;
 
   width: 875px;
   height: 184px;
@@ -168,6 +177,7 @@ html {
   height: 88px;
 
   color: var(--yellow);
+  font: var(--font-h3-88b);
 }
 
 .section-main-lower-text-div {
@@ -181,6 +191,7 @@ html {
   height: 88px;
 
   color: var(--white-2);
+  font: var(--font-h3-88b);
 }
 
 .section-main-lower-text-span {
@@ -190,19 +201,22 @@ html {
   height: 76px;
 
   color: var(--white-1);
+
+  font: var(--font-h9-28l);
+  letter-spacing: 0.28px;
 }
 
 .section-main-header-circles {
   position: absolute;
 
   left: 54px;
+  /* left: 2.8125vw; */
   top: 218px;
 }
 
 .section-main-buttons {
   display: flex;
 
-  margin-left: 202px;
   margin-top: 142px;
 }
 
@@ -215,11 +229,13 @@ html {
 
   display: flex;
   flex-direction: column;
+
+  margin-left: auto;
+  margin-right: 132px;
 }
 
 .section-main-video {
   margin-top: 75px;
-  margin-left: 28px;
 
   width: 683px;
   height: auto;
@@ -230,7 +246,8 @@ html {
   flex-direction: column;
 
   margin-top: 26px;
-  margin-left: 442px;
+  margin-left: auto;
+  margin-right: 74px;
 
   width: 195px;
   height: 76px;
@@ -238,7 +255,8 @@ html {
   flex-shrink: 0;
 
   color: var(--white-1);
-  }
+  font: var(--font-h8-28r);
+}
 
 .section-main-right-text-2 {
   text-indent: 67px;
@@ -246,8 +264,8 @@ html {
 
 .section-main-arrow {
   position: absolute;
-  margin-top: 782px;
-  margin-left: 587px;
+  top: 782px;
+  right: 79px;
 
   width: 45px;
   height: 29px;
@@ -272,6 +290,8 @@ html {
   overflow: hidden;
 
   color: var(--white-2);
+
+  font: var(--font-h1-112b);
 }
 
 .section-about-scrolling-text-upper {
@@ -329,6 +349,7 @@ html {
   margin-left: 100px;
 
   color: var(--white-2);
+  font: var(--font-18r);
 }
 
 .main-text-right-section-about-1 {
@@ -391,7 +412,8 @@ html {
   text-shadow: 1px 0 1px #000;
   -webkit-text-stroke: 0.2px var(--main-background);
 
-  color: var(--white-1)
+  color: var(--white-1);
+  font: var(--font-h7-32r);
 }
 
 .lower-right-section-about-images {
@@ -454,6 +476,8 @@ html {
   height: 216px;
 
   color: var(--main-background);
+  font: var(--font-h5-56bl);
+  letter-spacing: 2px;
 }
 
 .section-playlists-right-header span {
@@ -509,6 +533,7 @@ html {
   height: 280px;
 
   color: var(--dark-grey-elements-1);
+  font: var(--font-16m);
 }
 
 .section-playlists-right-text p {
@@ -544,6 +569,8 @@ html {
   color: var(--white-2);
 
   -webkit-text-stroke: 1px var(--white-2);
+  font: var(--font-h5-56m);
+  letter-spacing: 2px;
 }
 
 .sections-works-header-1 {
@@ -569,6 +596,7 @@ html {
 
   color: var(--yellow);
   -webkit-text-stroke: 0px;
+  font: var(--font-24m);
 }
 
 .section-works-upper-right-text {
@@ -584,6 +612,7 @@ html {
 
   text-align: right;
   color: var(--white-1);
+  font: var(--font-16rr);
 }
 
 .section-works-line {
@@ -648,16 +677,19 @@ html {
   flex-direction: column;
   
   margin-left: 12px;
+  font: var(--font-16s);
 }
 
 .section-works-audio-card-head-title {
   color: var(--white-1);
+  font: var(--font-24r);
 }
 
 .section-works-audio-card-head-artist-name {
   margin-top: 4px;
 
   color: var(--white-2);
+  font: var(--font-16rr);
 }
 
 .section-works-audio-card-site-container {
@@ -667,6 +699,7 @@ html {
   height: 18px;
 
   color: var(--white-1);
+  font: var(--font-14r);
 }
 
 .section-works-audio-card-site-img {
@@ -753,6 +786,7 @@ html {
 
   color: var(--white-1);
   user-select: none;
+  font: var(--font-14r);
 }
 
 .section-works-audio-card-before-after {
@@ -770,6 +804,7 @@ html {
   user-select: none;
   pointer-events: none;
   z-index: 10;
+  font: var(--font-14r);
 }
 
 .section-works-audio-card-progress-bar-vertical-line {
@@ -806,6 +841,7 @@ html {
   margin-left: 202px;
 
   color: var(--white-2);
+  font: var(--font-16rr);
 }
 
 .section-works-lower-text-container > div {
@@ -848,6 +884,8 @@ html {
   color: var(--yellow);
 
   -webkit-text-stroke: 1px var(--yellow);
+  font: var(--font-h5-56m);
+  letter-spacing: 2px;
 }
 
 .sections-stages-header-1 {
@@ -912,12 +950,20 @@ html {
 
   width: 182px;
   height: 40px;
+
+  color: var(--white-2);
+  font: var(--font-16r);
 }
 
 .section-stages-ul-numbers {
   display: flex;
 
   width: 54px;
+  font: var(--font-40l);
+}
+
+.section-stages-ul-header {
+  font: var(--font-20rr);
 }
 
 .section-stages-ul-a {
@@ -930,6 +976,7 @@ html {
 
   color: var(--yellow);
   text-decoration: none;
+  font: var(--font-16m);
 }
 
 .section-stages-ul-a-img {
@@ -958,6 +1005,7 @@ html {
   overflow: hidden;
 
   color: var(--white-2);
+  font: var(--font-h1-112b);
 }
 
 .section-prices-header-scrolling-text-upper {
@@ -1010,6 +1058,7 @@ html {
   margin: 0;
 
   color: var(--white-1);
+  font: var(--font-28bb);
 }
 
 .section-prices-ul {
@@ -1017,6 +1066,8 @@ html {
   padding: 0;
 
   margin-top: 46px;
+
+  font: var(--font-16r);
 }
 
 .section-prices-li {
@@ -1065,9 +1116,10 @@ html {
 }
 
 .section-prices-price {
-  color: var(--white-1);
-
   margin-top: 56px;
+  
+  color: var(--white-1);
+  font: var(--font-40m);
 }
 
 .section-prices-warning-container {
@@ -1088,6 +1140,8 @@ html {
   margin-left: 8px;
 
   color: var(--light-grey);
+  font: var(--font-12m);
+
 }
 
 .section-prices-warning-hover-text {
@@ -1109,6 +1163,7 @@ html {
 
   color: var(--white-2);
   background-color: var(--dark-grey-elements-2);
+  font: var(--font-12r);
 
   opacity: 0;
   transition: opacity 0.3s;
@@ -1165,6 +1220,7 @@ html {
   width: 298px;
 
   color: var(--white-2);
+  font: var(--font-16rr);
 }
 
 .section-reviews-header {
@@ -1180,6 +1236,8 @@ html {
   
   gap: 12px;
   color: var(--yellow);
+  font: var(--font-h5-56m);
+  letter-spacing: 2px;
 }
 
 .section-reviews-header-1 {
@@ -1231,6 +1289,7 @@ html {
   margin-left: 20px;
 
   color: var(--white-1);
+  font: var(--font-16s);
 }
 
 .section-reviews-review-stars-container {
@@ -1249,6 +1308,7 @@ html {
   width: 640px;
 
   color: var(--white-2);
+  font: var(--font-16r);
 }
 
 .section-reviews-review-site-logo {
@@ -1286,6 +1346,7 @@ html {
   margin: 0;
 
   color: var(--white-2);
+  font: var(--font-h6-48b);
 }
 
 .section-communication-header-p {
@@ -1295,6 +1356,7 @@ html {
   width: 357px;
 
   color: var(--white-2);
+  font: var(--font-22r);
 }
 
 .section-communication-a-container {
@@ -1366,6 +1428,7 @@ html {
 
   color: var(--white-2);
   background-color: var(--main-background);
+  font: var(--font-16r);
 
   box-shadow: inset 0 0 0 50px var(--main-background);
   -webkit-text-fill-color: var(--white-2);
@@ -1392,6 +1455,7 @@ html {
   padding: 0 8px;
 
   color: var(--light-grey);
+  font: var(--font-h10-12r);
 }
 
 .section-communication-form-lower-container {
@@ -1442,6 +1506,7 @@ html {
   width: 372px;
 
   color: var(--light-grey);
+  font: var(--font-14r);
 }
 
 .section-communication-form-agreement-label-a {
@@ -1497,30 +1562,36 @@ html {
   height: 30px;
   
   color: var(--white-1);
+  font: var(--font-28l);
 }
 
 .footer-left-container-adress {
   margin-top: 16px;
 
   color: var(--white-2);
+  font: var(--font-16r);
 }
 
 .footer-left-container-copyright {
   margin-top: auto;
 
   color: var(--light-grey);
+  font: var(--font-16r);
 }
 
 .footer-central-container {
   display: flex;
   flex-direction: column;
 
-  margin-left: 462px;
+  /* margin-left: 462px; */
+  margin-left: 24.0625vw;
 }
 
 .footer-central-container-ul {
   margin: 0;
   padding: 0;
+
+  font: var(--font-16r);
 }
 
 .footer-central-container-ul li{
@@ -1536,6 +1607,7 @@ html {
 
   text-decoration: none;
   color: var(--light-grey);
+  font: var(--font-16r);
 }
 
 .footer-right-container {
@@ -1551,9 +1623,15 @@ html {
   color: var(--white-2);
 }
 
+.footer-right-container-phone {
+  font: var(--font-20r);
+}
+
 .footer-right-container-mail {
   margin-top: 12px;
   text-align: right;
+
+  font: var(--font-16r);
 }
 
 .footer-right-container-img-container {
@@ -1617,6 +1695,8 @@ html {
 
   background-color: var(--yellow);
   border-radius: 2px;
+
+  font: var(--font-16s);
 }
 
 .main-button:hover {
@@ -1628,6 +1708,8 @@ html {
 
   border: 1px solid var(--white-2);
   border-radius: 2px;
+
+  font: var(--font-16r);
 }
 
 .secondary-button:hover {

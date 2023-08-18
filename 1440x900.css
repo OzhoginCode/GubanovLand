@@ -1,0 +1,112 @@
+:root {
+  --font-h1-112b: 700 112px/116px 'Noto Sans', sans-serif;
+  --font-h2-100b: 700 100px/116px 'Noto Sans', sans-serif;
+  --font-h3-88b: 500 88px/92px 'Noto Sans', sans-serif;
+  --font-h4-72b: 700 72px/92px 'Noto Sans', sans-serif;
+  --font-h5-56bl: 700 56px/64px 'Noto Sans', sans-serif;
+  --font-h5-56m: 400 56px/64px 'Noto Sans', sans-serif;
+  --font-h6-48b: 600 48px/56px 'Noto Sans', sans-serif;
+  --font-h6-48m: 500 48px/64px 'Noto Sans', sans-serif;
+  --font-40m: 400 40px/48px 'Roboto', sans-serif;
+  --font-40l: 200 40px/44px 'Roboto Flex', sans-serif;
+  --font-h7-32r: 400 32px/40px 'VoronovFont', sans-serif;
+  --font-28bb: 500 28px/120% 'Roboto', sans-serif;
+  --font-28l: 300 28px/30px 'Roboto', sans-serif;
+  --font-h8-28r: 400 28px/32px 'VoronovFont', sans-serif;
+  --font-h9-28l: 300 28px/38px 'Noto Sans', sans-serif;
+  --font-24m: 400 24px/28px 'Roboto', sans-serif;
+  --font-24r: 400 24px/28px 'Roboto', sans-serif;
+  --font-22r: 300 22px/28px 'Roboto', sans-serif;
+  --font-20r: 300 20px/20px 'Roboto', sans-serif;
+  --font-20rr: 300 20px/20px 'Roboto', sans-serif;
+  --font-18r: 300 18px/22px 'Roboto', sans-serif;
+  --font-18m: 500 18px/120% 'Roboto', sans-serif;
+  --font-16r: 300 16px/20px 'Roboto', sans-serif;
+  --font-16rr: 300 16px/24px 'Roboto', sans-serif;
+  --font-16m: 400 16px/20px 'Roboto', sans-serif;
+  --font-16s: 600 16px/20px 'Roboto Flex', sans-serif;
+  --font-14r: 400 14px/18px 'Roboto', sans-serif;
+  --font-12m: 500 12px/120% 'Roboto', sans-serif;
+  --font-12r: 300 12px/18px 'Roboto', sans-serif;
+  --font-h10-12r: 400 12px/18px 'Noto Sans', sans-serif;
+
+  --font-h11-72s: 600 72px/92px 'Noto Sans', sans-serif;
+  --font-h12-48b: 700 48px/60px 'Noto Sans', sans-serif;
+  --font-h13-48r: 400 48px/60px 'Noto Sans', sans-serif;
+  --font-h13-48r-letter-spacing: 1px;
+  --font-24bb: 700 24px/28px 'Roboto', sans-serif;
+  --font-20m: 500 20px/24px 'Roboto', sans-serif;
+  --font-14rr: 400 14px/20px 'Roboto', sans-serif;
+  --font-14m: 500 14px/18px 'Roboto', sans-serif;
+  --font-h14-12r: 400 12px/18px 'Noto Sans', sans-serif;
+}
+
+
+@media (max-width: 1919px), (max-height: 1079px) {
+  .logo-header {
+    margin-left: 6.25vw;
+  }
+
+  .right-button-header {
+    margin-right: 6.25vw;
+  }
+
+  .section-main {
+    height: 817px;
+  }
+
+  .section-main-left {
+    padding-left: 6.25%;
+  }
+  
+  .h1 {
+    font: var(--font-h11-72s);
+  }
+  
+  .h2 {
+    font: var(--font-h11-72s);
+  }
+
+  .section-main-header-circles {
+    left: 0.02777777778vw;
+    top: 130px;
+  }
+
+  .section-main-text {
+    margin-top: 231px;
+  
+    width: 795px;
+    height: 184px;
+
+  }
+
+  .section-main-right {
+    margin-left: auto;
+    margin-right: 63px;
+  }
+
+  .section-main-video {
+    margin-top: 80px;
+  
+    width: 545px;
+    height: auto;
+  }
+
+  .section-main-right-text {
+    margin-top: 36px;
+    margin-left: auto;
+    margin-right: 102px;
+  }
+  
+  .section-main-right-text-2 {
+    text-indent: 67px;
+  }
+  
+  .section-main-arrow {
+    top: 659px;
+    right: 102px;
+  
+    width: 45px;
+    height: 29px;
+  }
+}

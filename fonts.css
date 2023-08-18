@@ -7,15 +7,59 @@
   src: url('./fonts/VoronovFont/Voronov.ttf') format('truetype');
 }
 
-.font-h1-112b {
+:root {
+  --font-h1-112b: 700 112px/116px 'Noto Sans', sans-serif;
+  --font-h2-100b: 700 100px/116px 'Noto Sans', sans-serif;
+  --font-h3-88b: 500 88px/92px 'Noto Sans', sans-serif;
+  --font-h4-72b: 700 72px/92px 'Noto Sans', sans-serif;
+  --font-h5-56bl: 700 56px/64px 'Noto Sans', sans-serif;
+  --font-h5-56m: 400 56px/64px 'Noto Sans', sans-serif;
+  --font-h6-48b: 600 48px/56px 'Noto Sans', sans-serif;
+  --font-h6-48m: 500 48px/64px 'Noto Sans', sans-serif;
+  --font-40m: 400 40px/48px 'Roboto', sans-serif;
+  --font-40l: 200 40px/44px 'Roboto Flex', sans-serif;
+  --font-h7-32r: 400 32px/40px 'VoronovFont', sans-serif;
+  --font-28bb: 500 28px/120% 'Roboto', sans-serif;
+  --font-28l: 300 28px/30px 'Roboto', sans-serif;
+  --font-h8-28r: 400 28px/32px 'VoronovFont', sans-serif;
+  --font-h9-28l: 300 28px/38px 'Noto Sans', sans-serif;
+  --font-24m: 400 24px/28px 'Roboto', sans-serif;
+  --font-24r: 400 24px/28px 'Roboto', sans-serif;
+  --font-22r: 300 22px/28px 'Roboto', sans-serif;
+  --font-20r: 300 20px/20px 'Roboto', sans-serif;
+  --font-20rr: 300 20px/20px 'Roboto', sans-serif;
+  --font-18r: 300 18px/22px 'Roboto', sans-serif;
+  --font-18m: 500 18px/120% 'Roboto', sans-serif;
+  --font-16r: 300 16px/20px 'Roboto', sans-serif;
+  --font-16rr: 300 16px/24px 'Roboto', sans-serif;
+  --font-16m: 400 16px/20px 'Roboto', sans-serif;
+  --font-16s: 600 16px/20px 'Roboto Flex', sans-serif;
+  --font-14r: 400 14px/18px 'Roboto', sans-serif;
+  --font-12m: 500 12px/120% 'Roboto', sans-serif;
+  --font-12r: 300 12px/18px 'Roboto', sans-serif;
+  --font-h10-12r: 400 12px/18px 'Noto Sans', sans-serif;
+
+  --font-h11-72s: 600 72px/92px 'Noto Sans', sans-serif;
+  --font-h12-48b: 700 48px/60px 'Noto Sans', sans-serif;
+  --font-h13-48r: 400 48px/60px 'Noto Sans', sans-serif;
+  --font-h13-48r-letter-spacing: 1px;
+  --font-24bb: 700 24px/28px 'Roboto', sans-serif;
+  --font-20m: 500 20px/24px 'Roboto', sans-serif;
+  --font-14rr: 400 14px/20px 'Roboto', sans-serif;
+  --font-14m: 500 14px/18px 'Roboto', sans-serif;
+  --font-h14-12r: 400 12px/18px 'Noto Sans', sans-serif;
+}
+
+
+/* .font-h1-112b {
   font-family: 'Noto Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 112px;
   line-height: 116px;
-}
+} */
 
-.font-h2-100b {
+/* .font-h2-100b {
   font-family: 'Noto Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -26,7 +70,7 @@
 .font-h3-88b {
   font-family: 'Noto Sans', sans-serif;
   font-style: normal;
-  /* font-weight: 600; */
+  font-weight: 600;
   font-weight: 500;
   font-size: 88px;
   line-height: 92px;
@@ -46,7 +90,6 @@
   font-weight: 700;
   font-size: 56px;
   line-height: 64px;
-  letter-spacing: 2px;
 }
 
 .font-h5-56m {
@@ -55,7 +98,6 @@
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
-  letter-spacing: 2px;
 }
 
 .font-h6-48b {
@@ -77,7 +119,7 @@
 .font-40m {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  /* font-weight: 500; */
+  font-weight: 500;
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
@@ -102,7 +144,7 @@
 .font-28bb {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  /* font-weight: 700; */
+  font-weight: 700;
   font-weight: 500;
   font-size: 28px;
   line-height: 120%;
@@ -127,11 +169,10 @@
 .font-h9-28l {
   font-family: 'Noto Sans', sans-serif;
   font-style: normal;
-  /* font-weight: 400; */
+  font-weight: 400;
   font-weight: 300;
   font-size: 28px;
   line-height: 38px;
-  letter-spacing: 0.28px;
 }
 
 .font-24m {
@@ -162,7 +203,6 @@
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 300;
-  /* font-weight: 400; */
   font-size: 20px;
   line-height: 20px;
 }
@@ -179,7 +219,6 @@
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 300;
-  /* font-weight: 400; */
   font-size: 18px;
   line-height: 22px;
 }
@@ -195,7 +234,7 @@
 .font-16r {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  /* font-weight: 400; */
+  font-weight: 400;
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
@@ -213,7 +252,7 @@
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
-  /* font-weight: 500; */
+  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
 }
@@ -245,7 +284,7 @@
 .font-12r {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  /* font-weight: 400; */
+  font-weight: 400;
   font-weight: 300;
   font-size: 12px;
   line-height: 18px;
@@ -257,4 +296,4 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-}
+} */
