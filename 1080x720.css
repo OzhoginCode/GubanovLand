@@ -1,0 +1,41 @@
+@media (max-width: 1439px) {
+/* SECTION STAGES */
+
+.sections-stages-header {
+  margin-left: auto;
+  margin-right: 210px;
+
+  max-width: 1132px;
+  width: 70%;
+}
+
+
+  /* SECTION REVIEWS */
+
+  .section-reviews-upper-part-left-container {
+    width: 478px;
+  }
+  
+  .section-reviews-quote {
+    width: 250px;
+  }
+  
+  .section-reviews-header {
+    margin-left: auto;
+    margin-right: 70px;
+
+    max-width: 795px;
+    width: 100%;
+  }
+  
+  .section-reviews-header-1 {
+    margin-left: auto;
+  }
+
+  /* SECTION COMMUNICATION */
+
+  .section-communication-left-container {
+    min-width: 283px;
+    margin-right: 50px;
+  }
+}
