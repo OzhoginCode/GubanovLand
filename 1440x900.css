@@ -1,48 +1,10 @@
-:root {
-  --font-h1-112b: 700 112px/116px 'Noto Sans', sans-serif;
-  --font-h2-100b: 700 100px/116px 'Noto Sans', sans-serif;
-  --font-h3-88b: 500 88px/92px 'Noto Sans', sans-serif;
-  --font-h4-72b: 700 72px/92px 'Noto Sans', sans-serif;
-  --font-h5-56bl: 700 56px/64px 'Noto Sans', sans-serif;
-  --font-h5-56m: 400 56px/64px 'Noto Sans', sans-serif;
-  --font-h6-48b: 600 48px/56px 'Noto Sans', sans-serif;
-  --font-h6-48m: 500 48px/64px 'Noto Sans', sans-serif;
-  --font-40m: 400 40px/48px 'Roboto', sans-serif;
-  --font-40l: 200 40px/44px 'Roboto Flex', sans-serif;
-  --font-h7-32r: 400 32px/40px 'VoronovFont', sans-serif;
-  --font-28bb: 500 28px/120% 'Roboto', sans-serif;
-  --font-28l: 300 28px/30px 'Roboto', sans-serif;
-  --font-h8-28r: 400 28px/32px 'VoronovFont', sans-serif;
-  --font-h9-28l: 300 28px/38px 'Noto Sans', sans-serif;
-  --font-24m: 400 24px/28px 'Roboto', sans-serif;
-  --font-24r: 400 24px/28px 'Roboto', sans-serif;
-  --font-22r: 300 22px/28px 'Roboto', sans-serif;
-  --font-20r: 300 20px/20px 'Roboto', sans-serif;
-  --font-20rr: 300 20px/20px 'Roboto', sans-serif;
-  --font-18r: 300 18px/22px 'Roboto', sans-serif;
-  --font-18m: 500 18px/120% 'Roboto', sans-serif;
-  --font-16r: 300 16px/20px 'Roboto', sans-serif;
-  --font-16rr: 300 16px/24px 'Roboto', sans-serif;
-  --font-16m: 400 16px/20px 'Roboto', sans-serif;
-  --font-16s: 600 16px/20px 'Roboto Flex', sans-serif;
-  --font-14r: 400 14px/18px 'Roboto', sans-serif;
-  --font-12m: 500 12px/120% 'Roboto', sans-serif;
-  --font-12r: 300 12px/18px 'Roboto', sans-serif;
-  --font-h10-12r: 400 12px/18px 'Noto Sans', sans-serif;
-
-  --font-h11-72s: 600 72px/92px 'Noto Sans', sans-serif;
-  --font-h12-48b: 700 48px/60px 'Noto Sans', sans-serif;
-  --font-h13-48r: 400 48px/60px 'Noto Sans', sans-serif;
-  --font-h13-48r-letter-spacing: 1px;
-  --font-24bb: 700 24px/28px 'Roboto', sans-serif;
-  --font-20m: 500 20px/24px 'Roboto', sans-serif;
-  --font-14rr: 400 14px/20px 'Roboto', sans-serif;
-  --font-14m: 500 14px/18px 'Roboto', sans-serif;
-  --font-h14-12r: 400 12px/18px 'Noto Sans', sans-serif;
-}
-
-
 @media (max-width: 1919px), (max-height: 1079px) {
+  .sections-container {
+    max-width: 1440px;
+  }
+  
+  /* HEADER */
+
   .logo-header {
     margin-left: 6.25vw;
   }
@@ -51,12 +13,16 @@
     margin-right: 6.25vw;
   }
 
+  /* SECTION MAIN */
+
   .section-main {
     height: 817px;
   }
 
   .section-main-left {
     padding-left: 6.25%;
+
+    width: 685px;
   }
   
   .h1 {
@@ -75,9 +41,8 @@
   .section-main-text {
     margin-top: 231px;
   
-    width: 795px;
+    width: 731px;
     height: 184px;
-
   }
 
   .section-main-right {
@@ -108,5 +73,526 @@
   
     width: 45px;
     height: 29px;
+  }
+
+  /* SECTION ABOUT */
+  
+  .section-about {
+    height: 1068px;
+  }
+  
+  .scrolling-text-section-about {
+    height: 168px;
+  
+    font: var(--font-h2-100b);
+  }
+  
+  .section-about-scrolling-text-lower {
+    top: 52px;
+  }
+  
+  .left-photos-section-about {
+    position: relative;
+
+    margin-top: 80px;
+    margin-left: 0px;
+  
+    width: 566px;
+  }
+  
+  .info-block-photo-1 {
+    position: absolute;
+    left: -38px;
+
+    height: 700px;
+    width: 108px;
+  }
+  
+  .info-block-photo-2 {
+    margin-left: 90px;
+  
+    width: 438px;
+    height: 700px;
+  }
+  
+  .main-text-right-section-about {
+    margin-top: 93px;
+  
+    font: var(--font-16r);
+  }
+  
+  .main-text-right-section-about-1 {
+    width: 274.265px;
+  }
+  
+  .text-indent-120 {
+    text-indent: 112px;
+  }
+  
+  .main-text-right-section-about-2 {
+    margin-left: 55.73px;
+  
+    width: 274.265px;
+  }
+  
+  .text-indent-193 {
+    text-indent: 173px;
+  }
+  
+  .text-indent-86 {
+    text-indent: 56px;
+  }
+  
+  .info-block-arrow {
+    margin-left: 28px;
+    margin-top: 401.33px;
+  }
+  
+  .lower-right-section-about-text {
+    margin-top: 391px;
+    margin-left: 23px;
+  
+    width: 287px;
+    height: 96px;
+
+    font: var(--font-h8-28r);
+  }
+  
+  .info-block-image-goldenrec {
+    top: 271px;
+    left: 55.73px;
+  }
+  
+  .info-block-image-Ivan {
+    top: 153px;
+    left: 183.73px;
+  }
+
+  /* SECTION PLAYLISTS */
+
+  .section-playlists {
+    height: 580px;
+  }
+
+  .section-playlists-video-div {
+    width: 583px;
+  }
+
+  .sections-playlists-video {
+    margin-top: 102px;
+    margin-left: 90px;
+  
+    width: 364px;
+    height: 376px;
+  }
+  
+  .section-playlists-right-header {
+    margin-top: 80px;
+    gap: 8px;
+  
+    width: 749px;
+
+    font: var(--font-h12-48b);
+  }
+
+  .section-playlists-right-header-1 {
+    text-indent: 348px;
+  }
+  
+  .section-playlists-right-header-low {
+    margin-top: 6px;
+  }
+  
+  .section-playlists-right-images {
+    margin-top: 18px;
+  }
+  
+  .section-playlists-right-images li {
+    margin-right: 24px;
+  }
+  
+  .section-playlists-right-text {
+    left: 403px;
+    top: 230px;
+  
+    width: 360px;
+    height: 252px;
+  
+    font: var(--font-14m);
+  }
+
+  /* SECTION WORKS */
+
+  .section-works {
+    height: 1012px;
+  }
+  
+  .section-works-upper {
+    height: 432px;
+  }
+  
+  .sections-works-header {
+    flex-shrink: 0;
+    margin-top: 120px;
+    margin-left: 90px;
+  
+    width: 748px;
+    
+    gap: 8px;
+  
+    font: var(--font-h13-48r);
+    letter-spacing: var(--font-h13-48r-letter-spacing);
+  }
+  
+  .sections-works-header-1 {
+    margin-left: 455px;
+  }
+  
+  .sections-works-header-2 {
+    margin-left: 200px;
+  }
+  
+  .sections-works-header-inside {
+    width: 61px;
+    height: 50px;
+  
+    font: var(--font-20m);
+  }
+  
+  .section-works-upper-right-text {
+    margin-right: 90px;
+    margin-top: 256px;
+  
+    width: 207px;
+
+    font: var(--font-14rr);
+  }
+  
+  .section-works-line {
+    right: 90px;
+    top: 332px;
+  }
+
+  .section-works-audio-cards-container {
+    top: 432px;
+  }
+
+  .card-1  {
+    margin-left: 90px;
+  }
+
+  .section-works-scroll-buttons-container {
+    right: 90px;
+    bottom: 120px;
+  }
+  
+  .section-works-lower-text-container {
+    left: 90px;
+    bottom: 120px;
+  
+    font: var(--font-14rr);
+  }
+
+  .section-works-lower-text-line {
+    margin-top: -3px;
+
+    width: 46px;
+  }
+
+  /* SECTION STAGES */
+
+  .section-stages {
+    height: 999px;
+  }
+  
+  .sections-stages-header {
+    margin-top: 120px;
+    margin-left: 218px;
+  
+    width: 1132px;
+    height: 196px;
+    
+    gap: 8px;
+  
+    font: var(--font-h13-48r);
+    letter-spacing: var(--font-h13-48r-letter-spacing);
+  }
+  
+  .sections-stages-header-1 {
+    margin-left: 310px;
+  }
+
+  .section-stages-lower-container ul {
+    margin-left: 90px;
+    margin-top: 112px;
+  
+    width: 823px;
+    height: 412px;
+  }
+  
+  .section-stages-lower-container ul li:not(:first-of-type) {
+    margin-top: 48px;
+  }
+  
+  .section-stages-lower-container-ul-li-img {
+    margin-right: 20px;
+  }
+  
+  .section-stages-ul-description {
+    width: 182px;
+    height: 40px;
+  
+    font: var(--font-14r);
+  }
+  
+  .section-stages-ul-numbers {
+    margin-right: 16px;
+  
+    font: var(--font-40l);
+  }
+  
+  .section-stages-ul-header {
+    font: var(--font-16rr);
+  }
+  
+  .section-stages-ul-a {
+    margin-top: 7px;
+  
+    width: 155px;
+
+    font: var(--font-14r);
+  }
+
+  .section-stages-video-cassette {
+    margin-top: 72px;
+    margin-left: 128px;
+  
+    width: 310px;
+    height: 491px;
+  }
+
+  /* SECTION PRICES */
+
+  .section-prices {
+    height: 1077px;
+  }
+  
+  .section-prices-header {
+    margin-top: 120px;
+  
+    height: 168px;
+  
+    font: var(--font-h2-100b);
+  }
+
+  .section-prices-header-scrolling-text-lower {
+    top: 52px;
+  }
+  
+  .section-prices-lists-container {
+    margin-top: 100px;
+  }
+  
+  .section-prices-list-container-1 {
+    margin-left: 90px;
+  }
+  
+  .section-prices-list-container-2 {
+    margin-left: 276px;
+  }
+  
+  .section-prices-list-container-3 {
+    margin-left: 264px;
+  }
+  
+  .section-prices-lists-header {
+    font: var(--font-24bb);
+  }
+  
+  .section-prices-ul {
+    margin-top: 59px;
+  
+    font: var(--font-14m);
+  }
+  
+  .section-prices-li {
+    margin-top: 12px;
+  }
+
+  .section-prices-price {
+    margin-top: 58px;
+  }
+
+  /* SECTION REVIEWS */
+
+  .section-reviews {
+    height: 880px;
+  }
+  
+  .section-reviews-upper-part {
+    margin-top: 120px;
+  }
+  
+  .section-reviews-upper-part-left-container {
+    width: 558px;
+  }
+  
+  .section-reviews-quotes-img {
+    margin-left: 94.26px;
+  }
+  
+  .section-reviews-quote {
+    font: var(--font-14rr);
+  }
+  
+  .section-reviews-header {
+    width: 795px;
+    height: 196px;
+    
+    gap: 8px;
+    font: var(--font-h13-48r);
+    letter-spacing: var(--font-h13-48r-letter-spacing);
+  }
+  
+  .section-reviews-header-1 {
+    margin-left: 214px;
+  }
+  
+  .section-reviews-lower-part {
+    margin-top: 92px;
+  }
+  
+  .section-reviews-reviews-container {
+    padding-left: 90px;
+  }
+  
+  .section-reviews-review {
+    position: relative;
+    flex-shrink: 0;
+  
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 33px;
+  
+    margin-right: 20px;
+  
+    width: 620px;
+    height: 280px;
+  }
+
+  .section-reviews-review-text {
+    width: 556px;
+  
+    font: var(--font-14r);
+  }
+  
+  .section-reviews-review-site-logo {
+    top: 20px;
+    right: 32px;
+  }
+  
+  .section-reviews-scroll-buttons-container {
+    position: absolute;
+
+    margin: 0;
+    right: 202px;
+    bottom: 60px;
+  }
+
+  .fixer2 {
+    transform: translateX(600px);
+  }
+
+  /* SECTION COMMUNICATION */
+
+  .section-communication {
+    height: 640px;
+  }
+
+  .section-communication-left-container {
+    margin-top: 180px;
+    margin-left: 90px;
+  }
+  
+  .section-communication-header {
+    font: var(--font-h6-48b);
+  }
+  
+  .section-communication-header-p {
+    margin-top: 13px;
+  
+    width: 245px;
+  
+    font: var(--font-16r);
+  }
+  
+  .section-communication-a-container {
+    margin-top: 75px;
+  }
+  
+  .section-communication-a-container a {
+    margin-right: 20px;
+  }
+  
+  .section-communication-right-container {
+    margin-top: 190px;
+    margin-right: 90px;
+  }
+  
+  .section-communication-form-upper-container {
+    margin-bottom: 25px;
+  }
+
+  .section-communication-fieldset-name {
+    height: 48px;
+  }
+  
+  .section-communication-fieldset-phone {
+    margin-left: 20px;
+
+    height: 48px;
+  }
+  
+  .section-communication-fieldset-message {
+    height: 96px;
+  }
+  
+  .section-communication-form input:not([type="checkbox"]), textarea {
+    margin-left: 26px;
+    margin-right: 26px;
+  
+    font: var(--font-16r); /* ЖДУ ОТ СОНИ */
+  }
+
+  .section-communication-form-legend {
+    font: var(--font-h14-12r);
+  }
+  
+  .section-communication-form-lower-container {
+    margin-top: 36px;
+  }
+
+  .section-communication-form-button {
+    margin-left: auto;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    height: 374px;
+  }
+  
+  .footer-container {
+    padding: 80px 90px;
+  }
+
+  /* UI KIT */
+  .scroll-button svg{
+    width: 32px;
+    height: 32px;
+  }
+  
+  .scroll-button-left {
+    margin-right: 44px; 
   }
 }
