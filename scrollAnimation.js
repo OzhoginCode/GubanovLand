@@ -11,7 +11,6 @@ window.addEventListener('scroll', () => {
   const scrollingUpperTextSectionPrices = document.querySelector('.section-prices-header-scrolling-text-upper');
   const scrollingLowerTextSectionPrices = document.querySelector('.section-prices-header-scrolling-text-lower');
 
-  if (scrollPosition < 3600) return;
   scrollingUpperTextSectionPrices.style.transform = `translateX(${offset - 600}px)`;
   scrollingLowerTextSectionPrices.style.transform = `translateX(${-offset - 600}px)`;
 });
