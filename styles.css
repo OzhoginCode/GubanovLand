@@ -38,7 +38,7 @@ html {
   margin-right: auto;
 }
 
-/* HEADER START */
+/* HEADER */
 
 .head {
   position: fixed;
@@ -139,8 +139,7 @@ html {
   width: 201px;
 }
 
-
-/* HEADER END */
+/* SECTION MAIN */
 
 .main {
   display: flex;
@@ -277,6 +276,8 @@ html {
   width: 45px;
   height: 29px;
 }
+
+  /* SECTION ABOUT */
 
 .section-about {
   height: 1173px;
@@ -436,6 +437,8 @@ html {
   left: 384px;
 }
 
+/* SECTION PLAYLISTS */
+
 .section-playlists {
   height: 600px;
 
@@ -541,6 +544,8 @@ html {
 .section-playlists-right-text p {
   margin: 0;
 }
+
+/* SECTION WORKS */
 
 .section-works {
   height: 1145px;
@@ -880,6 +885,8 @@ html {
   margin-top: -3px;
 }
 
+/* SECTION STAGES */
+
 .section-stages {
   height: 1128px;
   background-color: var(--dark-grey-background);
@@ -1007,6 +1014,8 @@ html {
   width: 362px;
   height: 572px;
 }
+
+/* SECTION PRICES */
 
 .section-prices {
   height: 1198px;
@@ -1202,6 +1211,8 @@ html {
   margin-top: 24px;
 }
 
+/* SECTION REVIEWS */
+
 .section-reviews {
   height: 1016px;
   
@@ -1360,6 +1371,8 @@ html {
 .section-reviews-scroll-buttons-container button {
   background-color: var(--dark-grey-background);
 }
+
+/* SECTION COMMUNICATION */
 
 .section-communication {
   height: 795px;
@@ -1556,6 +1569,8 @@ html {
 .section-communication-form-button {
   margin-left: auto;
 }
+
+/* FOOTER */
 
 .footer {
   border-top: 1px solid var(--white-2);
