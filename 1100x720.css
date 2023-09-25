@@ -1,3 +1,395 @@
 @media (max-width: 1439px) {
+  .sections-container {
+    max-width: 1100px;
+  }
   
+  /* SECTION MAIN */
+
+  .section-main {
+    height: 680px;
+  }
+
+  .section-main-left {
+    padding-left: 47px;
+  }
+  
+  .section-main-text {
+    margin-top: 89px;
+  
+    width: 426px;
+    height: 276px;
+  }
+
+  .section-main-lower-text-div {
+    text-indent: 265px;
+    margin-top: 4px;
+  }
+
+  .section-main-lower-text-span {
+    position: absolute;
+  
+    text-indent: 0;
+
+    transform: translate(206px, 45px);
+  }
+  
+  .section-main-header-circles {
+    left: -35px;
+    top: 13px;
+  }
+  
+  .section-main-buttons {
+    margin-top: 84px;
+  }
+
+  .section-main-right {
+    margin-right: 46px;
+  }
+  
+  .section-main-video {
+    margin-top: 97px;
+  
+    width: 425px;
+  }
+  
+  .section-main-right-text {
+    margin-top: 22px;
+    margin-right: 87px;
+  }
+  
+  .section-main-arrow {
+    top: 542px;
+    right: 92px;
+  }
+  
+  /* SECTION ABOUT */
+  
+  .section-about {
+    height: 931px;
+  }
+
+  .left-photos-section-about {
+    margin-top: 43px;
+    margin-left: -133px;
+
+    width: 427px;
+  }
+
+  .info-block-photo-1 {
+    display: none;
+  }
+
+  .info-block-photo-2 {
+    width: 427px;
+    height: 620px;
+
+    margin-left: 0;
+  }
+
+  .main-text-right-section-about {
+    margin-top: 56px;
+  }
+
+  .info-block-arrow {
+    margin-left: 39px;
+    margin-top: 321.33px;
+  }
+  
+  .lower-right-section-about-text {
+    margin-top: 263px;
+  }
+
+  .info-block-image-goldenrec {
+    top: 129px;
+    left: -42px;
+  }
+  
+  .info-block-image-Ivan {
+    top: 23px;
+    left: 99px;
+  }
+  
+  /* SECTION PLAYLISTS */
+  
+  .section-playlists {
+    height: 600px;
+  }
+
+  .section-playlists-video-div {
+    min-width: 445px;
+    width: 100%;
+  }
+
+  .sections-playlists-video {
+    margin-left: 48px;
+  }
+
+  .section-playlists-right-header-1 {
+    text-indent: 269px;
+  }
+
+  .section-playlists-right-text {
+    left: 371px;
+    top: 232px;
+  
+    width: 236px;
+    height: 324px;
+  
+    font: var(--font-12m);
+    gap: 4px;
+  }
+  
+  /* SECTION WORKS */
+  
+  .section-works {
+    height: 941px;
+  }
+
+  .section-works-upper {
+    height: 412px;
+  }
+  
+  .sections-works-header {
+    margin-top: 100px;
+    margin-left: 39px;
+  }
+
+  .section-works-upper-right-text {
+    margin-right: 48px;
+    margin-top: 236px;
+  }
+  
+  .section-works-line {
+    right: 48px;
+    top: 312px;
+
+    width: 236px;
+    transform: scaleY(1.4);
+  }
+  
+  .section-works-audio-cards-container {
+    top: 412px;
+  }
+
+  .card-1  {
+    margin-left: 39px;
+  }
+  
+  .section-works-scroll-buttons-container {
+    right: 48px;
+    bottom: 158px;
+  }
+  
+  .section-works-lower-text-container {
+    left: 38px;
+    bottom: 69px;
+  }
+  
+  .section-works-lower-text-container > div {
+    width: 182px;
+  }
+  
+  .section-works-lower-text-container-button {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  
+  .section-works-lower-text-container-button a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .section-works-lower-text-line {
+    margin-top: -3px;
+  }
+  
+  /* SECTION STAGES */
+  
+  .section-stages {
+    height: 1138px;
+    background: linear-gradient(to bottom, var(--dark-grey-background) 80%, var(--main-background) 130%);
+  }
+  
+  .sections-stages-header {
+    margin-top: 95px;
+    margin-left: 51px;
+
+    height: 196px;
+    width: 100%;
+  }
+  
+  .sections-stages-header-1 {
+    margin-left: 185px;
+  }
+  
+  .section-stages-lower-container {
+    flex-direction: column;
+  }
+
+  .section-stages-lower-container ul {
+    margin-left: 39px;
+    margin-top: 63px;
+  
+    width: 832px;
+  }
+  
+  .section-stages-video-cassette {
+    margin-top: -45px;
+    margin-left: auto;
+    margin-right: -79px;
+
+    transform: rotate(-90deg);
+  }
+  
+  /* SECTION PRICES */
+  
+  .section-prices {
+    height: 957px;
+    background: linear-gradient(to bottom, var(--dark-grey-background) -20%, var(--main-background) 30%);
+  }
+  
+  .section-prices-header {
+    margin-top: 62px;
+  }
+  
+  .section-prices-lists-container {
+    padding-left: 48px;
+    padding-right: 48px;
+  
+    margin-top: 100px;
+  }
+  
+  .section-prices-button {
+    margin-top: 22px;
+  }
+  
+  /* SECTION REVIEWS */
+  
+  .section-reviews {
+    position: relative;
+    
+    height: 892px;
+  }
+
+  .section-reviews-upper-part-left-container {
+    position: absolute;
+    top: 732px;
+  }
+  
+  .section-reviews-quotes-img {
+    margin-left: 48px;
+  }
+
+  .section-reviews-header {
+    margin-left: 260px;
+  }
+  
+  .section-reviews-header-1 {
+    margin-left: 200px;
+  }
+  
+  .section-reviews-lower-part {
+    margin-top: 80px;
+  }
+  
+  .section-reviews-scroll-buttons-container {
+    right: 48px;
+    bottom: 144px;
+  }
+  
+  /* SECTION COMMUNICATION */
+  
+  .section-communication {
+    height: 586px;
+  }
+  
+  .section-communication-left-container {
+    margin-top: 140px;
+    margin-left: 48px;
+  }
+  
+  .section-communication-right-container {
+    margin-top: 140px;
+    margin-right: 48px;
+
+    max-width: 540px;
+  }
+
+  .section-communication-fieldset-name {
+    min-width: 236px;
+  }
+  
+  .section-communication-fieldset-phone {
+    min-width: 236px;
+  }
+  
+  .section-communication-form-lower-container {
+    display: flex;
+    align-items: center;
+  
+    margin-top: 40px;
+  }
+  
+  .section-communication-form-agreement-container {
+    display: flex;
+    align-items: center;
+  
+    margin-right: 6px;
+  
+    max-width: 404px;
+    height: 36px;
+  }
+  
+  .section-communication-form-agreement-input[type="checkbox"] {
+    margin: 0;
+  
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    appearance: none;
+    background-image: url('./media/section-communication-checkbox-unchecked.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .section-communication-form-agreement-input:not(:checked):hover {
+    background-image: url('./media/section-communication-checkbox-unchecked-hover.svg');
+  }
+  
+  .section-communication-form-agreement-input:checked {
+    background-image: url('./media/section-communication-checkbox-checked.svg');
+  }
+  
+  .section-communication-form-agreement-input:checked:hover {
+    background-image: url('./media/section-communication-checkbox-checked-hover.svg');
+  }
+  
+  .section-communication-form-agreement-label {
+    padding-left: 12px;
+  
+    max-width: 372px;
+    min-width: 248px;
+  
+    color: var(--light-grey);
+    font: var(--font-14r);
+  }
+  
+  .section-communication-form-agreement-label-a {
+    color: var(--white-2);
+    text-decoration: none;
+  }
+  
+  .section-communication-form-button {
+    margin-left: auto;
+  }
+  
+  /* FOOTER */
+  
+  .footer-container {
+    padding: 80px 48px;
+  }
 }

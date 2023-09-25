@@ -35,7 +35,9 @@
 
   .section-main-header-circles {
     left: 0.02777777778vw;
-    top: 130px;
+    top: 153px;
+
+    width: 380px;
   }
 
   .section-main-text {
@@ -54,7 +56,6 @@
     margin-top: 80px;
   
     width: 545px;
-    height: auto;
   }
 
   .section-main-right-text {
@@ -144,7 +145,7 @@
   }
   
   .info-block-arrow {
-    margin-left: 28px;
+    margin-left: 39px;
     margin-top: 401.33px;
   }
   
@@ -271,6 +272,8 @@
   .section-works-line {
     right: 90px;
     top: 332px;
+
+    width: 492px;
   }
 
   .section-works-audio-cards-container {

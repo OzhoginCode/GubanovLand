@@ -193,8 +193,6 @@ html {
 
 .h2 {
   margin: 0;
-  
-  height: 88px;
 
   color: var(--white-2);
   font: var(--font-h3-88b);
@@ -336,8 +334,12 @@ html {
 .info-block-photo-2 {
   margin-left: 20px;
 
-  max-width: 100%;
+  width: 100%;
   height: auto;
+
+  background-image: url(./media/info-block-photo-2.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .right-section-about {
@@ -428,6 +430,9 @@ html {
   left: 256px;
 
   z-index: 10;
+
+  width: 182px;
+  height: 236px;
 }
 
 .info-block-image-Ivan {
@@ -920,7 +925,6 @@ html {
 .section-stages-lower-container {
   display: flex;
   
-
   flex-shrink: 0;
 }
 
