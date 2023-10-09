@@ -1,89 +1,88 @@
+const scrollingUpperTextSectionAbout = document.querySelector('.section-about-scrolling-text-upper');
+const scrollingLowerTextSectionAbout = document.querySelector('.section-about-scrolling-text-lower');
+
+const scrollingUpperTextSectionPrices = document.querySelector('.section-prices-header-scrolling-text-upper');
+const scrollingLowerTextSectionPrices = document.querySelector('.section-prices-header-scrolling-text-lower');
+
 window.addEventListener('scroll', () => {
   const scrollPosition = window.scrollY;
   const offset = scrollPosition / 6;
 
-  const scrollingUpperTextSectionAbout = document.querySelector('.section-about-scrolling-text-upper');
-  const scrollingLowerTextSectionAbout = document.querySelector('.section-about-scrolling-text-lower');
-
   scrollingUpperTextSectionAbout.style.transform = `translateX(${offset}px)`;
   scrollingLowerTextSectionAbout.style.transform = `translateX(${-offset}px)`;
-
-  const scrollingUpperTextSectionPrices = document.querySelector('.section-prices-header-scrolling-text-upper');
-  const scrollingLowerTextSectionPrices = document.querySelector('.section-prices-header-scrolling-text-lower');
 
   scrollingUpperTextSectionPrices.style.transform = `translateX(${offset - 600}px)`;
   scrollingLowerTextSectionPrices.style.transform = `translateX(${-offset - 600}px)`;
 });
 
-const sectionWorksContainer = document.getElementById('section-works-audio-cards-container');
-
-document.getElementById('sectionWorksScrollButtonLeft').addEventListener('click', () => {
-  const audioCard = document.querySelector('.section-works-audio-card');
-  const cardWidth = audioCard.offsetWidth + 20;
-  sectionWorksContainer.scrollLeft -= cardWidth;
-});
-
-document.getElementById('sectionWorksScrollButtonRight').addEventListener('click', () => {
-  const audioCard = document.querySelector('.section-works-audio-card');
-  const cardWidth = audioCard.offsetWidth + 20;
-  sectionWorksContainer.scrollLeft += cardWidth;
-});
-
 const sectionReviewsContainer = document.getElementById('section-reviews-reviews-container');
+const sectionReviewsScrollButtonLeft = document.getElementById('sectionReviewsScrollButtonLeft');
+const sectionReviewsScrollButtonRight = document.getElementById('sectionReviewsScrollButtonRight');
 
-document.getElementById('sectionReviewsScrollButtonLeft').addEventListener('click', () => {
+sectionReviewsScrollButtonLeft.addEventListener('click', () => {
   sectionReviewsContainer.scrollLeft -= sectionReviewsContainer.offsetWidth;
 });
 
-document.getElementById('sectionReviewsScrollButtonRight').addEventListener('click', () => {
+sectionReviewsScrollButtonRight.addEventListener('click', () => {
   sectionReviewsContainer.scrollLeft += sectionReviewsContainer.offsetWidth;
 });
 
 sectionReviewsContainer.addEventListener('scroll', () => {
-  const scrollButtonRight = document.getElementById('sectionReviewsScrollButtonRight');
-  const scrollButtonLeft = document.getElementById('sectionReviewsScrollButtonLeft');
   const classEnabledName = 'scroll-button-enabled';
   const classDisabledName = 'scroll-button-disabled';
 
   // eslint-disable-next-line max-len
   if (sectionReviewsContainer.scrollLeft >= sectionReviewsContainer.scrollWidth - sectionReviewsContainer.clientWidth - 5) {
-    scrollButtonRight.classList.add(classDisabledName);
-    scrollButtonRight.classList.remove(classEnabledName);
+    sectionReviewsScrollButtonRight.classList.add(classDisabledName);
+    sectionReviewsScrollButtonRight.classList.remove(classEnabledName);
   } else {
-    scrollButtonRight.classList.add(classEnabledName);
-    scrollButtonRight.classList.remove(classDisabledName);
+    sectionReviewsScrollButtonRight.classList.add(classEnabledName);
+    sectionReviewsScrollButtonRight.classList.remove(classDisabledName);
   }
 
   if (sectionReviewsContainer.scrollLeft <= 0) {
-    scrollButtonLeft.classList.add(classDisabledName);
-    scrollButtonLeft.classList.remove(classEnabledName);
+    sectionReviewsScrollButtonLeft.classList.add(classDisabledName);
+    sectionReviewsScrollButtonLeft.classList.remove(classEnabledName);
   } else {
-    scrollButtonLeft.classList.remove(classDisabledName);
-    scrollButtonLeft.classList.add(classEnabledName);
+    sectionReviewsScrollButtonLeft.classList.remove(classDisabledName);
+    sectionReviewsScrollButtonLeft.classList.add(classEnabledName);
   }
 });
 
+const sectionWorksContainer = document.getElementById('section-works-audio-cards-container');
+const sectionWorksScrollButtonLeft = document.getElementById('sectionWorksScrollButtonLeft');
+const sectionWorksScrollButtonRight = document.getElementById('sectionWorksScrollButtonRight');
+
+const audioCard = document.querySelector('.section-works-audio-card');
+const cardWidth = audioCard.offsetWidth + 20;
+
+sectionWorksScrollButtonLeft.addEventListener('click', () => {
+  sectionWorksContainer.scrollLeft -= cardWidth;
+});
+
+sectionWorksScrollButtonRight.addEventListener('click', () => {
+  sectionWorksContainer.scrollLeft += cardWidth;
+});
+
 sectionWorksContainer.addEventListener('scroll', () => {
-  const scrollButtonRight = document.getElementById('sectionWorksScrollButtonRight');
-  const scrollButtonLeft = document.getElementById('sectionWorksScrollButtonLeft');
   const classEnabledName = 'scroll-button-enabled';
   const classDisabledName = 'scroll-button-disabled';
 
   // eslint-disable-next-line max-len
   if (sectionWorksContainer.scrollLeft >= sectionWorksContainer.scrollWidth - sectionWorksContainer.clientWidth - 5) {
-    scrollButtonRight.classList.add(classDisabledName);
-    scrollButtonRight.classList.remove(classEnabledName);
+    sectionWorksScrollButtonRight.classList.add(classDisabledName);
+    sectionWorksScrollButtonRight.classList.remove(classEnabledName);
   } else {
-    scrollButtonRight.classList.add(classEnabledName);
-    scrollButtonRight.classList.remove(classDisabledName);
+    sectionWorksScrollButtonRight.classList.add(classEnabledName);
+    sectionWorksScrollButtonRight.classList.remove(classDisabledName);
   }
 
   if (sectionWorksContainer.scrollLeft <= 0) {
-    scrollButtonLeft.classList.add(classDisabledName);
-    scrollButtonLeft.classList.remove(classEnabledName);
+    sectionWorksScrollButtonLeft.classList.add(classDisabledName);
+    sectionWorksScrollButtonLeft.classList.remove(classEnabledName);
   } else {
-    scrollButtonLeft.classList.remove(classDisabledName);
-    scrollButtonLeft.classList.add(classEnabledName);
+    sectionWorksScrollButtonLeft.classList.remove(classDisabledName);
+    sectionWorksScrollButtonLeft.classList.add(classEnabledName);
   }
 });
 
@@ -91,7 +90,7 @@ sectionWorksContainer.addEventListener('scroll', () => {
 const carouselContainer = document.querySelector('.section-works-audio-cards-container');
 const carouselCards = Array.from(document.querySelectorAll('.section-works-audio-card'));
 const carouselCount = carouselCards.length;
-const cardWidth = carouselCards[0].offsetWidth + 20;
+// const cardWidth = carouselCards[0].offsetWidth + 20;
 let currentPosition = 0;
 let previousPosition = 0;
 let positionSet = 0;

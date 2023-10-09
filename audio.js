@@ -71,9 +71,7 @@ const pauseSong = (audioCard) => {
   progressBarCircle.setAttribute('fill', 'var(--white-1)');
 };
 
-const pauseAllSongs = () => {
-  audioCardObjects.forEach((audioCard) => pauseSong(audioCard));
-};
+const pauseAllSongs = () => audioCardObjects.forEach((audioCard) => pauseSong(audioCard));
 
 const playSong = (audioCard) => {
   const {
