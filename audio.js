@@ -126,12 +126,11 @@ const drag = (e, audioCard) => {
 };
 
 const dragEnd = (audioCard) => {
-  if (audioCard.isDragging) {
-    // eslint-disable-next-line no-param-reassign
-    audioCard.isDragging = false;
-    pauseAllSongs();
-    playSong(audioCard);
-  }
+  if (!audioCard.isDragging) return;
+  // eslint-disable-next-line no-param-reassign
+  audioCard.isDragging = false;
+  pauseAllSongs();
+  playSong(audioCard);
 };
 
 audioCardObjects.forEach((audioCard) => {
