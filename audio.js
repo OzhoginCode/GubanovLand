@@ -85,7 +85,7 @@ const playSong = (audioCard) => {
   progressBar.style.background = 'var(--yellow)';
   progressBarCircle.setAttribute('fill', 'var(--yellow)');
 
-  updateProgress(audioCard);
+  requestAnimationFrame(() => updateProgress(audioCard));
 };
 
 const setProgress = (e, audioCard) => {
