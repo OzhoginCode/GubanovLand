@@ -4,15 +4,17 @@ const scrollingLowerTextSectionAbout = document.querySelector('.section-about-sc
 const scrollingUpperTextSectionPrices = document.querySelector('.section-prices-header-scrolling-text-upper');
 const scrollingLowerTextSectionPrices = document.querySelector('.section-prices-header-scrolling-text-lower');
 
+let scrollPosition = 0;
+
 window.addEventListener('scroll', () => {
-  const scrollPosition = window.scrollY;
+  scrollPosition = window.scrollY;
   const offset = scrollPosition / 6;
 
   scrollingUpperTextSectionAbout.style.transform = `translateX(${offset}px)`;
   scrollingLowerTextSectionAbout.style.transform = `translateX(${-offset}px)`;
 
-  scrollingUpperTextSectionPrices.style.transform = `translateX(${offset - 600}px)`;
-  scrollingLowerTextSectionPrices.style.transform = `translateX(${-offset - 600}px)`;
+  scrollingUpperTextSectionPrices.style.transform = `translateX(${offset}px)`;
+  scrollingLowerTextSectionPrices.style.transform = `translateX(${-offset}px)`;
 });
 
 const sectionReviewsContainer = document.getElementById('section-reviews-reviews-container');

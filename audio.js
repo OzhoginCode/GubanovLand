@@ -46,7 +46,6 @@ const formatTime = (time) => {
 const updateProgress = (audioCard) => {
   const { audio, currentTimeElem, progressBar } = audioCard;
   const { duration, currentTime } = audio;
-  const isPlaying = audio.classList.contains('playing');
 
   const progressPercent = (currentTime / duration) * 100;
 
@@ -54,7 +53,7 @@ const updateProgress = (audioCard) => {
   currentTimeElem.innerHTML = formattedCurrentTime;
   progressBar.style.width = `${progressPercent}%`;
 
-  if (!isPlaying) return;
+  if (playingSong === null) return;
   requestAnimationFrame(() => updateProgress(audioCard));
 };
 
@@ -86,7 +85,7 @@ const playSong = (audioCard) => {
   progressBar.style.background = 'var(--yellow)';
   progressBarCircle.setAttribute('fill', 'var(--yellow)');
 
-  requestAnimationFrame(() => updateProgress(audioCard));
+  updateProgress(audioCard);
 };
 
 const setProgress = (e, audioCard) => {
