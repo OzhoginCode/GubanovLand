@@ -1,0 +1,613 @@
+:root {
+  --font-h1-112b: 700 112px/116px 'Noto Sans', sans-serif;
+  --font-h2-100b: 700 100px/116px 'Noto Sans', sans-serif;
+  --font-h3-88b: 500 88px/92px 'Noto Sans', sans-serif;
+  --font-h4-88b: 700 88px/92px 'Noto Sans', sans-serif;
+  --font-h5-56bl: 700 56px/64px 'Noto Sans', sans-serif;
+  --font-h5-56m: 400 56px/64px 'Noto Sans', sans-serif;
+  --font-h6-48b: 600 48px/56px 'Noto Sans', sans-serif;
+  --font-h6-48m: 500 48px/64px 'Noto Sans', sans-serif;
+  --font-40m: 400 40px/48px 'Roboto', sans-serif;
+  --font-40l: 200 40px/44px 'Roboto Flex', sans-serif;
+  --font-h7-32r: 400 32px/40px 'VoronovFont', sans-serif;
+  --font-28bb: 500 28px/120% 'Roboto', sans-serif;
+  --font-28l: 300 28px/30px 'Roboto', sans-serif;
+  --font-h8-28r: 400 28px/32px 'VoronovFont', sans-serif;
+  --font-h9-28l: 300 28px/38px 'Noto Sans', sans-serif;
+  --font-24m: 400 24px/28px 'Roboto', sans-serif;
+  --font-24r: 400 24px/28px 'Roboto', sans-serif;
+  --font-22r: 300 22px/28px 'Roboto', sans-serif;
+  --font-20r: 300 20px/20px 'Roboto', sans-serif;
+  --font-20rr: 300 20px/20px 'Roboto', sans-serif;
+  --font-18r: 300 18px/22px 'Roboto', sans-serif;
+  --font-18m: 500 18px/120% 'Roboto', sans-serif;
+  --font-16r: 300 16px/20px 'Roboto', sans-serif;
+  --font-16rr: 300 16px/24px 'Roboto', sans-serif;
+  --font-16m: 400 16px/20px 'Roboto', sans-serif;
+  --font-16s: 600 16px/20px 'Roboto Flex', sans-serif;
+  --font-14r: 400 14px/18px 'Roboto', sans-serif;
+  --font-12m: 500 12px/150% 'Roboto', sans-serif;
+  --font-12r: 300 12px/18px 'Roboto', sans-serif;
+  --font-h10-12r: 400 12px/18px 'Noto Sans', sans-serif;
+
+  /* 1440px */
+  --font-h11-72s: 600 72px/92px 'Noto Sans', sans-serif;
+  --font-h12-48b: 700 48px/60px 'Noto Sans', sans-serif;
+  --font-h13-48r: 400 48px/60px 'Noto Sans', sans-serif;
+  --font-h13-48r-letter-spacing: 1px;
+  --font-24bb: 700 24px/28px 'Roboto', sans-serif;
+  --font-20m: 500 20px/24px 'Roboto', sans-serif;
+  --font-14rr: 400 14px/20px 'Roboto', sans-serif;
+  --font-14m: 500 14px/18px 'Roboto', sans-serif;
+  --font-h14-12r: 400 12px/18px 'Noto Sans', sans-serif;
+
+  /* 360px */
+  --font-h15-53s: 600 53px/62px 'Noto Sans', sans-serif;
+  --font-h18-32b: 700 32px/36px 'Noto Sans', sans-serif;
+  --font-h18-32s: 600 32px/36px 'Noto Sans', sans-serif;
+  --font-h19-30s: 600 30px/36px 'Noto Sans', sans-serif;
+  --font-h17-20r: 400 20px/24px 'VoronovFont', sans-serif;
+  --font-18-rr: 400 18px/24px 'Roboto', sans-serif;
+  --font-h16-14r: 400 14px/18px 'Noto Sans', sans-serif;
+}
+
+@media (max-width: 1099px) {
+  .sections-container {
+    max-width: 834px;
+  }
+
+  .head {
+    height: 110px;
+
+    border-bottom: 0;
+
+    background: transparent;
+    backdrop-filter: none;
+    mix-blend-mode: difference;
+    pointer-events: none;
+  }
+
+  .head.header-menu-opened {
+    flex-direction: column;
+
+    bottom: 0;
+    height: unset;
+
+    background-color: var(--main-background);
+    mix-blend-mode: normal;
+
+    pointer-events: auto;
+  }
+
+  .header-menu-opened .header-menu-line {
+    display: block;
+    position: absolute;
+    left: 43px;
+    right: 43px;
+    top: 108px;
+    width: calc(100% - 86px);
+  }
+
+  .logo-header {
+    margin-left: 43px;
+  }
+  
+  .header-menu-opened .div-logo {
+    height: 110px;
+  }
+  
+  .header-menu-button {
+    display: block;
+
+    margin-right: 43px;
+
+    background: transparent;
+    pointer-events: all;
+    cursor: pointer;
+  }
+
+  .header-menu-opened .header-menu-button {
+    position: absolute;
+    top: 42px;
+    right: 4px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header-menu-opened .nav {
+    position: absolute;
+    top: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    
+    height: auto;
+    width: auto;
+    transform: translateY(-50%);
+  }
+
+  .header-menu-opened .nav-ul {
+    flex-direction: column;
+
+    font: var(--font-h18-32s);
+    text-transform: uppercase;
+  }
+  
+  .header-menu-opened .nav-ul li {
+    margin: 0;
+    margin-bottom: 48px; 
+  }
+  
+  .div-button-block {
+    display: none;
+  }
+
+  .header-menu-opened .div-button-block {
+    display: flex;
+    position: absolute;
+
+    height: 56px;
+    width: 236px;
+
+    bottom: 100px;
+    right: 43px;
+  }
+  
+  .right-button-header {
+    margin: 0;
+
+    height: 56px;
+    width: 236px;
+  }
+
+  .header-menu-opened .header-right-container-img-container {
+    display: flex;
+
+    position: absolute;
+    bottom: 116px;
+    left: 43px;
+
+    width: 236px;
+  }
+
+  /* SECTION MAIN */
+
+  .main {
+    margin-top: 0;
+  }
+  
+  .section-main {
+    height: 1083px;
+  }
+  
+  .section-main-container {
+    flex-direction: column;
+  }
+  
+  .section-main-left {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .section-main-text {
+    margin-top: 162px;
+  
+    width: 700px;
+    height: 184px;
+  }
+
+  .section-main-lower-text-div {
+    text-indent: 0;
+  }
+  
+  .h2 {
+    text-indent: 0;
+    width: 394px
+  }
+  
+  .section-main-lower-text-span {
+    position: unset;
+    transform: unset;
+
+    margin-left: 50px;
+    height: 76px;
+  }
+  
+  .section-main-header-circles {
+    position: absolute;
+  
+    left: 25px;
+    top: 105px;
+  }
+  
+  .section-main-buttons {
+    position: absolute;
+  
+    top: 973px;
+    left: 171px;
+
+    margin: 0;
+  }
+  
+  .section-main-right {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .section-main-video {
+    margin-top: 56px;
+  }
+  
+  .section-main-right-text {
+    margin-top: 36px;
+    margin-right: 129px;
+  }
+  
+  .section-main-arrow {
+    top: 515px;
+    right: 134px;
+  }
+
+  /* SECTION ABOUT */
+
+  .section-about {
+    height: 1407px;
+  }
+
+  .scrolling-text-section-about {
+    height: 140px;
+    font: var(--font-h4-88b);
+  }
+
+  .section-about-scrolling-text-lower {
+    top: 46px;
+  }
+
+  .left-photos-section-about {
+    margin-top: 80px;
+    margin-left: -127px;
+
+    width: 480px;
+  }
+
+  .info-block-photo-2 {
+    width: 480px;
+    height: 700px;
+  }
+
+  .main-text-right-section-about {
+    flex-direction: column;
+
+    margin-top: 80px;
+    margin-left: 132px;
+  }
+
+  .main-text-right-section-about-1 {
+    width: 274px;
+  }
+
+  .main-text-right-section-about-2 {
+    margin-left: 0;
+    margin-top: 32px;
+
+    width: 274px;
+  }
+
+  .info-block-arrow {
+    margin-top: 189px;
+    margin-left: 24px;
+  }
+
+  .lower-right-section-about-text {
+    margin-top: 179px;
+    margin-left: 23px;
+  }
+
+  .info-block-image-goldenrec {
+    top: 461px;
+    left: -440px;
+  }
+
+  .info-block-image-Ivan {
+    top: 343px;
+    left: -315px;
+  }
+
+  /* SECTION PLAYLISTS */
+
+  .section-playlists {
+    height: 793px;
+  }
+
+  .section-playlists-container {
+    flex-direction: column-reverse;
+    height: unset;
+  }
+
+  .sections-playlists-video {
+    margin-top: 60px;
+    margin-left: 45px;
+  }
+
+  .section-playlists-right-header {
+    margin-left: 43px;
+
+    width: 800px;
+    height: unset;
+
+    letter-spacing: normal;
+  }
+
+  .section-playlists-right-header-1 {
+    text-indent: 418px;
+  }
+
+  .section-playlists-right-images {
+    display: none;
+  }
+
+  .section-playlists-right-text {
+    left: 427px;
+    top: 336px;
+
+    width: 364px;
+
+    font: var(--font-14m);
+  }
+
+  /* SECTION WORKS */
+  
+  .section-works {
+    height: 920px;
+  }
+
+  .section-works-upper {
+    height: 388px;
+  }
+  
+  .sections-works-header {
+    margin-left: 45px;
+  }
+
+  .section-works-upper-right-text {
+    display: none;
+  }
+  
+  .section-works-line {
+    display: none;
+  }
+  
+  .section-works-audio-cards-container {
+    top: 388px;
+  }
+
+  .card-1  {
+    margin-left: 34px;
+  }
+  
+  .section-works-scroll-buttons-container {
+    right: 51px;
+    bottom: 88px;
+  }
+  
+  .section-works-lower-text-container {
+    left: 34px;
+    bottom: 80px;
+  }
+
+  /* SECTION STAGES */
+  
+  .section-stages {
+    height: 1220px;
+    /* background: linear-gradient(to bottom, var(--dark-grey-background) 80%, var(--main-background) 130%); */
+  }
+  
+  .sections-stages-header {
+    margin-top: 56px;
+    margin-left: 43px;
+
+    height: 316px;
+    width: 600px;
+  }
+  
+  .sections-stages-header-1 {
+    margin-left: 0;
+  }
+
+  .section-stages-lower-container ul {
+    margin-left: 43px;
+  
+    width: 748px;
+  }
+  
+  .section-stages-video-cassette {
+    margin-right: -212px;
+  }
+
+  /* SECTION PRICES */
+
+  .section-prices {
+    height: 2324px;
+  }
+
+  .section-prices-header {
+    margin-top: 52px;
+
+    height: 138px;
+
+    font: var(--font-h4-88b);
+  }
+
+  .section-prices-header-scrolling-text-lower {
+    top: 46px;
+  }
+
+  .section-prices-lists-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+
+    margin-top: 64px;
+  }
+
+  .section-prices-list-container {
+    position: relative;
+  }
+
+  .section-prices-lists-container > div:nth-child(-n+2)::after {
+    position: absolute;
+    bottom: -60px;
+    left: -228px;
+  
+    max-width: 740px;
+    width: 100vw;
+    height: 10px;
+  
+    background-image: url(./media/section-prices-dividing-line.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  
+    content: '';
+  }
+
+  .section-prices-list-container-1 {
+    margin-right: 0;
+  }
+
+  .section-prices-list-container-2 {
+    margin-right: 0;
+    margin-top: 120px;
+  }
+
+  .section-prices-list-container-3 {
+    margin-top: 120px;
+  }
+
+  .section-prices-ul {
+    margin-top: 59px;
+  }
+
+  .section-prices-button {
+    margin-top: 24px;
+    width: 316px;
+    margin-left: -33px;
+  }
+
+  /* SECTION REVIEWS */
+  
+  .section-reviews {
+    height: 842px;
+  }
+
+  .section-reviews-upper-part {
+    margin-top: 60px;
+  }
+
+  .section-reviews-upper-part-left-container {
+    top: 682px;
+  }
+  
+  .section-reviews-quotes-img {
+    margin-left: 43px;
+  }
+
+  .section-reviews-header {
+    margin-left: 43px;
+  }
+  
+  .section-reviews-header-1 {
+    margin-left: 170px;
+  }
+
+  .section-reviews-reviews-container {
+    padding-left: 43px;
+  }
+
+  .section-reviews-scroll-buttons-container {
+    right: 43px;
+    bottom: 128px;
+  }
+
+  /* SECTION COMMUNICATION */
+  
+  .section-communication {
+    height: 669px;
+  }
+  
+  .section-communication-left-container {
+    margin-top: 124px;
+    margin-left: 43px;
+  }
+  
+  .section-communication-right-container {
+    margin-top: 140px;
+    margin-right: 48px;
+
+    max-width: 364px;
+  }
+
+  .section-communication-form-upper-container {
+    flex-direction: column;
+  
+    margin-bottom: 0;
+  }
+
+  .section-communication-fieldset-name {
+    min-width: 364px;
+    margin-bottom: 21px;
+  }
+  
+  .section-communication-fieldset-phone {
+    min-width: 364px;
+    margin-left: 0;
+    margin-bottom: 21px;
+  }
+  
+  .section-communication-form-lower-container {
+    flex-direction: column;
+  
+    margin-top: 31px;
+  }
+  
+  .section-communication-form-agreement-container {
+    max-width: 364px;
+    height: 54px;
+
+    text-align: justify;
+  }
+  
+  .section-communication-form-agreement-label {
+    min-width: 332px;
+  }
+  
+  .section-communication-form-button {
+    margin-top: 42px;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    height: 411px;
+  }
+
+  .footer-container {
+    padding: 79px 43px;
+  }
+
+  .footer-left-container-copyright {
+    margin-top: 60px;
+  }
+
+  .footer-central-container-ul {
+    display: none;
+  }
+
+  .footer-central-container-a {
+    margin-top: auto;
+    transform: translateX(-250px);
+  }
+}

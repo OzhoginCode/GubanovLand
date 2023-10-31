@@ -1,5 +1,4 @@
 @import "./fonts.css";
-/* @import "./1440x900.css"; */
 
 :root {
   --main-background: #111223;
@@ -62,11 +61,13 @@ html {
   z-index: 100;
 }
 
+.header-menu-line {
+  display: none;
+}
+
 .div-logo {
   display: flex;
   align-items: center;
-
-  flex: 1 1 0;
 
   height: 100%;
   width: 100%;
@@ -88,12 +89,17 @@ html {
   font: var(--font-28l);
 }
 
+.header-menu-button {
+  display: none;
+  background-color: var(--main-background);
+  border: none;
+  padding: 0;
+}
+
 .nav {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  flex: 1 1 0;
 
   height: 100%;
   width: 100%;
@@ -117,7 +123,7 @@ html {
   margin: 0 20px;
 
   width: max-content;
-  max-width: 12vw;
+  /* max-width: 12vw; */
   height: 22px;
 }
 
@@ -128,15 +134,25 @@ html {
 
   height: 100%;
   width: 100%;
-  
-  flex: 1 1 0;
 }
 
 .right-button-header {
   /* margin-right: 202px; */
   margin-right: 10.52083333vw;
 
-  width: 201px;
+  width: 182px;
+}
+
+.header-right-container-img-container {
+  display: none;
+  justify-content: space-between;
+
+  margin-top: auto;
+}
+
+.header-right-container-img-container a {
+  width: 40px;
+  height: 40px;
 }
 
 /* SECTION MAIN */
@@ -275,7 +291,7 @@ html {
   height: 29px;
 }
 
-  /* SECTION ABOUT */
+/* SECTION ABOUT */
 
 .section-about {
   height: 1173px;
@@ -327,8 +343,8 @@ html {
 }
 
 .info-block-photo-1 {
-  max-width: 100%;
-  height: auto;
+  max-width: 108px;
+  height: 751px;
 }
 
 .info-block-photo-2 {
@@ -440,6 +456,9 @@ html {
 
   top: 183px;
   left: 384px;
+
+  width: 236px;
+  height: 236px;
 }
 
 /* SECTION PLAYLISTS */
@@ -462,8 +481,6 @@ html {
   display: flex;
   flex-direction: column;
   position: relative;
-
-  flex: 1;
 }
 
 .sections-playlists-video {
@@ -472,6 +489,8 @@ html {
 
   width: 364px;
   height: 376px;
+
+  border-radius: 5px;
 }
 
 .section-playlists-right-header {
@@ -524,6 +543,10 @@ html {
 
 .section-playlists-right-images li {
   margin-right: 24px;
+}
+
+.section-playlists-right-images li img {
+  width: 33px;
 }
 
 .playlists-block-image-yandex {
@@ -1755,6 +1778,7 @@ html {
 
   border: 1px solid var(--white-2);
   border-radius: 2px;
+  box-sizing: border-box;
 
   font: var(--font-16r);
 }

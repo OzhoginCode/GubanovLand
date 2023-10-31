@@ -189,16 +189,6 @@
     width: 182px;
   }
   
-  .section-works-lower-text-container-button {
-    display: inline-flex;
-    flex-direction: column;
-  }
-  
-  .section-works-lower-text-container-button a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
   .section-works-lower-text-line {
     margin-top: -3px;
   }

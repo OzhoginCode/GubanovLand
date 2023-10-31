@@ -39,6 +39,7 @@
   --font-12r: 300 12px/18px 'Roboto', sans-serif;
   --font-h10-12r: 400 12px/18px 'Noto Sans', sans-serif;
 
+  /* 1440px */
   --font-h11-72s: 600 72px/92px 'Noto Sans', sans-serif;
   --font-h12-48b: 700 48px/60px 'Noto Sans', sans-serif;
   --font-h13-48r: 400 48px/60px 'Noto Sans', sans-serif;
@@ -48,4 +49,13 @@
   --font-14rr: 400 14px/20px 'Roboto', sans-serif;
   --font-14m: 500 14px/18px 'Roboto', sans-serif;
   --font-h14-12r: 400 12px/18px 'Noto Sans', sans-serif;
+
+  /* 360px */
+  --font-h15-53s: 600 53px/62px 'Noto Sans', sans-serif;
+  --font-h18-32b: 700 32px/36px 'Noto Sans', sans-serif;
+  --font-h18-32s: 600 32px/36px 'Noto Sans', sans-serif;
+  --font-h19-30s: 600 30px/36px 'Noto Sans', sans-serif;
+  --font-h17-20r: 400 20px/24px 'VoronovFont', sans-serif;
+  --font-18-rr: 400 18px/24px 'Roboto', sans-serif;
+  --font-h16-14r: 400 14px/18px 'Noto Sans', sans-serif;
 }
