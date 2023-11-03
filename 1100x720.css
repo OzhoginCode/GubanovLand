@@ -238,15 +238,15 @@
     background: linear-gradient(to bottom, var(--dark-grey-background) -20%, var(--main-background) 30%);
   }
   
-  .section-prices-header {
-    margin-top: 62px;
+  .section-prices-header-container {
+    top: 62px;
   }
-  
+
   .section-prices-lists-container {
     padding-left: 48px;
     padding-right: 48px;
   
-    margin-top: 100px;
+    margin-top: 330px;
   }
   
   .section-prices-button {

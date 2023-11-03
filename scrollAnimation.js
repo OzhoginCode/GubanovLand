@@ -6,7 +6,7 @@ const scrollingLowerTextSectionPrices = document.querySelector('.section-prices-
 
 let scrollPosition = 0;
 
-window.addEventListener('scroll', () => {
+const scrollElements = () => {
   scrollPosition = window.scrollY;
   const offset = scrollPosition / 6;
 
@@ -15,7 +15,11 @@ window.addEventListener('scroll', () => {
 
   scrollingUpperTextSectionPrices.style.transform = `translateX(${offset}px)`;
   scrollingLowerTextSectionPrices.style.transform = `translateX(${-offset}px)`;
-});
+};
+
+window.addEventListener('scroll', scrollElements);
+
+window.addEventListener('touchmove', scrollElements);
 
 const sectionReviewsContainer = document.getElementById('section-reviews-reviews-container');
 const sectionReviewsScrollButtonLeft = document.getElementById('sectionReviewsScrollButtonLeft');

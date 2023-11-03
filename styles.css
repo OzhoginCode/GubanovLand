@@ -302,6 +302,12 @@ html {
   flex-direction: column;
 }
 
+.scrolling-text-section-about-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
 .scrolling-text-section-about {
   position: relative;
 
@@ -309,6 +315,8 @@ html {
 
   color: var(--white-2);
   white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
   font: var(--font-h1-112b);
 }
@@ -331,6 +339,8 @@ html {
 
 .section-about-main {
   display: flex;
+
+  margin-top: 182px;
 }
 
 .left-photos-section-about {
@@ -577,6 +587,8 @@ html {
 
 .section-works {
   height: 1145px;
+
+  overflow-x: hidden;
 }
 
 .section-works-container {
@@ -918,6 +930,9 @@ html {
 .section-stages {
   height: 1128px;
   background-color: var(--dark-grey-background);
+
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .sections-stages-header {
@@ -1046,14 +1061,24 @@ html {
 
 .section-prices {
   height: 1198px;
+
+  position: relative;
+}
+
+.section-prices-header-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 142px;
 }
 
 .section-prices-header {
   position: relative;
 
-  margin-top: 140px;
-
   height: 182px;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
 
   font: var(--font-h1-112b);
 }
@@ -1084,7 +1109,7 @@ html {
   padding-left: 202px;
   padding-right: 193px;
 
-  margin-top: 140px;
+  margin-top: 462px;
 }
 
 .section-prices-list-container-1 {
@@ -1242,6 +1267,7 @@ html {
 
 .section-reviews {
   height: 1016px;
+  overflow-x: hidden;
   
   background-color: var(--dark-grey-background);
 }
