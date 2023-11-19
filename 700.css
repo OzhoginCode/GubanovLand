@@ -1,0 +1,170 @@
+@media (max-width: 1099px) {
+  .sections-container {
+    max-width: 700px;
+  }
+
+  /* SECTION MAIN */
+
+  .section-main {
+    height: 1137px;
+  }
+
+  .section-main-left {
+    margin-left: 43px;
+  }
+
+  .section-main-text {
+    margin-top: 144px;
+  
+    width: 550px;
+    height: 276px;
+  }
+
+  .section-main-lower-text-div {
+    text-indent: 265px;
+    margin-top: 4px;
+  }
+
+  .h2 {
+    text-indent: unset;
+    width: 394px
+  }
+  
+  .section-main-lower-text-span {
+    position: absolute;
+  
+    text-indent: 0;
+
+    transform: translate(225px, 45px);
+  }
+  
+  .section-main-header-circles {
+    position: absolute;
+  
+    left: 10px;
+    top: 85px;
+  }
+
+  .section-main-buttons {
+    top: 1027px;
+  }
+
+  .section-main-video {
+    margin-top: 36px;
+  }
+
+  /* SECTION ABOUT */
+
+  .left-photos-section-about {
+    margin-left: -195px;
+  }
+
+  .main-text-right-section-about {
+    margin-left: auto;
+    margin-right: 62px;
+  }
+
+  /* SECTION STAGES */
+
+  .section-stages-lower-container ul {
+    margin-left: 43px;
+  
+    width: initial;
+  }
+  
+  .section-stages-video-cassette {
+    margin-right: -212px;
+  }
+
+  /* SECTION PRICES */
+
+  .section-prices-lists-container > div:nth-child(-n+2)::after {
+      left: -190px;
+    
+      width: 94vw;
+    }
+
+  /* SECTION REVIEWS */
+
+  .section-reviews {
+    height: 880px;
+  }
+
+  .section-reviews-upper-part-left-container {
+    top: 766px;
+  }
+
+  .section-reviews-header-1 {
+    margin-left: 34px;
+  }
+
+  .section-reviews-lower-part {
+    margin-top: 60px;
+  }
+
+  .section-reviews-review {
+    padding-left: 32px;
+    padding-right: 33px;
+    padding-top: 20px;
+
+    width: 316px;
+    height: 410px;
+  }
+
+  .section-reviews-review-text {
+    margin-top: 28px;
+
+    width: 251px;
+  }
+
+  .section-reviews-review-site-logo {
+    right: 33px;
+  }
+
+  .section-reviews-scroll-buttons-container {
+    bottom: 82px;
+  }
+
+  /* SECTION COMMUNICATION */
+
+  .section-communication-left-container {
+    min-width: 285px;
+  }
+
+  .section-communication-right-container {
+    margin-left: 30px;
+    margin-right: auto;
+  }
+
+  .section-communication-form-upper-container {
+    flex-direction: column;
+  
+    margin-bottom: 0;
+  }
+
+  .section-communication-fieldset-name {
+    min-width: 300px;
+  }
+  
+  .section-communication-fieldset-phone {
+    min-width: 300px;
+  }
+  
+  .section-communication-form-lower-container {
+    margin-top: 31px;
+  }
+  
+  .section-communication-form-agreement-container {
+    max-width: 300px;
+  }
+  
+  .section-communication-form-agreement-label {
+    min-width: 270px;
+  }
+
+  /* FOOTER */
+
+  .footer-central-container-a {
+    transform: translateX(-183px);
+  }
+}

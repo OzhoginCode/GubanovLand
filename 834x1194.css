@@ -3,6 +3,8 @@
     max-width: 834px;
   }
 
+  /* HEADER */
+
   .head {
     height: 110px;
 
@@ -137,6 +139,8 @@
     padding: 0;
     margin-left: auto;
     margin-right: auto;
+
+    width: unset;
   }
   
   .section-main-text {
@@ -174,8 +178,9 @@
     position: absolute;
   
     top: 973px;
-    left: 171px;
-
+    left: 50%;
+    transform: translateX(-50%);
+    
     margin: 0;
   }
   
@@ -288,12 +293,15 @@
 
     width: 800px;
     height: unset;
+    width: unset;
 
     letter-spacing: normal;
   }
 
   .section-playlists-right-header-1 {
-    text-indent: 418px;
+    text-indent: unset;
+    margin-left: auto;
+    margin-right: 43px;
   }
 
   .section-playlists-right-images {
@@ -303,8 +311,9 @@
   .section-playlists-right-text {
     left: 427px;
     top: 336px;
+    right: 43px;
 
-    width: 364px;
+    width: unset;
 
     font: var(--font-14m);
   }
@@ -321,6 +330,15 @@
   
   .sections-works-header {
     margin-left: 45px;
+    margin-right: 51px;
+  }
+
+  .sections-works-header-1 {
+    margin-left: auto;
+  }
+  
+  .sections-works-header-2 {
+    margin-left: auto;
   }
 
   .section-works-upper-right-text {
@@ -353,7 +371,6 @@
   
   .section-stages {
     height: 1220px;
-    /* background: linear-gradient(to bottom, var(--dark-grey-background) 80%, var(--main-background) 130%); */
   }
   
   .sections-stages-header {
@@ -497,7 +514,7 @@
   }
   
   .section-communication-right-container {
-    margin-top: 140px;
+    margin-top: 124px;
     margin-right: 48px;
 
     max-width: 364px;
