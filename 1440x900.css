@@ -255,6 +255,10 @@
   .sections-works-header-2 {
     margin-left: 200px;
   }
+
+  .sections-works-header-3 {
+    word-spacing: 13px;
+  }
   
   .sections-works-header-inside {
     width: 61px;

@@ -1,0 +1,446 @@
+@media (max-width: 699px) {
+  .sections-container {
+    max-width: 580px;
+  }
+
+  /* SECTION MAIN */
+
+  .section-main-text {
+    width: 424px;
+  }
+
+  .section-main-lower-text-span {
+    width: 130px;
+
+    hyphens: auto;
+    word-wrap: break-word;
+
+    font: var(--font-16r);
+    transform: translate(220px, 58px);
+  }
+  
+  /* SECTION ABOUT */
+
+  .section-about {
+    height: 1545px;
+  }
+
+  .section-about-main {
+    flex-direction: column-reverse;
+  }
+
+  .left-photos-section-about {
+    margin-top: 60px;
+    margin-left: 0;
+
+    width: unset;
+  }
+
+  .info-block-photo-2 {
+    width: 580px;
+    height: 337px;
+  }
+
+  .main-text-right-section-about {
+    margin-top: 516px;
+    margin-left: 166px;
+  }
+  
+  .lower-right-section-about {
+    position: absolute;
+  }
+
+  .info-block-arrow {
+    display: none;
+  }
+
+  .lower-right-section-about-text {
+    position: absolute;
+    top: 362px;
+    left: 316px;
+
+    margin: 0;
+
+    width: 160px;
+
+    font: var(--font-h17-20r);
+  }
+
+  .info-block-image-goldenrec {
+    top: 218px;
+    left: 108px;
+  }
+
+  .info-block-image-Ivan {
+    top: 100px;
+    left: 236px;
+  }
+
+  /* SECTION PLAYLISTS */
+
+  .section-playlists {
+    height: 1032px;
+  }
+
+  .sections-playlists-video {
+    margin-top: 40px;
+  }
+
+  .section-playlists-right-header-1 {
+    margin-left: 0;
+    margin-right: unset;
+  }
+
+  .section-playlists-right-header-2 {
+    line-height: 1.5;
+  }
+
+  .section-playlists-right-text {
+    left: 44px;
+    top: 792px;
+
+    width: 492px;
+  }
+
+  /* SECTION WORKS */
+
+  .section-works {
+    height: 2338px;
+  }
+
+  .section-works-upper {
+    height: 480px;
+  }
+
+  .sections-works-header {
+    margin-top: 88px;
+    margin-right: unset;
+  }
+
+  .sections-works-header-1 {
+    margin-left: 0;
+  }
+
+  .sections-works-header-2 {
+    margin-left: 0;
+  }
+
+  .sections-works-header-inside {
+    display: block;
+    position: absolute;
+
+    margin-top: 132px;
+
+    width: inherit;
+    height: unset;
+
+    font: inherit;
+    text-transform: uppercase;
+  }
+
+  .sections-works-header-3 {
+    margin-top: 68px;
+  }
+  
+  .section-works-audio-cards-container {
+    top: 480px;
+
+    flex-direction: column;
+
+    width: 100%;
+
+    overflow-x: hidden;
+  }
+
+  .section-works-audio-cards-container::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .section-works-audio-card {
+    margin-left: 44px;
+    margin-right: 44px;
+    margin-bottom: 20px;
+
+    padding: 0;
+
+    width: 236px;
+    height: 236px;
+
+    border-radius: 2px;
+    border: none;
+    background: var(--light-grey);
+
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+  .section-works-audio-card-head {
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .section-works-audio-card-img {
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 2px;
+    background: none;
+  }
+
+  .section-works-audio-card-head-title-container {
+    display: none;
+  }
+
+  .section-works-audio-card-head-artist-name {
+    display: none;
+  }
+
+  .section-works-audio-card-site-container {
+    display: none;
+  }
+
+  .section-works-audio-card-site-img {
+    display: none;
+  }
+
+  .section-works-audio-card-controls {
+    position: absolute;
+
+    bottom: 12px;
+    left: 12px;
+
+    width: 100%;
+    height: 32px;
+
+    align-self: center;
+
+    z-index: 10;
+  }
+
+  .section-works-audio-card-controls-backward {
+    display: none;
+  }
+
+  .section-works-audio-card-controls-forward {
+    display: none;
+  }
+
+  .section-works-audio-card-progress-bar-container {
+    position: absolute;
+    display: flex;
+    align-self: center;
+
+    bottom: 0;
+
+    width: 100%;
+    height: 6px;
+
+    border-radius: unset;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .section-works-audio-card-progress-bar-container::before {
+    display: none;
+  }
+
+  .section-works-audio-card-progress-bar-container:hover::before {
+    opacity: 1;
+  }
+
+  .section-works-audio-card-progress-bar {
+    height: 6px;
+
+    border-radius: unset;
+  }
+
+  .section-works-audio-card-progress-bar-circle {
+    display: none;
+  }
+
+  .section-works-audio-card-time-container {
+    display: none;
+  }
+
+  .section-works-audio-card-before-after {
+    display: none;
+  }
+
+  .section-works-audio-card-progress-bar-vertical-line {
+    display: none;
+  }
+
+  .card-1 {
+    order: 3;
+    width: 492px;
+  }
+
+  .card-2 {
+    order: 2;
+
+    margin-left: auto;
+  }
+
+  .card-3 {
+    order: 1;
+  }
+
+  .card-4 {
+    order: 6;
+
+    transform: translate(256px, -256px);
+    height: 498px;
+  }
+
+  .card-5 {
+    order: 4;
+  }
+
+  .card-6 {
+    order: 5;
+  }
+
+  .fixer {
+    display: none;
+  }
+
+  .fixer2 {
+    display: none;
+  }
+
+  .section-works-scroll-buttons-container {
+    display: none;
+  }
+
+  .section-works-audio-card-controls-button:hover object rect,
+  .section-works-audio-card-controls-button:hover object path,
+  .section-works-audio-card-controls-button:hover rect,
+  .section-works-audio-card-controls-button:hover path{
+    fill: var(--white-1);
+  }
+
+  .section-works-audio-card-controls-button:hover circle{
+    fill-opacity: 0.6;
+  }
+  
+  .section-works-lower-text-container {
+    flex-direction: column-reverse;
+
+    left: 392px;
+    bottom: 108px;
+
+    font: var(--font-18-rr);
+  }
+
+  .section-works-lower-text-container > div {
+    margin-top: 24px;
+  }
+
+  .section-works-lower-text-line {
+    margin-top: -3px;
+    transform: scaleX(1.22);
+    margin-left: 6px;
+  }
+
+  /* SECTION PRICES */
+
+  .section-prices-lists-container > div:nth-child(-n+2)::after {
+    left: -144px;
+  
+    width: 94vw;
+  }
+
+  /* SECTION REVIEWS */
+
+  .section-reviews {
+    height: 1008px;
+  }
+
+  .section-reviews-upper-part-left-container {
+    top: 880px;
+  }
+
+  .section-reviews-header {
+    width: 488px;
+    height: 316px;
+  }
+
+  .section-reviews-header-1 {
+    margin-left: 0;
+  }
+
+  /* SECTION COMMUNICATION */
+
+  .section-communication {
+    height: 969px;
+  }
+
+  .section-communication-container {
+    position: relative;
+
+    flex-direction: column;
+  }
+
+  .section-communication-a-container {
+    position: absolute;
+    top: 832px;
+
+    margin-top: unset;
+  }
+
+  .section-communication-left-container {
+    margin-top: 100px;
+
+    min-width: 285px;
+  }
+
+  .section-communication-right-container {
+    margin-left: 45px;
+    margin-top: 62px;
+
+    max-width: unset;
+  }
+
+  .section-communication-fieldset-name {
+    min-width: 491px;
+  }
+  
+  .section-communication-fieldset-phone {
+    min-width: 491px;
+  }
+  
+  .section-communication-form-lower-container {
+    margin-top: 31px;
+
+    align-items: unset;
+  }
+  
+  .section-communication-form-agreement-container {
+    max-width: 491px;
+    text-align: unset;
+  }
+  
+  .section-communication-form-agreement-label {
+    min-width: 405px;
+  }
+
+  .section-communication-form-button {
+    min-width: 491px;
+  }
+
+  /* FOOTER */
+
+  .footer-central-container-a {
+    transform: translateX(-240px);
+  }
+
+  .footer-central-container {
+    width: 0;
+  }
+}

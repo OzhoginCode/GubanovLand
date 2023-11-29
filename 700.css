@@ -55,6 +55,10 @@
 
   /* SECTION ABOUT */
 
+  .section-about {
+    height: 1436px;
+  }
+
   .left-photos-section-about {
     margin-left: -195px;
   }
@@ -79,10 +83,10 @@
   /* SECTION PRICES */
 
   .section-prices-lists-container > div:nth-child(-n+2)::after {
-      left: -190px;
-    
-      width: 94vw;
-    }
+    left: -190px;
+  
+    width: 94vw;
+  }
 
   /* SECTION REVIEWS */
 

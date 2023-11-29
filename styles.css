@@ -726,6 +726,7 @@ html {
 
   border-radius: 10px;
   background: lightgray 50% / cover no-repeat;
+  user-select: none;
 }
 
 .section-works-audio-card-head-title-container {
@@ -783,6 +784,8 @@ html {
   border: 0;
 
   background-color: unset;
+
+  cursor: pointer;
 }
 
 .section-works-audio-card-progress-bar-container {
@@ -797,6 +800,8 @@ html {
 
   border-radius: 3.334px;
   background: var(--light-grey);
+
+  cursor: pointer;
 }
 
 .section-works-audio-card-progress-bar-container::before {
@@ -831,6 +836,7 @@ html {
   height: 16px;
 
   z-index: 20;
+  cursor: pointer;
 }
 
 .section-works-audio-card-time-container {
