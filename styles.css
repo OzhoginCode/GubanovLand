@@ -1222,7 +1222,6 @@ html {
 
   color: var(--light-grey);
   font: var(--font-12m);
-
 }
 
 .section-prices-warning-hover-text {
@@ -1790,6 +1789,7 @@ html {
   min-width: 236px;
 
   text-decoration: none;
+  cursor: pointer;
 }
 
 .main-button {

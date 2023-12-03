@@ -1,0 +1,589 @@
+@font-face {
+  font-family: 'VoronovFont';
+  src: url('./fonts/VoronovFont/Voronov.ttf') format('truetype');
+}
+
+:root {
+  --font-h1-112b: 700 112px/116px 'Noto Sans', sans-serif;
+  --font-h2-100b: 700 100px/116px 'Noto Sans', sans-serif;
+  --font-h3-88b: 600 88px/92px 'Noto Sans', sans-serif;
+  --font-h4-88b: 700 88px/92px 'Noto Sans', sans-serif;
+  --font-h5-56bl: 700 56px/64px 'Noto Sans', sans-serif;
+  --font-h5-56m: 400 56px/64px 'Noto Sans', sans-serif;
+  --font-h6-48b: 600 48px/56px 'Noto Sans', sans-serif;
+  --font-h6-48m: 500 48px/64px 'Noto Sans', sans-serif;
+  --font-40m: 400 40px/48px 'Roboto', sans-serif;
+  --font-40l: 200 40px/44px 'Roboto Flex', sans-serif;
+  --font-h7-32r: 400 32px/40px 'VoronovFont', sans-serif;
+  --font-28bb: 500 28px/120% 'Roboto', sans-serif;
+  --font-28l: 300 28px/30px 'Roboto', sans-serif;
+  --font-h8-28r: 400 28px/32px 'VoronovFont', sans-serif;
+  --font-h9-28l: 300 28px/38px 'Noto Sans', sans-serif;
+  --font-24m: 400 24px/28px 'Roboto', sans-serif;
+  --font-24r: 400 24px/28px 'Roboto', sans-serif;
+  --font-22r: 300 22px/28px 'Roboto', sans-serif;
+  --font-20r: 300 20px/20px 'Roboto', sans-serif;
+  --font-20rr: 300 20px/20px 'Roboto', sans-serif;
+  --font-18r: 300 18px/22px 'Roboto', sans-serif;
+  --font-18m: 500 18px/120% 'Roboto', sans-serif;
+  --font-16r: 300 16px/20px 'Roboto', sans-serif;
+  --font-16rr: 300 16px/24px 'Roboto', sans-serif;
+  --font-16m: 400 16px/20px 'Roboto', sans-serif;
+  --font-16s: 600 16px/20px 'Roboto Flex', sans-serif;
+  --font-14r: 400 14px/18px 'Roboto', sans-serif;
+  --font-12m: 500 12px/150% 'Roboto', sans-serif;
+  --font-12r: 300 12px/18px 'Roboto', sans-serif;
+  --font-h10-12r: 400 12px/18px 'Noto Sans', sans-serif;
+
+  /* 1440px */
+  --font-h11-72s: 600 72px/92px 'Noto Sans', sans-serif;
+  --font-h12-48b: 700 48px/60px 'Noto Sans', sans-serif;
+  --font-h13-48r: 400 48px/60px 'Noto Sans', sans-serif;
+  --font-h13-48r-letter-spacing: 1px;
+  --font-24bb: 700 24px/28px 'Roboto', sans-serif;
+  --font-20m: 500 20px/24px 'Roboto', sans-serif;
+  --font-14rr: 400 14px/20px 'Roboto', sans-serif;
+  --font-14m: 500 14px/18px 'Roboto', sans-serif;
+  --font-h14-12r: 400 12px/18px 'Noto Sans', sans-serif;
+
+  /* 360px */
+  --font-h15-53s: 600 53px/62px 'Noto Sans', sans-serif;
+  --font-h18-32b: 700 32px/36px 'Noto Sans', sans-serif;
+  --font-h18-32s: 600 32px/36px 'Noto Sans', sans-serif;
+  --font-h19-30s: 600 30px/36px 'Noto Sans', sans-serif;
+  --font-h17-20r: 400 20px/24px 'VoronovFont', sans-serif;
+  --font-18-rr: 400 18px/24px 'Roboto', sans-serif;
+  --font-h16-14r: 400 14px/18px 'Noto Sans', sans-serif;
+}
+
+
+@media (max-width: 579px) {
+  .sections-container {
+    max-width: 360px;
+  }
+
+  /* HEADER */
+
+  .head {
+    height: 76px;
+  }
+
+  .logo-header {
+    margin-left: 22px;
+  
+    max-width: 36px;
+  }
+
+  .logo-name-header {
+    display: none;
+  }
+
+  .header-menu-button {
+    margin-right: 22px;
+  }
+
+  /* SECTION MAIN */
+
+  .section-main {
+    height: 992px;
+  }
+
+  .section-main-left {
+    margin-left: 22px;
+  }
+  
+  .section-main-text {
+    margin-top: 89px;
+    
+    height: unset;
+    width: unset;
+  }
+
+  .h1 {
+    height: 58px;
+
+    font: var(--font-h15-53s);
+  }
+
+  .h2 {
+    font: var(--font-h15-53s);
+    width: unset;
+  }
+
+  .section-main-lower-text-div {
+    text-indent: 192px;
+  }
+
+  .section-main-lower-text-span {
+    width: 113px;
+
+    transform: translate(147px, 42px);
+
+    font: var(--font-h16-14r);
+  }
+  
+  .section-main-header-circles {
+    left: -74px;
+    top: 29px;
+  }
+  
+  .section-main-buttons {
+    top: 769px;
+
+    flex-direction: column;
+  }
+
+  .section-main-button-2 {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+
+  .section-main-right {
+    margin-right: 22px;
+  }
+  
+  .section-main-video {
+    margin-top: 40px;
+  
+    width: 316px;
+  }
+  
+  .section-main-right-text {
+    margin-top: 26px;
+    margin-right: 104px;
+  }
+  
+  .section-main-arrow {
+    top: 379px;
+    right: 109px;
+  }
+
+  /* SECTION ABOUT */
+  
+  .section-about {
+    height: 1255px;
+  }
+
+  .left-photos-section-about {
+    margin-top: 48px;
+  }
+
+  .info-block-photo-2 {
+    width: 360px;
+    height: 337px;
+  }
+
+  .main-text-right-section-about {
+    margin-top: 448px;
+    margin-left: 22px;
+    margin-right: 22px;
+
+    font: var(--font-14r);
+  }
+
+  .main-text-right-section-about-1 {
+    width: 316px;
+  }
+
+  .main-text-right-section-about-2 {
+    width: 316px;
+  }
+
+  .lower-right-section-about-text {
+    top: 310px;
+    left: 178px;
+  }
+
+  .info-block-image-goldenrec {
+    top: 164px;
+    left: -32px;
+  }
+
+  .text-indent-193 {
+    text-indent: 0;
+  }
+
+  .text-indent-86 {
+    text-indent: 0;
+  }
+  
+  .info-block-image-Ivan {
+    top: 46px;
+    left: 102px;
+  }
+
+  /* SECTION PLAYLISTS */
+  
+  .section-playlists {
+    height: 871px;
+  }
+
+  .section-playlists-video-div {
+    min-width: 316px;
+  }
+
+  .sections-playlists-video {
+    margin-left: 22px;
+
+    width: 316px;
+    height: 324px;
+  }
+
+  .section-playlists-right-header {
+    margin-left: 22px;
+    margin-top: 24.35px;
+    
+    font: var(--font-h18-32b);
+  }
+
+  .section-playlists-right-text {
+    left: 22px;
+    top: 595px;
+  
+    width: 323px;
+    hyphens: auto;
+  }
+
+  /* SECTION WORKS */
+
+  .section-works {
+    height: 1559px;
+  }
+
+  .section-works-upper {
+    height: 332px;
+  }
+
+  .sections-works-header {
+    margin-top: 48px;
+    margin-left: 22px;
+
+    font: var(--font-h18-32s);
+  }
+
+  .sections-works-header-inside {
+    margin-top: 92px;
+  }
+
+  .sections-works-header-3 {
+    margin-top: 46px;
+
+    line-height: 1.43;
+  }
+  
+  .section-works-audio-cards-container {
+    top: 308px;
+  }
+
+  .section-works-audio-card {
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-bottom: 8px;
+
+    width: 154px;
+    height: 154px;
+  }
+
+  .section-works-audio-card-controls {
+    bottom: 8px;
+    left: 8px;
+
+    height: 30px;
+  }
+
+  .section-works-audio-card-progress-bar-container {
+    height: 4px;
+  }
+
+  .section-works-audio-card-progress-bar {
+    height: 4px;
+  }
+
+  .card-1 {
+    width: 316px;
+  }
+
+  .card-2 {
+    margin-left: auto;
+  }
+
+  .card-4 {
+    transform: translate(162px, -162px);
+    height: 320px;
+  }
+
+  .section-works-lower-text-container {
+    left: 184px;
+    bottom: 49px;
+  }
+
+  /* SECTION STAGES */
+
+  .section-stages {
+    height: 1341px;
+  }
+
+  .sections-stages-header {
+    margin-top: 60px;
+    margin-left: 22px;
+
+    width: 333px;
+    height: 196px;
+    
+    gap: 0px;
+
+    font: var(--font-h18-32s);
+    line-height: 1.4;
+    letter-spacing: 0;
+  }
+
+  .section-stages-lower-container ul {
+    margin-left: 54px;
+    margin-top: 60px;
+
+    width: 252px;
+    height: 640px;
+  }
+
+  .section-stages-lower-container ul li {
+    position: relative;
+    
+    height: 132px;
+  }
+
+  .section-stages-lower-container ul li:not(:first-of-type) {
+    margin-top: 8px;
+  }
+
+  .section-stages-lower-container-ul-li-img {
+    position: absolute;
+    top: -6px;
+    left: -21px;
+
+    margin: 0;
+
+    width: 80px;
+
+    transform: rotate(90deg);
+  }
+
+  .section-stages-lower-container li:first-of-type
+  .section-stages-lower-container-ul-li-img {
+    display: none;
+  }
+
+  .section-stages-ul-description {
+    position: absolute;
+
+    top: 89px;
+    left: 70px;
+  }
+
+  .section-stages-ul-numbers {
+    margin-right: 16px;
+  }
+
+  .section-stages-ul-a {
+    margin-top: 7px;
+
+    width: 173px;
+
+    text-decoration: none;
+  }
+
+  .section-stages-ul-a-img {
+    margin-left: 8px;
+  }
+
+  .section-stages-video-cassette {
+    margin-top: 0px;
+    margin-right: -144px;
+
+    width: 310px;
+    height: 491px;
+  }
+
+  /* SECTION PRICES */
+
+  .section-prices-lists-container > div:nth-child(-n+2)::after {
+    left: 0;
+
+    width: 316px;
+  }
+
+  .section-prices-list-container {
+    box-sizing: border-box;
+    padding-left: 40px;
+  }
+
+  .section-prices-button {
+    margin-left: -40px;
+  }
+
+  .section-prices-warning-hover-text {
+    top: -64px;
+    left: -12px;
+  
+    padding: 8px 12px;
+  
+    width: 290px;
+    height: 72px;
+  }
+
+  /* SECTION REVIEWS */
+
+  .section-reviews {
+    height: 980px;
+  }
+
+  .section-reviews-upper-part {
+    margin-top: 60px;
+  }
+
+  .section-reviews-upper-part-left-container {
+    top: 840px;
+  }
+
+  .section-reviews-quotes-img {
+    margin-left: 41px;
+  }
+
+  .section-reviews-header {
+    width: 316px;
+    height: 196px;
+
+    margin-left: 22px;
+
+    gap: 4px;
+
+    font: var(--font-h18-32s);
+  }
+
+  .section-reviews-reviews-container {
+    padding-left: 22px;
+  }
+
+  .section-reviews-scroll-buttons-container {
+    right: 22px;
+    bottom: 198px;
+  }
+
+  .scroll-button-left {
+    margin-right: 236px;
+  }
+
+  /* SECTION COMMUNICATION */
+
+  .section-communication {
+    height: 965px;
+  }
+
+  .section-communication-a-container {
+    top: 857px;
+  }
+
+  .section-communication-left-container {
+    margin-left: 22px;
+  }
+
+  .section-communication-right-container {
+    margin-left: 22px;
+  }
+
+  .section-communication-fieldset-name {
+    min-width: 316px;
+  }
+  
+  .section-communication-fieldset-phone {
+    min-width: 316px;
+  }
+  
+  .section-communication-form-lower-container {
+    margin-top: 24px;
+  }
+  
+  .section-communication-form-agreement-container {
+    max-width: 316px;
+  }
+  
+  .section-communication-form-agreement-label {
+    min-width: 280px;
+  }
+
+  .section-communication-form-button {
+    margin-left: unset;
+    margin-top: 44px;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    height: 537px;
+  }
+
+  .footer-container {
+    position: relative;
+
+    padding: 39px 22px 58px;
+  }
+
+  .footer-left-container-adress {
+    margin-top: 85px;
+  }
+
+  .footer-left-container-copyright {
+    position: absolute;
+    top: 409px;
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
+
+  .footer-central-container-a {
+    margin-top: 373px;
+    
+    transform: translateX(-200px);
+  }
+
+  .footer-central-container {
+    width: 0;
+  }
+
+  .footer-right-container {
+    width: 0;
+  }
+
+  .footer-right-container-phone {
+    position: absolute;
+
+    left: 22px;
+    top: 105px;
+
+    margin: 0;
+  }
+
+  .footer-right-container-mail {
+    position: absolute;
+
+    left: 22px;
+    top: 137px;
+
+    margin: 0;
+  }
+
+  .footer-right-container-img-container {
+    position: absolute;
+    top: 293px;
+    left: 22px;
+    right: 22px;
+
+    margin-top: auto;
+  }
+
+  /* <<<<< UI-Kit >>>>> */
+
+  .large-button {
+    width: 316px;
+    min-width: 316px;
+  }
+}

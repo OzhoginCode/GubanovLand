@@ -1,4 +1,4 @@
-@media (max-width: 1099px) {
+@media (max-width: 833px) {
   .sections-container {
     max-width: 700px;
   }
@@ -127,6 +127,10 @@
 
   .section-reviews-scroll-buttons-container {
     bottom: 82px;
+  }
+
+  .fixer2 {
+    transform: translateX(660px);
   }
 
   /* SECTION COMMUNICATION */

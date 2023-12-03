@@ -24,13 +24,14 @@ window.addEventListener('touchmove', scrollElements);
 const sectionReviewsContainer = document.getElementById('section-reviews-reviews-container');
 const sectionReviewsScrollButtonLeft = document.getElementById('sectionReviewsScrollButtonLeft');
 const sectionReviewsScrollButtonRight = document.getElementById('sectionReviewsScrollButtonRight');
+let offsetWidth;
 
 sectionReviewsScrollButtonLeft.addEventListener('click', () => {
-  sectionReviewsContainer.scrollLeft -= sectionReviewsContainer.offsetWidth;
+  sectionReviewsContainer.scrollLeft -= offsetWidth;
 });
 
 sectionReviewsScrollButtonRight.addEventListener('click', () => {
-  sectionReviewsContainer.scrollLeft += sectionReviewsContainer.offsetWidth;
+  sectionReviewsContainer.scrollLeft += offsetWidth;
 });
 
 sectionReviewsContainer.addEventListener('scroll', () => {
@@ -54,6 +55,15 @@ sectionReviewsContainer.addEventListener('scroll', () => {
     sectionReviewsScrollButtonLeft.classList.add(classEnabledName);
   }
 });
+
+const checkViewportSizeForReviews = () => {
+  const isViewportBig = window.innerWidth > 833;
+
+  offsetWidth = isViewportBig ? 640 : 336;
+};
+
+window.addEventListener('load', checkViewportSizeForReviews);
+window.addEventListener('resize', checkViewportSizeForReviews);
 
 const sectionWorksContainer = document.getElementById('section-works-audio-cards-container');
 const sectionWorksScrollButtonLeft = document.getElementById('sectionWorksScrollButtonLeft');
