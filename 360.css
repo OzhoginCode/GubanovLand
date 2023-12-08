@@ -82,6 +82,44 @@
     margin-right: 22px;
   }
 
+  .header-menu-opened .header-menu-line {
+    left: 22px;
+    right: 22px;
+    top: 80px;
+
+    width: calc(100% - 44px);
+  }
+
+  .logo-header {
+    margin-left: 22px;
+  }
+
+  .header-menu-opened .div-logo {
+    height: 76px;
+  }
+
+  .header-menu-opened .logo-name-header {
+    display: block;
+
+    transform: translateY(2px);
+  }
+
+  .header-menu-opened .header-menu-button {
+    top: 28px;
+    right: 0;
+
+    margin-left: 25.32px;
+  }
+
+  .header-menu-opened .nav {
+    top: 24.39%;
+    transform: unset;
+  }
+
+  .header-menu-opened .nav-ul li {
+    margin-bottom: 32px;
+  }
+
   /* SECTION MAIN */
 
   .section-main {

@@ -35,6 +35,8 @@
     right: 43px;
     top: 108px;
     width: calc(100% - 86px);
+
+    transform: rotateY(180deg);
   }
 
   .logo-header {
@@ -260,6 +262,12 @@
   .lower-right-section-about-text {
     margin-top: 179px;
     margin-left: 23px;
+
+    width: 217px;
+  }
+
+  .lower-right-section-about-images {
+    margin-left: auto;
   }
 
   .info-block-image-goldenrec {
@@ -548,6 +556,8 @@
     height: 54px;
 
     text-align: justify;
+
+    margin-right: unset;
   }
   
   .section-communication-form-agreement-label {

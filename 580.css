@@ -3,6 +3,31 @@
     max-width: 580px;
   }
 
+  /* HEADER */
+  .header-menu-opened .div-button-block {
+    margin-left: unset;
+
+    width: 316px;
+
+    bottom: 136px;
+    right: 50%;
+
+    transform: translateX(50%);
+  }
+
+  .right-button-header {
+    width: 316px;
+  }
+  
+  .header-menu-opened .header-right-container-img-container {
+    bottom: 48px;
+    left: 50%;
+    
+    width: 316px;
+
+    transform: translateX(-50%);
+  }
+
   /* SECTION MAIN */
 
   .section-main-text {
@@ -14,6 +39,7 @@
 
     hyphens: auto;
     word-wrap: break-word;
+    overflow-wrap: break-word;
 
     font: var(--font-16r);
     transform: translate(220px, 58px);

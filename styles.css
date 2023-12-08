@@ -371,6 +371,8 @@ html {
 .right-section-about {
   display: flex;
   flex-direction: column;
+
+  width: 100%;
 }
 
 .main-text-right-section-about {
@@ -424,6 +426,7 @@ html {
   display: flex;
 
   height: 100%;
+  width: 100%;
 }
 
 .info-block-arrow {
@@ -1069,6 +1072,7 @@ html {
   height: 1198px;
 
   position: relative;
+  overflow: hidden;
 }
 
 .section-prices-header-container {

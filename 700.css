@@ -68,6 +68,14 @@
     margin-right: 62px;
   }
 
+  .lower-right-section-about {
+    width: unset;
+  }
+
+  .lower-right-section-about-images {
+    margin-left: unset;
+  }
+
   /* SECTION STAGES */
 
   .section-stages-lower-container ul {

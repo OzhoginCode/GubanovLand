@@ -152,3 +152,13 @@ carouselContainer.addEventListener('scroll', () => {
     rightmostCard.style.transform = `translateX(${(cardWidth * carouselCount * (positionSet + 1)) - cardWidth * carouselCount}px)`;
   }
 });
+
+const warningElements = document.querySelectorAll('.section-prices-warning-hover-text');
+
+warningElements.forEach((element) => {
+  const rect = element.getBoundingClientRect();
+  if (rect.right > window.innerWidth - 25) {
+    // eslint-disable-next-line no-param-reassign
+    element.style.left = `${rect.right - window.innerWidth - 300}px`;
+  }
+});
