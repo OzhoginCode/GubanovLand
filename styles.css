@@ -29,6 +29,10 @@ html {
   /* overflow-x: hidden; */
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .sections-container {
   max-width: 1920px;
   height: 100%;
