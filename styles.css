@@ -195,8 +195,6 @@ html {
   height: 184px;
 
   z-index: 10;
-
-  user-select: none;
 }
 
 .h1 {
