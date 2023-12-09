@@ -115,6 +115,10 @@
     top: 24.39%;
     transform: unset;
   }
+  
+  .header-menu-opened .nav-ul {
+    font: var(--font-h20-22r);
+  }
 
   .header-menu-opened .nav-ul li {
     margin-bottom: 32px;
