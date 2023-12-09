@@ -286,6 +286,10 @@
     margin-top: 80px;
   }
   
+  .section-reviews-reviews-container {
+    padding-left: 48px;
+  }
+
   .section-reviews-scroll-buttons-container {
     right: 48px;
     bottom: 144px;

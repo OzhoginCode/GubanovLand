@@ -195,6 +195,8 @@ html {
   height: 184px;
 
   z-index: 10;
+
+  user-select: none;
 }
 
 .h1 {
@@ -242,6 +244,8 @@ html {
   display: flex;
 
   margin-top: 142px;
+
+  user-select: none;
 }
 
 .section-main-button-2 {
@@ -280,6 +284,7 @@ html {
 
   color: var(--white-1);
   font: var(--font-h8-28r);
+  user-select: none;
 }
 
 .section-main-right-text-2 {
@@ -323,6 +328,7 @@ html {
   overflow-y: hidden;
 
   font: var(--font-h1-112b);
+  user-select: none;
 }
 
 .section-about-scrolling-text-upper {
@@ -450,6 +456,7 @@ html {
 
   color: var(--white-1);
   font: var(--font-h7-32r);
+  user-select: none;
 }
 
 .lower-right-section-about-images {
@@ -627,12 +634,12 @@ html {
   -webkit-text-stroke: 1px var(--white-2);
   font: var(--font-h5-56m);
   letter-spacing: 2px;
+  user-select: none;
 }
 
 .sections-works-header-1 {
   margin-left: 600px;
 }
-
 
 .sections-works-header-2 {
   display: flex;
@@ -670,6 +677,7 @@ html {
   text-align: right;
   color: var(--white-1);
   font: var(--font-16rr);
+  user-select: none;
 }
 
 .section-works-line {
@@ -678,6 +686,7 @@ html {
   top: 373px;
 
   flex-shrink: 0;
+  user-select: none;
 }
 
 .section-works-audio-cards-container {
@@ -1095,6 +1104,7 @@ html {
   overflow-y: hidden;
 
   font: var(--font-h1-112b);
+  user-select: none;
 }
 
 .section-prices-header-scrolling-text-upper {
@@ -1274,6 +1284,8 @@ html {
 
 .section-prices-button {
   margin-top: 24px;
+
+  user-select: none;
 }
 
 /* SECTION REVIEWS */
@@ -1402,6 +1414,7 @@ html {
   display: flex;
 
   margin-top: 8px;
+  user-select: none;
 }
 
 .section-reviews-review-stars-container img {
@@ -1570,6 +1583,7 @@ html {
 
   color: var(--light-grey);
   font: var(--font-h10-12r);
+  user-select: none;
 }
 
 .section-communication-form-lower-container {
@@ -1634,6 +1648,8 @@ html {
 
 .section-communication-form-button {
   margin-left: auto;
+
+  user-select: none;
 }
 
 /* FOOTER */
