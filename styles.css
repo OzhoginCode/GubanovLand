@@ -238,6 +238,8 @@ html {
   left: 54px;
   /* left: 2.8125vw; */
   top: 218px;
+
+  user-select: none;
 }
 
 .section-main-buttons {
