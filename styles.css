@@ -73,14 +73,15 @@ html {
   display: flex;
   align-items: center;
 
+  margin-left: 202px;
+  
   height: 100%;
-  width: 100%;
+
+  text-decoration: none;
+  pointer-events: all;
 }
 
 .logo-header {
-  margin-left: 10.52083333vw;
-  /* margin-left: 202px; */
-
   max-width: 50px;
   height: auto;
 }
@@ -137,12 +138,10 @@ html {
   justify-content: end;
 
   height: 100%;
-  width: 100%;
 }
 
 .right-button-header {
-  /* margin-right: 202px; */
-  margin-right: 10.52083333vw;
+  margin-right: 202px;
 
   width: 182px;
 }

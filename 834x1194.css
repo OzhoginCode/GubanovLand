@@ -39,8 +39,9 @@
     transform: rotateY(180deg);
   }
 
-  .logo-header {
+  .div-logo {
     margin-left: 43px;
+    margin-right: auto;
   }
   
   .header-menu-opened .div-logo {
