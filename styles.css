@@ -900,7 +900,7 @@ html {
 }
 
 .fixer2 {
-  transform: translateX(700px);
+  transform: translateX(1000000px);
   height: 1px;
   min-width: 1px;
 }
@@ -1367,10 +1367,9 @@ html {
 
   padding-left: 202px;
 
-  overflow-x: hidden;
+  overflow-x: scroll;
 
   scroll-behavior: smooth;
-  overscroll-behavior: contain;
 }
 
 .section-reviews-reviews-container::-webkit-scrollbar {

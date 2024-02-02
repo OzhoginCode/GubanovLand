@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 const scrollingUpperTextSectionAbout = document.querySelector('.section-about-scrolling-text-upper');
 const scrollingLowerTextSectionAbout = document.querySelector('.section-about-scrolling-text-lower');
 
@@ -70,14 +71,14 @@ const sectionWorksScrollButtonLeft = document.getElementById('sectionWorksScroll
 const sectionWorksScrollButtonRight = document.getElementById('sectionWorksScrollButtonRight');
 
 const audioCard = document.querySelector('.section-works-audio-card');
-const cardWidth = audioCard.offsetWidth + 20;
+const audioCardWidth = audioCard.offsetWidth + 20;
 
 sectionWorksScrollButtonLeft.addEventListener('click', () => {
-  sectionWorksContainer.scrollLeft -= cardWidth;
+  sectionWorksContainer.scrollLeft -= audioCardWidth;
 });
 
 sectionWorksScrollButtonRight.addEventListener('click', () => {
-  sectionWorksContainer.scrollLeft += cardWidth;
+  sectionWorksContainer.scrollLeft += audioCardWidth;
 });
 
 sectionWorksContainer.addEventListener('scroll', () => {
@@ -103,55 +104,65 @@ sectionWorksContainer.addEventListener('scroll', () => {
 });
 
 // БЕСКОНЕЧНЫЙ СКРОЛЛ
-const carouselContainer = document.querySelector('.section-works-audio-cards-container');
-const carouselCards = Array.from(document.querySelectorAll('.section-works-audio-card'));
-const carouselCount = carouselCards.length;
-// const cardWidth = carouselCards[0].offsetWidth + 20;
-let currentPosition = 0;
-let previousPosition = 0;
-let positionSet = 0;
+const audioCardsContainer = document.querySelector('.section-works-audio-cards-container');
+const reviewsContainer = document.querySelector('.section-reviews-reviews-container');
+const carouselAudioCards = Array.from(document.querySelectorAll('.section-works-audio-card'));
+const carouselReviewsCards = Array.from(document.querySelectorAll('.section-reviews-review'));
 
-carouselContainer.addEventListener('scroll', () => {
-  const { scrollLeft } = carouselContainer;
-  previousPosition = currentPosition;
-  currentPosition = Math.floor(scrollLeft / cardWidth) - (carouselCount * positionSet);
+const applyInfiniteScroll = (carouselContainer, carouselCards) => {
+  const carouselCount = carouselCards.length;
+  const cardWidth = carouselCards[0].offsetWidth + 20;
 
-  const delta = currentPosition - previousPosition;
+  let currentPosition = 0;
+  let previousPosition = 0;
+  let positionSet = 0;
 
-  if (currentPosition > carouselCount) {
-    currentPosition -= carouselCount;
-    previousPosition -= carouselCount;
-    positionSet += 1;
-  }
+  carouselContainer.addEventListener('scroll', () => {
+    const { scrollLeft } = carouselContainer;
 
-  if (currentPosition < 0) {
-    currentPosition += carouselCount;
-    previousPosition += carouselCount;
-    positionSet -= 1;
-  }
+    previousPosition = currentPosition;
+    currentPosition = Math.floor(scrollLeft / cardWidth) - (carouselCount * positionSet);
 
-  if (delta > 0) {
-    if (currentPosition === 1 && positionSet === 0) return;
-    if (currentPosition === 1) {
-      const leftmostCard = carouselCards[carouselCount - 1];
-      leftmostCard.style.transform = `translateX(${cardWidth * carouselCount * (positionSet)}px)`;
-      return;
+    const delta = currentPosition - previousPosition;
+
+    if (currentPosition > carouselCount) {
+      currentPosition -= carouselCount;
+      previousPosition -= carouselCount;
+      positionSet += 1;
     }
-    const leftmostCard = carouselCards[currentPosition - 2];
-    leftmostCard.style.transform = `translateX(${cardWidth * carouselCount * (positionSet + 1)}px)`;
-  }
 
-  if (delta < 0) {
-    if (currentPosition === 0 && positionSet === 0) return;
-    if (currentPosition === 0) {
-      const rightmostCard = carouselCards[carouselCount - 1];
-      rightmostCard.style.transform = `translateX(${(cardWidth * carouselCount * (positionSet)) - cardWidth * carouselCount}px)`;
-      return;
+    if (currentPosition < 0) {
+      currentPosition += carouselCount;
+      previousPosition += carouselCount;
+      positionSet -= 1;
     }
-    const rightmostCard = carouselCards[currentPosition - 1];
-    rightmostCard.style.transform = `translateX(${(cardWidth * carouselCount * (positionSet + 1)) - cardWidth * carouselCount}px)`;
-  }
-});
+
+    if (delta > 0) {
+      if (currentPosition === 1 && positionSet === 0) return;
+      if (currentPosition === 1) {
+        const leftmostCard = carouselCards[carouselCount - 1];
+        leftmostCard.style.transform = `translateX(${cardWidth * carouselCount * (positionSet)}px)`;
+        return;
+      }
+      const leftmostCard = carouselCards[currentPosition - 2];
+      leftmostCard.style.transform = `translateX(${cardWidth * carouselCount * (positionSet + 1)}px)`;
+    }
+
+    if (delta < 0) {
+      if (currentPosition === 0 && positionSet === 0) return;
+      if (currentPosition === 0) {
+        const rightmostCard = carouselCards[carouselCount - 1];
+        rightmostCard.style.transform = `translateX(${(cardWidth * carouselCount * (positionSet)) - cardWidth * carouselCount}px)`;
+        return;
+      }
+      const rightmostCard = carouselCards[currentPosition - 1];
+      rightmostCard.style.transform = `translateX(${(cardWidth * carouselCount * (positionSet + 1)) - cardWidth * carouselCount}px)`;
+    }
+  });
+};
+
+applyInfiniteScroll(audioCardsContainer, carouselAudioCards);
+applyInfiniteScroll(reviewsContainer, carouselReviewsCards);
 
 const warningElements = document.querySelectorAll('.section-prices-warning-hover-text');
 
