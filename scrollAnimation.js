@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 const scrollingUpperTextSectionAbout = document.querySelector('.section-about-scrolling-text-upper');
 const scrollingLowerTextSectionAbout = document.querySelector('.section-about-scrolling-text-lower');
 
@@ -57,14 +56,14 @@ sectionReviewsContainer.addEventListener('scroll', () => {
   }
 });
 
-const checkViewportSizeForReviews = () => {
-  const isViewportBig = window.innerWidth > 833;
+const reviewCard = document.querySelector('.section-reviews-review');
 
-  offsetWidth = isViewportBig ? 640 : 336;
+const updateOffsetWidth = () => {
+  offsetWidth = reviewCard.offsetWidth + 20;
 };
 
-window.addEventListener('load', checkViewportSizeForReviews);
-window.addEventListener('resize', checkViewportSizeForReviews);
+window.addEventListener('load', updateOffsetWidth);
+window.addEventListener('resize', updateOffsetWidth);
 
 const sectionWorksContainer = document.getElementById('section-works-audio-cards-container');
 const sectionWorksScrollButtonLeft = document.getElementById('sectionWorksScrollButtonLeft');
