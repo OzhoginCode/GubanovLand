@@ -110,7 +110,7 @@ const carouselReviewsCards = Array.from(document.querySelectorAll('.section-revi
 
 const applyInfiniteScroll = (carouselContainer, carouselCards) => {
   const carouselCount = carouselCards.length;
-  const cardWidth = carouselCards[0].offsetWidth + 20;
+  let cardWidth = carouselCards[0].offsetWidth + 20;
 
   let currentPosition = 0;
   let previousPosition = 0;
@@ -158,6 +158,12 @@ const applyInfiniteScroll = (carouselContainer, carouselCards) => {
       rightmostCard.style.transform = `translateX(${(cardWidth * carouselCount * (positionSet + 1)) - cardWidth * carouselCount}px)`;
     }
   });
+  const updateCardWidth = () => {
+    cardWidth = carouselCards[0].offsetWidth + 20;
+  };
+
+  window.addEventListener('load', updateCardWidth);
+  window.addEventListener('resize', updateCardWidth);
 };
 
 applyInfiniteScroll(audioCardsContainer, carouselAudioCards);
