@@ -16,7 +16,7 @@ const toggleMenu = () => {
   menuButtonImg.src = isOpen ? openedMenuButtonImgSrc : closedMenuButtonImgSrc;
   document.body.classList.toggle('overflow-hidden');
   document.body.style.marginRight = `${isOpen ? scrollbarWidth : 0}px`;
-  header.style.marginRight = `${isOpen ? scrollbarWidth : 0}px`;
+  header.style.paddingRight = `${isOpen ? scrollbarWidth : 0}px`;
 };
 
 menuButton.addEventListener('click', toggleMenu);
