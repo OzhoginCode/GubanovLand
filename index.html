@@ -15,6 +15,7 @@
     <script defer src="scrollAnimation.js"></script>
     <script defer src="audio.js"></script>
     <script defer src="menu.js"></script>
+    <script defer src="modal-block.js"></script>
     <script defer src="autoPlayVideos.js"></script>
   </head>
   <body class="body">
@@ -38,7 +39,7 @@
         </ul>
       </nav>
       <div class="div-button-block">
-        <a href="#section-communication" class="right-button-header middle-button secondary-button">
+        <a class="right-button-header middle-button secondary-button" data-modal-type="submit-application">
           <span>Оставить заявку</span>
         </a>
       </div>
@@ -87,10 +88,10 @@
               </div>
             </div>
             <div class="section-main-buttons">
-              <a href="#section-communication" class="large-button main-button">
+              <a class="large-button main-button" data-modal-type="order-song">
                 <span>Заказать песню</span>
               </a>
-              <a href="#section-communication" class="large-button secondary-button section-main-button-2">
+              <a class="large-button secondary-button section-main-button-2" data-modal-type="try-for-free">
                 <span>Попробовать бесплатно</span>
               </a>
             </div>
@@ -558,7 +559,7 @@
                 <div class="section-stages-lower-container-ul-li-img"></div>
                 <div class="section-stages-ul-description">
                   Основа будущей песни 
-                  <a href="#section-communication" class="section-stages-ul-a text-button-2">
+                  <a class="section-stages-ul-a text-button-2" data-modal-type="try-for-free">
                     Попробуй бесплатно 
                     <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none" class="section-stages-ul-a-img">
                       <path d="M1 1.25L6 6.25L1.5 10.75" stroke="#FFCB5A" stroke-width="1.5" class="text-button-2-svg-path"/>
@@ -630,7 +631,7 @@
                   Работа начинается по предоплате в 5000 ₽. Остаток вы доплачиваете когда утвердите что вам все нравится.
                 </div>
               </div>
-              <a href="#section-communication" class="section-prices-button large-button main-button">
+              <a class="section-prices-button large-button main-button" data-modal-type="by-reference">
                 <span>Оставить заявку</span>
               </a>
             </div>
@@ -655,7 +656,7 @@
                   Работа начинается по предоплате в 5000 ₽. Остаток вы доплачиваете когда утвердите что вам все нравится.
                 </div>
               </div>
-              <a href="#section-communication" class="section-prices-button large-button main-button">
+              <a class="section-prices-button large-button main-button" data-modal-type="producing">
                 <span>Оставить заявку</span>
               </a>
             </div>
@@ -680,7 +681,7 @@
                   Работа начинается по предоплате в 5000 ₽. Остаток вы доплачиваете когда утвердите что вам все нравится.
                 </div>
               </div>
-              <a href="#section-communication" class="section-prices-button large-button main-button">
+              <a class="section-prices-button large-button main-button" data-modal-type="turnkey">
                 <span>Оставить заявку</span>
               </a>
             </div>
@@ -889,6 +890,46 @@
         </div>
       </section>
     </main>
+    <div class="modal">
+      <button class="modal-close-button">
+        <img src="./media/header-menu-button-opened.svg" alt="">
+      </button>
+      <div class="modal-upper">
+        <div class="header-container">
+          <h4 class="modal-header">ОСТАВИТЬ ЗАЯВКУ</h4>
+          <div class="modal-hashtag"></div>
+        </div>
+        <div class="modal-p-container">
+          <p class="modal-demo-p">Я набросаю демо-вариант будущей песни по твоей идее.</p>
+          <p class="modal-p">Оставь свои данные и я свяжусь с тобой для уточнения деталей</p>
+        </div>
+      </div>
+      <div class="modal-lower">
+        <form action="" class="modal-form">
+          <div class="modal-form-upper-container">
+            <fieldset class="modal-fieldset modal-fieldset-name">
+              <legend class="modal-form-legend">ИМЯ *</legend>
+              <label for="name"></label>
+              <input required autocomplete="given-name" name="name" id="name" type="text"></input>
+            </fieldset>
+            <fieldset class="modal-fieldset modal-fieldset-phone">
+              <legend class="modal-form-legend">ТЕЛЕФОН *</legend>
+              <label for="phone"></label>
+              <input required autocomplete ="tel" name="phone" id="phone" type="number"></input>
+            </fieldset>
+          </div>
+          <div class="modal-form-lower-container">
+            <div class="modal-form-agreement-container">
+              <input type="checkbox" name="" value="" id="agreement" type="text" class="modal-form-agreement-input">
+              <label for="agreement" class="modal-form-agreement-label">
+                Я даю согласие на обработку персональных данных и соглашаюсь с <a href="" class="modal-form-agreement-label-a">Политикой конфиденциальности.</a>
+              </label>
+            </div>
+            <button class="modal-form-button large-button main-button">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <footer class="footer">
       <div class="footer-container sections-container">
         <div class="footer-left-container">

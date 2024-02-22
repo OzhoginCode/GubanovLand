@@ -454,6 +454,36 @@
     min-width: 491px;
   }
 
+  /* MODAL */
+
+  .modal {
+    width: 492px;
+  
+    padding-left: 50px;
+    padding-right: 54px;
+  }
+
+  .modal-close-button {
+    top: 24px;
+    right: 24.32px;
+  }
+
+  .modal.try-for-free .modal-header {
+    font: var(--font-h21-24s);
+  }
+
+  .modal-hashtag {
+    margin-top: 18px;
+  }
+
+  .modal-p {
+    margin-right: -7px;
+  }
+
+  .modal.try-for-free .modal-p {
+    margin-right: -7px;
+  }
+
   /* FOOTER */
 
   .footer-central-container-a {

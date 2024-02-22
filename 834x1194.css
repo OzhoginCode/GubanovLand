@@ -22,7 +22,7 @@
     bottom: 0;
     height: unset;
 
-    background-color: var(--main-background);
+    background-color: var(--dark-grey-background);
     mix-blend-mode: normal;
 
     pointer-events: auto;

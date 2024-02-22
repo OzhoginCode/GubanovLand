@@ -622,6 +622,109 @@
     margin-top: auto;
   }
 
+  /* MODAL */
+
+  .modal {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: unset;
+    height: unset;
+  
+    padding-left: max(22px, calc((100vw - 330px) / 2));
+    padding-right: 22px;
+    padding-bottom: unset;
+
+    transform: none;
+  }
+
+  .modal-close-button {
+    top: 28px;
+    right: 25.32px;
+  }
+
+  .header-container {
+    max-width: 100%;
+  }
+  
+  .modal-header {
+    font: var(--font-h6-48m);
+    width: 300px;
+  }
+
+  .modal.try-for-free .modal-header {
+    font: var(--font-h21-36s);
+  }
+
+  .modal-hashtag {
+    margin-top: 12px;
+  }
+
+  .modal-demo-p {
+    margin-top: 40px;
+    margin-left: 0;
+
+    width: 260px;
+
+    font: var(--font-16s);
+  }
+
+  .modal-upper {
+    flex-direction: column;
+  }
+
+  .modal-p-container {
+    max-width: 100%;
+  }
+  
+  .modal-p {
+    margin: 0;
+    margin-top: 20px;
+    margin-right: unset;
+    margin-left: 0;
+
+    width: 260px;
+  
+    font: var(--font-16m);
+  }
+  
+  .modal-lower {
+    margin-top: 56px;
+  }
+
+  .modal-form-button {
+    margin-left: 0;
+    
+    width: 100%;
+  }
+
+  .modal-fieldset-name {
+    min-width: 316px;
+    max-width: 316px;
+  }
+  
+  .modal-fieldset-phone {
+    min-width: 316px;
+    max-width: 316px;
+  }
+  
+  .modal-form-lower-container {
+    margin-top: 16px;
+
+    align-items: normal;
+  }
+  
+  .modal-form-agreement-label {
+    max-width: 245px;
+  }
+  
+  .modal-form-button {
+    margin-left: unset;
+    margin-top: 54px;
+  }
+
   /* <<<<< UI-Kit >>>>> */
 
   .large-button {
