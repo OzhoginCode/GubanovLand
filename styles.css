@@ -4,6 +4,7 @@
   --main-background: #111223;
   --dark-grey-background: #1D1E2E;
   --yellow: #FFCB5A;
+  --error-color: #EB5757;
   --dark-grey-elements-1: #444444;
   --dark-grey-elements-2: #41414F;
   --light-grey: #888891;
@@ -1504,6 +1505,8 @@ html {
 }
 
 .section-communication-fieldset {
+  position: relative;
+
   margin: 0;
   padding: 0;
 
@@ -1575,6 +1578,13 @@ input[type="number"] {
 
 :autofill {
   background-color: var(--main-background);
+}
+
+:-webkit-autofill,
+:-webkit-autofill:hover, 
+:-webkit-autofill:focus, 
+:-webkit-autofill:active{
+  -webkit-background-clip: text;
 }
 
 .section-communication-fieldset:has(input:focus, textarea:focus) {
@@ -1931,6 +1941,8 @@ input[type="number"] {
 }
 
 .modal-fieldset {
+  position: relative;
+
   margin: 0;
   padding: 0;
 
@@ -2068,6 +2080,40 @@ input[type="number"] {
   user-select: none;
 }
 
+.modal-sent-header {
+  font: var(--font-h6-48m);
+
+  color: var(--white-1);
+}
+
+.modal-sent-p {
+  margin-top: 19px;
+
+  width: 292px;
+
+  font: var(--font-22r);
+  color: var(--white-2);
+}
+
+.modal-sent-img {
+  position: absolute;
+  
+  top: 92px;
+  right: 137px;
+}
+
+.modal-sent-button {
+  position: absolute;
+  left: 50%;
+  bottom: 112px;
+
+  transform: translateX(-50%);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: inherit;
+}
 
 
 
@@ -2120,6 +2166,16 @@ input[type="number"] {
 
 .main-button:hover {
   background-color: var(--white-1);
+}
+
+.main-button:disabled {
+  color: var(--light-grey);
+  
+  cursor: not-allowed;
+}
+
+.main-button:disabled:hover {
+  background-color: var(--yellow);
 }
 
 .secondary-button {
@@ -2214,4 +2270,51 @@ input[type="number"] {
 
 .display-none {
   display: none;
+}
+
+.iti { 
+  width: 100%;
+}
+
+.section-communication-form .iti__dropdown-content {
+  border-color: var(--dark-grey-elements-2) !important;
+
+  background-color: var(--dark-grey-background) !important;
+
+  font: var(--font-14rr);
+}
+
+.modal-form .iti__dropdown-content {
+  border-color: var(--dark-grey-elements-2) !important;
+
+  background-color: var(--dark-grey-background) !important;
+
+  font: var(--font-14rr);
+}
+
+.section-communication-form .phonenumber-input-container {
+  margin-top: 7px;
+  margin-left: 5px;
+
+  font: var(--font-16r);
+}
+
+.modal-form .phonenumber-input-container {
+  margin-top: 7px;
+  margin-left: 8px;
+
+  font: var(--font-16r);
+}
+
+.form-input-error {
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+
+  color: var(--error-color);
+  font: var(--font-12r);
+}
+
+fieldset.fieldset-error {
+  border-color: var(--error-color);
 }

@@ -540,6 +540,10 @@
     margin-bottom: 21px;
   }
   
+  .form-name {
+    margin-top: 3px;
+  }
+
   .section-communication-fieldset-phone {
     min-width: 364px;
     margin-left: 0;
@@ -590,5 +594,19 @@
   .footer-central-container-a {
     margin-top: auto;
     transform: translateX(-250px);
+  }
+
+  /* MODAL */
+
+  .form-input-error {
+    bottom: -30px;
+  }
+
+  .modal .form-input-error {
+    bottom: -20px;
+  }
+
+  .modal .form-name {
+    margin-top: 0;
   }
 }

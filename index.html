@@ -17,6 +17,10 @@
     <script defer src="menu.js"></script>
     <script defer src="modal-block.js"></script>
     <script defer src="autoPlayVideos.js"></script>
+    <script defer src="phoneInputs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.2/build/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.2/build/css/intlTelInput.css">
   </head>
   <body class="body">
     <header class="head">
@@ -39,7 +43,7 @@
         </ul>
       </nav>
       <div class="div-button-block">
-        <a class="right-button-header middle-button secondary-button" data-modal-type="submit-application">
+        <a href="#" class="right-button-header middle-button secondary-button" data-modal-type="submit-application">
           <span>Оставить заявку</span>
         </a>
       </div>
@@ -858,17 +862,19 @@
             </div>
           </div>
           <div class="section-communication-right-container">
-            <form action="" class="section-communication-form">
+            <form action="" class="section-communication-form" data-form="mainForm" data-application-type="main">
               <div class="section-communication-form-upper-container">
                 <fieldset class="section-communication-fieldset section-communication-fieldset-name">
                   <legend class="section-communication-form-legend">ИМЯ *</legend>
                   <label for="name"></label>
-                  <input required autocomplete="given-name" name="name" id="name" type="text"></input>
+                  <input required autocomplete="given-name" name="name" id="name" type="text" class="form-name"></input>
+                  <span class="form-input-error display-none">Поле обязательно к заполнению</span>
                 </fieldset>
                 <fieldset class="section-communication-fieldset section-communication-fieldset-phone">
                   <legend class="section-communication-form-legend">ТЕЛЕФОН *</legend>
-                  <label for="phone"></label>
-                  <input required autocomplete ="tel" name="phone" id="phone" type="number"></input>
+                  <label for="section-communication-phone"></label>
+                  <input required autocomplete ="tel" name="phone" class="form-phone" id="section-communication-phone"></input>
+                  <span class="form-input-error display-none">Некорректный формат номера</span>
                 </fieldset>
               </div>
               <fieldset class="section-communication-fieldset section-communication-fieldset-message">
@@ -878,12 +884,12 @@
               </fieldset>
               <div class="section-communication-form-lower-container">
                 <div class="section-communication-form-agreement-container">
-                  <input type="checkbox" name="" value="" id="agreement" type="text" class="section-communication-form-agreement-input">
+                  <input type="checkbox" name="" value="" id="agreement" class="section-communication-form-agreement-input" checked disabled>
                   <label for="agreement" class="section-communication-form-agreement-label">
-                    Я даю согласие на обработку персональных данных и соглашаюсь с <a href="" class="section-communication-form-agreement-label-a">Политикой конфиденциальности.</a>
+                    Я даю согласие на обработку персональных данных и соглашаюсь с <a href="./policy.html" class="section-communication-form-agreement-label-a">Политикой конфиденциальности.</a>
                   </label>
                 </div>
-                <button class="section-communication-form-button large-button main-button">Отправить</button>
+                <button disabled class="section-communication-form-button large-button main-button">Отправить</button>
               </div>
             </form>
           </div>
@@ -905,29 +911,39 @@
         </div>
       </div>
       <div class="modal-lower">
-        <form action="" class="modal-form">
+        <form action="" class="modal-form" data-form="modalForm">
           <div class="modal-form-upper-container">
             <fieldset class="modal-fieldset modal-fieldset-name">
               <legend class="modal-form-legend">ИМЯ *</legend>
               <label for="name"></label>
-              <input required autocomplete="given-name" name="name" id="name" type="text"></input>
+              <input required autocomplete="given-name" name="name" id="name" type="text" class="form-name"></input>
+              <span class="form-input-error display-none">Поле обязательно к заполнению</span>
             </fieldset>
             <fieldset class="modal-fieldset modal-fieldset-phone">
               <legend class="modal-form-legend">ТЕЛЕФОН *</legend>
-              <label for="phone"></label>
-              <input required autocomplete ="tel" name="phone" id="phone" type="number"></input>
+              <label for="modal-phone"></label>
+              <input required autocomplete="tel" name="phone" class="form-phone" id="modal-phone"></input>
+              <span class="form-input-error display-none">Некорректный формат номера</span>
             </fieldset>
           </div>
           <div class="modal-form-lower-container">
             <div class="modal-form-agreement-container">
-              <input type="checkbox" name="" value="" id="agreement" type="text" class="modal-form-agreement-input">
+              <input type="checkbox" name="" value="" id="agreement" class="modal-form-agreement-input" checked disabled>
               <label for="agreement" class="modal-form-agreement-label">
-                Я даю согласие на обработку персональных данных и соглашаюсь с <a href="" class="modal-form-agreement-label-a">Политикой конфиденциальности.</a>
+                Я даю согласие на обработку персональных данных и соглашаюсь с <a href="./policy.html" class="modal-form-agreement-label-a">Политикой конфиденциальности.</a>
               </label>
             </div>
-            <button class="modal-form-button large-button main-button">Отправить</button>
+            <button disabled class="modal-form-button large-button main-button">Отправить</button>
           </div>
         </form>
+      </div>
+      <div class="modal-sent display-none">
+        <div class="modal-sent-header-container">
+          <div class="modal-sent-header">СПАСИБО!</div>
+          <div class="modal-sent-p">Ваша заявка отправлена. В ближайшее время мы с вами свяжемся!</div>
+        </div>
+        <img src="./media/modal-sent.svg" alt="" class="modal-sent-img">
+        <button class="modal-sent-button large-button secondary-button">Ок</button>
       </div>
     </div>
     <footer class="footer">
@@ -963,7 +979,7 @@
               <a href="#section-communication" class="text-button-1">Связь</a>
             </li>
           </ul>
-          <a href="" class="footer-central-container-a">
+          <a href="./policy.html" class="footer-central-container-a">
             Политика конфиденциальности
           </a>
         </div>

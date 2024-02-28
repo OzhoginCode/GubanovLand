@@ -435,6 +435,26 @@
     font: var(--font-12m);
   }
 
+  .modal-sent-header {
+    font: var(--font-h18-32s);
+  }
+  
+  .modal-sent-p {
+    margin-top: 24px;
+  
+    width: 236px;
+  
+    font: var(--font-18r);
+  }
+  
+  .modal-sent-img {
+    top: 55px;
+    right: 114px;
+  }
+  
+  .modal-sent-button {
+    bottom: 81px;
+  }
 
   /* FOOTER */
   

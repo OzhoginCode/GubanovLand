@@ -241,6 +241,10 @@
     min-width: 364px;
     margin-bottom: 21px;
   }
+
+  .modal .form-name {
+    margin-top: 7px;
+  }
   
   .modal-fieldset-phone {
     min-width: 364px;
@@ -269,6 +273,29 @@
   
   .modal-form-button {
     margin-top: 20px;
+  }
+
+  .modal-sent-p {
+    margin-top: 24px;
+  
+    width: 236px;
+  }
+  
+  .modal-sent-img {
+    top: 136px;
+    right: 50px;
+  }
+  
+  .modal-sent-button {
+    bottom: 76px;
+  }
+
+  .form-input-error {
+    bottom: -30px;
+  }
+
+  .modal .form-input-error {
+    bottom: -35px;
   }
 
   /* FOOTER */

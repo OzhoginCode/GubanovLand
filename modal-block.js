@@ -1,12 +1,16 @@
 const modal = document.querySelector('.modal');
 const openFormButtons = document.querySelectorAll('[data-modal-type]');
+const form = modal.querySelector('form');
 
 const modalOpening = () => {
   const closeButton = modal.querySelector('.modal-close-button');
+  const okButton = modal.querySelector('.modal-sent-button');
 
   let isOpen = false;
 
-  const toggleModal = () => {
+  const toggleModal = (e) => {
+    e.preventDefault();
+
     isOpen = !isOpen;
     modal.classList.toggle('modal-open');
     document.body.classList.toggle('modal-open');
@@ -15,11 +19,17 @@ const modalOpening = () => {
 
   openFormButtons.forEach((btn) => btn.addEventListener('click', toggleModal));
   closeButton.addEventListener('click', toggleModal);
+  okButton.addEventListener('click', toggleModal);
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && isOpen) {
       toggleModal();
     }
+  });
+
+  document.addEventListener('form-sent', () => {
+    if (isOpen) return;
+    toggleModal();
   });
 };
 
@@ -31,9 +41,18 @@ const modalSwiching = () => {
   const header = modal.querySelector('.modal-header');
   const hashtag = modal.querySelector('.modal-hashtag');
   const demoP = modal.querySelector('.modal-demo-p');
-  // const submit = modal.querySelector('.modal-form-button');
+  const upperContainer = modal.querySelector('.modal-upper');
+  const lowerContainer = modal.querySelector('.modal-lower');
+  const sentContainer = modal.querySelector('.modal-sent');
 
-  const render = ({ type }) => {
+  const render = ({ type, state }) => {
+    if (state === 'sent') {
+      upperContainer.classList.add('display-none');
+      lowerContainer.classList.add('display-none');
+      sentContainer.classList.remove('display-none');
+      return;
+    }
+
     hashtag.classList.add('display-none');
     demoP.classList.add('display-none');
     modal.classList.remove('modal-hash-active');
@@ -79,12 +98,19 @@ const modalSwiching = () => {
 
   const modalState = {
     type: 'default',
+    state: 'filling',
   };
 
   openFormButtons.forEach((btn) => btn.addEventListener('click', () => {
     modalState.type = btn.dataset.modalType;
+    form.dataset.applicationType = btn.dataset.modalType;
     render(modalState);
   }));
+
+  document.addEventListener('form-sent', () => {
+    modalState.state = 'sent';
+    render(modalState);
+  });
 };
 
 modalSwiching();

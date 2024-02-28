@@ -573,6 +573,10 @@
     font: var(--font-14r);
   }
 
+  .section-communication-form .phonenumber-input-container {
+    margin-top: 2px;
+  }
+
   .section-communication-form-legend {
     font: var(--font-h14-12r);
   }
@@ -583,6 +587,12 @@
 
   .section-communication-form-button {
     margin-left: auto;
+  }
+
+  /* MODAL */
+
+  .form-input-error {
+    bottom: -20px;
   }
 
   /* FOOTER */

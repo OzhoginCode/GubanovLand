@@ -484,6 +484,18 @@
     margin-right: -7px;
   }
 
+  .modal-sent-img {
+    top: 208px;
+    right: 40px;
+
+    width: 176px;
+    height: 204px;
+  }
+  
+  .modal-sent-button {
+    bottom: 76px;
+  }
+
   /* FOOTER */
 
   .footer-central-container-a {
