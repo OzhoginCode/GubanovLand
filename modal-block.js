@@ -9,7 +9,7 @@ const modalOpening = () => {
   let isOpen = false;
 
   const toggleModal = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
 
     isOpen = !isOpen;
     modal.classList.toggle('modal-open');
@@ -28,6 +28,7 @@ const modalOpening = () => {
   });
 
   document.addEventListener('form-sent', () => {
+    console.log(123);
     if (isOpen) return;
     toggleModal();
   });
