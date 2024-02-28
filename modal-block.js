@@ -28,7 +28,6 @@ const modalOpening = () => {
   });
 
   document.addEventListener('form-sent', () => {
-    console.log(123);
     if (isOpen) return;
     toggleModal();
   });
