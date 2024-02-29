@@ -8,16 +8,17 @@ const modalOpening = () => {
 
   let isOpen = false;
 
-  const toggleModal = (e) => {
-    // e.preventDefault();
-
+  const toggleModal = () => {
     isOpen = !isOpen;
     modal.classList.toggle('modal-open');
     document.body.classList.toggle('modal-open');
     document.body.classList.toggle('overflow-hidden');
   };
 
-  openFormButtons.forEach((btn) => btn.addEventListener('click', toggleModal));
+  openFormButtons.forEach((btn) => btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    toggleModal();
+  }));
   closeButton.addEventListener('click', toggleModal);
   okButton.addEventListener('click', toggleModal);
 
