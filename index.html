@@ -18,9 +18,9 @@
     <script defer src="modal-block.js"></script>
     <script defer src="autoPlayVideos.js"></script>
     <script defer src="phoneInputs.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.2/build/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.6/build/js/intlTelInput.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.2/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.6/build/css/intlTelInput.css">
   </head>
   <body class="body">
     <header class="head">
@@ -42,6 +42,14 @@
           <li><a href="#section-communication" class="text-button-1">Контакты</a></li>
         </ul>
       </nav>
+      <div class="header-contacts">
+        <a href="tel:+79312252397" class="header-contacts-phone">8 (931) 225-23-97</a>
+        <a href="tel:+79312252397" class="header-contacts-phone-small"><img src="./media/phone-icon.svg" alt=""></a>
+        <div class="header-contacts-messangers">
+          <a href="https://api.whatsapp.com/send?%20phone=79657518041" target="_blank" class="header-contacts-messangers-item"><img src="./media/whatsapp-icon.png" alt=""></a>
+          <a href="https://web.telegram.org/k/#@ivangubanovmusic" target="_blank" class="header-contacts-messangers-item"><img src="./media/telegram-icon.png" alt=""></a>
+        </div>
+      </div>
       <div class="div-button-block">
         <a href="#" class="right-button-header middle-button secondary-button" data-modal-type="submit-application">
           <span>Оставить заявку</span>
@@ -626,13 +634,13 @@
                 <li class="section-prices-li section-prices-li-inactive">Запись вокала</li>
                 <li class="section-prices-li section-prices-li-inactive">Сведение / мастеринг</li>
               </ul>
-              <span class="section-prices-price">20 000 ₽</span>
+              <span class="section-prices-price">30 000 ₽</span>
               <div class="section-prices-warning-container">
                 <img src="./media/section-prices-warning.svg" alt="" class="section-prices-warning-img">
                 <span class="section-prices-warning-text">Поэтапная оплата</span>
                 <img src="./media/section-prices-warning-lower-part.svg" alt="" class="section-prices-warning-hover-img">
                 <div class="section-prices-warning-hover-text">
-                  Работа начинается по предоплате в 5000 ₽. Остаток вы доплачиваете когда утвердите что вам все нравится.
+                  Работа начинается по предоплате в 10 000 ₽. Остаток вы доплачиваете когда утвердите что вам все нравится.
                 </div>
               </div>
               <a class="section-prices-button large-button main-button" data-modal-type="by-reference">
@@ -648,16 +656,16 @@
                 <li class="section-prices-li section-prices-li-active">Рекомендация в плейлисты</li>
                 <li class="section-prices-li section-prices-li-active">Дистрибуция</li>
                 <li class="section-prices-li section-prices-li-active">Вокальная линия</li>
-                <li class="section-prices-li section-prices-li-inactive">Текст песни</li>
+                <li class="section-prices-li section-prices-li-active">Текст песни</li>
                 <li class="section-prices-li section-prices-li-inactive">Запись вокала</li>
                 <li class="section-prices-li section-prices-li-inactive">Сведение / мастеринг</li>
               </ul>
-              <span class="section-prices-price">30 000 ₽</span>
+              <span class="section-prices-price">60 000 ₽</span>
               <div class="section-prices-warning-container">
                 <img src="./media/section-prices-warning.svg" alt="" class="section-prices-warning-img">
                 <span class="section-prices-warning-text">Поэтапная оплата</span>
                 <div class="section-prices-warning-hover-text">
-                  Работа начинается по предоплате в 5000 ₽. Остаток вы доплачиваете когда утвердите что вам все нравится.
+                  Работа начинается по предоплате в 10 000 ₽. Остаток вы доплачиваете когда утвердите что вам все нравится.
                 </div>
               </div>
               <a class="section-prices-button large-button main-button" data-modal-type="producing">
@@ -677,12 +685,12 @@
                 <li class="section-prices-li section-prices-li-active">Запись вокала</li>
                 <li class="section-prices-li section-prices-li-active">Сведение / мастеринг</li>
               </ul>
-              <span class="section-prices-price">65 000 ₽</span>
+              <span class="section-prices-price">80 000 ₽</span>
               <div class="section-prices-warning-container">
                 <img src="./media/section-prices-warning.svg" alt="" class="section-prices-warning-img">
                 <span class="section-prices-warning-text">Поэтапная оплата</span>
                 <div class="section-prices-warning-hover-text">
-                  Работа начинается по предоплате в 5000 ₽. Остаток вы доплачиваете когда утвердите что вам все нравится.
+                  Работа начинается по предоплате в 10 000 ₽. Остаток вы доплачиваете когда утвердите что вам все нравится.
                 </div>
               </div>
               <a class="section-prices-button large-button main-button" data-modal-type="turnkey">
@@ -709,7 +717,7 @@
           </div>
           <div class="section-reviews-lower-part">
             <div class="section-reviews-reviews-container" id="section-reviews-reviews-container">
-              <div class="section-reviews-review">
+              <div class="section-reviews-review section-reviews-review-1">
                 <div class="section-reviews-review-head">
                   <img src="./media/section-reviews-review-img-1.png" alt="" class="section-reviews-review-img">
                   <div class="section-reviews-review-head-name-container">
@@ -726,7 +734,9 @@
                 <div class="section-reviews-review-text">
                   Первый раз обратилась к Ивану по написанию аранжировки год назад. Я впервые делала песню и мало что понимала в этом, был страх, что у меня не получится. Но оказалось что я зря переживала, Ваня очень чутко и ответственно подходит к своему делу, не смотрит с высока, а наоборот воплощает все мои безумные идеи) в общем очень комфортно работать, ну и конечно качество на высоте! Сейчас уже делаю 6-ую песню! Количество прослушиваний переваливает за 4,5 млн!!! Я очень довольна результатом!
                 </div>
-                <img src="./media/section-reviews-review-site-logo-2gis.png" alt="" class="section-reviews-review-site-logo">
+                <a href="https://2gis.ru/spb/search/gmusic/firm/70000001069161478/30.283741%2C59.908528/tab/reviews" target="_blank">
+                  <img src="./media/section-reviews-review-site-logo-2gis.png" alt="" class="section-reviews-review-site-logo">
+                </a>
               </div>
               <div class="section-reviews-review">
                 <div class="section-reviews-review-head">
@@ -745,7 +755,9 @@
                 <div class="section-reviews-review-text">
                   После долгих поисков наткнулся на эту студию. Ознакомившись с примерами работ в группе, понял, что здесь качественно и с пониманием пишется музыка самых разных стилей. Обратился к Ивану за помощью с написанием аранжировки и не прогадал. Окончательный вариант получил очень быстро, буквально за несколько корректировок, так как Иван грамотно учел все мои пожелания. Всем доволен, рекомендую!
                 </div>
-                <img src="./media/section-reviews-review-site-logo-yandex.png" alt="" class="section-reviews-review-site-logo">
+                <a href="https://yandex.ru/maps/org/gmusic/9146338038/reviews/?ll=30.282064%2C59.908660&mode=search&sctx=ZAAAAAgBEAAaKAoSCY9WtaSjUD5AEQgB%2BRIq%2BE1AEhIJZVJDG4CN7z8RxMw%2Bj1Ge0T8iBgABAgMEBSgKOABAAkgBagJydZ0BzcxMPaABAKgBAL0B%2F7Ntm8IBBfaVqIkiggIGZ211c2ljigIAkgIAmgIMZGVza3RvcC1tYXBz&sll=30.282064%2C59.908660&sspn=0.030813%2C0.008611&tab=reviews&text=gmusic&z=16" target="_blank">
+                  <img src="./media/section-reviews-review-site-logo-yandex.png" alt="" class="section-reviews-review-site-logo">
+                </a>
               </div>
               <div class="section-reviews-review">
                 <div class="section-reviews-review-head">
@@ -766,13 +778,15 @@
                   До этого долго искала студию! Все всегда на высшем уровне!! 
                   Ребята круты😎😎😎
                 </div>
-                <img src="./media/section-reviews-review-site-logo-2gis.png" alt="" class="section-reviews-review-site-logo">
+                <a href="https://2gis.ru/spb/search/gmusic/firm/70000001069161478/30.283741%2C59.908528/tab/reviews" target="_blank">
+                  <img src="./media/section-reviews-review-site-logo-2gis.png" alt="" class="section-reviews-review-site-logo">
+                </a>
               </div>
               <div class="section-reviews-review">
                 <div class="section-reviews-review-head">
-                  <img src="./media/section-reviews-review-img-3.png" alt="" class="section-reviews-review-img">
+                  <img src="./media/section-reviews-review-img-4.png" alt="" class="section-reviews-review-img">
                   <div class="section-reviews-review-head-name-container">
-                    <span>Виктория Н.</span>
+                    <span>Татьяна Левина</span>
                     <div class="section-reviews-review-stars-container">
                       <img src="./media/section-reviews-review-star.svg" alt="">
                       <img src="./media/section-reviews-review-star.svg" alt="">
@@ -783,17 +797,17 @@
                   </div>
                 </div>
                 <div class="section-reviews-review-text">
-                  Не первый год Ваня пишет мне аранжировки! И здесь же записываюсь!))
-                  До этого долго искала студию! Все всегда на высшем уровне!! 
-                  Ребята круты😎😎😎
+                  Долго искала аранжировщика, присылали какие-то странные вещи, не слыша меня совсем.В итоге наткнулась на Ваню, аранжировка превзошла все ожидания, мастер всегда на связи и подправляет аранжировку по твоему вкусу. После этого у песни были неплохие прослушивания, а Ваня оказался еще и очень вдохновляющим человеком.А для начинающего артиста поддержка и мотивация очень важны, обращайтесь, не пожалеете!
                 </div>
-                <img src="./media/section-reviews-review-site-logo-2gis.png" alt="" class="section-reviews-review-site-logo">
+                <a href="https://2gis.ru/spb/search/gmusic/firm/70000001069161478/30.283741%2C59.908528/tab/reviews" target="_blank">
+                  <img src="./media/section-reviews-review-site-logo-2gis.png" alt="" class="section-reviews-review-site-logo">
+                </a>
               </div>
               <div class="section-reviews-review">
                 <div class="section-reviews-review-head">
-                  <img src="./media/section-reviews-review-img-3.png" alt="" class="section-reviews-review-img">
+                  <img src="./media/section-reviews-review-img-5.png" alt="" class="section-reviews-review-img">
                   <div class="section-reviews-review-head-name-container">
-                    <span>Виктория Н.</span>
+                    <span>Your F.</span>
                     <div class="section-reviews-review-stars-container">
                       <img src="./media/section-reviews-review-star.svg" alt="">
                       <img src="./media/section-reviews-review-star.svg" alt="">
@@ -804,11 +818,11 @@
                   </div>
                 </div>
                 <div class="section-reviews-review-text">
-                  Не первый год Ваня пишет мне аранжировки! И здесь же записываюсь!))
-                  До этого долго искала студию! Все всегда на высшем уровне!! 
-                  Ребята круты😎😎😎
+                  После долгих поисков наткнулся на эту студию. Ознакомившись с примерами работ в группе, понял, что здесь качественно и с пониманием пишется музыка самых разных стилей. Обратился к Ивану за помощью с написанием аранжировки и не прогадал. Окончательный вариант получил очень быстро, буквально за несколько корректировок, так как Иван грамотно учел все мои пожелания. Всем доволен, рекомендую!
                 </div>
-                <img src="./media/section-reviews-review-site-logo-2gis.png" alt="" class="section-reviews-review-site-logo">
+                <a href="https://yandex.ru/maps/org/gmusic/9146338038/reviews/?ll=30.282064%2C59.908660&mode=search&sctx=ZAAAAAgBEAAaKAoSCY9WtaSjUD5AEQgB%2BRIq%2BE1AEhIJZVJDG4CN7z8RxMw%2Bj1Ge0T8iBgABAgMEBSgKOABAAkgBagJydZ0BzcxMPaABAKgBAL0B%2F7Ntm8IBBfaVqIkiggIGZ211c2ljigIAkgIAmgIMZGVza3RvcC1tYXBz&sll=30.282064%2C59.908660&sspn=0.030813%2C0.008611&tab=reviews&text=gmusic&z=16" target="_blank">
+                  <img src="./media/section-reviews-review-site-logo-yandex.png" alt="" class="section-reviews-review-site-logo">
+                </a>
               </div>
               <div class="fixer2"></div>
             </div>

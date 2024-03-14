@@ -13,6 +13,10 @@
     margin-right: 6.25vw;
   }
 
+  .header-contacts {
+    right: calc(6.25vw + 216px);
+  }
+
   /* SECTION MAIN */
 
   .section-main {
@@ -288,7 +292,7 @@
   }
 
   .card-1  {
-    margin-left: 90px;
+    margin-left: 10090px;
   }
 
   .section-works-scroll-buttons-container {

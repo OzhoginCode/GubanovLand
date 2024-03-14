@@ -147,6 +147,38 @@ html {
   width: 182px;
 }
 
+.header-contacts {
+  position: absolute;
+
+  right: 419px;
+}
+
+.header-contacts-phone {
+  font: var(--font-16r);
+
+  color: var(--white-1);
+
+  text-decoration: none;
+}
+
+.header-contacts-phone-small {
+  display: none;
+}
+
+.header-contacts-messangers {
+  display: flex;
+  flex-direction: row-reverse;
+
+  margin-top: 4px;
+}
+
+.header-contacts-messangers-item img {
+  width: 18px;
+  height: 18px;
+
+  margin-left: 12px;
+}
+
 .header-right-container-img-container {
   display: none;
   justify-content: space-between;
@@ -692,6 +724,7 @@ html {
 .section-works-audio-cards-container {
   position: absolute;
   top: 533px;
+  left: -10000px;
 
   display: flex;
 
@@ -891,7 +924,7 @@ html {
 }
 
 .card-1  {
-  margin-left: 202px;
+  margin-left: 10202px;
 }
 
 .fixer {
@@ -1364,6 +1397,8 @@ html {
 .section-reviews-reviews-container {
   position: absolute;
 
+  left: -10000px;
+
   display: flex;
 
   padding-left: 202px;
@@ -1375,6 +1410,10 @@ html {
 
 .section-reviews-reviews-container::-webkit-scrollbar {
   width: 0;
+}
+
+.section-reviews-review-1 {
+  margin-left: 10000px;
 }
 
 .section-reviews-review {
@@ -2275,7 +2314,17 @@ input[type="number"] {
   width: 100%;
 }
 
-.section-communication-form .iti__dropdown-content {
+/* .iti__flag {
+  width: 14px !important;
+  height: 14px !important;
+  border-radius: 50%;
+} */
+
+.iti__country-name {
+  color: var(--white-1);
+}
+
+.iti--fullscreen-popup {
   border-color: var(--dark-grey-elements-2) !important;
 
   background-color: var(--dark-grey-background) !important;
@@ -2283,7 +2332,7 @@ input[type="number"] {
   font: var(--font-14rr);
 }
 
-.modal-form .iti__dropdown-content {
+.iti__dropdown-content {
   border-color: var(--dark-grey-elements-2) !important;
 
   background-color: var(--dark-grey-background) !important;

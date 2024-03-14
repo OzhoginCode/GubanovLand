@@ -1,6 +1,8 @@
 .main {
   padding-left: 202px;
   padding-right: 208px;
+
+  color: var(--white-1);
 }
 
 .policy-h1 {

@@ -1,11 +1,10 @@
 const modal = document.querySelector('.modal');
 const openFormButtons = document.querySelectorAll('[data-modal-type]');
 const form = modal.querySelector('form');
+const closeButton = modal.querySelector('.modal-close-button');
+const okButton = modal.querySelector('.modal-sent-button');
 
 const modalOpening = () => {
-  const closeButton = modal.querySelector('.modal-close-button');
-  const okButton = modal.querySelector('.modal-sent-button');
-
   let isOpen = false;
 
   const toggleModal = () => {
@@ -46,14 +45,39 @@ const modalSwiching = () => {
   const lowerContainer = modal.querySelector('.modal-lower');
   const sentContainer = modal.querySelector('.modal-sent');
 
+  const modalState = {
+    type: 'default',
+    state: 'filling',
+  };
+
+  const switchToFilling = () => {
+    modalState.state = 'filling';
+    closeButton.removeEventListener('click', switchToFilling);
+    okButton.removeEventListener('click', switchToFilling);
+  };
+
+  const switchToFillingOnEsc = (e) => {
+    if (e.key === 'Escape') {
+      switchToFilling();
+      document.removeEventListener('keydown', switchToFillingOnEsc);
+    }
+  };
+
   const render = ({ type, state }) => {
     if (state === 'sent') {
       upperContainer.classList.add('display-none');
       lowerContainer.classList.add('display-none');
       sentContainer.classList.remove('display-none');
+
+      closeButton.addEventListener('click', switchToFilling);
+      okButton.addEventListener('click', switchToFilling);
+      document.addEventListener('keydown', switchToFillingOnEsc);
       return;
     }
 
+    upperContainer.classList.remove('display-none');
+    lowerContainer.classList.remove('display-none');
+    sentContainer.classList.add('display-none');
     hashtag.classList.add('display-none');
     demoP.classList.add('display-none');
     modal.classList.remove('modal-hash-active');
@@ -95,11 +119,6 @@ const modalSwiching = () => {
       default:
         throw new Error(`Unexpected form type: "${type}"`);
     }
-  };
-
-  const modalState = {
-    type: 'default',
-    state: 'filling',
   };
 
   openFormButtons.forEach((btn) => btn.addEventListener('click', () => {

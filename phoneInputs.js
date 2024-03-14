@@ -466,7 +466,7 @@ const apply = async (button, e) => {
 
   try {
     // await axios.post(routes.applicationsPath(), formDataJson); // eslint-disable-line
-    formsState.state = 'sent';
+    formsState.state = 'filling';
     render();
     const event = new Event('form-sent');
     document.dispatchEvent(event);

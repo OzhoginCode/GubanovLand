@@ -2,7 +2,34 @@
   .sections-container {
     max-width: 1100px;
   }
+
+  /* HEADER */
+
+  .header-contacts {
+    display: flex;
+
+    right: calc(6.25vw + 202px);
+  }
+
+  .header-contacts-phone {
+    display: none;
+  }
   
+  .header-contacts-phone-small {
+    display: unset;
+  }
+
+  .header-contacts-messangers {
+    margin-top: 0;
+  }
+  
+  .header-contacts-messangers-item img {
+    width: 18px;
+    height: 18px;
+  
+    margin-left: 12px;
+  }
+
   /* SECTION MAIN */
 
   .section-main {
@@ -176,7 +203,7 @@
   }
 
   .card-1  {
-    margin-left: 39px;
+    margin-left: 10039px;
   }
   
   .section-works-scroll-buttons-container {

@@ -30,6 +30,10 @@
 
   /* SECTION MAIN */
 
+  .main {
+    margin-top: 30px;
+  }
+
   .section-main-text {
     width: 424px;
   }
@@ -172,6 +176,7 @@
   
   .section-works-audio-cards-container {
     top: 480px;
+    left: unset;
 
     flex-direction: column;
 
