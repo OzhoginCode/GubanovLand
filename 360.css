@@ -67,6 +67,8 @@
 
   .header-contacts-phone {
     font: var(--font-24m);
+
+    min-width: 190px;
   }
 
   /* SECTION MAIN */
