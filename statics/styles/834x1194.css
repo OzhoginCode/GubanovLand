@@ -471,7 +471,7 @@
     width: 100vw;
     height: 10px;
   
-    background-image: url(./media/section-prices-dividing-line.svg);
+    background-image: url(../assets/images/section-prices-dividing-line.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;

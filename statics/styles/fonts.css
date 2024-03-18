@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'VoronovFont';
-  src: url('./fonts/VoronovFont/Voronov.ttf') format('truetype');
+  src: url('../assets/fonts/VoronovFont/Voronov.ttf') format('truetype');
 }
 
 :root {

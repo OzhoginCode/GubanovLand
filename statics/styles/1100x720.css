@@ -359,7 +359,7 @@
     min-width: 20px;
     height: 20px;
     appearance: none;
-    background-image: url('./media/section-communication-checkbox-unchecked.svg');
+    background-image: url('../assets/images/section-communication-checkbox-unchecked.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -369,15 +369,15 @@
   }
   
   .section-communication-form-agreement-input:not(:checked):hover {
-    background-image: url('./media/section-communication-checkbox-unchecked-hover.svg');
+    background-image: url('../assets/images/section-communication-checkbox-unchecked-hover.svg');
   }
   
   .section-communication-form-agreement-input:checked {
-    background-image: url('./media/section-communication-checkbox-checked.svg');
+    background-image: url('../assets/images/section-communication-checkbox-checked.svg');
   }
   
   .section-communication-form-agreement-input:checked:hover {
-    background-image: url('./media/section-communication-checkbox-checked-hover.svg');
+    background-image: url('../assets/images/section-communication-checkbox-checked-hover.svg');
   }
   
   .section-communication-form-agreement-label {
