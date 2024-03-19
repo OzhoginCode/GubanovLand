@@ -11,9 +11,9 @@ export default {
         test: /\.html$/i,
         loader: 'html-loader',
       },
-      { 
+      {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
     ],
   },
