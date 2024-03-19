@@ -1,4 +1,6 @@
-import startServer from '../startServer.js';
+import server from '../server.js';
 
 const port = 4000;
-startServer(port);
+server().listen(port, () => {
+  console.log(`Server was started on '${port}'`);
+});
