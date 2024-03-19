@@ -7,15 +7,16 @@ export default () => {
 
   app.use(Express.json());
 
-  app.post('/applications', (req, res) => {
+  app.post('/applications', async (req, res) => {
     const formdata = req.body;
     console.log(req.body);
 
     try {
-      const info = sendEmail(formdata);
+      const info = await sendEmail(formdata);
       console.log(info);
       res.status(200).end('Письмо отправлено успешно');
-    } catch {
+    } catch (error) {
+      console.error(error);
       res.status(500).end('Что-то пошло не так!');
     }
   });

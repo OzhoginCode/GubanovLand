@@ -19,7 +19,7 @@ const createEmailText = (data) => {
   return `${name}\nPhone: ${phone}\n\n${message}\n${formType}, ${applicationType}`;
 };
 
-export default (data) => {
+export default async (data) => {
   const mailOptions = {
     from: process.env.SERVER_EMAIL,
     to: process.env.RECIPIENT_EMAIL,
@@ -27,10 +27,10 @@ export default (data) => {
     text: createEmailText(data),
   };
 
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      throw new Error(error);
-    }
+  try {
+    const info = await transporter.sendMail(mailOptions);
     return info.response;
-  });
+  } catch (error) {
+    throw new Error(error);
+  }
 };
