@@ -7,5 +7,6 @@ parserOptions:
   ecmaVersion: latest
   sourceType: module
 rules: {
-  import/extensions: ignorePackages
+  import/no-unresolved: 0,
+  import/extensions: 0,
 }
