@@ -19,8 +19,16 @@ export default {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      filename: 'index.html',
       template: '/statics/index.html',
       minify: true,
+      chunks: ['main'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'policy.html',
+      template: '/statics/policy.html',
+      minify: true,
+      chunks: ['policy'],
     }),
     new MiniCssExtractPlugin(),
   ],
@@ -31,7 +39,10 @@ export default {
       new TerserPlugin(),
     ],
   },
-  entry: './statics/scripts/main.js',
+  entry: {
+    main: './statics/scripts/index.js',
+    policy: './statics/scripts/policy.js',
+  },
   output: {
     clean: true,
   },
