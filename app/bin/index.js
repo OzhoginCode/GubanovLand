@@ -1,3 +1,4 @@
+#!/usr/bin/node
 import server from '../server.js';
 
 const port = 4000;

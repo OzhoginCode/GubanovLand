@@ -7,7 +7,7 @@ export default () => {
 
   app.use(Express.json());
 
-  app.post('/applications', async (req, res) => {
+  app.post('/api/applications', async (req, res) => {
     const formdata = req.body;
     console.log(req.body);
 
