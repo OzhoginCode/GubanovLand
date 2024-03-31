@@ -4,7 +4,10 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const transporter = nodemailer.createTransport({
-  service: 'Yandex',
+  pool: true,
+  host: 'smtp.yandex.ru',
+  port: 465,
+  secure: true,
   auth: {
     user: process.env.SERVER_EMAIL,
     pass: process.env.SERVER_PASSWORD,

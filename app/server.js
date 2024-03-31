@@ -9,7 +9,7 @@ export default () => {
 
   app.post('/api/applications', async (req, res) => {
     const formdata = req.body;
-    console.log(req.body);
+    console.log(formdata);
 
     try {
       const info = await sendEmail(formdata);
