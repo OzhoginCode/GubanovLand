@@ -445,7 +445,8 @@ nameInputs.forEach(handleNameinput);
 policyCheckboxes.forEach(handlePolicy);
 
 const routes = {
-  applicationsPath: () => 'http://gubanovmusic.ru/api/applications',
+  // applicationsPath: () => 'http://gubanovmusic.ru/api/applications',
+  applicationsPath: () => 'http://localhost:4000/api/applications',
 };
 
 const apply = async (button, e) => {
@@ -459,13 +460,11 @@ const apply = async (button, e) => {
   formDataObject.formType = form.dataset.form;
   formDataObject.applicationType = form.dataset.applicationType;
 
-  const formDataJson = JSON.stringify(formDataObject);
-
   formsState.state = 'sending';
   render();
 
   try {
-    await axios.post(routes.applicationsPath(), formDataJson); // eslint-disable-line
+    await axios.post(routes.applicationsPath(), formDataObject); // eslint-disable-line
     formsState.state = 'filling';
     render();
     const event = new Event('form-sent');
