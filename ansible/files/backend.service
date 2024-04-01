@@ -1,0 +1,15 @@
+[Unit]
+Description=GM landing backend
+After=network.target
+
+[Service]
+Type=simple
+User=appuser
+WorkingDirectory=/home/appuser/app
+ExecStart=/usr/bin/node /home/appuser/app/app/bin/index.js
+Restart=always
+RestartSec=1
+SyslogIdentifier=backend
+
+[Install]
+WantedBy=multi-user.target

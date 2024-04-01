@@ -1,0 +1,198 @@
+- hosts: all
+
+  tasks:
+    - name: apt update
+      ansible.builtin.apt:
+        autoclean: yes
+        # update_cache: yes
+        # upgrade: dist
+        autoremove: yes
+      become: yes
+          
+    - name: install node.js
+      import_role:
+        name: geerlingguy.nodejs
+      vars:
+        nodejs_version: "21.x"
+        nodejs_install_npm_user: "root"
+
+    - name: create appuser
+      ansible.builtin.user:
+        name: appuser
+      become: yes
+
+    - name: git clone app
+      git:
+        repo: https://github.com/OzhoginCode/gubanov-landing
+        dest: /home/appuser/app
+      notify:
+        - restart backend
+      become_user: appuser
+
+    - name: install dependencies
+      command: make install
+      args:
+        chdir: /home/appuser/app
+      become_user: appuser
+
+    - name: сopy .env file
+      ansible.builtin.copy:
+        src: "{{ playbook_dir }}/../files/.env.vault"
+        dest: /home/appuser/app/.env
+      notify:
+        - restart backend
+      become_user: appuser
+
+    - name: build statics
+      command: make build
+      args:
+        chdir: /home/appuser/app
+      notify:
+        - restart nginx
+      become_user: appuser
+
+    - name: set permissions
+      file:
+        path: "{{ item }}"
+        mode: 0700
+      loop:
+        - /home/appuser/app/app
+        - /home/appuser/app/ansible
+        - /home/appuser/app/.env
+        - /home/appuser/app/.eslingignore
+        - /home/appuser/app/.eslintrc.yml
+        - /home/appuser/app/.git
+        - /home/appuser/app/.gitignore
+        - /home/appuser/app/Makefile
+        - /home/appuser/app/node_modules
+        - /home/appuser/app/package.json
+        - /home/appuser/app/package-lock.json
+        - /home/appuser/app/statics
+        - /home/appuser/app/webpack.config.js
+      notify:
+        - restart nginx
+        - restart backend
+
+    - name: set permissions for dist folder
+      file:
+        path: "/home/appuser/app/dist"
+        mode: 0755
+      notify:
+        - restart nginx
+        - restart backend
+
+    - name: сopy backend systemd file
+      ansible.builtin.copy:
+        src: "{{ playbook_dir }}/../files/backend.service"
+        dest: /etc/systemd/system/backend.service
+
+    - name: reload systemd daemon
+      ansible.builtin.systemd:
+        daemon_reload: yes
+
+    - name: start backend
+      ansible.builtin.systemd:
+        name: backend
+        state: started
+
+    - name: install prerequisites for nginx
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - curl
+        - gnupg2
+        - ca-certificates
+        - lsb-release
+        - ubuntu-keyring
+
+    - name: fetch nginx signing key
+      shell: "curl https://nginx.org/keys/nginx_signing.key | gpg --dearmor | sudo tee /usr/share/keyrings/nginx-archive-keyring.gpg >/dev/null"
+      args:
+        creates: /usr/share/keyrings/nginx-archive-keyring.gpg
+
+    - name: verify nginx signing key
+      shell: "gpg --dry-run --quiet --no-keyring --import --import-options import-show /usr/share/keyrings/nginx-archive-keyring.gpg"
+      register: key_verification
+
+    - name: set up apt repository for stable nginx packages
+      apt_repository:
+        repo: "deb [signed-by=/usr/share/keyrings/nginx-archive-keyring.gpg] http://nginx.org/packages/ubuntu {{ ansible_lsb.codename }} nginx"
+        state: present
+
+    - name: set up repository pinning
+      copy:
+        content: |
+          Package: *
+          Pin: origin nginx.org
+          Pin: release o=nginx
+          Pin-Priority: 900
+        dest: /etc/apt/preferences.d/99nginx
+
+    - name: install nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+
+    - name: update nginx.conf
+      ansible.builtin.template:
+        src: ../files/nginx.conf
+        dest: /etc/nginx/nginx.conf
+      notify:
+        - restart nginx
+
+    - name: update gubanovmusic.ru.conf
+      ansible.builtin.template:
+        src: ../files/gubanovmusic.ru.conf
+        dest: /etc/nginx/conf.d/gubanovmusic.ru.conf
+      notify:
+        - restart nginx
+
+    - name: add nginx user to appuser group
+      user:
+        name: nginx
+        groups: appuser
+        append: yes
+      notify:
+        - restart nginx
+
+    - name: install snapd
+      ansible.builtin.package:
+        name: snapd
+        state: present
+
+    - name: install classic snap support
+      ansible.builtin.command: snap install core
+
+    - name: remove certbot-auto and any Certbot OS packages
+      ansible.builtin.package:
+        name: certbot
+        state: absent
+        autoremove: yes
+
+    - name: install Certbot snap
+      ansible.builtin.command: snap install --classic certbot
+
+    - name: prepare Certbot command
+      ansible.builtin.file:
+        src: /snap/bin/certbot
+        dest: /usr/bin/certbot
+        state: link
+
+    - name: get and install staging certificates with Certbot
+      ansible.builtin.command: certbot --nginx --staging --agree-tos -m gmusicweb@yandex.ru -d gubanovmusic.ru -d www.gubanovmusic.ru
+
+    - name: test automatic renewal
+      ansible.builtin.command: certbot renew --dry-run
+
+  handlers:
+    - name: restart nginx
+      ansible.builtin.service:
+        name: nginx
+        state: reloaded
+
+    - name: restart backend
+      ansible.builtin.systemd:
+        name: backend
+        state: restarted
