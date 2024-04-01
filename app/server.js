@@ -1,22 +1,19 @@
 /* eslint-disable no-console */
 import Express from 'express';
-import cors from 'cors';
 import sendEmail from './sendEmail.js';
 
 export default () => {
   const app = new Express();
 
   app.use(Express.json());
-  app.use(cors());
 
   app.post('/api/applications', async (req, res) => {
     const formdata = req.body;
-    console.log({ req });
-    console.log({ formdata });
+    console.log(formdata);
 
     try {
-      // const info = await sendEmail(formdata);
-      // console.log(info);
+      const info = await sendEmail(formdata);
+      console.log(info);
       res.status(200).end('Письмо отправлено успешно');
     } catch (error) {
       console.error(error);
