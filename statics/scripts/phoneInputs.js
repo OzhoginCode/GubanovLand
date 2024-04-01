@@ -445,8 +445,7 @@ nameInputs.forEach(handleNameinput);
 policyCheckboxes.forEach(handlePolicy);
 
 const routes = {
-  // applicationsPath: () => 'http://gubanovmusic.ru/api/applications',
-  applicationsPath: () => 'http://localhost:4000/api/applications',
+  applicationsPath: () => 'http://gubanovmusic.ru/api/applications',
 };
 
 const apply = async (button, e) => {
