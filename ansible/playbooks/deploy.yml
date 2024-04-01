@@ -1,30 +1,34 @@
 - hosts: all
 
   tasks:
-    - name: apt update
-      ansible.builtin.apt:
-        autoclean: yes
-        # update_cache: yes
-        # upgrade: dist
-        autoremove: yes
-      become: yes
+      # - name: system update
+      #   ansible.builtin.apt:
+      #     autoclean: yes
+      #     update_cache: yes
+      #     # upgrade: dist
+      #     autoremove: yes
+      #   become: yes
           
-    - name: install node.js
-      import_role:
-        name: geerlingguy.nodejs
-      vars:
-        nodejs_version: "21.x"
-        nodejs_install_npm_user: "root"
+    # - name: install node.js
+    #   import_role:
+    #     name: geerlingguy.nodejs
+    #   vars:
+    #     nodejs_version: "21.x"
+    #     nodejs_install_npm_user: "root"
 
     - name: create appuser
       ansible.builtin.user:
         name: appuser
       become: yes
 
+    - name: set git config for safe directory
+      command: git config --global --add safe.directory /home/appuser/app
+
     - name: git clone app
       git:
         repo: https://github.com/OzhoginCode/gubanov-landing
         dest: /home/appuser/app
+        force: yes
       notify:
         - restart backend
       become_user: appuser
@@ -33,7 +37,6 @@
       command: make install
       args:
         chdir: /home/appuser/app
-      become_user: appuser
 
     - name: сopy .env file
       ansible.builtin.copy:
@@ -41,7 +44,6 @@
         dest: /home/appuser/app/.env
       notify:
         - restart backend
-      become_user: appuser
 
     - name: build statics
       command: make build
@@ -49,26 +51,43 @@
         chdir: /home/appuser/app
       notify:
         - restart nginx
-      become_user: appuser
 
-    - name: set permissions
+    - name: change app folder owner and group
+      ansible.builtin.file:
+        path: /home/appuser/app
+        owner: appuser
+        group: appuser
+        recurse: yes
+      become: yes
+
+    - name: set permissions for files
+      file:
+        path: "{{ item }}"
+        mode: 0600
+      loop:
+        - /home/appuser/app/.env
+        - /home/appuser/app/.eslintignore
+        - /home/appuser/app/.eslintrc.yml
+        - /home/appuser/app/.gitignore
+        - /home/appuser/app/Makefile
+        - /home/appuser/app/package.json
+        - /home/appuser/app/package-lock.json
+        - /home/appuser/app/webpack.config.js
+      notify:
+        - restart nginx
+        - restart backend
+
+    - name: set permissions for directories
       file:
         path: "{{ item }}"
         mode: 0700
+        recurse: yes
       loop:
         - /home/appuser/app/app
         - /home/appuser/app/ansible
-        - /home/appuser/app/.env
-        - /home/appuser/app/.eslingignore
-        - /home/appuser/app/.eslintrc.yml
         - /home/appuser/app/.git
-        - /home/appuser/app/.gitignore
-        - /home/appuser/app/Makefile
         - /home/appuser/app/node_modules
-        - /home/appuser/app/package.json
-        - /home/appuser/app/package-lock.json
         - /home/appuser/app/statics
-        - /home/appuser/app/webpack.config.js
       notify:
         - restart nginx
         - restart backend
@@ -94,6 +113,7 @@
       ansible.builtin.systemd:
         name: backend
         state: started
+        enabled: true
 
     - name: install prerequisites for nginx
       apt:
@@ -186,6 +206,11 @@
     - name: test automatic renewal
       ansible.builtin.command: certbot renew --dry-run
 
+    - name: install htop
+      ansible.builtin.apt:
+        name: htop
+        state: present
+
   handlers:
     - name: restart nginx
       ansible.builtin.service:
@@ -196,3 +221,8 @@
       ansible.builtin.systemd:
         name: backend
         state: restarted
+
+# TASKS:
+
+# UFW setup (community.general.ufw)
+# ssh config
