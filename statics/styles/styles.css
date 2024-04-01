@@ -2313,12 +2313,6 @@ input[type="number"] {
   width: 100%;
 }
 
-/* .iti__flag {
-  width: 14px !important;
-  height: 14px !important;
-  border-radius: 50%;
-} */
-
 .iti__country-name {
   color: var(--white-1);
 }
@@ -2337,6 +2331,10 @@ input[type="number"] {
   background-color: var(--dark-grey-background) !important;
 
   font: var(--font-14rr);
+}
+
+.iti__tel-input {
+  margin-left: 0 !important;
 }
 
 .section-communication-form .phonenumber-input-container {

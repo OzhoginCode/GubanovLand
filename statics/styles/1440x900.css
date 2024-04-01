@@ -578,7 +578,7 @@
   }
 
   .section-communication-form .phonenumber-input-container {
-    margin-top: 2px;
+    margin-top: 3px;
   }
 
   .section-communication-form-legend {
@@ -610,6 +610,7 @@
   }
 
   /* UI KIT */
+
   .scroll-button svg{
     width: 32px;
     height: 32px;
@@ -617,5 +618,9 @@
   
   .scroll-button-left {
     margin-right: 44px; 
+  }
+
+  .section-communication-form .phonenumber-input-container {
+    font: var(--font-14r);
   }
 }
