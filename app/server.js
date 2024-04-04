@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import Express from 'express';
 import sendEmail from './sendEmail.js';
-import formatEmailText from './formatEmailText';
+import formatEmailText from './formatEmailText.js';
 
 export default () => {
   const app = new Express();
