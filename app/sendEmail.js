@@ -14,20 +14,12 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const createEmailText = (data) => {
-  const {
-    name, phone, message, formType, applicationType,
-  } = data;
-
-  return `${name}\nPhone: ${phone}\n\n${message}\n${formType}, ${applicationType}`;
-};
-
-export default async (data) => {
+export default async (text) => {
   const mailOptions = {
     from: process.env.SERVER_EMAIL,
     to: process.env.RECIPIENT_EMAIL,
     subject: 'Новая заявка на сайте!',
-    text: createEmailText(data),
+    text,
   };
 
   try {

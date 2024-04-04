@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 import Express from 'express';
 import sendEmail from './sendEmail.js';
+import formatEmailText from './formatEmailText';
 
 export default () => {
   const app = new Express();
@@ -9,21 +10,22 @@ export default () => {
 
   app.post('/api/applications', async (req, res) => {
     const formdata = req.body;
-    console.log(formdata);
+    console.log({ formdata });
 
     try {
-      const info = await sendEmail(formdata);
-      console.log(info);
-      res.status(200).end('Письмо отправлено успешно');
+      const mailText = formatEmailText(formdata);
+      const info = await sendEmail(mailText);
+      console.log({ info });
+      res.status(200).end();
     } catch (error) {
-      console.error(error);
-      res.status(500).end('Что-то пошло не так!');
+      console.error({ error });
+      res.status(500).end();
     }
   });
 
   app.use((err, req, res) => {
     console.error(err.stack);
-    res.status(500).end('Что-то пошло не так!');
+    res.status(500).end();
   });
 
   return app;
