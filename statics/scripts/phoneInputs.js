@@ -448,7 +448,7 @@ const routes = {
   applicationsPath: () => '/applications',
 };
 
-axios.defaults.baseURL = 'http://gubanovmusic.ru/api'; // eslint-disable-line
+axios.defaults.baseURL = 'https://gubanovmusic.ru/api'; // eslint-disable-line
 
 const apply = async (button, e) => {
   e.preventDefault();
