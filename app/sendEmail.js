@@ -17,7 +17,10 @@ const transporter = nodemailer.createTransport({
 export default async (text) => {
   const mailOptions = {
     from: process.env.SERVER_EMAIL,
-    to: process.env.RECIPIENT_EMAIL,
+    to: [
+      process.env.RECIPIENT_EMAIL,
+      process.env.RECIPIENT_EMAIL_2,
+    ],
     subject: 'Новая заявка на сайте!',
     text,
   };
