@@ -445,8 +445,10 @@ nameInputs.forEach(handleNameinput);
 policyCheckboxes.forEach(handlePolicy);
 
 const routes = {
-  applicationsPath: () => '/api/applications',
+  applicationsPath: () => '/applications',
 };
+
+axios.defaults.baseURL = 'http://gubanovmusic.ru/api'; // eslint-disable-line
 
 const apply = async (button, e) => {
   e.preventDefault();
