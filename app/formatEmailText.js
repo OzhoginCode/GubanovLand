@@ -1,5 +1,7 @@
 const formatApplicationType = (type) => {
   switch (type) {
+    case 'main':
+      return 'Остались вопросы';
     case 'try-for-free':
       return 'Попробовать бесплатно';
     case 'order-song':
