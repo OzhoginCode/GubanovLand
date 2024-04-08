@@ -448,8 +448,6 @@ const routes = {
   applicationsPath: () => '/applications',
 };
 
-axios.defaults.baseURL = 'https://gubanovmusic.ru/api'; // eslint-disable-line
-
 const apply = async (button, e) => {
   e.preventDefault();
 
@@ -465,7 +463,15 @@ const apply = async (button, e) => {
   render();
 
   try {
-    await axios.post(routes.applicationsPath(), formDataObject); // eslint-disable-line
+    const response = await fetch(`https://gubanovmusic.ru/api${routes.applicationsPath()}`, {
+      method: 'POST',
+      body: formDataObject,
+    });
+
+    if (!response.ok) {
+      throw new Error();
+    }
+
     formsState.state = 'filling';
     render();
     const event = new Event('form-sent');
@@ -474,7 +480,8 @@ const apply = async (button, e) => {
     formsState.state = 'filling';
     render();
 
-    alert('УПС!!! Что-то пошло не так, попробуйте перезагрузить страницу'); // eslint-disable-line 
+    // eslint-disable-next-line no-alert
+    alert('Что-то пошло не так, попробуйте перезагрузить страницу. Если перезагрузка не поможет, попробуйте позднее или свяжитесь с нами по контактам, указанным внизу страницы');
   }
 };
 

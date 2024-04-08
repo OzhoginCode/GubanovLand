@@ -6,7 +6,6 @@
     <title>Песня на заказ</title>
     <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@20.3.0/build/js/intlTelInput.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
   </head>
   <body class="body">
     <header class="head">
@@ -100,7 +99,10 @@
           </div>
           <img src="./assets/images/header-circles.svg" alt="" class="section-main-header-circles">
           <div class="section-main-right">
-            <video autoplay muted loop preload="auto" playsinline src="./assets/video/section-main-video.mp4" class="section-main-video"></video>
+            <video autoplay muted loop preload="auto" playsinline class="section-main-video">
+              <source src="./assets/video/section-main-video.webm" type="video/webm">
+              <source src="./assets/video/section-main-video.mp4" type="video/mp4">
+            </video>
             <div>
               <div class="section-main-right-text">
                 <span>я работал</span>
@@ -167,7 +169,10 @@
       <section class="section-playlists">
         <div class="section-playlists-container sections-container">
           <div class="section-playlists-video-div">
-            <video autoplay muted loop preload="auto" playsinline src="./assets/video/section-playlists-video.mp4" class="sections-playlists-video"></video>
+            <video autoplay muted loop preload="auto" playsinline class="sections-playlists-video">
+              <source src="./assets/video/section-playlists-video.webm" type="video/webm">
+              <source src="./assets/video/section-playlists-video.mp4" type="video/mp4">
+            </video>            
           </div>
           <div class="section-playlists-right-div">
             <h2 class="section-playlists-right-header">
@@ -612,7 +617,10 @@
                 <div class="section-stages-ul-description">Публикация трека на цифровых площадках</div>
               </li>
             </ul>
-            <video autoplay muted loop preload="auto" playsinline src="./assets/video/section-stages-video-cassette.mp4" class="section-stages-video-cassette"></video>
+            <video autoplay muted loop preload="auto" playsinline class="section-stages-video-cassette">
+              <source src="./assets/video/section-stages-video-cassette.webm" type="video/webm">
+              <source src="./assets/video/section-stages-video-cassette.mp4" type="video/mp4">
+            </video>
           </div>
         </div>
       </section>
