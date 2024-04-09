@@ -459,13 +459,18 @@ const apply = async (button, e) => {
   formDataObject.formType = form.dataset.form;
   formDataObject.applicationType = form.dataset.applicationType;
 
+  const body = JSON.stringify(formDataObject);
+
   formsState.state = 'sending';
   render();
 
   try {
     const response = await fetch(`https://gubanovmusic.ru/api${routes.applicationsPath()}`, {
       method: 'POST',
-      body: formDataObject,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body,
     });
 
     if (!response.ok) {
