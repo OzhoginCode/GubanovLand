@@ -405,7 +405,7 @@ html {
   width: 100%;
   height: auto;
 
-  background-image: url(../assets/images/info-block-photo-2.png);
+  background-image: url(../assets/images/info-block-photo-2.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -1439,6 +1439,8 @@ html {
 
 .section-reviews-review-img {
   width: 44px;
+
+  border-radius: 100%;
 }
 
 .section-reviews-review-head-name-container {
