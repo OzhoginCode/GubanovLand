@@ -1,1053 +1,1197 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Песня на заказ</title>
-    <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
-    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@21.1.4/build/js/intlTelInput.min.js" defer></script>
-  </head>
-  <body class="body">
-    <header class="head">
-      <img src="./assets/images/section-works-line.svg" class="header-menu-line">
-      <a class="div-logo" href="#">
-        <img src="./assets/images/logo-header.png" class="logo-header">
-        <div class="logo-name-header">
-          GMusic
-        </div>
-      </a>
-      <button class="header-menu-button">
-        <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 1H29.25" stroke="white" stroke-width="2"/>
-          <path d="M0 10H29.25" stroke="white" stroke-width="2"/>
-          <path d="M0 19H29.25" stroke="white" stroke-width="2"/>
-        </svg>          
-      </button>
-      <nav class="nav">
-        <ul class="nav-ul">
-          <li><a href="#section-about" class="text-button-1">Обо мне</a></li>
-          <li><a href="#section-works" class="text-button-1">Работы</a></li>
-          <li><a href="#section-prices" class="text-button-1">Цены</a></li>
-          <li><a href="#section-communication" class="text-button-1">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="header-contacts">
-        <a href="tel:+79312252397" class="header-contacts-phone">8 (931) 225-23-97</a>
-        <a href="tel:+79312252397" class="header-contacts-phone-small"><img src="./assets/images/phone-icon.svg"></a>
-        <div class="header-contacts-messangers">
-          <a href="https://api.whatsapp.com/send?%20phone=79657518041" target="_blank" class="header-contacts-messangers-item"><img src="./assets/images/whatsapp-icon.png"></a>
-          <a href="https://web.telegram.org/k/#@ivangubanovmusic" target="_blank" class="header-contacts-messangers-item"><img src="./assets/images/telegram-icon.png"></a>
-        </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Песня на заказ</title>
+  <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@21.1.4/build/js/intlTelInput.min.js" defer></script>
+</head>
+
+<body class="body">
+  <header class="head">
+    <img src="./assets/images/section-works-line.svg" class="header-menu-line">
+    <a class="div-logo" href="#">
+      <img src="./assets/images/logo-header.png" class="logo-header">
+      <div class="logo-name-header">
+        GMusic
       </div>
-      <div class="div-button-block">
-        <a href="#" class="right-button-header middle-button secondary-button" data-modal-type="submit-application">
-          <span>Оставить заявку</span>
-        </a>
-      </div>
-      <div class="header-right-container-img-container">
-        <a href="https://t.me/VanyaSolminor" target="_blank">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
-            <path d="M20.506 8.83887C14.756 8.83887 10.0893 13.5055 10.0893 19.2555C10.0893 25.0055 14.756 29.6722 20.506 29.6722C26.256 29.6722 30.9226 25.0055 30.9226 19.2555C30.9226 13.5055 26.256 8.83887 20.506 8.83887ZM25.3393 15.9222C25.183 17.568 24.506 21.568 24.1622 23.4118C24.0164 24.193 23.7247 24.4535 23.4539 24.4847C22.8497 24.5368 22.3914 24.0889 21.808 23.7035C20.8914 23.0993 20.3705 22.7243 19.4851 22.141C18.4539 21.4639 19.1205 21.0889 19.7143 20.4847C19.8705 20.3285 22.5372 17.9014 22.5893 17.6826C22.5965 17.6495 22.5956 17.6151 22.5865 17.5824C22.5774 17.5497 22.5605 17.5198 22.5372 17.4951C22.4747 17.443 22.3914 17.4639 22.3185 17.4743C22.2247 17.4951 20.7664 18.4639 17.9226 20.3805C17.506 20.6618 17.131 20.8076 16.7976 20.7972C16.4226 20.7868 15.7143 20.5889 15.183 20.4118C14.5268 20.2035 14.0164 20.0889 14.058 19.7243C14.0789 19.5368 14.3393 19.3493 14.8289 19.1514C17.8705 17.8285 19.8914 16.9535 20.9018 16.5368C23.7976 15.3285 24.3914 15.1201 24.7872 15.1201C24.8705 15.1201 25.0685 15.141 25.1935 15.2451C25.2976 15.3285 25.3289 15.443 25.3393 15.5264C25.3289 15.5889 25.3497 15.7764 25.3393 15.9222Z" fill="white"/>
-            <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098"/>
-          </svg>
-        </a>
-        <a href="https://instagram.com/gubanovmusic?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
-            <mask id="mask0_450_583" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="11" y="9" width="18" height="19">
-              <path d="M13.3819 13.071C14.3944 13.071 15.2153 12.2502 15.2153 11.2376C15.2153 10.2251 14.3944 9.4043 13.3819 9.4043C12.3694 9.4043 11.5486 10.2251 11.5486 11.2376C11.5486 12.2502 12.3694 13.071 13.3819 13.071Z" fill="white"/>
-              <path d="M11.5488 15.8208H15.2155V27.2791H11.5488V15.8208ZM18.8822 20.175V27.2791H22.0905V20.8625C22.0905 19.7166 22.778 18.8 23.9238 18.8C25.0697 18.8 25.7572 19.9458 25.7572 20.8625V27.2791H28.9655V20.175C28.9655 18.8 27.3613 15.8208 23.9238 15.8208C20.4863 15.8208 18.8822 18.8 18.8822 20.175Z" fill="white"/>
-            </mask>
-            <g mask="url(#mask0_450_583)">
-              <path d="M9.25708 7.5708H31.2571V29.5708H9.25708V7.5708Z" fill="white"/>
-            </g>
-            <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098"/>
-          </svg>
-        </a>
-        <a href="https://vk.com/gubanovmusic" target="_blank">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
-            <path d="M29.0279 27.1521H26.6518C25.7529 27.1521 25.482 26.4239 23.8706 24.8114C22.4622 23.4541 21.8674 23.2854 21.5112 23.2854C21.0185 23.2854 20.8841 23.4208 20.8841 24.0989V26.2364C20.8841 26.8146 20.6966 27.1531 19.1862 27.1531C17.7209 27.0547 16.2999 26.6095 15.0403 25.8543C13.7808 25.0991 12.7186 24.0555 11.9414 22.8094C10.096 20.5125 8.81193 17.8167 8.19141 14.9364C8.19141 14.5802 8.32682 14.2573 9.00599 14.2573H11.381C11.9914 14.2573 12.2112 14.5291 12.4508 15.1573C13.6039 18.551 15.5716 21.5031 16.3706 21.5031C16.6768 21.5031 16.8102 21.3677 16.8102 20.6041V17.1083C16.7091 15.5135 15.8622 15.3791 15.8622 14.8021C15.873 14.6498 15.9426 14.5077 16.0564 14.406C16.1702 14.3043 16.3191 14.2509 16.4716 14.2573H20.2049C20.7154 14.2573 20.8841 14.5114 20.8841 15.1219V19.8406C20.8841 20.35 21.1029 20.5187 21.257 20.5187C21.5633 20.5187 21.7987 20.35 22.3602 19.7896C23.5637 18.3218 24.5469 16.6866 25.2789 14.9354C25.3538 14.7251 25.4955 14.5452 25.6822 14.4229C25.869 14.3007 26.0906 14.2429 26.3133 14.2583H28.6893C29.4018 14.2583 29.5529 14.6146 29.4018 15.1229C28.5376 17.0587 27.4683 18.8963 26.2122 20.6041C25.956 20.9948 25.8539 21.1979 26.2122 21.6562C26.4477 22.0125 27.281 22.7083 27.8404 23.3698C28.655 24.1823 29.331 25.1219 29.8424 26.151C30.0466 26.8135 29.706 27.1521 29.0279 27.1521Z" fill="white"/>
-            <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098"/>
-          </svg>                
-        </a>
-      </div>
-    </header>
-    <main class="main">
-      <section class="section-main">
-        <div class="section-main-container sections-container">
-          <div class="section-main-left">
-            <div class="section-main-text">
-              <h1 class="h1">
-                АВТОРСКАЯ ПЕСНЯ
-              </h1>
-              <div class="section-main-lower-text-div">
-                <h2 class="h2">
-                  НА ЗАКАЗ
-                </h2>
-                <span class="section-main-lower-text-span">
-                  от саундпродюсера Ивана Губанова
-                </span>
-              </div>
-            </div>
-            <div class="section-main-buttons">
-              <a class="large-button main-button" data-modal-type="order-song">
-                <span>Заказать песню</span>
-              </a>
-              <a class="large-button secondary-button section-main-button-2" data-modal-type="try-for-free">
-                <span>Попробовать бесплатно</span>
-              </a>
-            </div>
-          </div>
-          <img src="./assets/images/header-circles.svg" class="section-main-header-circles">
-          <div class="section-main-right">
-            <video autoplay muted loop preload="auto" playsinline class="section-main-video">
-              <source src="./assets/video/section-main-video.webm" type="video/webm">
-              <source src="./assets/video/section-main-video.mp4" type="video/mp4">
-            </video>
-            <div>
-              <div class="section-main-right-text">
-                <span>я работал</span>
-                <span class="section-main-right-text-2">с ними</span>
-              </div>
-            </div>
-            <img src="./assets/images/section-main-arrow.svg" class="section-main-arrow">
-          </div>       
-        </div>
-      </section>
-      <section class="section-about" id="section-about">
-        <div class="section-about-container sections-container">
-          <div class="scrolling-text-section-about-container">
-            <div class="scrolling-text-section-about">
-              <span class="section-about-scrolling-text-upper right-scrolling-text">
-                КОМПОЗИТОР АРАНЖИРОВЩИК КОМПОЗИТОР АРАНЖИРОВЩИК КОМПОЗИТОР АРАНЖИРОВЩИК КОМПОЗИТОР АРАНЖИРОВЩИК КОМПОЗИТОР
-              </span>
-              <span class="section-about-scrolling-text-lower left-scrolling-text">
-                КОМПОЗИТОР АРАНЖИРОВЩИК КОМПОЗИТОР АРАНЖИРОВЩИК КОМПОЗИТОР АРАНЖИРОВЩИК КОМПОЗИТОР АРАНЖИРОВЩИК КОМПОЗИТОР
-              </span>
-            </div>
-          </div>
-          <div class="section-about-main">
-            <div class="left-photos-section-about">
-              <img src="./assets/images/info-block-photo-1.jpg" class="info-block-photo-1">
-              <div class="info-block-photo-2"></div>
-            </div>
-            <div class="right-section-about">
-              <div class="main-text-right-section-about">
-                <div class="main-text-right-section-about-1">
-                  <p class="text-indent-120 main-text-right-section-about-1-p-1">
-                    Я поработал с такими артистами как Мукка, Pyrokinesis, Ai Mori, Любарская, Диана Чрагян, Ravanna, IDAI и др...
-                  </p>
-                  <p>                 
-                    Получил золотую пластинку на трек Ravanna - “Жги” который набрал более 7,5 миллионов прослушиваний.<br><br>
-                  </p>
-                </div>
-                <div class="main-text-right-section-about-2">
-                  <p class="text-indent-193">
-                    Я постоянно совершенствуюсь в области ар-анжировки, синтеза звука и зву-корежиссуры.<br><br>
-                  </p>
-                  <p class="text-indent-86">
-                    Не обходится и без сцены, с группой RAVANNA в качестве гитариста я объездил всю Россию с концертами в тысячных залах.
-                  </p>
-                </div>
-              </div>
-              <div class="lower-right-section-about">
-                <div>
-                  <img src="./assets/images/info-block-arrow.svg" class="info-block-arrow">
-                </div>
-                <div class="lower-right-section-about-text">
-                  Меня зовут Ваня<br>
-                  я пишу музыку артистам
-                </div>
-                <div class="lower-right-section-about-images">
-                  <img src="./assets/images/info-block-image-goldenrec.png" alt="Золотая пластинка" class="info-block-image-goldenrec">
-                  <img src="./assets/images/info-block-image-Ivan.jpg" alt="Иван Губанов" class="info-block-image-Ivan">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-playlists">
-        <div class="section-playlists-container sections-container">
-          <div class="section-playlists-video-div">
-            <video autoplay muted loop preload="auto" playsinline class="sections-playlists-video">
-              <source src="./assets/video/section-playlists-video.webm" type="video/webm">
-              <source src="./assets/video/section-playlists-video.mp4" type="video/mp4">
-            </video>            
-          </div>
-          <div class="section-playlists-right-div">
-            <h2 class="section-playlists-right-header">
-              <span class="section-playlists-right-header-1">МОИ РАБОТЫ</span>
-              <span class="section-playlists-right-header-2">РЕГУЛЯРНО ПОПАДАЮТ</span>
-              <span class="section-playlists-right-header-3">В ТОП ЧАРТЫ</span>
-            </h2>
-            <ul class="section-playlists-right-images">
-              <li><img src="./assets/images/playlists-block-image-yandex.png" class="playlists-block-image-yandex"></li>
-              <li><img src="./assets/images/playlists-block-image-boom.png"></li>
-              <li><img src="./assets/images/playlists-block-image-zvuk.png"></li>
-              <li><img src="./assets/images/playlists-block-image-spotify.png"></li>
-            </ul>
-            <div class="section-playlists-right-text">
-              <p>
-                Треки над которыми я работал отправляются на дистрибуцию в стриминговые платформы. Где, совместно с лейблом Captain Drake rec., мы пишем рекомендательные письма музыкальным платформам, что увеличивает шанс попадания твоей песни в официальные плейлисты. Всё очень просто, быстро и без лишних шагов, так как мы работаем напрямую с теми кто загружает твой трек на цифровые площадки.
-              </p>
-              <p>
-                <br>Зачем нужна дистрибуция? Дело в том, что музыкальные сервисы платят за прослушивания артисту, что дает возможность зарабатывать на своём творчестве.
-              </p>
-            </div>
-          </div>      
-        </div>
-      </section>
-      <section class="section-works" id="section-works">
-        <div class="section-works-container sections-container">
-          <div class="section-works-upper">
-            <h2 class="sections-works-header">
-              <span class="sections-works-header-1">ПОСЛУШАЙ</span>
-              <span class="sections-works-header-2">ПРИМЕРЫ &#160;РАБОТ&#160;&#160;<div class="sections-works-header-inside">до и после</div> &#160;-</span>
-              <span class="sections-works-header-3">ПОЧУВСТВУЙ РАЗНИЦУ</span>
-            </h2>
-            <div class="section-works-upper-right-text">КАЧЕСТВЕННАЯ МУЗЫКА ОЧЕНЬ СИЛЬНО ВЛИЯЕТ НА ВОСПРИЯТИЕ ТРЕКА.</div>
-            <img src="./assets/images/section-works-line.svg" class="section-works-line">
-          </div>
-          <div id="section-works-audio-cards-container" class="section-works-audio-cards-container">
-            <div class="section-works-audio-card card-1">
-              <audio class="section-works-audio-card-player" preload="auto">
-                <source src="./assets/audio/ksema-ogon.m4a" type="audio/mp4">
-                <source src="./assets/audio/ksema-ogon.mp3" type="audio/mpeg">
-              </audio>
-              <div class="section-works-audio-card-head">
-                <img src="./assets/images/section-works-audio-card-img-1.jpg" alt="Обложка трека KSEMA - огонь" class="section-works-audio-card-img">
-                <div class="section-works-audio-card-head-title-container">
-                  <span class="section-works-audio-card-head-title">Огонь</span>
-                  <span class="section-works-audio-card-head-artist-name">KSEMA</span>
-                </div>
-                <div class="section-works-audio-card-site-container">
-                  <img src="./assets/images/section-works-audio-card-site-img.svg" class="section-works-audio-card-site-img">
-                  <span>Яндекс музыка</span>
-                </div>
-              </div>
-              <div class="section-works-audio-card-controls">
-                <button class="section-works-audio-card-controls-backward section-works-audio-card-controls-button">
-                  <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="6" y="32" width="6" height="32" rx="2.22272" transform="rotate(-180 6 32)" fill="white"/>
-                    <path d="M8.68174 16.7563C7.77276 16.1656 7.77276 14.8344 8.68174 14.2437L28.687 1.2442C29.6832 0.596907 31 1.31212 31 2.50047L31 28.4995C31 29.6879 29.6832 30.4031 28.687 29.7558L8.68174 16.7563Z" fill="white"/>
-                  </svg>                  
-                </button>
-                <button class="section-works-audio-card-controls-play section-works-audio-card-controls-button">
-                  <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22.3183 13.2437C23.2272 13.8344 23.2272 15.1656 22.3183 15.7563L2.31295 28.7558C1.31681 29.4031 -5.09473e-08 28.6879 9.96796e-10 27.4995L1.13745e-06 1.50047C1.1894e-06 0.312126 1.31682 -0.403091 2.31296 0.244205L22.3183 13.2437Z" fill="white"/>
-                  </svg>
-                </button>
-                <button class="section-works-audio-card-controls-forward section-works-audio-card-controls-button">
-                  <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="25" width="6" height="32" rx="2.22272" fill="white"/>
-                    <path d="M22.3183 14.2437C23.2272 14.8344 23.2272 16.1656 22.3183 16.7563L2.31295 29.7558C1.31681 30.4031 -5.09473e-08 29.6879 9.96796e-10 28.4995L1.13745e-06 2.50047C1.1894e-06 1.31213 1.31682 0.596909 2.31296 1.2442L22.3183 14.2437Z" fill="white"/>
-                  </svg>
-                </button>
-              </div>
-              <div class="section-works-audio-card-progress-bar-container">
-                <div class="section-works-audio-card-progress-bar"></div>
-                <svg id="slider" class="section-works-audio-card-progress-bar-circle" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-                  <circle class="section-works-audio-card-progress-bar-circle-inner" cx="8.90039" cy="8" r="8" fill="#FFF"/>
-                </svg>
-              </div>
-              <div class="section-works-audio-card-time-container">
-                <span class="section-works-audio-card-current-time">00:00</span>
-                <span class="section-works-audio-card-duration">00:15</span>
-              </div>
-              <div class="section-works-audio-card-before-after">
-                <span class="section-works-audio-card-span-before">до</span>
-                <div class="section-works-audio-card-progress-bar-vertical-line">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
-                    <path d="M1 0L1 42" stroke="white"/>
-                  </svg>
-                </div>
-                <span class="section-works-audio-card-span-after">после</span>
-              </div>
-            </div>
-            <!-- ВТОРАЯ КАРТОЧКА -->
-            <div class="section-works-audio-card card-2">
-              <audio class="section-works-audio-card-player" preload="auto">
-                <source src="./assets/audio/kate-rogalski-gromki-track.m4a" type="audio/mp4">
-                <source src="./assets/audio/kate-rogalski-gromki-track.mp3" type="audio/mpeg">
-              </audio>
-              <div class="section-works-audio-card-head">
-                <img src="./assets/images/section-works-audio-card-img-2.jpg" alt="Обложка трека KATE ROGALSKI - Громкий трек" class="section-works-audio-card-img">
-                <div class="section-works-audio-card-head-title-container">
-                  <span class="section-works-audio-card-head-title">Громкий трек</span>
-                  <span class="section-works-audio-card-head-artist-name">KATE ROGALSKI</span>
-                </div>
-                <div class="section-works-audio-card-site-container">
-                  <img src="./assets/images/section-works-audio-card-site-img.svg" class="section-works-audio-card-site-img">
-                  <span>Яндекс музыка</span>
-                </div>
-              </div>
-              <div class="section-works-audio-card-controls">
-                <button class="section-works-audio-card-controls-backward section-works-audio-card-controls-button">
-                  <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="6" y="32" width="6" height="32" rx="2.22272" transform="rotate(-180 6 32)" fill="white"/>
-                    <path d="M8.68174 16.7563C7.77276 16.1656 7.77276 14.8344 8.68174 14.2437L28.687 1.2442C29.6832 0.596907 31 1.31212 31 2.50047L31 28.4995C31 29.6879 29.6832 30.4031 28.687 29.7558L8.68174 16.7563Z" fill="white"/>
-                  </svg>                  
-                </button>
-                <button class="section-works-audio-card-controls-play section-works-audio-card-controls-button">
-                  <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22.3183 13.2437C23.2272 13.8344 23.2272 15.1656 22.3183 15.7563L2.31295 28.7558C1.31681 29.4031 -5.09473e-08 28.6879 9.96796e-10 27.4995L1.13745e-06 1.50047C1.1894e-06 0.312126 1.31682 -0.403091 2.31296 0.244205L22.3183 13.2437Z" fill="white"/>
-                  </svg>
-                </button>
-                <button class="section-works-audio-card-controls-forward section-works-audio-card-controls-button">
-                  <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="25" width="6" height="32" rx="2.22272" fill="white"/>
-                    <path d="M22.3183 14.2437C23.2272 14.8344 23.2272 16.1656 22.3183 16.7563L2.31295 29.7558C1.31681 30.4031 -5.09473e-08 29.6879 9.96796e-10 28.4995L1.13745e-06 2.50047C1.1894e-06 1.31213 1.31682 0.596909 2.31296 1.2442L22.3183 14.2437Z" fill="white"/>
-                  </svg>
-                </button>
-              </div>
-              <div class="section-works-audio-card-progress-bar-container">
-                <div class="section-works-audio-card-progress-bar"></div>
-                <svg id="slider" class="section-works-audio-card-progress-bar-circle" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-                  <circle class="section-works-audio-card-progress-bar-circle-inner" cx="8.90039" cy="8" r="8" fill="#FFF"/>
-                </svg>
-              </div>
-              <div class="section-works-audio-card-time-container">
-                <span class="section-works-audio-card-current-time">00:00</span>
-                <span class="section-works-audio-card-duration">00:15</span>
-              </div>
-              <div class="section-works-audio-card-before-after">
-                <span class="section-works-audio-card-span-before">до</span>
-                <div class="section-works-audio-card-progress-bar-vertical-line">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
-                    <path d="M1 0L1 42" stroke="white"/>
-                  </svg>
-                </div>
-                <span class="section-works-audio-card-span-after">после</span>
-              </div>
-            </div>
-            <div class="section-works-audio-card card-3">
-              <audio class="section-works-audio-card-player" preload="auto">
-                <source src="./assets/audio/lukanova-vechnaya-istoriya.m4a" type="audio/mp4">
-                <source src="./assets/audio/lukanova-vechnaya-istoriya.mp3" type="audio/mpeg">
-              </audio>
-              <div class="section-works-audio-card-head">
-                <img src="./assets/images/section-works-audio-card-img-3.jpg" alt="Обложка трека TONYA - Вечная история" class="section-works-audio-card-img">
-                <div class="section-works-audio-card-head-title-container">
-                  <span class="section-works-audio-card-head-title">Вечная история</span>
-                  <span class="section-works-audio-card-head-artist-name">TONYA</span>
-                </div>
-                <div class="section-works-audio-card-site-container">
-                  <img src="./assets/images/section-works-audio-card-site-img.svg" class="section-works-audio-card-site-img">
-                  <span>Яндекс музыка</span>
-                </div>
-              </div>
-              <div class="section-works-audio-card-controls">
-                <button class="section-works-audio-card-controls-backward section-works-audio-card-controls-button">
-                  <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="6" y="32" width="6" height="32" rx="2.22272" transform="rotate(-180 6 32)" fill="white"/>
-                    <path d="M8.68174 16.7563C7.77276 16.1656 7.77276 14.8344 8.68174 14.2437L28.687 1.2442C29.6832 0.596907 31 1.31212 31 2.50047L31 28.4995C31 29.6879 29.6832 30.4031 28.687 29.7558L8.68174 16.7563Z" fill="white"/>
-                  </svg>                  
-                </button>
-                <button class="section-works-audio-card-controls-play section-works-audio-card-controls-button">
-                  <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22.3183 13.2437C23.2272 13.8344 23.2272 15.1656 22.3183 15.7563L2.31295 28.7558C1.31681 29.4031 -5.09473e-08 28.6879 9.96796e-10 27.4995L1.13745e-06 1.50047C1.1894e-06 0.312126 1.31682 -0.403091 2.31296 0.244205L22.3183 13.2437Z" fill="white"/>
-                  </svg>
-                </button>
-                <button class="section-works-audio-card-controls-forward section-works-audio-card-controls-button">
-                  <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="25" width="6" height="32" rx="2.22272" fill="white"/>
-                    <path d="M22.3183 14.2437C23.2272 14.8344 23.2272 16.1656 22.3183 16.7563L2.31295 29.7558C1.31681 30.4031 -5.09473e-08 29.6879 9.96796e-10 28.4995L1.13745e-06 2.50047C1.1894e-06 1.31213 1.31682 0.596909 2.31296 1.2442L22.3183 14.2437Z" fill="white"/>
-                  </svg>
-                </button>
-              </div>
-              <div class="section-works-audio-card-progress-bar-container">
-                <div class="section-works-audio-card-progress-bar"></div>
-                <svg id="slider" class="section-works-audio-card-progress-bar-circle" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-                  <circle class="section-works-audio-card-progress-bar-circle-inner" cx="8.90039" cy="8" r="8" fill="#FFF"/>
-                </svg>
-              </div>
-              <div class="section-works-audio-card-time-container">
-                <span class="section-works-audio-card-current-time">00:00</span>
-                <span class="section-works-audio-card-duration">00:15</span>
-              </div>
-              <div class="section-works-audio-card-before-after">
-                <span class="section-works-audio-card-span-before">до</span>
-                <div class="section-works-audio-card-progress-bar-vertical-line">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
-                    <path d="M1 0L1 42" stroke="white"/>
-                  </svg>
-                </div>
-                <span class="section-works-audio-card-span-after">после</span>
-              </div>
-            </div>
-            <div class="section-works-audio-card card-4">
-              <audio class="section-works-audio-card-player" preload="auto">
-                <source src="./assets/audio/ksesha-uletai.m4a" type="audio/mp4">
-                <source src="./assets/audio/ksesha-uletai.mp3" type="audio/mpeg">
-              </audio>
-              <div class="section-works-audio-card-head">
-                <img src="./assets/images/section-works-audio-card-img-4.jpg" alt="Обложка трека KSESHA - Улетай" class="section-works-audio-card-img">
-                <div class="section-works-audio-card-head-title-container">
-                  <span class="section-works-audio-card-head-title">Улетай</span>
-                  <span class="section-works-audio-card-head-artist-name">KSESHA</span>
-                </div>
-                <div class="section-works-audio-card-site-container">
-                  <img src="./assets/images/section-works-audio-card-site-img.svg" class="section-works-audio-card-site-img">
-                  <span>Яндекс музыка</span>
-                </div>
-              </div>
-              <div class="section-works-audio-card-controls">
-                <button class="section-works-audio-card-controls-backward section-works-audio-card-controls-button">
-                  <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="6" y="32" width="6" height="32" rx="2.22272" transform="rotate(-180 6 32)" fill="white"/>
-                    <path d="M8.68174 16.7563C7.77276 16.1656 7.77276 14.8344 8.68174 14.2437L28.687 1.2442C29.6832 0.596907 31 1.31212 31 2.50047L31 28.4995C31 29.6879 29.6832 30.4031 28.687 29.7558L8.68174 16.7563Z" fill="white"/>
-                  </svg>                  
-                </button>
-                <button class="section-works-audio-card-controls-play section-works-audio-card-controls-button">
-                  <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22.3183 13.2437C23.2272 13.8344 23.2272 15.1656 22.3183 15.7563L2.31295 28.7558C1.31681 29.4031 -5.09473e-08 28.6879 9.96796e-10 27.4995L1.13745e-06 1.50047C1.1894e-06 0.312126 1.31682 -0.403091 2.31296 0.244205L22.3183 13.2437Z" fill="white"/>
-                  </svg>
-                </button>
-                <button class="section-works-audio-card-controls-forward section-works-audio-card-controls-button">
-                  <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="25" width="6" height="32" rx="2.22272" fill="white"/>
-                    <path d="M22.3183 14.2437C23.2272 14.8344 23.2272 16.1656 22.3183 16.7563L2.31295 29.7558C1.31681 30.4031 -5.09473e-08 29.6879 9.96796e-10 28.4995L1.13745e-06 2.50047C1.1894e-06 1.31213 1.31682 0.596909 2.31296 1.2442L22.3183 14.2437Z" fill="white"/>
-                  </svg>
-                </button>
-              </div>
-              <div class="section-works-audio-card-progress-bar-container">
-                <div class="section-works-audio-card-progress-bar"></div>
-                <svg id="slider" class="section-works-audio-card-progress-bar-circle" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-                  <circle class="section-works-audio-card-progress-bar-circle-inner" cx="8.90039" cy="8" r="8" fill="#FFF"/>
-                </svg>
-              </div>
-              <div class="section-works-audio-card-time-container">
-                <span class="section-works-audio-card-current-time">00:00</span>
-                <span class="section-works-audio-card-duration">00:15</span>
-              </div>
-              <div class="section-works-audio-card-before-after">
-                <span class="section-works-audio-card-span-before">до</span>
-                <div class="section-works-audio-card-progress-bar-vertical-line">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
-                    <path d="M1 0L1 42" stroke="white"/>
-                  </svg>
-                </div>
-                <span class="section-works-audio-card-span-after">после</span>
-              </div>
-            </div>
-            <div class="section-works-audio-card card-5">
-              <audio class="section-works-audio-card-player" preload="auto">
-                <source src="./assets/audio/tvoya-bivshaya-allo.m4a" type="audio/mp4">
-                <source src="./assets/audio/tvoya-bivshaya-allo.mp3" type="audio/mpeg">
-              </audio>
-              <div class="section-works-audio-card-head">
-                <img src="./assets/images/section-works-audio-card-img-5.jpg" alt="Обложка трека ТВОЯ БЫВШАЯ - Алло" class="section-works-audio-card-img">
-                <div class="section-works-audio-card-head-title-container">
-                  <span class="section-works-audio-card-head-title">Алло</span>
-                  <span class="section-works-audio-card-head-artist-name">ТВОЯ БЫВШАЯ</span>
-                </div>
-                <div class="section-works-audio-card-site-container">
-                  <img src="./assets/images/section-works-audio-card-site-img.svg" class="section-works-audio-card-site-img">
-                  <span>Яндекс музыка</span>
-                </div>
-              </div>
-              <div class="section-works-audio-card-controls">
-                <button class="section-works-audio-card-controls-backward section-works-audio-card-controls-button">
-                  <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="6" y="32" width="6" height="32" rx="2.22272" transform="rotate(-180 6 32)" fill="white"/>
-                    <path d="M8.68174 16.7563C7.77276 16.1656 7.77276 14.8344 8.68174 14.2437L28.687 1.2442C29.6832 0.596907 31 1.31212 31 2.50047L31 28.4995C31 29.6879 29.6832 30.4031 28.687 29.7558L8.68174 16.7563Z" fill="white"/>
-                  </svg>                  
-                </button>
-                <button class="section-works-audio-card-controls-play section-works-audio-card-controls-button">
-                  <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22.3183 13.2437C23.2272 13.8344 23.2272 15.1656 22.3183 15.7563L2.31295 28.7558C1.31681 29.4031 -5.09473e-08 28.6879 9.96796e-10 27.4995L1.13745e-06 1.50047C1.1894e-06 0.312126 1.31682 -0.403091 2.31296 0.244205L22.3183 13.2437Z" fill="white"/>
-                  </svg>
-                </button>
-                <button class="section-works-audio-card-controls-forward section-works-audio-card-controls-button">
-                  <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="25" width="6" height="32" rx="2.22272" fill="white"/>
-                    <path d="M22.3183 14.2437C23.2272 14.8344 23.2272 16.1656 22.3183 16.7563L2.31295 29.7558C1.31681 30.4031 -5.09473e-08 29.6879 9.96796e-10 28.4995L1.13745e-06 2.50047C1.1894e-06 1.31213 1.31682 0.596909 2.31296 1.2442L22.3183 14.2437Z" fill="white"/>
-                  </svg>
-                </button>
-              </div>
-              <div class="section-works-audio-card-progress-bar-container">
-                <div class="section-works-audio-card-progress-bar"></div>
-                <svg id="slider" class="section-works-audio-card-progress-bar-circle" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-                  <circle class="section-works-audio-card-progress-bar-circle-inner" cx="8.90039" cy="8" r="8" fill="#FFF"/>
-                </svg>
-              </div>
-              <div class="section-works-audio-card-time-container">
-                <span class="section-works-audio-card-current-time">00:00</span>
-                <span class="section-works-audio-card-duration">00:15</span>
-              </div>
-              <div class="section-works-audio-card-before-after">
-                <span class="section-works-audio-card-span-before">до</span>
-                <div class="section-works-audio-card-progress-bar-vertical-line">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
-                    <path d="M1 0L1 42" stroke="white"/>
-                  </svg>
-                </div>
-                <span class="section-works-audio-card-span-after">после</span>
-              </div>
-            </div>
-            <div class="section-works-audio-card card-6">
-              <audio class="section-works-audio-card-player" preload="auto">
-                <source src="./assets/audio/tory-tvoya.m4a" type="audio/mp4">
-                <source src="./assets/audio/tory-tvoya.mp3" type="audio/mpeg">
-              </audio>
-              <div class="section-works-audio-card-head">
-                <img src="./assets/images/section-works-audio-card-img-6.jpg" alt="Обложка трека TORY - Твоя" class="section-works-audio-card-img">
-                <div class="section-works-audio-card-head-title-container">
-                  <span class="section-works-audio-card-head-title">Твоя</span>
-                  <span class="section-works-audio-card-head-artist-name">TORY</span>
-                </div>
-                <div class="section-works-audio-card-site-container">
-                  <img src="./assets/images/section-works-audio-card-site-img.svg" class="section-works-audio-card-site-img">
-                  <span>Яндекс музыка</span>
-                </div>
-              </div>
-              <div class="section-works-audio-card-controls">
-                <button class="section-works-audio-card-controls-backward section-works-audio-card-controls-button">
-                  <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="6" y="32" width="6" height="32" rx="2.22272" transform="rotate(-180 6 32)" fill="white"/>
-                    <path d="M8.68174 16.7563C7.77276 16.1656 7.77276 14.8344 8.68174 14.2437L28.687 1.2442C29.6832 0.596907 31 1.31212 31 2.50047L31 28.4995C31 29.6879 29.6832 30.4031 28.687 29.7558L8.68174 16.7563Z" fill="white"/>
-                  </svg>                  
-                </button>
-                <button class="section-works-audio-card-controls-play section-works-audio-card-controls-button">
-                  <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22.3183 13.2437C23.2272 13.8344 23.2272 15.1656 22.3183 15.7563L2.31295 28.7558C1.31681 29.4031 -5.09473e-08 28.6879 9.96796e-10 27.4995L1.13745e-06 1.50047C1.1894e-06 0.312126 1.31682 -0.403091 2.31296 0.244205L22.3183 13.2437Z" fill="white"/>
-                  </svg>
-                </button>
-                <button class="section-works-audio-card-controls-forward section-works-audio-card-controls-button">
-                  <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="25" width="6" height="32" rx="2.22272" fill="white"/>
-                    <path d="M22.3183 14.2437C23.2272 14.8344 23.2272 16.1656 22.3183 16.7563L2.31295 29.7558C1.31681 30.4031 -5.09473e-08 29.6879 9.96796e-10 28.4995L1.13745e-06 2.50047C1.1894e-06 1.31213 1.31682 0.596909 2.31296 1.2442L22.3183 14.2437Z" fill="white"/>
-                  </svg>
-                </button>
-              </div>
-              <div class="section-works-audio-card-progress-bar-container">
-                <div class="section-works-audio-card-progress-bar"></div>
-                <svg id="slider" class="section-works-audio-card-progress-bar-circle" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-                  <circle class="section-works-audio-card-progress-bar-circle-inner" cx="8.90039" cy="8" r="8" fill="#FFF"/>
-                </svg>
-              </div>
-              <div class="section-works-audio-card-time-container">
-                <span class="section-works-audio-card-current-time">00:00</span>
-                <span class="section-works-audio-card-duration">00:15</span>
-              </div>
-              <div class="section-works-audio-card-before-after">
-                <span class="section-works-audio-card-span-before">до</span>
-                <div class="section-works-audio-card-progress-bar-vertical-line">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
-                    <path d="M1 0L1 42" stroke="white"/>
-                  </svg>
-                </div>
-                <span class="section-works-audio-card-span-after">после</span>
-              </div>
-            </div>
-            <div class="fixer"></div>
-          </div>
-          <div class="section-works-scroll-buttons-container">
-            <button id="sectionWorksScrollButtonLeft" class="scroll-button-left scroll-button scroll-button-disabled">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                <circle cx="20" cy="20" r="19.5" stroke="#fff"/>
-                <path d="M23 12L15 20L23 28" stroke="#fff" stroke-width="2"/>
-              </svg>
-            </button>
-            <button id="sectionWorksScrollButtonRight" class="scroll-button scroll-button-enabled">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                <circle cx="20" cy="20" r="19.5" stroke="#fff"/>
-                <path d="M17 12L25 20L17 28" stroke="#fff" stroke-width="2"/>
-              </svg>
-            </button>
-          </div>
-          <div class="section-works-lower-text-container">
-            <div>ПОСЛУШАТЬ ВСЕ<br>МОИ РАБОТЫ ТЫ<br>МОЖЕШЬ&nbsp;
-              <div class="section-works-lower-text-container-button text-button-3">
-                <a href="https://vk.com/music/playlist/40895579_65097748" target="_blank">ЗДЕСЬ</a>
-                <svg class="section-works-lower-text-line" xmlns="http://www.w3.org/2000/svg" width="51" height="2" viewBox="0 0 51 2" fill="none">
-                  <path d="M0 1H51" stroke="#FFCB5A"/>
-                </svg>
-              </div>
-            </div>
-            <div>В МОЕМ<br>ПОРТФОЛИО<br>БОЛЕЕ 150 РАБОТ</div>
-          </div>
-        </div>
-      </section>
-      <section class="section-stages">
-        <div class="section-stages-container sections-container">
-          <h2 class="sections-stages-header">
-            <span class="sections-stages-header-1">СОЗДАНИЕ ПЕСНИ - ТВОРЧЕСКИЙ</span>
-            <span>ПРОЦЕСС, КОТОРЫЙ ПРОХОДИТ</span>
-            <span>ЧЕРЕЗ 5 ЭТАПОВ</span>
-          </h2>
-          <div class="section-stages-lower-container">
-            <ul>
-              <li class="mt0">
-                <span class="section-stages-ul-numbers">01</span>
-                <span class="section-stages-ul-header">ДЕМО</span>
-                <div class="section-stages-lower-container-ul-li-img"></div>
-                <div class="section-stages-ul-description">
-                  Основа будущей песни 
-                  <a class="section-stages-ul-a text-button-2" data-modal-type="try-for-free">
-                    Попробуй бесплатно 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none" class="section-stages-ul-a-img">
-                      <path d="M1 1.25L6 6.25L1.5 10.75" stroke="#FFCB5A" stroke-width="1.5" class="text-button-2-svg-path"/>
-                    </svg>
-                  </a>
-                </div>
-              </li>
-              <li>
-                <span class="section-stages-ul-numbers">02</span>
-                <span class="section-stages-ul-header">АРАНЖИРОВКА</span>
-                <div class="section-stages-lower-container-ul-li-img"></div>
-                <div class="section-stages-ul-description">Полноценный минус радиоформата</div>
-              </li>
-              <li>
-                <span class="section-stages-ul-numbers">03</span>
-                <span class="section-stages-ul-header">ЗАПИСЬ</span>
-                <div class="section-stages-lower-container-ul-li-img"></div>
-                <div class="section-stages-ul-description">Запись вокала на студии звукозаписи</div>
-              </li>
-              <li>
-                <span class="section-stages-ul-numbers">04</span>
-                <span class="section-stages-ul-header">СВЕДЕНИЕ</span>
-                <div class="section-stages-lower-container-ul-li-img"></div>
-                <div class="section-stages-ul-description">Процесс доведения звука до проф уровня</div>
-              </li>
-              <li>
-                <span class="section-stages-ul-numbers">05</span>
-                <span class="section-stages-ul-header">ДИСТРИБУЦИЯ</span>
-                <div class="section-stages-lower-container-ul-li-img"></div>
-                <div class="section-stages-ul-description">Публикация трека на цифровых площадках</div>
-              </li>
-            </ul>
-            <video autoplay muted loop preload="auto" playsinline class="section-stages-video-cassette">
-              <source src="./assets/video/section-stages-video-cassette.webm" type="video/webm">
-              <source src="./assets/video/section-stages-video-cassette.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </section>
-      <section class="section-prices" id="section-prices">
-        <div class="section-prices-container sections-container">
-          <div class="section-prices-header-container">
-            <div class="section-prices-header">
-              <span class="section-prices-header-scrolling-text-upper">
-                СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ
-              </span>
-              <span class="section-prices-header-scrolling-text-lower">
-                СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ
-              </span>
-            </div>
-          </div>
-          <div class="section-prices-lists-container">
-            <div class="section-prices-list-container-1 section-prices-list-container">
-              <h3 class="section-prices-lists-header">ПО РЕФЕРЕНСУ</h3>
-              <ul class="section-prices-ul">
-                <li class="section-prices-li section-prices-li-active">Аранжировка</li>
-                <li class="section-prices-li section-prices-li-active">Без ограничения на правки</li>
-                <li class="section-prices-li section-prices-li-active">Передача авторских прав</li>
-                <li class="section-prices-li section-prices-li-inactive">Рекомендация в плейлисты</li>
-                <li class="section-prices-li section-prices-li-inactive">Дистрибуция</li>
-                <li class="section-prices-li section-prices-li-inactive">Вокальная линия</li>
-                <li class="section-prices-li section-prices-li-inactive">Текст песни</li>
-                <li class="section-prices-li section-prices-li-inactive">Запись вокала</li>
-                <li class="section-prices-li section-prices-li-inactive">Сведение / мастеринг</li>
-              </ul>
-              <span class="section-prices-price">30 000 ₽</span>
-              <div class="section-prices-warning-container">
-                <img src="./assets/images/section-prices-warning.svg" class="section-prices-warning-img">
-                <span class="section-prices-warning-text">Поэтапная оплата</span>
-                <img src="./assets/images/section-prices-warning-lower-part.svg" class="section-prices-warning-hover-img">
-                <div class="section-prices-warning-hover-text">
-                  Работа начинается по предоплате в 10 000 ₽. Остаток вы доплачиваете когда утвердите что вам все нравится.
-                </div>
-              </div>
-              <a class="section-prices-button large-button main-button" data-modal-type="by-reference">
-                <span>Оставить заявку</span>
-              </a>
-            </div>
-            <div class="section-prices-list-container-2 section-prices-list-container">
-              <h3 class="section-prices-lists-header">ПРОДЮСИРОВАНИЕ</h3>
-              <ul class="section-prices-ul">
-                <li class="section-prices-li section-prices-li-active">Аранжировка</li>
-                <li class="section-prices-li section-prices-li-active">Без ограничения на правки</li>
-                <li class="section-prices-li section-prices-li-active">Передача авторских прав</li>
-                <li class="section-prices-li section-prices-li-active">Рекомендация в плейлисты</li>
-                <li class="section-prices-li section-prices-li-active">Дистрибуция</li>
-                <li class="section-prices-li section-prices-li-active">Вокальная линия</li>
-                <li class="section-prices-li section-prices-li-active">Текст песни</li>
-                <li class="section-prices-li section-prices-li-inactive">Запись вокала</li>
-                <li class="section-prices-li section-prices-li-inactive">Сведение / мастеринг</li>
-              </ul>
-              <span class="section-prices-price">60 000 ₽</span>
-              <div class="section-prices-warning-container">
-                <img src="./assets/images/section-prices-warning.svg" class="section-prices-warning-img">
-                <span class="section-prices-warning-text">Поэтапная оплата</span>
-                <div class="section-prices-warning-hover-text">
-                  Работа начинается по предоплате в 10 000 ₽. Остаток вы доплачиваете когда утвердите что вам все нравится.
-                </div>
-              </div>
-              <a class="section-prices-button large-button main-button" data-modal-type="producing">
-                <span>Оставить заявку</span>
-              </a>
-            </div>
-            <div class="section-prices-list-container-3 section-prices-list-container">
-              <h3 class="section-prices-lists-header">ПОД КЛЮЧ</h3>
-              <ul class="section-prices-ul">
-                <li class="section-prices-li section-prices-li-active">Аранжировка</li>
-                <li class="section-prices-li section-prices-li-active">Без ограничения на правки</li>
-                <li class="section-prices-li section-prices-li-active">Передача авторских прав</li>
-                <li class="section-prices-li section-prices-li-active">Рекомендация в плейлисты</li>
-                <li class="section-prices-li section-prices-li-active">Дистрибуция</li>
-                <li class="section-prices-li section-prices-li-active">Вокальная линия</li>
-                <li class="section-prices-li section-prices-li-active">Текст песни</li>
-                <li class="section-prices-li section-prices-li-active">Запись вокала</li>
-                <li class="section-prices-li section-prices-li-active">Сведение / мастеринг</li>
-              </ul>
-              <span class="section-prices-price">80 000 ₽</span>
-              <div class="section-prices-warning-container">
-                <img src="./assets/images/section-prices-warning.svg" class="section-prices-warning-img">
-                <span class="section-prices-warning-text">Поэтапная оплата</span>
-                <div class="section-prices-warning-hover-text">
-                  Работа начинается по предоплате в 10 000 ₽. Остаток вы доплачиваете когда утвердите что вам все нравится.
-                </div>
-              </div>
-              <a class="section-prices-button large-button main-button" data-modal-type="turnkey">
-                <span>Оставить заявку</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-reviews">
-        <div class="section-reviews-container sections-container">
-          <div class="section-reviews-upper-part">
-            <div class="section-reviews-upper-part-left-container">
-              <img src="./assets/images/section-reviews-quotes.svg" class="section-reviews-quotes-img">
-              <blockquote class="section-reviews-quote">
-                Я С ТРЕПЕТОМ ОТНОШУСЬ К СВОИМ КЛИЕНТАМ И РАБОТАЮ ДО ТОГО РЕЗУЛЬТАТА - КОТОРЫМ АРТИСТ ОСТАНЕТСЯ ДОВОЛЕН.
-              </blockquote>
-            </div>
-            <h2 class="section-reviews-header">
-              <span class="section-reviews-header-1">ЧТО ОБО МНЕ ГОВОРЯТ</span>
-              <span>ЛЮДИ С КОТОРЫМИ МЫ</span>
-              <span>РАБОТАЛИ</span>
-            </h2>
-          </div>
-          <div class="section-reviews-lower-part">
-            <div class="section-reviews-reviews-container" id="section-reviews-reviews-container">
-              <div class="section-reviews-review section-reviews-review-1">
-                <div class="section-reviews-review-head">
-                  <img src="./assets/images/section-reviews-review-img-1.jpg" alt="Аватарка клиента" class="section-reviews-review-img">
-                  <div class="section-reviews-review-head-name-container">
-                    <span>Софья</span>
-                    <div class="section-reviews-review-stars-container">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                    </div>
-                  </div>
-                </div>
-                <div class="section-reviews-review-text">
-                  Первый раз обратилась к Ивану по написанию аранжировки год назад. Я впервые делала песню и мало что понимала в этом, был страх, что у меня не получится. Но оказалось что я зря переживала, Ваня очень чутко и ответственно подходит к своему делу, не смотрит с высока, а наоборот воплощает все мои безумные идеи) в общем очень комфортно работать, ну и конечно качество на высоте! Сейчас уже делаю 6-ую песню! Количество прослушиваний переваливает за 4,5 млн!!! Я очень довольна результатом!
-                </div>
-                <a href="https://2gis.ru/spb/search/gmusic/firm/70000001069161478/30.283741%2C59.908528/tab/reviews" target="_blank">
-                  <img src="./assets/images/section-reviews-review-site-logo-2gis.png" class="section-reviews-review-site-logo">
-                </a>
-              </div>
-              <div class="section-reviews-review">
-                <div class="section-reviews-review-head">
-                  <img src="./assets/images/section-reviews-review-img-2.jpg" alt="Аватарка клиента" class="section-reviews-review-img">
-                  <div class="section-reviews-review-head-name-container">
-                    <span>Алексей М.</span>
-                    <div class="section-reviews-review-stars-container">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                    </div>
-                  </div>
-                </div>
-                <div class="section-reviews-review-text">
-                  После долгих поисков наткнулся на эту студию. Ознакомившись с примерами работ в группе, понял, что здесь качественно и с пониманием пишется музыка самых разных стилей. Обратился к Ивану за помощью с написанием аранжировки и не прогадал. Окончательный вариант получил очень быстро, буквально за несколько корректировок, так как Иван грамотно учел все мои пожелания. Всем доволен, рекомендую!
-                </div>
-                <a href="https://yandex.ru/maps/org/gmusic/9146338038/reviews/?ll=30.282064%2C59.908660&mode=search&sctx=ZAAAAAgBEAAaKAoSCY9WtaSjUD5AEQgB%2BRIq%2BE1AEhIJZVJDG4CN7z8RxMw%2Bj1Ge0T8iBgABAgMEBSgKOABAAkgBagJydZ0BzcxMPaABAKgBAL0B%2F7Ntm8IBBfaVqIkiggIGZ211c2ljigIAkgIAmgIMZGVza3RvcC1tYXBz&sll=30.282064%2C59.908660&sspn=0.030813%2C0.008611&tab=reviews&text=gmusic&z=16" target="_blank">
-                  <img src="./assets/images/section-reviews-review-site-logo-yandex.png" class="section-reviews-review-site-logo">
-                </a>
-              </div>
-              <div class="section-reviews-review">
-                <div class="section-reviews-review-head">
-                  <img src="./assets/images/section-reviews-review-img-3.jpg" alt="Аватарка клиента" class="section-reviews-review-img">
-                  <div class="section-reviews-review-head-name-container">
-                    <span>Виктория Н.</span>
-                    <div class="section-reviews-review-stars-container">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                    </div>
-                  </div>
-                </div>
-                <div class="section-reviews-review-text">
-                  Не первый год Ваня пишет мне аранжировки! И здесь же записываюсь!))
-                  До этого долго искала студию! Все всегда на высшем уровне!! 
-                  Ребята круты😎😎😎
-                </div>
-                <a href="https://2gis.ru/spb/search/gmusic/firm/70000001069161478/30.283741%2C59.908528/tab/reviews" target="_blank">
-                  <img src="./assets/images/section-reviews-review-site-logo-2gis.png" class="section-reviews-review-site-logo">
-                </a>
-              </div>
-              <div class="section-reviews-review">
-                <div class="section-reviews-review-head">
-                  <img src="./assets/images/section-reviews-review-img-4.jpg" alt="Аватарка клиента" class="section-reviews-review-img">
-                  <div class="section-reviews-review-head-name-container">
-                    <span>Татьяна Левина</span>
-                    <div class="section-reviews-review-stars-container">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                    </div>
-                  </div>
-                </div>
-                <div class="section-reviews-review-text">
-                  Долго искала аранжировщика, присылали какие-то странные вещи, не слыша меня совсем.В итоге наткнулась на Ваню, аранжировка превзошла все ожидания, мастер всегда на связи и подправляет аранжировку по твоему вкусу. После этого у песни были неплохие прослушивания, а Ваня оказался еще и очень вдохновляющим человеком.А для начинающего артиста поддержка и мотивация очень важны, обращайтесь, не пожалеете!
-                </div>
-                <a href="https://2gis.ru/spb/search/gmusic/firm/70000001069161478/30.283741%2C59.908528/tab/reviews" target="_blank">
-                  <img src="./assets/images/section-reviews-review-site-logo-2gis.png" class="section-reviews-review-site-logo">
-                </a>
-              </div>
-              <div class="section-reviews-review">
-                <div class="section-reviews-review-head">
-                  <img src="./assets/images/section-reviews-review-img-5.jpg" alt="Аватарка клиента" class="section-reviews-review-img">
-                  <div class="section-reviews-review-head-name-container">
-                    <span>Your F.</span>
-                    <div class="section-reviews-review-stars-container">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                      <img src="./assets/images/section-reviews-review-star.svg">
-                    </div>
-                  </div>
-                </div>
-                <div class="section-reviews-review-text">
-                  После долгих поисков наткнулся на эту студию. Ознакомившись с примерами работ в группе, понял, что здесь качественно и с пониманием пишется музыка самых разных стилей. Обратился к Ивану за помощью с написанием аранжировки и не прогадал. Окончательный вариант получил очень быстро, буквально за несколько корректировок, так как Иван грамотно учел все мои пожелания. Всем доволен, рекомендую!
-                </div>
-                <a href="https://yandex.ru/maps/org/gmusic/9146338038/reviews/?ll=30.282064%2C59.908660&mode=search&sctx=ZAAAAAgBEAAaKAoSCY9WtaSjUD5AEQgB%2BRIq%2BE1AEhIJZVJDG4CN7z8RxMw%2Bj1Ge0T8iBgABAgMEBSgKOABAAkgBagJydZ0BzcxMPaABAKgBAL0B%2F7Ntm8IBBfaVqIkiggIGZ211c2ljigIAkgIAmgIMZGVza3RvcC1tYXBz&sll=30.282064%2C59.908660&sspn=0.030813%2C0.008611&tab=reviews&text=gmusic&z=16" target="_blank">
-                  <img src="./assets/images/section-reviews-review-site-logo-yandex.png" class="section-reviews-review-site-logo">
-                </a>
-              </div>
-              <div class="fixer2"></div>
-            </div>
-            <div class="section-reviews-scroll-buttons-container">
-              <button id="sectionReviewsScrollButtonLeft" class="scroll-button-left scroll-button scroll-button-disabled">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                  <circle cx="20" cy="20" r="19.5" stroke="#fff"/>
-                  <path d="M23 12L15 20L23 28" stroke="#fff" stroke-width="2"/>
-                </svg>
-              </button>
-              <button id="sectionReviewsScrollButtonRight" class="scroll-button scroll-button-enabled">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                  <circle cx="20" cy="20" r="19.5" stroke="#fff"/>
-                  <path d="M17 12L25 20L17 28" stroke="#fff" stroke-width="2"/>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-communication" id="section-communication">
-        <div class="section-communication-container sections-container">
-          <div class="section-communication-left-container">
-            <h3 class="section-communication-header">ОСТАЛИСЬ ВОПРОСЫ ?</h3>
-            <p class="section-communication-header-p">Оставь свои данные и я свяжусь с тобой для уточнения деталей</p>
-            <div class="section-communication-a-container">
-              <a href="https://t.me/VanyaSolminor" target="_blank">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
-                  <path d="M20.506 8.83887C14.756 8.83887 10.0893 13.5055 10.0893 19.2555C10.0893 25.0055 14.756 29.6722 20.506 29.6722C26.256 29.6722 30.9226 25.0055 30.9226 19.2555C30.9226 13.5055 26.256 8.83887 20.506 8.83887ZM25.3393 15.9222C25.183 17.568 24.506 21.568 24.1622 23.4118C24.0164 24.193 23.7247 24.4535 23.4539 24.4847C22.8497 24.5368 22.3914 24.0889 21.808 23.7035C20.8914 23.0993 20.3705 22.7243 19.4851 22.141C18.4539 21.4639 19.1205 21.0889 19.7143 20.4847C19.8705 20.3285 22.5372 17.9014 22.5893 17.6826C22.5965 17.6495 22.5956 17.6151 22.5865 17.5824C22.5774 17.5497 22.5605 17.5198 22.5372 17.4951C22.4747 17.443 22.3914 17.4639 22.3185 17.4743C22.2247 17.4951 20.7664 18.4639 17.9226 20.3805C17.506 20.6618 17.131 20.8076 16.7976 20.7972C16.4226 20.7868 15.7143 20.5889 15.183 20.4118C14.5268 20.2035 14.0164 20.0889 14.058 19.7243C14.0789 19.5368 14.3393 19.3493 14.8289 19.1514C17.8705 17.8285 19.8914 16.9535 20.9018 16.5368C23.7976 15.3285 24.3914 15.1201 24.7872 15.1201C24.8705 15.1201 25.0685 15.141 25.1935 15.2451C25.2976 15.3285 25.3289 15.443 25.3393 15.5264C25.3289 15.5889 25.3497 15.7764 25.3393 15.9222Z" fill="white"/>
-                  <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098"/>
-                </svg>
-              </a>
-              <a href="https://instagram.com/gubanovmusic?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
-                  <mask id="mask0_450_581" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="11" y="9" width="18" height="19">
-                    <path d="M13.3819 13.071C14.3944 13.071 15.2153 12.2502 15.2153 11.2376C15.2153 10.2251 14.3944 9.4043 13.3819 9.4043C12.3694 9.4043 11.5486 10.2251 11.5486 11.2376C11.5486 12.2502 12.3694 13.071 13.3819 13.071Z" fill="white"/>
-                    <path d="M11.5488 15.8208H15.2155V27.2791H11.5488V15.8208ZM18.8822 20.175V27.2791H22.0905V20.8625C22.0905 19.7166 22.778 18.8 23.9238 18.8C25.0697 18.8 25.7572 19.9458 25.7572 20.8625V27.2791H28.9655V20.175C28.9655 18.8 27.3613 15.8208 23.9238 15.8208C20.4863 15.8208 18.8822 18.8 18.8822 20.175Z" fill="white"/>
-                  </mask>
-                  <g mask="url(#mask0_450_581)">
-                    <path d="M9.25708 7.5708H31.2571V29.5708H9.25708V7.5708Z" fill="white"/>
-                  </g>
-                  <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098"/>
-                  </svg>
-              </a>
-              <a href="https://vk.com/gubanovmusic" target="_blank">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
-                  <path d="M29.0279 27.1521H26.6518C25.7529 27.1521 25.482 26.4239 23.8706 24.8114C22.4622 23.4541 21.8674 23.2854 21.5112 23.2854C21.0185 23.2854 20.8841 23.4208 20.8841 24.0989V26.2364C20.8841 26.8146 20.6966 27.1531 19.1862 27.1531C17.7209 27.0547 16.2999 26.6095 15.0403 25.8543C13.7808 25.0991 12.7186 24.0555 11.9414 22.8094C10.096 20.5125 8.81193 17.8167 8.19141 14.9364C8.19141 14.5802 8.32682 14.2573 9.00599 14.2573H11.381C11.9914 14.2573 12.2112 14.5291 12.4508 15.1573C13.6039 18.551 15.5716 21.5031 16.3706 21.5031C16.6768 21.5031 16.8102 21.3677 16.8102 20.6041V17.1083C16.7091 15.5135 15.8622 15.3791 15.8622 14.8021C15.873 14.6498 15.9426 14.5077 16.0564 14.406C16.1702 14.3043 16.3191 14.2509 16.4716 14.2573H20.2049C20.7154 14.2573 20.8841 14.5114 20.8841 15.1219V19.8406C20.8841 20.35 21.1029 20.5187 21.257 20.5187C21.5633 20.5187 21.7987 20.35 22.3602 19.7896C23.5637 18.3218 24.5469 16.6866 25.2789 14.9354C25.3538 14.7251 25.4955 14.5452 25.6822 14.4229C25.869 14.3007 26.0906 14.2429 26.3133 14.2583H28.6893C29.4018 14.2583 29.5529 14.6146 29.4018 15.1229C28.5376 17.0587 27.4683 18.8963 26.2122 20.6041C25.956 20.9948 25.8539 21.1979 26.2122 21.6562C26.4477 22.0125 27.281 22.7083 27.8404 23.3698C28.655 24.1823 29.331 25.1219 29.8424 26.151C30.0466 26.8135 29.706 27.1521 29.0279 27.1521Z" fill="white"/>
-                  <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098"/>
-                </svg>                
-              </a>
-            </div>
-          </div>
-          <div class="section-communication-right-container">
-            <form action="" class="section-communication-form" data-form="mainForm" data-application-type="main">
-              <div class="section-communication-form-upper-container">
-                <fieldset class="section-communication-fieldset section-communication-fieldset-name">
-                  <legend class="section-communication-form-legend">ИМЯ *</legend>
-                  <label for="name"></label>
-                  <input required autocomplete="given-name" name="name" id="name" type="text" class="form-name"></input>
-                  <span class="form-input-error display-none">Поле обязательно к заполнению</span>
-                </fieldset>
-                <fieldset class="section-communication-fieldset section-communication-fieldset-phone">
-                  <legend class="section-communication-form-legend">ТЕЛЕФОН *</legend>
-                  <label for="section-communication-phone"></label>
-                  <input required autocomplete ="tel" name="phone" class="form-phone" id="section-communication-phone"></input>
-                  <span class="form-input-error display-none">Некорректный формат номера</span>
-                </fieldset>
-              </div>
-              <fieldset class="section-communication-fieldset section-communication-fieldset-message">
-                <legend class="section-communication-form-legend">СООБЩЕНИЕ</legend>
-                <label for="message"></label>
-                <textarea name="message" id="message"></textarea>
-              </fieldset>
-              <div class="section-communication-form-lower-container">
-                <div class="section-communication-form-agreement-container">
-                  <input type="checkbox" name="" value="" id="agreement" class="section-communication-form-agreement-input" checked disabled>
-                  <label for="agreement" class="section-communication-form-agreement-label">
-                    Я даю согласие на обработку персональных данных и соглашаюсь с <a href="./policy.html" class="section-communication-form-agreement-label-a">Политикой конфиденциальности.</a>
-                  </label>
-                </div>
-                <button disabled class="section-communication-form-button large-button main-button">Отправить</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-    <div class="modal">
-      <button class="modal-close-button">
-        <img src="./assets/images/header-menu-button-opened.svg">
-      </button>
-      <div class="modal-upper">
-        <div class="header-container">
-          <h4 class="modal-header">ОСТАВИТЬ ЗАЯВКУ</h4>
-          <div class="modal-hashtag"></div>
-        </div>
-        <div class="modal-p-container">
-          <p class="modal-demo-p">Я набросаю демо-вариант будущей песни по твоей идее.</p>
-          <p class="modal-p">Оставь свои данные и я свяжусь с тобой для уточнения деталей</p>
-        </div>
-      </div>
-      <div class="modal-lower">
-        <form action="" class="modal-form" data-form="modalForm">
-          <div class="modal-form-upper-container">
-            <fieldset class="modal-fieldset modal-fieldset-name">
-              <legend class="modal-form-legend">ИМЯ *</legend>
-              <label for="name"></label>
-              <input required autocomplete="given-name" name="name" id="name" type="text" class="form-name"></input>
-              <span class="form-input-error display-none">Поле обязательно к заполнению</span>
-            </fieldset>
-            <fieldset class="modal-fieldset modal-fieldset-phone">
-              <legend class="modal-form-legend">ТЕЛЕФОН *</legend>
-              <label for="modal-phone"></label>
-              <input required autocomplete="tel" name="phone" class="form-phone" id="modal-phone"></input>
-              <span class="form-input-error display-none">Некорректный формат номера</span>
-            </fieldset>
-          </div>
-          <div class="modal-form-lower-container">
-            <div class="modal-form-agreement-container">
-              <input type="checkbox" name="" value="" id="agreement" class="modal-form-agreement-input" checked disabled>
-              <label for="agreement" class="modal-form-agreement-label">
-                Я даю согласие на обработку персональных данных и соглашаюсь с <a href="./policy.html" class="modal-form-agreement-label-a">Политикой конфиденциальности.</a>
-              </label>
-            </div>
-            <button disabled class="modal-form-button large-button main-button">Отправить</button>
-          </div>
-        </form>
-      </div>
-      <div class="modal-sent display-none">
-        <div class="modal-sent-header-container">
-          <div class="modal-sent-header">СПАСИБО!</div>
-          <div class="modal-sent-p">Ваша заявка отправлена. В ближайшее время мы с вами свяжемся!</div>
-        </div>
-        <img src="./assets/images/modal-sent.png" class="modal-sent-img">
-        <button class="modal-sent-button large-button secondary-button">Ок</button>
+    </a>
+    <button class="header-menu-button">
+      <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 1H29.25" stroke="white" stroke-width="2" />
+        <path d="M0 10H29.25" stroke="white" stroke-width="2" />
+        <path d="M0 19H29.25" stroke="white" stroke-width="2" />
+      </svg>
+    </button>
+    <nav class="nav">
+      <ul class="nav-ul">
+        <li><a href="#section-about" class="text-button-1">Обо мне</a></li>
+        <li><a href="#section-works" class="text-button-1">Работы</a></li>
+        <li><a href="#section-prices" class="text-button-1">Цены</a></li>
+        <li><a href="#section-communication" class="text-button-1">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header-contacts">
+      <a href="tel:+79312252397" class="header-contacts-phone">8 (931) 225-23-97</a>
+      <a href="tel:+79312252397" class="header-contacts-phone-small"><img src="./assets/images/phone-icon.svg"></a>
+      <div class="header-contacts-messangers">
+        <a href="https://api.whatsapp.com/send?%20phone=79657518041" target="_blank"
+          class="header-contacts-messangers-item"><img src="./assets/images/whatsapp-icon.png"></a>
+        <a href="https://web.telegram.org/k/#@ivangubanovmusic" target="_blank"
+          class="header-contacts-messangers-item"><img src="./assets/images/telegram-icon.png"></a>
       </div>
     </div>
-    <footer class="footer">
-      <div class="footer-container sections-container">
-        <div class="footer-left-container">
-          <div class="footer-logo-container">
-            <img src="./assets/images/logo-header.png" class="footer-logo">
-            <div class="footer-logo-name">
-              GMusic
+    <div class="div-button-block">
+      <a href="#" class="right-button-header middle-button secondary-button" data-modal-type="submit-application">
+        <span>Оставить заявку</span>
+      </a>
+    </div>
+    <div class="header-right-container-img-container">
+      <a href="https://t.me/VanyaSolminor" target="_blank">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+          <path
+            d="M20.506 8.83887C14.756 8.83887 10.0893 13.5055 10.0893 19.2555C10.0893 25.0055 14.756 29.6722 20.506 29.6722C26.256 29.6722 30.9226 25.0055 30.9226 19.2555C30.9226 13.5055 26.256 8.83887 20.506 8.83887ZM25.3393 15.9222C25.183 17.568 24.506 21.568 24.1622 23.4118C24.0164 24.193 23.7247 24.4535 23.4539 24.4847C22.8497 24.5368 22.3914 24.0889 21.808 23.7035C20.8914 23.0993 20.3705 22.7243 19.4851 22.141C18.4539 21.4639 19.1205 21.0889 19.7143 20.4847C19.8705 20.3285 22.5372 17.9014 22.5893 17.6826C22.5965 17.6495 22.5956 17.6151 22.5865 17.5824C22.5774 17.5497 22.5605 17.5198 22.5372 17.4951C22.4747 17.443 22.3914 17.4639 22.3185 17.4743C22.2247 17.4951 20.7664 18.4639 17.9226 20.3805C17.506 20.6618 17.131 20.8076 16.7976 20.7972C16.4226 20.7868 15.7143 20.5889 15.183 20.4118C14.5268 20.2035 14.0164 20.0889 14.058 19.7243C14.0789 19.5368 14.3393 19.3493 14.8289 19.1514C17.8705 17.8285 19.8914 16.9535 20.9018 16.5368C23.7976 15.3285 24.3914 15.1201 24.7872 15.1201C24.8705 15.1201 25.0685 15.141 25.1935 15.2451C25.2976 15.3285 25.3289 15.443 25.3393 15.5264C25.3289 15.5889 25.3497 15.7764 25.3393 15.9222Z"
+            fill="white" />
+          <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098" />
+        </svg>
+      </a>
+      <a href="https://instagram.com/gubanovmusic?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+          <mask id="mask0_450_583" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="11" y="9" width="18"
+            height="19">
+            <path
+              d="M13.3819 13.071C14.3944 13.071 15.2153 12.2502 15.2153 11.2376C15.2153 10.2251 14.3944 9.4043 13.3819 9.4043C12.3694 9.4043 11.5486 10.2251 11.5486 11.2376C11.5486 12.2502 12.3694 13.071 13.3819 13.071Z"
+              fill="white" />
+            <path
+              d="M11.5488 15.8208H15.2155V27.2791H11.5488V15.8208ZM18.8822 20.175V27.2791H22.0905V20.8625C22.0905 19.7166 22.778 18.8 23.9238 18.8C25.0697 18.8 25.7572 19.9458 25.7572 20.8625V27.2791H28.9655V20.175C28.9655 18.8 27.3613 15.8208 23.9238 15.8208C20.4863 15.8208 18.8822 18.8 18.8822 20.175Z"
+              fill="white" />
+          </mask>
+          <g mask="url(#mask0_450_583)">
+            <path d="M9.25708 7.5708H31.2571V29.5708H9.25708V7.5708Z" fill="white" />
+          </g>
+          <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098" />
+        </svg>
+      </a>
+      <a href="https://vk.com/gubanovmusic" target="_blank">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+          <path
+            d="M29.0279 27.1521H26.6518C25.7529 27.1521 25.482 26.4239 23.8706 24.8114C22.4622 23.4541 21.8674 23.2854 21.5112 23.2854C21.0185 23.2854 20.8841 23.4208 20.8841 24.0989V26.2364C20.8841 26.8146 20.6966 27.1531 19.1862 27.1531C17.7209 27.0547 16.2999 26.6095 15.0403 25.8543C13.7808 25.0991 12.7186 24.0555 11.9414 22.8094C10.096 20.5125 8.81193 17.8167 8.19141 14.9364C8.19141 14.5802 8.32682 14.2573 9.00599 14.2573H11.381C11.9914 14.2573 12.2112 14.5291 12.4508 15.1573C13.6039 18.551 15.5716 21.5031 16.3706 21.5031C16.6768 21.5031 16.8102 21.3677 16.8102 20.6041V17.1083C16.7091 15.5135 15.8622 15.3791 15.8622 14.8021C15.873 14.6498 15.9426 14.5077 16.0564 14.406C16.1702 14.3043 16.3191 14.2509 16.4716 14.2573H20.2049C20.7154 14.2573 20.8841 14.5114 20.8841 15.1219V19.8406C20.8841 20.35 21.1029 20.5187 21.257 20.5187C21.5633 20.5187 21.7987 20.35 22.3602 19.7896C23.5637 18.3218 24.5469 16.6866 25.2789 14.9354C25.3538 14.7251 25.4955 14.5452 25.6822 14.4229C25.869 14.3007 26.0906 14.2429 26.3133 14.2583H28.6893C29.4018 14.2583 29.5529 14.6146 29.4018 15.1229C28.5376 17.0587 27.4683 18.8963 26.2122 20.6041C25.956 20.9948 25.8539 21.1979 26.2122 21.6562C26.4477 22.0125 27.281 22.7083 27.8404 23.3698C28.655 24.1823 29.331 25.1219 29.8424 26.151C30.0466 26.8135 29.706 27.1521 29.0279 27.1521Z"
+            fill="white" />
+          <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098" />
+        </svg>
+      </a>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section-main">
+      <div class="section-main-container sections-container">
+        <div class="section-main-left">
+          <div class="section-main-text">
+            <h1 class="h1">
+              АВТОРСКАЯ ПЕСНЯ
+            </h1>
+            <div class="section-main-lower-text-div">
+              <h2 class="h2">
+                НА ЗАКАЗ
+              </h2>
+              <span class="section-main-lower-text-span">
+                от саундпродюсера Ивана Губанова
+              </span>
             </div>
           </div>
-          <div class="footer-left-container-adress">
-            Санкт-Петербург,<br>
-            Наб. Обводного канала,<br>
-            136к1Б, оф. 359
-          </div>
-          <div class="footer-left-container-copyright">
-            Ⓒ 2023 Gubanov music
+          <div class="section-main-buttons">
+            <a class="large-button main-button" data-modal-type="order-song">
+              <span>Заказать песню</span>
+            </a>
+            <a class="large-button secondary-button section-main-button-2" data-modal-type="try-for-free">
+              <span>Попробовать бесплатно</span>
+            </a>
           </div>
         </div>
-        <div class="footer-central-container">
-          <ul class="footer-central-container-ul">
-            <li>
-              <a href="#section-about" class="text-button-1">Обо мне</a>
+        <img src="./assets/images/header-circles.svg" class="section-main-header-circles">
+        <div class="section-main-right">
+          <video autoplay muted loop preload="auto" playsinline class="section-main-video">
+            <source src="./assets/video/section-main-video.webm" type="video/webm">
+            <source src="./assets/video/section-main-video.mp4" type="video/mp4">
+          </video>
+          <div>
+            <div class="section-main-right-text">
+              <span>я работал</span>
+              <span class="section-main-right-text-2">с ними</span>
+            </div>
+          </div>
+          <img src="./assets/images/section-main-arrow.svg" class="section-main-arrow">
+        </div>
+      </div>
+    </section>
+    <section class="section-about" id="section-about">
+      <div class="section-about-container sections-container">
+        <div class="scrolling-text-section-about-container">
+          <div class="scrolling-text-section-about">
+            <span class="section-about-scrolling-text-upper right-scrolling-text">
+              КОМПОЗИТОР АРАНЖИРОВЩИК КОМПОЗИТОР АРАНЖИРОВЩИК КОМПОЗИТОР АРАНЖИРОВЩИК КОМПОЗИТОР АРАНЖИРОВЩИК КОМПОЗИТОР
+            </span>
+            <span class="section-about-scrolling-text-lower left-scrolling-text">
+              КОМПОЗИТОР АРАНЖИРОВЩИК КОМПОЗИТОР АРАНЖИРОВЩИК КОМПОЗИТОР АРАНЖИРОВЩИК КОМПОЗИТОР АРАНЖИРОВЩИК КОМПОЗИТОР
+            </span>
+          </div>
+        </div>
+        <div class="section-about-main">
+          <div class="left-photos-section-about">
+            <img src="./assets/images/info-block-photo-1.jpg" class="info-block-photo-1">
+            <div class="info-block-photo-2"></div>
+          </div>
+          <div class="right-section-about">
+            <div class="main-text-right-section-about">
+              <div class="main-text-right-section-about-1">
+                <p class="text-indent-120 main-text-right-section-about-1-p-1">
+                  Я поработал с такими артистами как Мукка, Pyrokinesis, Ai Mori, Любарская, Диана Чрагян, Ravanna, IDAI
+                  и др...
+                </p>
+                <p>
+                  Получил золотую пластинку на трек Ravanna - “Жги” который набрал более 7,5 миллионов
+                  прослушиваний.<br><br>
+                </p>
+              </div>
+              <div class="main-text-right-section-about-2">
+                <p class="text-indent-193">
+                  Я постоянно совершенствуюсь в области ар-анжировки, синтеза звука и зву-корежиссуры.<br><br>
+                </p>
+                <p class="text-indent-86">
+                  Не обходится и без сцены, с группой RAVANNA в качестве гитариста я объездил всю Россию с концертами в
+                  тысячных залах.
+                </p>
+              </div>
+            </div>
+            <div class="lower-right-section-about">
+              <div>
+                <img src="./assets/images/info-block-arrow.svg" class="info-block-arrow">
+              </div>
+              <div class="lower-right-section-about-text">
+                Меня зовут Ваня<br>
+                я пишу музыку артистам
+              </div>
+              <div class="lower-right-section-about-images">
+                <img src="./assets/images/info-block-image-goldenrec.png" alt="Золотая пластинка"
+                  class="info-block-image-goldenrec">
+                <img src="./assets/images/info-block-image-Ivan.jpg" alt="Иван Губанов" class="info-block-image-Ivan">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-playlists">
+      <div class="section-playlists-container sections-container">
+        <div class="section-playlists-video-div">
+          <video autoplay muted loop preload="auto" playsinline class="sections-playlists-video">
+            <source src="./assets/video/section-playlists-video.webm" type="video/webm">
+            <source src="./assets/video/section-playlists-video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="section-playlists-right-div">
+          <h2 class="section-playlists-right-header">
+            <span class="section-playlists-right-header-1">МОИ РАБОТЫ</span>
+            <span class="section-playlists-right-header-2">РЕГУЛЯРНО ПОПАДАЮТ</span>
+            <span class="section-playlists-right-header-3">В ТОП ЧАРТЫ</span>
+          </h2>
+          <ul class="section-playlists-right-images">
+            <li><img src="./assets/images/playlists-block-image-yandex.png" class="playlists-block-image-yandex"></li>
+            <li><img src="./assets/images/playlists-block-image-boom.png"></li>
+            <li><img src="./assets/images/playlists-block-image-zvuk.png"></li>
+            <li><img src="./assets/images/playlists-block-image-spotify.png"></li>
+          </ul>
+          <div class="section-playlists-right-text">
+            <p>
+              Треки над которыми я работал отправляются на дистрибуцию в стриминговые платформы. Где, совместно с
+              лейблом Captain Drake rec., мы пишем рекомендательные письма музыкальным платформам, что увеличивает шанс
+              попадания твоей песни в официальные плейлисты. Всё очень просто, быстро и без лишних шагов, так как мы
+              работаем напрямую с теми кто загружает твой трек на цифровые площадки.
+            </p>
+            <p>
+              <br>Зачем нужна дистрибуция? Дело в том, что музыкальные сервисы платят за прослушивания артисту, что дает
+              возможность зарабатывать на своём творчестве.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-works" id="section-works">
+      <div class="section-works-container sections-container">
+        <div class="section-works-upper">
+          <h2 class="sections-works-header">
+            <span class="sections-works-header-1">ПОСЛУШАЙ</span>
+            <span class="sections-works-header-2">ПРИМЕРЫ &#160;РАБОТ&#160;&#160;<div
+                class="sections-works-header-inside">до и после</div> &#160;-</span>
+            <span class="sections-works-header-3">ПОЧУВСТВУЙ РАЗНИЦУ</span>
+          </h2>
+          <div class="section-works-upper-right-text">КАЧЕСТВЕННАЯ МУЗЫКА ОЧЕНЬ СИЛЬНО ВЛИЯЕТ НА ВОСПРИЯТИЕ ТРЕКА.</div>
+          <img src="./assets/images/section-works-line.svg" class="section-works-line">
+        </div>
+        <div id="section-works-audio-cards-container" class="section-works-audio-cards-container">
+          <div class="section-works-audio-card card-1">
+            <audio class="section-works-audio-card-player" preload="auto">
+              <source src="./assets/audio/ksema-ogon.m4a" type="audio/mp4">
+              <source src="./assets/audio/ksema-ogon.mp3" type="audio/mpeg">
+            </audio>
+            <div class="section-works-audio-card-head">
+              <img src="./assets/images/section-works-audio-card-img-1.jpg" alt="Обложка трека KSEMA - огонь"
+                class="section-works-audio-card-img">
+              <div class="section-works-audio-card-head-title-container">
+                <span class="section-works-audio-card-head-title">Огонь</span>
+                <span class="section-works-audio-card-head-artist-name">KSEMA</span>
+              </div>
+              <div class="section-works-audio-card-site-container">
+                <img src="./assets/images/section-works-audio-card-site-img.svg"
+                  class="section-works-audio-card-site-img">
+                <span>Яндекс музыка</span>
+              </div>
+            </div>
+            <div class="section-works-audio-card-controls">
+              <button class="section-works-audio-card-controls-backward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="6" y="32" width="6" height="32" rx="2.22272" transform="rotate(-180 6 32)" fill="white" />
+                  <path
+                    d="M8.68174 16.7563C7.77276 16.1656 7.77276 14.8344 8.68174 14.2437L28.687 1.2442C29.6832 0.596907 31 1.31212 31 2.50047L31 28.4995C31 29.6879 29.6832 30.4031 28.687 29.7558L8.68174 16.7563Z"
+                    fill="white" />
+                </svg>
+              </button>
+              <button class="section-works-audio-card-controls-play section-works-audio-card-controls-button">
+                <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22.3183 13.2437C23.2272 13.8344 23.2272 15.1656 22.3183 15.7563L2.31295 28.7558C1.31681 29.4031 -5.09473e-08 28.6879 9.96796e-10 27.4995L1.13745e-06 1.50047C1.1894e-06 0.312126 1.31682 -0.403091 2.31296 0.244205L22.3183 13.2437Z"
+                    fill="white" />
+                </svg>
+              </button>
+              <button class="section-works-audio-card-controls-forward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="25" width="6" height="32" rx="2.22272" fill="white" />
+                  <path
+                    d="M22.3183 14.2437C23.2272 14.8344 23.2272 16.1656 22.3183 16.7563L2.31295 29.7558C1.31681 30.4031 -5.09473e-08 29.6879 9.96796e-10 28.4995L1.13745e-06 2.50047C1.1894e-06 1.31213 1.31682 0.596909 2.31296 1.2442L22.3183 14.2437Z"
+                    fill="white" />
+                </svg>
+              </button>
+            </div>
+            <div class="section-works-audio-card-progress-bar-container">
+              <div class="section-works-audio-card-progress-bar"></div>
+              <svg id="slider" class="section-works-audio-card-progress-bar-circle" xmlns="http://www.w3.org/2000/svg"
+                width="17" height="16" viewBox="0 0 17 16" fill="none">
+                <circle class="section-works-audio-card-progress-bar-circle-inner" cx="8.90039" cy="8" r="8"
+                  fill="#FFF" />
+              </svg>
+            </div>
+            <div class="section-works-audio-card-time-container">
+              <span class="section-works-audio-card-current-time">00:00</span>
+              <span class="section-works-audio-card-duration">00:15</span>
+            </div>
+            <div class="section-works-audio-card-before-after">
+              <span class="section-works-audio-card-span-before">до</span>
+              <div class="section-works-audio-card-progress-bar-vertical-line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
+                  <path d="M1 0L1 42" stroke="white" />
+                </svg>
+              </div>
+              <span class="section-works-audio-card-span-after">после</span>
+            </div>
+          </div>
+          <!-- ВТОРАЯ КАРТОЧКА -->
+          <div class="section-works-audio-card card-2">
+            <audio class="section-works-audio-card-player" preload="auto">
+              <source src="./assets/audio/kate-rogalski-gromki-track.m4a" type="audio/mp4">
+              <source src="./assets/audio/kate-rogalski-gromki-track.mp3" type="audio/mpeg">
+            </audio>
+            <div class="section-works-audio-card-head">
+              <img src="./assets/images/section-works-audio-card-img-2.jpg"
+                alt="Обложка трека KATE ROGALSKI - Громкий трек" class="section-works-audio-card-img">
+              <div class="section-works-audio-card-head-title-container">
+                <span class="section-works-audio-card-head-title">Громкий трек</span>
+                <span class="section-works-audio-card-head-artist-name">KATE ROGALSKI</span>
+              </div>
+              <div class="section-works-audio-card-site-container">
+                <img src="./assets/images/section-works-audio-card-site-img.svg"
+                  class="section-works-audio-card-site-img">
+                <span>Яндекс музыка</span>
+              </div>
+            </div>
+            <div class="section-works-audio-card-controls">
+              <button class="section-works-audio-card-controls-backward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="6" y="32" width="6" height="32" rx="2.22272" transform="rotate(-180 6 32)" fill="white" />
+                  <path
+                    d="M8.68174 16.7563C7.77276 16.1656 7.77276 14.8344 8.68174 14.2437L28.687 1.2442C29.6832 0.596907 31 1.31212 31 2.50047L31 28.4995C31 29.6879 29.6832 30.4031 28.687 29.7558L8.68174 16.7563Z"
+                    fill="white" />
+                </svg>
+              </button>
+              <button class="section-works-audio-card-controls-play section-works-audio-card-controls-button">
+                <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22.3183 13.2437C23.2272 13.8344 23.2272 15.1656 22.3183 15.7563L2.31295 28.7558C1.31681 29.4031 -5.09473e-08 28.6879 9.96796e-10 27.4995L1.13745e-06 1.50047C1.1894e-06 0.312126 1.31682 -0.403091 2.31296 0.244205L22.3183 13.2437Z"
+                    fill="white" />
+                </svg>
+              </button>
+              <button class="section-works-audio-card-controls-forward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="25" width="6" height="32" rx="2.22272" fill="white" />
+                  <path
+                    d="M22.3183 14.2437C23.2272 14.8344 23.2272 16.1656 22.3183 16.7563L2.31295 29.7558C1.31681 30.4031 -5.09473e-08 29.6879 9.96796e-10 28.4995L1.13745e-06 2.50047C1.1894e-06 1.31213 1.31682 0.596909 2.31296 1.2442L22.3183 14.2437Z"
+                    fill="white" />
+                </svg>
+              </button>
+            </div>
+            <div class="section-works-audio-card-progress-bar-container">
+              <div class="section-works-audio-card-progress-bar"></div>
+              <svg id="slider" class="section-works-audio-card-progress-bar-circle" xmlns="http://www.w3.org/2000/svg"
+                width="17" height="16" viewBox="0 0 17 16" fill="none">
+                <circle class="section-works-audio-card-progress-bar-circle-inner" cx="8.90039" cy="8" r="8"
+                  fill="#FFF" />
+              </svg>
+            </div>
+            <div class="section-works-audio-card-time-container">
+              <span class="section-works-audio-card-current-time">00:00</span>
+              <span class="section-works-audio-card-duration">00:15</span>
+            </div>
+            <div class="section-works-audio-card-before-after">
+              <span class="section-works-audio-card-span-before">до</span>
+              <div class="section-works-audio-card-progress-bar-vertical-line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
+                  <path d="M1 0L1 42" stroke="white" />
+                </svg>
+              </div>
+              <span class="section-works-audio-card-span-after">после</span>
+            </div>
+          </div>
+          <div class="section-works-audio-card card-3">
+            <audio class="section-works-audio-card-player" preload="auto">
+              <source src="./assets/audio/lukanova-vechnaya-istoriya.m4a" type="audio/mp4">
+              <source src="./assets/audio/lukanova-vechnaya-istoriya.mp3" type="audio/mpeg">
+            </audio>
+            <div class="section-works-audio-card-head">
+              <img src="./assets/images/section-works-audio-card-img-3.jpg" alt="Обложка трека TONYA - Вечная история"
+                class="section-works-audio-card-img">
+              <div class="section-works-audio-card-head-title-container">
+                <span class="section-works-audio-card-head-title">Вечная история</span>
+                <span class="section-works-audio-card-head-artist-name">TONYA</span>
+              </div>
+              <div class="section-works-audio-card-site-container">
+                <img src="./assets/images/section-works-audio-card-site-img.svg"
+                  class="section-works-audio-card-site-img">
+                <span>Яндекс музыка</span>
+              </div>
+            </div>
+            <div class="section-works-audio-card-controls">
+              <button class="section-works-audio-card-controls-backward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="6" y="32" width="6" height="32" rx="2.22272" transform="rotate(-180 6 32)" fill="white" />
+                  <path
+                    d="M8.68174 16.7563C7.77276 16.1656 7.77276 14.8344 8.68174 14.2437L28.687 1.2442C29.6832 0.596907 31 1.31212 31 2.50047L31 28.4995C31 29.6879 29.6832 30.4031 28.687 29.7558L8.68174 16.7563Z"
+                    fill="white" />
+                </svg>
+              </button>
+              <button class="section-works-audio-card-controls-play section-works-audio-card-controls-button">
+                <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22.3183 13.2437C23.2272 13.8344 23.2272 15.1656 22.3183 15.7563L2.31295 28.7558C1.31681 29.4031 -5.09473e-08 28.6879 9.96796e-10 27.4995L1.13745e-06 1.50047C1.1894e-06 0.312126 1.31682 -0.403091 2.31296 0.244205L22.3183 13.2437Z"
+                    fill="white" />
+                </svg>
+              </button>
+              <button class="section-works-audio-card-controls-forward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="25" width="6" height="32" rx="2.22272" fill="white" />
+                  <path
+                    d="M22.3183 14.2437C23.2272 14.8344 23.2272 16.1656 22.3183 16.7563L2.31295 29.7558C1.31681 30.4031 -5.09473e-08 29.6879 9.96796e-10 28.4995L1.13745e-06 2.50047C1.1894e-06 1.31213 1.31682 0.596909 2.31296 1.2442L22.3183 14.2437Z"
+                    fill="white" />
+                </svg>
+              </button>
+            </div>
+            <div class="section-works-audio-card-progress-bar-container">
+              <div class="section-works-audio-card-progress-bar"></div>
+              <svg id="slider" class="section-works-audio-card-progress-bar-circle" xmlns="http://www.w3.org/2000/svg"
+                width="17" height="16" viewBox="0 0 17 16" fill="none">
+                <circle class="section-works-audio-card-progress-bar-circle-inner" cx="8.90039" cy="8" r="8"
+                  fill="#FFF" />
+              </svg>
+            </div>
+            <div class="section-works-audio-card-time-container">
+              <span class="section-works-audio-card-current-time">00:00</span>
+              <span class="section-works-audio-card-duration">00:15</span>
+            </div>
+            <div class="section-works-audio-card-before-after">
+              <span class="section-works-audio-card-span-before">до</span>
+              <div class="section-works-audio-card-progress-bar-vertical-line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
+                  <path d="M1 0L1 42" stroke="white" />
+                </svg>
+              </div>
+              <span class="section-works-audio-card-span-after">после</span>
+            </div>
+          </div>
+          <div class="section-works-audio-card card-4">
+            <audio class="section-works-audio-card-player" preload="auto">
+              <source src="./assets/audio/ksesha-uletai.m4a" type="audio/mp4">
+              <source src="./assets/audio/ksesha-uletai.mp3" type="audio/mpeg">
+            </audio>
+            <div class="section-works-audio-card-head">
+              <img src="./assets/images/section-works-audio-card-img-4.jpg" alt="Обложка трека KSESHA - Улетай"
+                class="section-works-audio-card-img">
+              <div class="section-works-audio-card-head-title-container">
+                <span class="section-works-audio-card-head-title">Улетай</span>
+                <span class="section-works-audio-card-head-artist-name">KSESHA</span>
+              </div>
+              <div class="section-works-audio-card-site-container">
+                <img src="./assets/images/section-works-audio-card-site-img.svg"
+                  class="section-works-audio-card-site-img">
+                <span>Яндекс музыка</span>
+              </div>
+            </div>
+            <div class="section-works-audio-card-controls">
+              <button class="section-works-audio-card-controls-backward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="6" y="32" width="6" height="32" rx="2.22272" transform="rotate(-180 6 32)" fill="white" />
+                  <path
+                    d="M8.68174 16.7563C7.77276 16.1656 7.77276 14.8344 8.68174 14.2437L28.687 1.2442C29.6832 0.596907 31 1.31212 31 2.50047L31 28.4995C31 29.6879 29.6832 30.4031 28.687 29.7558L8.68174 16.7563Z"
+                    fill="white" />
+                </svg>
+              </button>
+              <button class="section-works-audio-card-controls-play section-works-audio-card-controls-button">
+                <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22.3183 13.2437C23.2272 13.8344 23.2272 15.1656 22.3183 15.7563L2.31295 28.7558C1.31681 29.4031 -5.09473e-08 28.6879 9.96796e-10 27.4995L1.13745e-06 1.50047C1.1894e-06 0.312126 1.31682 -0.403091 2.31296 0.244205L22.3183 13.2437Z"
+                    fill="white" />
+                </svg>
+              </button>
+              <button class="section-works-audio-card-controls-forward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="25" width="6" height="32" rx="2.22272" fill="white" />
+                  <path
+                    d="M22.3183 14.2437C23.2272 14.8344 23.2272 16.1656 22.3183 16.7563L2.31295 29.7558C1.31681 30.4031 -5.09473e-08 29.6879 9.96796e-10 28.4995L1.13745e-06 2.50047C1.1894e-06 1.31213 1.31682 0.596909 2.31296 1.2442L22.3183 14.2437Z"
+                    fill="white" />
+                </svg>
+              </button>
+            </div>
+            <div class="section-works-audio-card-progress-bar-container">
+              <div class="section-works-audio-card-progress-bar"></div>
+              <svg id="slider" class="section-works-audio-card-progress-bar-circle" xmlns="http://www.w3.org/2000/svg"
+                width="17" height="16" viewBox="0 0 17 16" fill="none">
+                <circle class="section-works-audio-card-progress-bar-circle-inner" cx="8.90039" cy="8" r="8"
+                  fill="#FFF" />
+              </svg>
+            </div>
+            <div class="section-works-audio-card-time-container">
+              <span class="section-works-audio-card-current-time">00:00</span>
+              <span class="section-works-audio-card-duration">00:15</span>
+            </div>
+            <div class="section-works-audio-card-before-after">
+              <span class="section-works-audio-card-span-before">до</span>
+              <div class="section-works-audio-card-progress-bar-vertical-line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
+                  <path d="M1 0L1 42" stroke="white" />
+                </svg>
+              </div>
+              <span class="section-works-audio-card-span-after">после</span>
+            </div>
+          </div>
+          <div class="section-works-audio-card card-5">
+            <audio class="section-works-audio-card-player" preload="auto">
+              <source src="./assets/audio/tvoya-bivshaya-allo.m4a" type="audio/mp4">
+              <source src="./assets/audio/tvoya-bivshaya-allo.mp3" type="audio/mpeg">
+            </audio>
+            <div class="section-works-audio-card-head">
+              <img src="./assets/images/section-works-audio-card-img-5.jpg" alt="Обложка трека ТВОЯ БЫВШАЯ - Алло"
+                class="section-works-audio-card-img">
+              <div class="section-works-audio-card-head-title-container">
+                <span class="section-works-audio-card-head-title">Алло</span>
+                <span class="section-works-audio-card-head-artist-name">ТВОЯ БЫВШАЯ</span>
+              </div>
+              <div class="section-works-audio-card-site-container">
+                <img src="./assets/images/section-works-audio-card-site-img.svg"
+                  class="section-works-audio-card-site-img">
+                <span>Яндекс музыка</span>
+              </div>
+            </div>
+            <div class="section-works-audio-card-controls">
+              <button class="section-works-audio-card-controls-backward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="6" y="32" width="6" height="32" rx="2.22272" transform="rotate(-180 6 32)" fill="white" />
+                  <path
+                    d="M8.68174 16.7563C7.77276 16.1656 7.77276 14.8344 8.68174 14.2437L28.687 1.2442C29.6832 0.596907 31 1.31212 31 2.50047L31 28.4995C31 29.6879 29.6832 30.4031 28.687 29.7558L8.68174 16.7563Z"
+                    fill="white" />
+                </svg>
+              </button>
+              <button class="section-works-audio-card-controls-play section-works-audio-card-controls-button">
+                <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22.3183 13.2437C23.2272 13.8344 23.2272 15.1656 22.3183 15.7563L2.31295 28.7558C1.31681 29.4031 -5.09473e-08 28.6879 9.96796e-10 27.4995L1.13745e-06 1.50047C1.1894e-06 0.312126 1.31682 -0.403091 2.31296 0.244205L22.3183 13.2437Z"
+                    fill="white" />
+                </svg>
+              </button>
+              <button class="section-works-audio-card-controls-forward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="25" width="6" height="32" rx="2.22272" fill="white" />
+                  <path
+                    d="M22.3183 14.2437C23.2272 14.8344 23.2272 16.1656 22.3183 16.7563L2.31295 29.7558C1.31681 30.4031 -5.09473e-08 29.6879 9.96796e-10 28.4995L1.13745e-06 2.50047C1.1894e-06 1.31213 1.31682 0.596909 2.31296 1.2442L22.3183 14.2437Z"
+                    fill="white" />
+                </svg>
+              </button>
+            </div>
+            <div class="section-works-audio-card-progress-bar-container">
+              <div class="section-works-audio-card-progress-bar"></div>
+              <svg id="slider" class="section-works-audio-card-progress-bar-circle" xmlns="http://www.w3.org/2000/svg"
+                width="17" height="16" viewBox="0 0 17 16" fill="none">
+                <circle class="section-works-audio-card-progress-bar-circle-inner" cx="8.90039" cy="8" r="8"
+                  fill="#FFF" />
+              </svg>
+            </div>
+            <div class="section-works-audio-card-time-container">
+              <span class="section-works-audio-card-current-time">00:00</span>
+              <span class="section-works-audio-card-duration">00:15</span>
+            </div>
+            <div class="section-works-audio-card-before-after">
+              <span class="section-works-audio-card-span-before">до</span>
+              <div class="section-works-audio-card-progress-bar-vertical-line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
+                  <path d="M1 0L1 42" stroke="white" />
+                </svg>
+              </div>
+              <span class="section-works-audio-card-span-after">после</span>
+            </div>
+          </div>
+          <div class="section-works-audio-card card-6">
+            <audio class="section-works-audio-card-player" preload="auto">
+              <source src="./assets/audio/tory-tvoya.m4a" type="audio/mp4">
+              <source src="./assets/audio/tory-tvoya.mp3" type="audio/mpeg">
+            </audio>
+            <div class="section-works-audio-card-head">
+              <img src="./assets/images/section-works-audio-card-img-6.jpg" alt="Обложка трека TORY - Твоя"
+                class="section-works-audio-card-img">
+              <div class="section-works-audio-card-head-title-container">
+                <span class="section-works-audio-card-head-title">Твоя</span>
+                <span class="section-works-audio-card-head-artist-name">TORY</span>
+              </div>
+              <div class="section-works-audio-card-site-container">
+                <img src="./assets/images/section-works-audio-card-site-img.svg"
+                  class="section-works-audio-card-site-img">
+                <span>Яндекс музыка</span>
+              </div>
+            </div>
+            <div class="section-works-audio-card-controls">
+              <button class="section-works-audio-card-controls-backward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="6" y="32" width="6" height="32" rx="2.22272" transform="rotate(-180 6 32)" fill="white" />
+                  <path
+                    d="M8.68174 16.7563C7.77276 16.1656 7.77276 14.8344 8.68174 14.2437L28.687 1.2442C29.6832 0.596907 31 1.31212 31 2.50047L31 28.4995C31 29.6879 29.6832 30.4031 28.687 29.7558L8.68174 16.7563Z"
+                    fill="white" />
+                </svg>
+              </button>
+              <button class="section-works-audio-card-controls-play section-works-audio-card-controls-button">
+                <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22.3183 13.2437C23.2272 13.8344 23.2272 15.1656 22.3183 15.7563L2.31295 28.7558C1.31681 29.4031 -5.09473e-08 28.6879 9.96796e-10 27.4995L1.13745e-06 1.50047C1.1894e-06 0.312126 1.31682 -0.403091 2.31296 0.244205L22.3183 13.2437Z"
+                    fill="white" />
+                </svg>
+              </button>
+              <button class="section-works-audio-card-controls-forward section-works-audio-card-controls-button">
+                <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="25" width="6" height="32" rx="2.22272" fill="white" />
+                  <path
+                    d="M22.3183 14.2437C23.2272 14.8344 23.2272 16.1656 22.3183 16.7563L2.31295 29.7558C1.31681 30.4031 -5.09473e-08 29.6879 9.96796e-10 28.4995L1.13745e-06 2.50047C1.1894e-06 1.31213 1.31682 0.596909 2.31296 1.2442L22.3183 14.2437Z"
+                    fill="white" />
+                </svg>
+              </button>
+            </div>
+            <div class="section-works-audio-card-progress-bar-container">
+              <div class="section-works-audio-card-progress-bar"></div>
+              <svg id="slider" class="section-works-audio-card-progress-bar-circle" xmlns="http://www.w3.org/2000/svg"
+                width="17" height="16" viewBox="0 0 17 16" fill="none">
+                <circle class="section-works-audio-card-progress-bar-circle-inner" cx="8.90039" cy="8" r="8"
+                  fill="#FFF" />
+              </svg>
+            </div>
+            <div class="section-works-audio-card-time-container">
+              <span class="section-works-audio-card-current-time">00:00</span>
+              <span class="section-works-audio-card-duration">00:15</span>
+            </div>
+            <div class="section-works-audio-card-before-after">
+              <span class="section-works-audio-card-span-before">до</span>
+              <div class="section-works-audio-card-progress-bar-vertical-line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
+                  <path d="M1 0L1 42" stroke="white" />
+                </svg>
+              </div>
+              <span class="section-works-audio-card-span-after">после</span>
+            </div>
+          </div>
+          <div class="fixer"></div>
+        </div>
+        <div class="section-works-scroll-buttons-container">
+          <button id="sectionWorksScrollButtonLeft" class="scroll-button-left scroll-button scroll-button-disabled">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="19.5" stroke="#fff" />
+              <path d="M23 12L15 20L23 28" stroke="#fff" stroke-width="2" />
+            </svg>
+          </button>
+          <button id="sectionWorksScrollButtonRight" class="scroll-button scroll-button-enabled">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="19.5" stroke="#fff" />
+              <path d="M17 12L25 20L17 28" stroke="#fff" stroke-width="2" />
+            </svg>
+          </button>
+        </div>
+        <div class="section-works-lower-text-container">
+          <div>ПОСЛУШАТЬ ВСЕ<br>МОИ РАБОТЫ ТЫ<br>МОЖЕШЬ&nbsp;
+            <div class="section-works-lower-text-container-button text-button-3">
+              <a href="https://vk.com/music/playlist/40895579_65097748" target="_blank">ЗДЕСЬ</a>
+              <svg class="section-works-lower-text-line" xmlns="http://www.w3.org/2000/svg" width="51" height="2"
+                viewBox="0 0 51 2" fill="none">
+                <path d="M0 1H51" stroke="#FFCB5A" />
+              </svg>
+            </div>
+          </div>
+          <div>В МОЕМ<br>ПОРТФОЛИО<br>БОЛЕЕ 150 РАБОТ</div>
+        </div>
+      </div>
+    </section>
+    <section class="section-stages">
+      <div class="section-stages-container sections-container">
+        <h2 class="sections-stages-header">
+          <span class="sections-stages-header-1">СОЗДАНИЕ ПЕСНИ - ТВОРЧЕСКИЙ</span>
+          <span>ПРОЦЕСС, КОТОРЫЙ ПРОХОДИТ</span>
+          <span>ЧЕРЕЗ 5 ЭТАПОВ</span>
+        </h2>
+        <div class="section-stages-lower-container">
+          <ul>
+            <li class="mt0">
+              <span class="section-stages-ul-numbers">01</span>
+              <span class="section-stages-ul-header">ДЕМО</span>
+              <div class="section-stages-lower-container-ul-li-img"></div>
+              <div class="section-stages-ul-description">
+                Основа будущей песни
+                <a class="section-stages-ul-a text-button-2" data-modal-type="try-for-free">
+                  Попробуй бесплатно
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none"
+                    class="section-stages-ul-a-img">
+                    <path d="M1 1.25L6 6.25L1.5 10.75" stroke="#FFCB5A" stroke-width="1.5"
+                      class="text-button-2-svg-path" />
+                  </svg>
+                </a>
+              </div>
             </li>
             <li>
-              <a href="#section-works" class="text-button-1">Работы</a>
+              <span class="section-stages-ul-numbers">02</span>
+              <span class="section-stages-ul-header">АРАНЖИРОВКА</span>
+              <div class="section-stages-lower-container-ul-li-img"></div>
+              <div class="section-stages-ul-description">Полноценный минус радиоформата</div>
             </li>
             <li>
-              <a href="#section-prices" class="text-button-1">Цены</a>
+              <span class="section-stages-ul-numbers">03</span>
+              <span class="section-stages-ul-header">ЗАПИСЬ</span>
+              <div class="section-stages-lower-container-ul-li-img"></div>
+              <div class="section-stages-ul-description">Запись вокала на студии звукозаписи</div>
             </li>
             <li>
-              <a href="#section-communication" class="text-button-1">Связь</a>
+              <span class="section-stages-ul-numbers">04</span>
+              <span class="section-stages-ul-header">СВЕДЕНИЕ</span>
+              <div class="section-stages-lower-container-ul-li-img"></div>
+              <div class="section-stages-ul-description">Процесс доведения звука до проф уровня</div>
+            </li>
+            <li>
+              <span class="section-stages-ul-numbers">05</span>
+              <span class="section-stages-ul-header">ДИСТРИБУЦИЯ</span>
+              <div class="section-stages-lower-container-ul-li-img"></div>
+              <div class="section-stages-ul-description">Публикация трека на цифровых площадках</div>
             </li>
           </ul>
-          <a href="./policy.html" class="footer-central-container-a">
-            Политика конфиденциальности
-          </a>
+          <video autoplay muted loop preload="auto" playsinline class="section-stages-video-cassette">
+            <source src="./assets/video/section-stages-video-cassette.webm" type="video/webm">
+            <source src="./assets/video/section-stages-video-cassette.mp4" type="video/mp4">
+          </video>
         </div>
-        <div class="footer-right-container">
-          <div class="footer-right-container-phone">
-            +7 (965) 751 80 41
+      </div>
+    </section>
+    <section class="section-prices" id="section-prices">
+      <div class="section-prices-container sections-container">
+        <div class="section-prices-header-container">
+          <div class="section-prices-header">
+            <span class="section-prices-header-scrolling-text-upper">
+              СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ
+              СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ
+            </span>
+            <span class="section-prices-header-scrolling-text-lower">
+              СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ
+              СТОИМОСТЬ СТОИМОСТЬ СТОИМОСТЬ
+            </span>
           </div>
-          <div class="footer-right-container-mail">
-            Gubanovmusic@yandex.ru
+        </div>
+        <div class="section-prices-lists-container">
+          <div class="section-prices-list-container-1 section-prices-list-container">
+            <h3 class="section-prices-lists-header">ПО РЕФЕРЕНСУ</h3>
+            <ul class="section-prices-ul">
+              <li class="section-prices-li section-prices-li-active">Аранжировка</li>
+              <li class="section-prices-li section-prices-li-active">Без ограничения на правки</li>
+              <li class="section-prices-li section-prices-li-active">Передача авторских прав</li>
+              <li class="section-prices-li section-prices-li-inactive">Рекомендация в плейлисты</li>
+              <li class="section-prices-li section-prices-li-inactive">Дистрибуция</li>
+              <li class="section-prices-li section-prices-li-inactive">Вокальная линия</li>
+              <li class="section-prices-li section-prices-li-inactive">Текст песни</li>
+              <li class="section-prices-li section-prices-li-inactive">Запись вокала</li>
+              <li class="section-prices-li section-prices-li-inactive">Сведение / мастеринг</li>
+            </ul>
+            <span class="section-prices-price">30 000 ₽</span>
+            <div class="section-prices-warning-container">
+              <img src="./assets/images/section-prices-warning.svg" class="section-prices-warning-img">
+              <span class="section-prices-warning-text">Поэтапная оплата</span>
+              <img src="./assets/images/section-prices-warning-lower-part.svg" class="section-prices-warning-hover-img">
+              <div class="section-prices-warning-hover-text">
+                Работа начинается по предоплате в 10 000 ₽. Остаток вы доплачиваете когда утвердите что вам все
+                нравится.
+              </div>
+            </div>
+            <a class="section-prices-button large-button main-button" data-modal-type="by-reference">
+              <span>Оставить заявку</span>
+            </a>
           </div>
-          <div class="footer-right-container-img-container">
+          <div class="section-prices-list-container-2 section-prices-list-container">
+            <h3 class="section-prices-lists-header">ПРОДЮСИРОВАНИЕ</h3>
+            <ul class="section-prices-ul">
+              <li class="section-prices-li section-prices-li-active">Аранжировка</li>
+              <li class="section-prices-li section-prices-li-active">Без ограничения на правки</li>
+              <li class="section-prices-li section-prices-li-active">Передача авторских прав</li>
+              <li class="section-prices-li section-prices-li-active">Рекомендация в плейлисты</li>
+              <li class="section-prices-li section-prices-li-active">Дистрибуция</li>
+              <li class="section-prices-li section-prices-li-active">Вокальная линия</li>
+              <li class="section-prices-li section-prices-li-active">Текст песни</li>
+              <li class="section-prices-li section-prices-li-inactive">Запись вокала</li>
+              <li class="section-prices-li section-prices-li-inactive">Сведение / мастеринг</li>
+            </ul>
+            <span class="section-prices-price">60 000 ₽</span>
+            <div class="section-prices-warning-container">
+              <img src="./assets/images/section-prices-warning.svg" class="section-prices-warning-img">
+              <span class="section-prices-warning-text">Поэтапная оплата</span>
+              <div class="section-prices-warning-hover-text">
+                Работа начинается по предоплате в 10 000 ₽. Остаток вы доплачиваете когда утвердите что вам все
+                нравится.
+              </div>
+            </div>
+            <a class="section-prices-button large-button main-button" data-modal-type="producing">
+              <span>Оставить заявку</span>
+            </a>
+          </div>
+          <div class="section-prices-list-container-3 section-prices-list-container">
+            <h3 class="section-prices-lists-header">ПОД КЛЮЧ</h3>
+            <ul class="section-prices-ul">
+              <li class="section-prices-li section-prices-li-active">Аранжировка</li>
+              <li class="section-prices-li section-prices-li-active">Без ограничения на правки</li>
+              <li class="section-prices-li section-prices-li-active">Передача авторских прав</li>
+              <li class="section-prices-li section-prices-li-active">Рекомендация в плейлисты</li>
+              <li class="section-prices-li section-prices-li-active">Дистрибуция</li>
+              <li class="section-prices-li section-prices-li-active">Вокальная линия</li>
+              <li class="section-prices-li section-prices-li-active">Текст песни</li>
+              <li class="section-prices-li section-prices-li-active">Запись вокала</li>
+              <li class="section-prices-li section-prices-li-active">Сведение / мастеринг</li>
+            </ul>
+            <span class="section-prices-price">80 000 ₽</span>
+            <div class="section-prices-warning-container">
+              <img src="./assets/images/section-prices-warning.svg" class="section-prices-warning-img">
+              <span class="section-prices-warning-text">Поэтапная оплата</span>
+              <div class="section-prices-warning-hover-text">
+                Работа начинается по предоплате в 10 000 ₽. Остаток вы доплачиваете когда утвердите что вам все
+                нравится.
+              </div>
+            </div>
+            <a class="section-prices-button large-button main-button" data-modal-type="turnkey">
+              <span>Оставить заявку</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-reviews">
+      <div class="section-reviews-container sections-container">
+        <div class="section-reviews-upper-part">
+          <div class="section-reviews-upper-part-left-container">
+            <img src="./assets/images/section-reviews-quotes.svg" class="section-reviews-quotes-img">
+            <blockquote class="section-reviews-quote">
+              Я С ТРЕПЕТОМ ОТНОШУСЬ К СВОИМ КЛИЕНТАМ И РАБОТАЮ ДО ТОГО РЕЗУЛЬТАТА - КОТОРЫМ АРТИСТ ОСТАНЕТСЯ ДОВОЛЕН.
+            </blockquote>
+          </div>
+          <h2 class="section-reviews-header">
+            <span class="section-reviews-header-1">ЧТО ОБО МНЕ ГОВОРЯТ</span>
+            <span>ЛЮДИ С КОТОРЫМИ МЫ</span>
+            <span>РАБОТАЛИ</span>
+          </h2>
+        </div>
+        <div class="section-reviews-lower-part">
+          <div class="section-reviews-reviews-container" id="section-reviews-reviews-container">
+            <div class="section-reviews-review section-reviews-review-1">
+              <div class="section-reviews-review-head">
+                <img src="./assets/images/section-reviews-review-img-1.jpg" alt="Аватарка клиента"
+                  class="section-reviews-review-img">
+                <div class="section-reviews-review-head-name-container">
+                  <span>Софья</span>
+                  <div class="section-reviews-review-stars-container">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                  </div>
+                </div>
+              </div>
+              <div class="section-reviews-review-text">
+                Первый раз обратилась к Ивану по написанию аранжировки год назад. Я впервые делала песню и мало что
+                понимала в этом, был страх, что у меня не получится. Но оказалось что я зря переживала, Ваня очень чутко
+                и ответственно подходит к своему делу, не смотрит с высока, а наоборот воплощает все мои безумные идеи)
+                в общем очень комфортно работать, ну и конечно качество на высоте! Сейчас уже делаю 6-ую песню!
+                Количество прослушиваний переваливает за 4,5 млн!!! Я очень довольна результатом!
+              </div>
+              <a href="https://2gis.ru/spb/search/gmusic/firm/70000001069161478/30.283741%2C59.908528/tab/reviews"
+                target="_blank">
+                <img src="./assets/images/section-reviews-review-site-logo-2gis.png"
+                  class="section-reviews-review-site-logo">
+              </a>
+            </div>
+            <div class="section-reviews-review">
+              <div class="section-reviews-review-head">
+                <img src="./assets/images/section-reviews-review-img-2.jpg" alt="Аватарка клиента"
+                  class="section-reviews-review-img">
+                <div class="section-reviews-review-head-name-container">
+                  <span>Алексей М.</span>
+                  <div class="section-reviews-review-stars-container">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                  </div>
+                </div>
+              </div>
+              <div class="section-reviews-review-text">
+                После долгих поисков наткнулся на эту студию. Ознакомившись с примерами работ в группе, понял, что здесь
+                качественно и с пониманием пишется музыка самых разных стилей. Обратился к Ивану за помощью с написанием
+                аранжировки и не прогадал. Окончательный вариант получил очень быстро, буквально за несколько
+                корректировок, так как Иван грамотно учел все мои пожелания. Всем доволен, рекомендую!
+              </div>
+              <a href="https://yandex.ru/maps/org/gmusic/9146338038/reviews/?ll=30.282064%2C59.908660&mode=search&sctx=ZAAAAAgBEAAaKAoSCY9WtaSjUD5AEQgB%2BRIq%2BE1AEhIJZVJDG4CN7z8RxMw%2Bj1Ge0T8iBgABAgMEBSgKOABAAkgBagJydZ0BzcxMPaABAKgBAL0B%2F7Ntm8IBBfaVqIkiggIGZ211c2ljigIAkgIAmgIMZGVza3RvcC1tYXBz&sll=30.282064%2C59.908660&sspn=0.030813%2C0.008611&tab=reviews&text=gmusic&z=16"
+                target="_blank">
+                <img src="./assets/images/section-reviews-review-site-logo-yandex.png"
+                  class="section-reviews-review-site-logo">
+              </a>
+            </div>
+            <div class="section-reviews-review">
+              <div class="section-reviews-review-head">
+                <img src="./assets/images/section-reviews-review-img-3.jpg" alt="Аватарка клиента"
+                  class="section-reviews-review-img">
+                <div class="section-reviews-review-head-name-container">
+                  <span>Виктория Н.</span>
+                  <div class="section-reviews-review-stars-container">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                  </div>
+                </div>
+              </div>
+              <div class="section-reviews-review-text">
+                Не первый год Ваня пишет мне аранжировки! И здесь же записываюсь!))
+                До этого долго искала студию! Все всегда на высшем уровне!!
+                Ребята круты😎😎😎
+              </div>
+              <a href="https://2gis.ru/spb/search/gmusic/firm/70000001069161478/30.283741%2C59.908528/tab/reviews"
+                target="_blank">
+                <img src="./assets/images/section-reviews-review-site-logo-2gis.png"
+                  class="section-reviews-review-site-logo">
+              </a>
+            </div>
+            <div class="section-reviews-review">
+              <div class="section-reviews-review-head">
+                <img src="./assets/images/section-reviews-review-img-4.jpg" alt="Аватарка клиента"
+                  class="section-reviews-review-img">
+                <div class="section-reviews-review-head-name-container">
+                  <span>Татьяна Левина</span>
+                  <div class="section-reviews-review-stars-container">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                  </div>
+                </div>
+              </div>
+              <div class="section-reviews-review-text">
+                Долго искала аранжировщика, присылали какие-то странные вещи, не слыша меня совсем.В итоге наткнулась на
+                Ваню, аранжировка превзошла все ожидания, мастер всегда на связи и подправляет аранжировку по твоему
+                вкусу. После этого у песни были неплохие прослушивания, а Ваня оказался еще и очень вдохновляющим
+                человеком.А для начинающего артиста поддержка и мотивация очень важны, обращайтесь, не пожалеете!
+              </div>
+              <a href="https://2gis.ru/spb/search/gmusic/firm/70000001069161478/30.283741%2C59.908528/tab/reviews"
+                target="_blank">
+                <img src="./assets/images/section-reviews-review-site-logo-2gis.png"
+                  class="section-reviews-review-site-logo">
+              </a>
+            </div>
+            <div class="section-reviews-review">
+              <div class="section-reviews-review-head">
+                <img src="./assets/images/section-reviews-review-img-5.jpg" alt="Аватарка клиента"
+                  class="section-reviews-review-img">
+                <div class="section-reviews-review-head-name-container">
+                  <span>Your F.</span>
+                  <div class="section-reviews-review-stars-container">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                    <img src="./assets/images/section-reviews-review-star.svg">
+                  </div>
+                </div>
+              </div>
+              <div class="section-reviews-review-text">
+                После долгих поисков наткнулся на эту студию. Ознакомившись с примерами работ в группе, понял, что здесь
+                качественно и с пониманием пишется музыка самых разных стилей. Обратился к Ивану за помощью с написанием
+                аранжировки и не прогадал. Окончательный вариант получил очень быстро, буквально за несколько
+                корректировок, так как Иван грамотно учел все мои пожелания. Всем доволен, рекомендую!
+              </div>
+              <a href="https://yandex.ru/maps/org/gmusic/9146338038/reviews/?ll=30.282064%2C59.908660&mode=search&sctx=ZAAAAAgBEAAaKAoSCY9WtaSjUD5AEQgB%2BRIq%2BE1AEhIJZVJDG4CN7z8RxMw%2Bj1Ge0T8iBgABAgMEBSgKOABAAkgBagJydZ0BzcxMPaABAKgBAL0B%2F7Ntm8IBBfaVqIkiggIGZ211c2ljigIAkgIAmgIMZGVza3RvcC1tYXBz&sll=30.282064%2C59.908660&sspn=0.030813%2C0.008611&tab=reviews&text=gmusic&z=16"
+                target="_blank">
+                <img src="./assets/images/section-reviews-review-site-logo-yandex.png"
+                  class="section-reviews-review-site-logo">
+              </a>
+            </div>
+            <div class="fixer2"></div>
+          </div>
+          <div class="section-reviews-scroll-buttons-container">
+            <button id="sectionReviewsScrollButtonLeft" class="scroll-button-left scroll-button scroll-button-disabled">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <circle cx="20" cy="20" r="19.5" stroke="#fff" />
+                <path d="M23 12L15 20L23 28" stroke="#fff" stroke-width="2" />
+              </svg>
+            </button>
+            <button id="sectionReviewsScrollButtonRight" class="scroll-button scroll-button-enabled">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <circle cx="20" cy="20" r="19.5" stroke="#fff" />
+                <path d="M17 12L25 20L17 28" stroke="#fff" stroke-width="2" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-communication" id="section-communication">
+      <div class="section-communication-container sections-container">
+        <div class="section-communication-left-container">
+          <h3 class="section-communication-header">ОСТАЛИСЬ ВОПРОСЫ ?</h3>
+          <p class="section-communication-header-p">Оставь свои данные и я свяжусь с тобой для уточнения деталей</p>
+          <div class="section-communication-a-container">
             <a href="https://t.me/VanyaSolminor" target="_blank">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
-                <path d="M20.506 8.83887C14.756 8.83887 10.0893 13.5055 10.0893 19.2555C10.0893 25.0055 14.756 29.6722 20.506 29.6722C26.256 29.6722 30.9226 25.0055 30.9226 19.2555C30.9226 13.5055 26.256 8.83887 20.506 8.83887ZM25.3393 15.9222C25.183 17.568 24.506 21.568 24.1622 23.4118C24.0164 24.193 23.7247 24.4535 23.4539 24.4847C22.8497 24.5368 22.3914 24.0889 21.808 23.7035C20.8914 23.0993 20.3705 22.7243 19.4851 22.141C18.4539 21.4639 19.1205 21.0889 19.7143 20.4847C19.8705 20.3285 22.5372 17.9014 22.5893 17.6826C22.5965 17.6495 22.5956 17.6151 22.5865 17.5824C22.5774 17.5497 22.5605 17.5198 22.5372 17.4951C22.4747 17.443 22.3914 17.4639 22.3185 17.4743C22.2247 17.4951 20.7664 18.4639 17.9226 20.3805C17.506 20.6618 17.131 20.8076 16.7976 20.7972C16.4226 20.7868 15.7143 20.5889 15.183 20.4118C14.5268 20.2035 14.0164 20.0889 14.058 19.7243C14.0789 19.5368 14.3393 19.3493 14.8289 19.1514C17.8705 17.8285 19.8914 16.9535 20.9018 16.5368C23.7976 15.3285 24.3914 15.1201 24.7872 15.1201C24.8705 15.1201 25.0685 15.141 25.1935 15.2451C25.2976 15.3285 25.3289 15.443 25.3393 15.5264C25.3289 15.5889 25.3497 15.7764 25.3393 15.9222Z" fill="white"/>
-                <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098"/>
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="icon">
+                <path
+                  d="M20.506 8.83887C14.756 8.83887 10.0893 13.5055 10.0893 19.2555C10.0893 25.0055 14.756 29.6722 20.506 29.6722C26.256 29.6722 30.9226 25.0055 30.9226 19.2555C30.9226 13.5055 26.256 8.83887 20.506 8.83887ZM25.3393 15.9222C25.183 17.568 24.506 21.568 24.1622 23.4118C24.0164 24.193 23.7247 24.4535 23.4539 24.4847C22.8497 24.5368 22.3914 24.0889 21.808 23.7035C20.8914 23.0993 20.3705 22.7243 19.4851 22.141C18.4539 21.4639 19.1205 21.0889 19.7143 20.4847C19.8705 20.3285 22.5372 17.9014 22.5893 17.6826C22.5965 17.6495 22.5956 17.6151 22.5865 17.5824C22.5774 17.5497 22.5605 17.5198 22.5372 17.4951C22.4747 17.443 22.3914 17.4639 22.3185 17.4743C22.2247 17.4951 20.7664 18.4639 17.9226 20.3805C17.506 20.6618 17.131 20.8076 16.7976 20.7972C16.4226 20.7868 15.7143 20.5889 15.183 20.4118C14.5268 20.2035 14.0164 20.0889 14.058 19.7243C14.0789 19.5368 14.3393 19.3493 14.8289 19.1514C17.8705 17.8285 19.8914 16.9535 20.9018 16.5368C23.7976 15.3285 24.3914 15.1201 24.7872 15.1201C24.8705 15.1201 25.0685 15.141 25.1935 15.2451C25.2976 15.3285 25.3289 15.443 25.3393 15.5264C25.3289 15.5889 25.3497 15.7764 25.3393 15.9222Z"
+                  fill="white" />
+                <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098" />
               </svg>
             </a>
             <a href="https://instagram.com/gubanovmusic?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
-                <mask id="mask0_450_582" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="11" y="9" width="18" height="19">
-                  <path d="M13.3819 13.071C14.3944 13.071 15.2153 12.2502 15.2153 11.2376C15.2153 10.2251 14.3944 9.4043 13.3819 9.4043C12.3694 9.4043 11.5486 10.2251 11.5486 11.2376C11.5486 12.2502 12.3694 13.071 13.3819 13.071Z" fill="white"/>
-                  <path d="M11.5488 15.8208H15.2155V27.2791H11.5488V15.8208ZM18.8822 20.175V27.2791H22.0905V20.8625C22.0905 19.7166 22.778 18.8 23.9238 18.8C25.0697 18.8 25.7572 19.9458 25.7572 20.8625V27.2791H28.9655V20.175C28.9655 18.8 27.3613 15.8208 23.9238 15.8208C20.4863 15.8208 18.8822 18.8 18.8822 20.175Z" fill="white"/>
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="icon">
+                <mask id="mask0_450_581" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="11" y="9" width="18"
+                  height="19">
+                  <path
+                    d="M13.3819 13.071C14.3944 13.071 15.2153 12.2502 15.2153 11.2376C15.2153 10.2251 14.3944 9.4043 13.3819 9.4043C12.3694 9.4043 11.5486 10.2251 11.5486 11.2376C11.5486 12.2502 12.3694 13.071 13.3819 13.071Z"
+                    fill="white" />
+                  <path
+                    d="M11.5488 15.8208H15.2155V27.2791H11.5488V15.8208ZM18.8822 20.175V27.2791H22.0905V20.8625C22.0905 19.7166 22.778 18.8 23.9238 18.8C25.0697 18.8 25.7572 19.9458 25.7572 20.8625V27.2791H28.9655V20.175C28.9655 18.8 27.3613 15.8208 23.9238 15.8208C20.4863 15.8208 18.8822 18.8 18.8822 20.175Z"
+                    fill="white" />
                 </mask>
-                <g mask="url(#mask0_450_582)">
-                  <path d="M9.25708 7.5708H31.2571V29.5708H9.25708V7.5708Z" fill="white"/>
+                <g mask="url(#mask0_450_581)">
+                  <path d="M9.25708 7.5708H31.2571V29.5708H9.25708V7.5708Z" fill="white" />
                 </g>
-                <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098"/>
-                </svg>
+                <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098" />
+              </svg>
             </a>
             <a href="https://vk.com/gubanovmusic" target="_blank">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
-                <path d="M29.0279 27.1521H26.6518C25.7529 27.1521 25.482 26.4239 23.8706 24.8114C22.4622 23.4541 21.8674 23.2854 21.5112 23.2854C21.0185 23.2854 20.8841 23.4208 20.8841 24.0989V26.2364C20.8841 26.8146 20.6966 27.1531 19.1862 27.1531C17.7209 27.0547 16.2999 26.6095 15.0403 25.8543C13.7808 25.0991 12.7186 24.0555 11.9414 22.8094C10.096 20.5125 8.81193 17.8167 8.19141 14.9364C8.19141 14.5802 8.32682 14.2573 9.00599 14.2573H11.381C11.9914 14.2573 12.2112 14.5291 12.4508 15.1573C13.6039 18.551 15.5716 21.5031 16.3706 21.5031C16.6768 21.5031 16.8102 21.3677 16.8102 20.6041V17.1083C16.7091 15.5135 15.8622 15.3791 15.8622 14.8021C15.873 14.6498 15.9426 14.5077 16.0564 14.406C16.1702 14.3043 16.3191 14.2509 16.4716 14.2573H20.2049C20.7154 14.2573 20.8841 14.5114 20.8841 15.1219V19.8406C20.8841 20.35 21.1029 20.5187 21.257 20.5187C21.5633 20.5187 21.7987 20.35 22.3602 19.7896C23.5637 18.3218 24.5469 16.6866 25.2789 14.9354C25.3538 14.7251 25.4955 14.5452 25.6822 14.4229C25.869 14.3007 26.0906 14.2429 26.3133 14.2583H28.6893C29.4018 14.2583 29.5529 14.6146 29.4018 15.1229C28.5376 17.0587 27.4683 18.8963 26.2122 20.6041C25.956 20.9948 25.8539 21.1979 26.2122 21.6562C26.4477 22.0125 27.281 22.7083 27.8404 23.3698C28.655 24.1823 29.331 25.1219 29.8424 26.151C30.0466 26.8135 29.706 27.1521 29.0279 27.1521Z" fill="white"/>
-                <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098"/>
-              </svg>                
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="icon">
+                <path
+                  d="M29.0279 27.1521H26.6518C25.7529 27.1521 25.482 26.4239 23.8706 24.8114C22.4622 23.4541 21.8674 23.2854 21.5112 23.2854C21.0185 23.2854 20.8841 23.4208 20.8841 24.0989V26.2364C20.8841 26.8146 20.6966 27.1531 19.1862 27.1531C17.7209 27.0547 16.2999 26.6095 15.0403 25.8543C13.7808 25.0991 12.7186 24.0555 11.9414 22.8094C10.096 20.5125 8.81193 17.8167 8.19141 14.9364C8.19141 14.5802 8.32682 14.2573 9.00599 14.2573H11.381C11.9914 14.2573 12.2112 14.5291 12.4508 15.1573C13.6039 18.551 15.5716 21.5031 16.3706 21.5031C16.6768 21.5031 16.8102 21.3677 16.8102 20.6041V17.1083C16.7091 15.5135 15.8622 15.3791 15.8622 14.8021C15.873 14.6498 15.9426 14.5077 16.0564 14.406C16.1702 14.3043 16.3191 14.2509 16.4716 14.2573H20.2049C20.7154 14.2573 20.8841 14.5114 20.8841 15.1219V19.8406C20.8841 20.35 21.1029 20.5187 21.257 20.5187C21.5633 20.5187 21.7987 20.35 22.3602 19.7896C23.5637 18.3218 24.5469 16.6866 25.2789 14.9354C25.3538 14.7251 25.4955 14.5452 25.6822 14.4229C25.869 14.3007 26.0906 14.2429 26.3133 14.2583H28.6893C29.4018 14.2583 29.5529 14.6146 29.4018 15.1229C28.5376 17.0587 27.4683 18.8963 26.2122 20.6041C25.956 20.9948 25.8539 21.1979 26.2122 21.6562C26.4477 22.0125 27.281 22.7083 27.8404 23.3698C28.655 24.1823 29.331 25.1219 29.8424 26.151C30.0466 26.8135 29.706 27.1521 29.0279 27.1521Z"
+                  fill="white" />
+                <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098" />
+              </svg>
             </a>
           </div>
         </div>
+        <div class="section-communication-right-container">
+          <form action="" class="section-communication-form" data-form="mainForm" data-application-type="main">
+            <div class="section-communication-form-upper-container">
+              <fieldset class="section-communication-fieldset section-communication-fieldset-name">
+                <legend class="section-communication-form-legend">ИМЯ *</legend>
+                <label for="name"></label>
+                <input required autocomplete="given-name" name="name" id="name" type="text" class="form-name"></input>
+                <span class="form-input-error display-none">Поле обязательно к заполнению</span>
+              </fieldset>
+              <fieldset class="section-communication-fieldset section-communication-fieldset-phone">
+                <legend class="section-communication-form-legend">ТЕЛЕФОН *</legend>
+                <label for="section-communication-phone"></label>
+                <input required autocomplete="tel" name="phone" class="form-phone"
+                  id="section-communication-phone"></input>
+                <span class="form-input-error display-none">Некорректный формат номера</span>
+              </fieldset>
+            </div>
+            <fieldset class="section-communication-fieldset section-communication-fieldset-message">
+              <legend class="section-communication-form-legend">СООБЩЕНИЕ</legend>
+              <label for="message"></label>
+              <textarea name="message" id="message"></textarea>
+            </fieldset>
+            <div class="section-communication-form-lower-container">
+              <div class="section-communication-form-agreement-container">
+                <input type="checkbox" name="" value="" id="agreement"
+                  class="section-communication-form-agreement-input" checked disabled>
+                <label for="agreement" class="section-communication-form-agreement-label">
+                  Я даю согласие на обработку персональных данных и соглашаюсь с <a href="./policy.html"
+                    class="section-communication-form-agreement-label-a">Политикой конфиденциальности.</a>
+                </label>
+              </div>
+              <button disabled class="section-communication-form-button large-button main-button">Отправить</button>
+            </div>
+          </form>
+        </div>
       </div>
-    </footer>
-  </body>
+    </section>
+  </main>
+  <div class="modal">
+    <button class="modal-close-button">
+      <img src="./assets/images/header-menu-button-opened.svg">
+    </button>
+    <div class="modal-upper">
+      <div class="header-container">
+        <h4 class="modal-header">ОСТАВИТЬ ЗАЯВКУ</h4>
+        <div class="modal-hashtag"></div>
+      </div>
+      <div class="modal-p-container">
+        <p class="modal-demo-p">Я набросаю демо-вариант будущей песни по твоей идее.</p>
+        <p class="modal-p">Оставь свои данные и я свяжусь с тобой для уточнения деталей</p>
+      </div>
+    </div>
+    <div class="modal-lower">
+      <form action="" class="modal-form" data-form="modalForm">
+        <div class="modal-form-upper-container">
+          <fieldset class="modal-fieldset modal-fieldset-name">
+            <legend class="modal-form-legend">ИМЯ *</legend>
+            <label for="name"></label>
+            <input required autocomplete="given-name" name="name" id="name" type="text" class="form-name"></input>
+            <span class="form-input-error display-none">Поле обязательно к заполнению</span>
+          </fieldset>
+          <fieldset class="modal-fieldset modal-fieldset-phone">
+            <legend class="modal-form-legend">ТЕЛЕФОН *</legend>
+            <label for="modal-phone"></label>
+            <input required autocomplete="tel" name="phone" class="form-phone" id="modal-phone"></input>
+            <span class="form-input-error display-none">Некорректный формат номера</span>
+          </fieldset>
+        </div>
+        <div class="modal-form-lower-container">
+          <div class="modal-form-agreement-container">
+            <input type="checkbox" name="" value="" id="agreement" class="modal-form-agreement-input" checked disabled>
+            <label for="agreement" class="modal-form-agreement-label">
+              Я даю согласие на обработку персональных данных и соглашаюсь с <a href="./policy.html"
+                class="modal-form-agreement-label-a">Политикой конфиденциальности.</a>
+            </label>
+          </div>
+          <button disabled class="modal-form-button large-button main-button">Отправить</button>
+        </div>
+      </form>
+    </div>
+    <div class="modal-sent display-none">
+      <div class="modal-sent-header-container">
+        <div class="modal-sent-header">СПАСИБО!</div>
+        <div class="modal-sent-p">Ваша заявка отправлена. В ближайшее время мы с вами свяжемся!</div>
+      </div>
+      <img src="./assets/images/modal-sent.png" class="modal-sent-img">
+      <button class="modal-sent-button large-button secondary-button">Ок</button>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-container sections-container">
+      <div class="footer-left-container">
+        <div class="footer-logo-container">
+          <img src="./assets/images/logo-header.png" class="footer-logo">
+          <div class="footer-logo-name">
+            GMusic
+          </div>
+        </div>
+        <div class="footer-left-container-adress">
+          Санкт-Петербург,<br>
+          Наб. Обводного канала,<br>
+          136к1Б, оф. 359
+        </div>
+        <div class="footer-left-container-copyright">
+          Ⓒ 2023 Gubanov music
+        </div>
+      </div>
+      <div class="footer-central-container">
+        <ul class="footer-central-container-ul">
+          <li>
+            <a href="#section-about" class="text-button-1">Обо мне</a>
+          </li>
+          <li>
+            <a href="#section-works" class="text-button-1">Работы</a>
+          </li>
+          <li>
+            <a href="#section-prices" class="text-button-1">Цены</a>
+          </li>
+          <li>
+            <a href="#section-communication" class="text-button-1">Связь</a>
+          </li>
+        </ul>
+        <a href="./policy.html" class="footer-central-container-a">
+          Политика конфиденциальности
+        </a>
+      </div>
+      <div class="footer-right-container">
+        <div class="footer-right-container-phone">
+          +7 (965) 751 80 41
+        </div>
+        <div class="footer-right-container-mail">
+          Gubanovmusic@yandex.ru
+        </div>
+        <div class="footer-right-container-img-container">
+          <a href="https://t.me/VanyaSolminor" target="_blank">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+              <path
+                d="M20.506 8.83887C14.756 8.83887 10.0893 13.5055 10.0893 19.2555C10.0893 25.0055 14.756 29.6722 20.506 29.6722C26.256 29.6722 30.9226 25.0055 30.9226 19.2555C30.9226 13.5055 26.256 8.83887 20.506 8.83887ZM25.3393 15.9222C25.183 17.568 24.506 21.568 24.1622 23.4118C24.0164 24.193 23.7247 24.4535 23.4539 24.4847C22.8497 24.5368 22.3914 24.0889 21.808 23.7035C20.8914 23.0993 20.3705 22.7243 19.4851 22.141C18.4539 21.4639 19.1205 21.0889 19.7143 20.4847C19.8705 20.3285 22.5372 17.9014 22.5893 17.6826C22.5965 17.6495 22.5956 17.6151 22.5865 17.5824C22.5774 17.5497 22.5605 17.5198 22.5372 17.4951C22.4747 17.443 22.3914 17.4639 22.3185 17.4743C22.2247 17.4951 20.7664 18.4639 17.9226 20.3805C17.506 20.6618 17.131 20.8076 16.7976 20.7972C16.4226 20.7868 15.7143 20.5889 15.183 20.4118C14.5268 20.2035 14.0164 20.0889 14.058 19.7243C14.0789 19.5368 14.3393 19.3493 14.8289 19.1514C17.8705 17.8285 19.8914 16.9535 20.9018 16.5368C23.7976 15.3285 24.3914 15.1201 24.7872 15.1201C24.8705 15.1201 25.0685 15.141 25.1935 15.2451C25.2976 15.3285 25.3289 15.443 25.3393 15.5264C25.3289 15.5889 25.3497 15.7764 25.3393 15.9222Z"
+                fill="white" />
+              <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098" />
+            </svg>
+          </a>
+          <a href="https://instagram.com/gubanovmusic?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+              <mask id="mask0_450_582" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="11" y="9" width="18"
+                height="19">
+                <path
+                  d="M13.3819 13.071C14.3944 13.071 15.2153 12.2502 15.2153 11.2376C15.2153 10.2251 14.3944 9.4043 13.3819 9.4043C12.3694 9.4043 11.5486 10.2251 11.5486 11.2376C11.5486 12.2502 12.3694 13.071 13.3819 13.071Z"
+                  fill="white" />
+                <path
+                  d="M11.5488 15.8208H15.2155V27.2791H11.5488V15.8208ZM18.8822 20.175V27.2791H22.0905V20.8625C22.0905 19.7166 22.778 18.8 23.9238 18.8C25.0697 18.8 25.7572 19.9458 25.7572 20.8625V27.2791H28.9655V20.175C28.9655 18.8 27.3613 15.8208 23.9238 15.8208C20.4863 15.8208 18.8822 18.8 18.8822 20.175Z"
+                  fill="white" />
+              </mask>
+              <g mask="url(#mask0_450_582)">
+                <path d="M9.25708 7.5708H31.2571V29.5708H9.25708V7.5708Z" fill="white" />
+              </g>
+              <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098" />
+            </svg>
+          </a>
+          <a href="https://vk.com/gubanovmusic" target="_blank">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+              <path
+                d="M29.0279 27.1521H26.6518C25.7529 27.1521 25.482 26.4239 23.8706 24.8114C22.4622 23.4541 21.8674 23.2854 21.5112 23.2854C21.0185 23.2854 20.8841 23.4208 20.8841 24.0989V26.2364C20.8841 26.8146 20.6966 27.1531 19.1862 27.1531C17.7209 27.0547 16.2999 26.6095 15.0403 25.8543C13.7808 25.0991 12.7186 24.0555 11.9414 22.8094C10.096 20.5125 8.81193 17.8167 8.19141 14.9364C8.19141 14.5802 8.32682 14.2573 9.00599 14.2573H11.381C11.9914 14.2573 12.2112 14.5291 12.4508 15.1573C13.6039 18.551 15.5716 21.5031 16.3706 21.5031C16.6768 21.5031 16.8102 21.3677 16.8102 20.6041V17.1083C16.7091 15.5135 15.8622 15.3791 15.8622 14.8021C15.873 14.6498 15.9426 14.5077 16.0564 14.406C16.1702 14.3043 16.3191 14.2509 16.4716 14.2573H20.2049C20.7154 14.2573 20.8841 14.5114 20.8841 15.1219V19.8406C20.8841 20.35 21.1029 20.5187 21.257 20.5187C21.5633 20.5187 21.7987 20.35 22.3602 19.7896C23.5637 18.3218 24.5469 16.6866 25.2789 14.9354C25.3538 14.7251 25.4955 14.5452 25.6822 14.4229C25.869 14.3007 26.0906 14.2429 26.3133 14.2583H28.6893C29.4018 14.2583 29.5529 14.6146 29.4018 15.1229C28.5376 17.0587 27.4683 18.8963 26.2122 20.6041C25.956 20.9948 25.8539 21.1979 26.2122 21.6562C26.4477 22.0125 27.281 22.7083 27.8404 23.3698C28.655 24.1823 29.331 25.1219 29.8424 26.151C30.0466 26.8135 29.706 27.1521 29.0279 27.1521Z"
+                fill="white" />
+              <circle cx="20" cy="20" r="19.4495" stroke="white" stroke-width="1.10098" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

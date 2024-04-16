@@ -14,7 +14,7 @@
   .header-contacts-phone {
     display: none;
   }
-  
+
   .header-contacts-phone-small {
     display: unset;
   }
@@ -22,11 +22,11 @@
   .header-contacts-messangers {
     margin-top: 0;
   }
-  
+
   .header-contacts-messangers-item img {
     width: 18px;
     height: 18px;
-  
+
     margin-left: 12px;
   }
 
@@ -39,10 +39,10 @@
   .section-main-left {
     padding-left: 47px;
   }
-  
+
   .section-main-text {
     margin-top: 89px;
-  
+
     width: 426px;
     height: 276px;
   }
@@ -54,17 +54,17 @@
 
   .section-main-lower-text-span {
     position: absolute;
-  
+
     text-indent: 0;
 
     transform: translate(206px, 45px);
   }
-  
+
   .section-main-header-circles {
     left: -35px;
     top: 13px;
   }
-  
+
   .section-main-buttons {
     margin-top: 84px;
   }
@@ -72,25 +72,25 @@
   .section-main-right {
     margin-right: 46px;
   }
-  
+
   .section-main-video {
     margin-top: 97px;
-  
+
     width: 425px;
   }
-  
+
   .section-main-right-text {
     margin-top: 22px;
     margin-right: 87px;
   }
-  
+
   .section-main-arrow {
     top: 542px;
     right: 92px;
   }
-  
+
   /* SECTION ABOUT */
-  
+
   .section-about {
     height: 931px;
   }
@@ -121,7 +121,7 @@
     margin-left: 39px;
     margin-top: 321.33px;
   }
-  
+
   .lower-right-section-about-text {
     margin-top: 263px;
   }
@@ -130,14 +130,14 @@
     top: 129px;
     left: -42px;
   }
-  
+
   .info-block-image-Ivan {
     top: 23px;
     left: 99px;
   }
-  
+
   /* SECTION PLAYLISTS */
-  
+
   .section-playlists {
     height: 600px;
   }
@@ -162,16 +162,16 @@
   .section-playlists-right-text {
     left: 371px;
     top: 232px;
-  
+
     width: 236px;
     height: 324px;
-  
+
     font: var(--font-12m);
     gap: 4px;
   }
-  
+
   /* SECTION WORKS */
-  
+
   .section-works {
     height: 941px;
   }
@@ -179,7 +179,7 @@
   .section-works-upper {
     height: 412px;
   }
-  
+
   .sections-works-header {
     margin-top: 100px;
     margin-left: 39px;
@@ -189,7 +189,7 @@
     margin-right: 48px;
     margin-top: 236px;
   }
-  
+
   .section-works-line {
     right: 48px;
     top: 312px;
@@ -197,40 +197,44 @@
     width: 236px;
     transform: scaleY(1.4);
   }
-  
+
   .section-works-audio-cards-container {
     top: 412px;
   }
 
-  .card-1  {
+  .card-1 {
     margin-left: 10039px;
   }
-  
+
   .section-works-scroll-buttons-container {
     right: 48px;
     bottom: 158px;
   }
-  
+
   .section-works-lower-text-container {
     left: 38px;
     bottom: 69px;
   }
-  
+
   .section-works-lower-text-container > div {
     width: 182px;
   }
-  
+
   .section-works-lower-text-line {
     margin-top: -3px;
   }
-  
+
   /* SECTION STAGES */
-  
+
   .section-stages {
     height: 1138px;
-    background: linear-gradient(to bottom, var(--dark-grey-background) 80%, var(--main-background) 130%);
+    background: linear-gradient(
+      to bottom,
+      var(--dark-grey-background) 80%,
+      var(--main-background) 130%
+    );
   }
-  
+
   .sections-stages-header {
     margin-top: 95px;
     margin-left: 51px;
@@ -238,11 +242,11 @@
     height: 196px;
     width: 100%;
   }
-  
+
   .sections-stages-header-1 {
     margin-left: 185px;
   }
-  
+
   .section-stages-lower-container {
     flex-direction: column;
   }
@@ -250,10 +254,10 @@
   .section-stages-lower-container ul {
     margin-left: 39px;
     margin-top: 63px;
-  
+
     width: 832px;
   }
-  
+
   .section-stages-video-cassette {
     margin-top: -45px;
     margin-left: auto;
@@ -261,14 +265,18 @@
 
     transform: rotate(-90deg);
   }
-  
+
   /* SECTION PRICES */
-  
+
   .section-prices {
     height: 957px;
-    background: linear-gradient(to bottom, var(--dark-grey-background) -20%, var(--main-background) 30%);
+    background: linear-gradient(
+      to bottom,
+      var(--dark-grey-background) -20%,
+      var(--main-background) 30%
+    );
   }
-  
+
   .section-prices-header-container {
     top: 62px;
   }
@@ -276,19 +284,19 @@
   .section-prices-lists-container {
     padding-left: 48px;
     padding-right: 48px;
-  
+
     margin-top: 330px;
   }
-  
+
   .section-prices-button {
     margin-top: 22px;
   }
-  
+
   /* SECTION REVIEWS */
-  
+
   .section-reviews {
     position: relative;
-    
+
     height: 892px;
   }
 
@@ -296,7 +304,7 @@
     position: absolute;
     top: 732px;
   }
-  
+
   .section-reviews-quotes-img {
     margin-left: 48px;
   }
@@ -304,15 +312,15 @@
   .section-reviews-header {
     margin-left: 260px;
   }
-  
+
   .section-reviews-header-1 {
     margin-left: 200px;
   }
-  
+
   .section-reviews-lower-part {
     margin-top: 80px;
   }
-  
+
   .section-reviews-reviews-container {
     padding-left: 48px;
   }
@@ -321,18 +329,18 @@
     right: 48px;
     bottom: 144px;
   }
-  
+
   /* SECTION COMMUNICATION */
-  
+
   .section-communication {
     height: 586px;
   }
-  
+
   .section-communication-left-container {
     margin-top: 140px;
     margin-left: 48px;
   }
-  
+
   .section-communication-right-container {
     margin-top: 140px;
     margin-right: 48px;
@@ -343,23 +351,23 @@
   .section-communication-fieldset-name {
     min-width: 236px;
   }
-  
+
   .section-communication-fieldset-phone {
     min-width: 236px;
   }
-  
+
   .section-communication-form-lower-container {
     margin-top: 40px;
   }
-  
+
   .section-communication-form-agreement-input[type="checkbox"] {
     margin: 0;
-  
+
     width: 20px;
     min-width: 20px;
     height: 20px;
     appearance: none;
-    background-image: url('../assets/images/section-communication-checkbox-unchecked.svg');
+    background-image: url("../assets/images/section-communication-checkbox-unchecked.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -367,50 +375,50 @@
     outline: none;
     cursor: pointer;
   }
-  
+
   .section-communication-form-agreement-input:not(:checked):hover {
-    background-image: url('../assets/images/section-communication-checkbox-unchecked-hover.svg');
+    background-image: url("../assets/images/section-communication-checkbox-unchecked-hover.svg");
   }
-  
+
   .section-communication-form-agreement-input:checked {
-    background-image: url('../assets/images/section-communication-checkbox-checked.svg');
+    background-image: url("../assets/images/section-communication-checkbox-checked.svg");
   }
-  
+
   .section-communication-form-agreement-input:checked:hover {
-    background-image: url('../assets/images/section-communication-checkbox-checked-hover.svg');
+    background-image: url("../assets/images/section-communication-checkbox-checked-hover.svg");
   }
-  
+
   .section-communication-form-agreement-label {
     padding-left: 12px;
-  
+
     max-width: 372px;
     min-width: 248px;
-  
+
     color: var(--light-grey);
     font: var(--font-14r);
   }
-  
+
   .section-communication-form-agreement-label-a {
     color: var(--white-2);
     text-decoration: none;
   }
-  
+
   .section-communication-form-button {
     margin-left: auto;
   }
-  
+
   /* MODAL */
 
   .modal {
     width: 747px;
     height: 480px;
-  
+
     padding-left: 53px;
     padding-right: 53px;
     padding-top: 100px;
     padding-bottom: 100px;
   }
-  
+
   .modal.modal-hash-active {
     padding-top: 81px;
     padding-bottom: 81px;
@@ -433,22 +441,22 @@
 
   .modal-hashtag {
     margin-top: 17px;
-  
+
     padding: 6px 16px;
-  
+
     font: var(--font-16r);
   }
 
   .modal-demo-p {
     margin-right: 20px;
     margin-bottom: 20px;
-  
+
     font: var(--font-18m);
   }
 
   .modal-p {
     margin-top: 0;
-    
+
     font: var(--font-18r);
   }
 
@@ -465,26 +473,26 @@
   .modal-sent-header {
     font: var(--font-h18-32s);
   }
-  
+
   .modal-sent-p {
     margin-top: 24px;
-  
+
     width: 236px;
-  
+
     font: var(--font-18r);
   }
-  
+
   .modal-sent-img {
     top: 55px;
     right: 114px;
   }
-  
+
   .modal-sent-button {
     bottom: 81px;
   }
 
   /* FOOTER */
-  
+
   .footer-container {
     padding: 80px 48px;
   }

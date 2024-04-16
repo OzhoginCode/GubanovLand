@@ -11,7 +11,7 @@
 
   .logo-header {
     margin-left: 22px;
-  
+
     max-width: 36px;
   }
 
@@ -56,7 +56,7 @@
     top: 24.39%;
     transform: unset;
   }
-  
+
   .header-menu-opened .nav-ul {
     font: var(--font-h20-22r);
   }
@@ -84,10 +84,10 @@
   .section-main-left {
     margin-left: 22px;
   }
-  
+
   .section-main-text {
     margin-top: 89px;
-    
+
     height: unset;
     width: unset;
   }
@@ -114,12 +114,12 @@
 
     font: var(--font-h16-14r);
   }
-  
+
   .section-main-header-circles {
     left: -74px;
     top: 29px;
   }
-  
+
   .section-main-buttons {
     top: 769px;
 
@@ -134,25 +134,25 @@
   .section-main-right {
     margin-right: 22px;
   }
-  
+
   .section-main-video {
     margin-top: 40px;
-  
+
     width: 316px;
   }
-  
+
   .section-main-right-text {
     margin-top: 26px;
     margin-right: 104px;
   }
-  
+
   .section-main-arrow {
     top: 379px;
     right: 109px;
   }
 
   /* SECTION ABOUT */
-  
+
   .section-about {
     height: 1255px;
   }
@@ -199,14 +199,14 @@
   .text-indent-86 {
     text-indent: 0;
   }
-  
+
   .info-block-image-Ivan {
     top: 46px;
     left: 102px;
   }
 
   /* SECTION PLAYLISTS */
-  
+
   .section-playlists {
     height: 871px;
   }
@@ -225,14 +225,14 @@
   .section-playlists-right-header {
     margin-left: 22px;
     margin-top: 24.35px;
-    
+
     font: var(--font-h18-32b);
   }
 
   .section-playlists-right-text {
     left: 22px;
     top: 595px;
-  
+
     width: 323px;
     hyphens: auto;
   }
@@ -263,7 +263,7 @@
 
     line-height: 1.43;
   }
-  
+
   .section-works-audio-cards-container {
     top: 308px;
   }
@@ -322,7 +322,7 @@
 
     width: 333px;
     height: 196px;
-    
+
     gap: 0px;
 
     font: var(--font-h18-32s);
@@ -340,7 +340,7 @@
 
   .section-stages-lower-container ul li {
     position: relative;
-    
+
     height: 132px;
   }
 
@@ -360,8 +360,9 @@
     transform: rotate(90deg);
   }
 
-  .section-stages-lower-container li:first-of-type
-  .section-stages-lower-container-ul-li-img {
+  .section-stages-lower-container
+    li:first-of-type
+    .section-stages-lower-container-ul-li-img {
     display: none;
   }
 
@@ -398,7 +399,7 @@
 
   /* SECTION PRICES */
 
-  .section-prices-lists-container > div:nth-child(-n+2)::after {
+  .section-prices-lists-container > div:nth-child(-n + 2)::after {
     left: 0;
 
     width: 316px;
@@ -416,9 +417,9 @@
   .section-prices-warning-hover-text {
     top: -64px;
     left: -12px;
-  
+
     padding: 8px 12px;
-  
+
     width: 290px;
     height: 72px;
   }
@@ -486,19 +487,19 @@
   .section-communication-fieldset-name {
     min-width: 316px;
   }
-  
+
   .section-communication-fieldset-phone {
     min-width: 316px;
   }
-  
+
   .section-communication-form-lower-container {
     margin-top: 24px;
   }
-  
+
   .section-communication-form-agreement-container {
     max-width: 316px;
   }
-  
+
   .section-communication-form-agreement-label {
     min-width: 280px;
   }
@@ -534,7 +535,7 @@
 
   .footer-central-container-a {
     margin-top: 373px;
-    
+
     transform: translateX(-200px);
   }
 
@@ -583,7 +584,7 @@
 
     width: unset;
     height: unset;
-  
+
     padding-left: max(22px, calc((100vw - 330px) / 2));
     padding-right: 22px;
     padding-bottom: unset;
@@ -599,7 +600,7 @@
   .header-container {
     max-width: 100%;
   }
-  
+
   .modal-header {
     font: var(--font-h6-48m);
     width: 300px;
@@ -629,7 +630,7 @@
   .modal-p-container {
     max-width: 100%;
   }
-  
+
   .modal-p {
     margin: 0;
     margin-top: 20px;
@@ -637,17 +638,17 @@
     margin-left: 0;
 
     width: 260px;
-  
+
     font: var(--font-16m);
   }
-  
+
   .modal-lower {
     margin-top: 56px;
   }
 
   .modal-form-button {
     margin-left: 0;
-    
+
     width: 100%;
   }
 
@@ -655,22 +656,22 @@
     min-width: 316px;
     max-width: 316px;
   }
-  
+
   .modal-fieldset-phone {
     min-width: 316px;
     max-width: 316px;
   }
-  
+
   .modal-form-lower-container {
     margin-top: 16px;
 
     align-items: normal;
   }
-  
+
   .modal-form-agreement-label {
     max-width: 245px;
   }
-  
+
   .modal-form-button {
     margin-left: unset;
     margin-top: 54px;
@@ -681,16 +682,16 @@
 
     margin-left: 24px;
   }
-  
+
   .modal-sent-p {
     margin-top: 26px;
     margin-left: 24px;
-  
+
     width: 314px;
-  
+
     font: var(--font-16m);
   }
-  
+
   .modal-sent-img {
     position: unset;
 
@@ -700,7 +701,7 @@
     width: unset;
     height: unset;
   }
-  
+
   .modal-sent-button {
     position: unset;
 

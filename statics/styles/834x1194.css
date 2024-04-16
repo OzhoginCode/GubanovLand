@@ -33,11 +33,11 @@
     margin-left: 43px;
     margin-right: auto;
   }
-  
+
   .header-menu-opened .div-logo {
     height: 110px;
   }
-  
+
   .header-menu-button {
     display: block;
 
@@ -61,10 +61,10 @@
   .header-menu-opened .nav {
     position: absolute;
     top: 29%;
-    
+
     display: flex;
     flex-direction: column;
-    
+
     height: auto;
     width: auto;
   }
@@ -75,12 +75,12 @@
     font: var(--font-h18-32s);
     text-transform: uppercase;
   }
-  
+
   .header-menu-opened .nav-ul li {
     margin: 0;
-    margin-bottom: 48px; 
+    margin-bottom: 48px;
   }
-  
+
   .div-button-block {
     display: none;
   }
@@ -95,7 +95,7 @@
     bottom: 100px;
     right: 43px;
   }
-  
+
   .right-button-header {
     margin: 0;
 
@@ -134,7 +134,7 @@
 
     font: var(--font-h18-32s);
   }
-  
+
   .header-contacts-phone-small {
     display: none;
   }
@@ -144,7 +144,7 @@
 
     gap: 26px;
   }
-  
+
   .header-contacts-messangers-item img {
     width: 32px;
     height: 32px;
@@ -155,15 +155,15 @@
   .main {
     margin-top: 20px;
   }
-  
+
   .section-main {
     height: 1083px;
   }
-  
+
   .section-main-container {
     flex-direction: column;
   }
-  
+
   .section-main-left {
     padding: 0;
     margin-left: auto;
@@ -171,10 +171,10 @@
 
     width: unset;
   }
-  
+
   .section-main-text {
     margin-top: 162px;
-  
+
     width: 700px;
     height: 184px;
   }
@@ -182,12 +182,12 @@
   .section-main-lower-text-div {
     text-indent: 0;
   }
-  
+
   .h2 {
     text-indent: 0;
-    width: 394px
+    width: 394px;
   }
-  
+
   .section-main-lower-text-span {
     position: unset;
     transform: unset;
@@ -195,38 +195,38 @@
     margin-left: 50px;
     height: 76px;
   }
-  
+
   .section-main-header-circles {
     position: absolute;
-  
+
     left: 25px;
     top: 105px;
   }
-  
+
   .section-main-buttons {
     position: absolute;
-  
+
     top: 973px;
     left: 50%;
     transform: translateX(-50%);
-    
+
     margin: 0;
   }
-  
+
   .section-main-right {
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .section-main-video {
     margin-top: 56px;
   }
-  
+
   .section-main-right-text {
     margin-top: 36px;
     margin-right: 129px;
   }
-  
+
   .section-main-arrow {
     top: 515px;
     right: 134px;
@@ -354,7 +354,7 @@
   }
 
   /* SECTION WORKS */
-  
+
   .section-works {
     height: 920px;
   }
@@ -362,7 +362,7 @@
   .section-works-upper {
     height: 388px;
   }
-  
+
   .sections-works-header {
     margin-left: 45px;
     margin-right: 51px;
@@ -371,7 +371,7 @@
   .sections-works-header-1 {
     margin-left: auto;
   }
-  
+
   .sections-works-header-2 {
     margin-left: auto;
   }
@@ -379,35 +379,35 @@
   .section-works-upper-right-text {
     display: none;
   }
-  
+
   .section-works-line {
     display: none;
   }
-  
+
   .section-works-audio-cards-container {
     top: 388px;
   }
 
-  .card-1  {
+  .card-1 {
     margin-left: 10034px;
   }
-  
+
   .section-works-scroll-buttons-container {
     right: 51px;
     bottom: 88px;
   }
-  
+
   .section-works-lower-text-container {
     left: 34px;
     bottom: 80px;
   }
 
   /* SECTION STAGES */
-  
+
   .section-stages {
     height: 1220px;
   }
-  
+
   .sections-stages-header {
     margin-top: 56px;
     margin-left: 43px;
@@ -415,17 +415,17 @@
     height: 316px;
     width: 600px;
   }
-  
+
   .sections-stages-header-1 {
     margin-left: 0;
   }
 
   .section-stages-lower-container ul {
     margin-left: 43px;
-  
+
     width: 748px;
   }
-  
+
   .section-stages-video-cassette {
     margin-right: -212px;
   }
@@ -462,21 +462,21 @@
     position: relative;
   }
 
-  .section-prices-lists-container > div:nth-child(-n+2)::after {
+  .section-prices-lists-container > div:nth-child(-n + 2)::after {
     position: absolute;
     bottom: -60px;
     left: -228px;
-  
+
     max-width: 740px;
     width: 100vw;
     height: 10px;
-  
+
     background-image: url(../assets/images/section-prices-dividing-line.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
-  
-    content: '';
+
+    content: "";
   }
 
   .section-prices-list-container-1 {
@@ -503,7 +503,7 @@
   }
 
   /* SECTION REVIEWS */
-  
+
   .section-reviews {
     height: 842px;
   }
@@ -515,7 +515,7 @@
   .section-reviews-upper-part-left-container {
     top: 682px;
   }
-  
+
   .section-reviews-quotes-img {
     margin-left: 43px;
   }
@@ -523,7 +523,7 @@
   .section-reviews-header {
     margin-left: 43px;
   }
-  
+
   .section-reviews-header-1 {
     margin-left: 170px;
   }
@@ -538,16 +538,16 @@
   }
 
   /* SECTION COMMUNICATION */
-  
+
   .section-communication {
     height: 669px;
   }
-  
+
   .section-communication-left-container {
     margin-top: 124px;
     margin-left: 43px;
   }
-  
+
   .section-communication-right-container {
     margin-top: 124px;
     margin-right: 48px;
@@ -557,7 +557,7 @@
 
   .section-communication-form-upper-container {
     flex-direction: column;
-  
+
     margin-bottom: 0;
   }
 
@@ -565,7 +565,7 @@
     min-width: 364px;
     margin-bottom: 21px;
   }
-  
+
   .form-name {
     margin-top: 3px;
   }
@@ -575,13 +575,13 @@
     margin-left: 0;
     margin-bottom: 21px;
   }
-  
+
   .section-communication-form-lower-container {
     flex-direction: column;
-  
+
     margin-top: 31px;
   }
-  
+
   .section-communication-form-agreement-container {
     max-width: 364px;
     height: 54px;
@@ -590,11 +590,11 @@
 
     margin-right: unset;
   }
-  
+
   .section-communication-form-agreement-label {
     min-width: 332px;
   }
-  
+
   .section-communication-form-button {
     margin-top: 42px;
   }

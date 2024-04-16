@@ -2,7 +2,7 @@
   .sections-container {
     max-width: 1440px;
   }
-  
+
   /* HEADER */
 
   .div-logo {
@@ -28,11 +28,11 @@
 
     width: 685px;
   }
-  
+
   .h1 {
     font: var(--font-h11-72s);
   }
-  
+
   .h2 {
     font: var(--font-h11-72s);
   }
@@ -46,7 +46,7 @@
 
   .section-main-text {
     margin-top: 231px;
-  
+
     width: 731px;
     height: 184px;
   }
@@ -58,7 +58,7 @@
 
   .section-main-video {
     margin-top: 80px;
-  
+
     width: 545px;
   }
 
@@ -67,35 +67,35 @@
     margin-left: auto;
     margin-right: 102px;
   }
-  
+
   .section-main-right-text-2 {
     text-indent: 67px;
   }
-  
+
   .section-main-arrow {
     top: 659px;
     right: 102px;
-  
+
     width: 45px;
     height: 29px;
   }
 
   /* SECTION ABOUT */
-  
+
   .section-about {
     height: 1068px;
   }
-  
+
   .scrolling-text-section-about {
     height: 168px;
-  
+
     font: var(--font-h2-100b);
   }
-  
+
   .section-about-scrolling-text-lower {
     top: 52px;
   }
-  
+
   .section-about-main {
     margin-top: 168px;
   }
@@ -105,10 +105,10 @@
 
     margin-top: 80px;
     margin-left: 0px;
-  
+
     width: 566px;
   }
-  
+
   .info-block-photo-1 {
     position: absolute;
     left: -38px;
@@ -116,62 +116,62 @@
     height: 700px;
     width: 108px;
   }
-  
+
   .info-block-photo-2 {
     margin-left: 90px;
-  
+
     width: 438px;
     height: 700px;
   }
-  
+
   .main-text-right-section-about {
     margin-top: 93px;
-  
+
     font: var(--font-16r);
   }
-  
+
   .main-text-right-section-about-1 {
     width: 274.265px;
   }
-  
+
   .text-indent-120 {
     text-indent: 112px;
   }
-  
+
   .main-text-right-section-about-2 {
     margin-left: 55.73px;
-  
+
     width: 274.265px;
   }
-  
+
   .text-indent-193 {
     text-indent: 173px;
   }
-  
+
   .text-indent-86 {
     text-indent: 56px;
   }
-  
+
   .info-block-arrow {
     margin-left: 39px;
     margin-top: 401.33px;
   }
-  
+
   .lower-right-section-about-text {
     margin-top: 391px;
     margin-left: 23px;
-  
+
     width: 287px;
     height: 96px;
 
     font: var(--font-h8-28r);
   }
-  
+
   .info-block-image-goldenrec {
     top: 271px;
     left: 55.73px;
   }
-  
+
   .info-block-image-Ivan {
     top: 153px;
     left: 183.73px;
@@ -190,15 +190,15 @@
   .sections-playlists-video {
     margin-top: 102px;
     margin-left: 90px;
-  
+
     width: 364px;
     height: 376px;
   }
-  
+
   .section-playlists-right-header {
     margin-top: 80px;
     gap: 8px;
-  
+
     width: 703px;
 
     font: var(--font-h12-48b);
@@ -207,26 +207,26 @@
   .section-playlists-right-header-1 {
     text-indent: 348px;
   }
-  
+
   .section-playlists-right-header-low {
     margin-top: 6px;
   }
-  
+
   .section-playlists-right-images {
     margin-top: 18px;
   }
-  
+
   .section-playlists-right-images li {
     margin-right: 24px;
   }
-  
+
   .section-playlists-right-text {
     left: 403px;
     top: 230px;
-  
+
     width: 360px;
     height: 252px;
-  
+
     font: var(--font-14m);
   }
 
@@ -235,27 +235,27 @@
   .section-works {
     height: 1012px;
   }
-  
+
   .section-works-upper {
     height: 432px;
   }
-  
+
   .sections-works-header {
     margin-top: 120px;
     margin-left: 90px;
-  
+
     width: 748px;
-    
+
     gap: 8px;
-  
+
     font: var(--font-h13-48r);
     letter-spacing: var(--font-h13-48r-letter-spacing);
   }
-  
+
   .sections-works-header-1 {
     margin-left: 455px;
   }
-  
+
   .sections-works-header-2 {
     margin-left: 200px;
   }
@@ -263,23 +263,23 @@
   .sections-works-header-3 {
     word-spacing: 13px;
   }
-  
+
   .sections-works-header-inside {
     width: 61px;
     height: 50px;
-  
+
     font: var(--font-20m);
   }
-  
+
   .section-works-upper-right-text {
     margin-right: 90px;
     margin-top: 256px;
-  
+
     width: 207px;
 
     font: var(--font-14rr);
   }
-  
+
   .section-works-line {
     right: 90px;
     top: 332px;
@@ -291,7 +291,7 @@
     top: 432px;
   }
 
-  .card-1  {
+  .card-1 {
     margin-left: 10090px;
   }
 
@@ -299,11 +299,11 @@
     right: 90px;
     bottom: 120px;
   }
-  
+
   .section-works-lower-text-container {
     left: 90px;
     bottom: 120px;
-  
+
     font: var(--font-14rr);
   }
 
@@ -318,23 +318,23 @@
   .section-stages {
     height: 999px;
   }
-  
+
   .sections-stages-header {
     margin-top: 120px;
     margin-left: 218px;
     /* margin-left: auto; */
     margin-right: 20px;
-  
+
     max-width: 1132px;
     width: 70%;
     height: 196px;
-    
+
     gap: 8px;
-  
+
     font: var(--font-h13-48r);
     letter-spacing: var(--font-h13-48r-letter-spacing);
   }
-  
+
   .sections-stages-header-1 {
     margin-left: auto;
   }
@@ -342,39 +342,39 @@
   .section-stages-lower-container ul {
     margin-left: 90px;
     margin-top: 112px;
-  
+
     width: 823px;
     height: 412px;
   }
-  
+
   .section-stages-lower-container ul li:not(:first-of-type) {
     margin-top: 48px;
   }
-  
+
   .section-stages-lower-container-ul-li-img {
     margin-right: 20px;
   }
-  
+
   .section-stages-ul-description {
     width: 182px;
     height: 40px;
-  
+
     font: var(--font-14r);
   }
-  
+
   .section-stages-ul-numbers {
     margin-right: 16px;
-  
+
     font: var(--font-40l);
   }
-  
+
   .section-stages-ul-header {
     font: var(--font-16rr);
   }
-  
+
   .section-stages-ul-a {
     margin-top: 7px;
-  
+
     width: 155px;
 
     font: var(--font-14r);
@@ -383,7 +383,7 @@
   .section-stages-video-cassette {
     margin-top: 72px;
     margin-left: 128px;
-  
+
     width: 310px;
     height: 491px;
   }
@@ -393,21 +393,21 @@
   .section-prices {
     height: 1077px;
   }
-  
+
   .section-prices-header-container {
     top: 120px;
   }
 
   .section-prices-header {
     height: 168px;
-  
+
     font: var(--font-h2-100b);
   }
 
   .section-prices-header-scrolling-text-lower {
     top: 52px;
   }
-  
+
   .section-prices-lists-container {
     margin-top: 388px;
 
@@ -418,13 +418,13 @@
   .section-prices-lists-header {
     font: var(--font-24bb);
   }
-  
+
   .section-prices-ul {
     margin-top: 47px;
-  
+
     font: var(--font-14m);
   }
-  
+
   .section-prices-li {
     margin-top: 12px;
   }
@@ -438,71 +438,71 @@
   .section-reviews {
     height: 880px;
   }
-  
+
   .section-reviews-upper-part {
     margin-top: 120px;
   }
-  
+
   .section-reviews-upper-part-left-container {
     width: 558px;
   }
-  
+
   .section-reviews-quotes-img {
     margin-left: 94.26px;
   }
-  
+
   .section-reviews-quote {
     width: 250px;
-    
+
     font: var(--font-14rr);
   }
-  
+
   .section-reviews-header {
     width: 795px;
     height: 196px;
-    
+
     gap: 8px;
     font: var(--font-h13-48r);
     letter-spacing: var(--font-h13-48r-letter-spacing);
   }
-  
+
   .section-reviews-header-1 {
     margin-left: 214px;
   }
-  
+
   .section-reviews-lower-part {
     margin-top: 92px;
   }
-  
+
   .section-reviews-reviews-container {
     padding-left: 90px;
   }
-  
+
   .section-reviews-review {
     position: relative;
     flex-shrink: 0;
-  
+
     padding-left: 32px;
     padding-right: 32px;
     padding-top: 33px;
-  
+
     margin-right: 20px;
-  
+
     width: 620px;
     height: 280px;
   }
 
   .section-reviews-review-text {
     width: 556px;
-  
+
     font: var(--font-14r);
   }
-  
+
   .section-reviews-review-site-logo {
     top: 20px;
     right: 32px;
   }
-  
+
   .section-reviews-scroll-buttons-container {
     position: absolute;
 
@@ -526,32 +526,32 @@
     margin-left: 90px;
     width: 283px;
   }
-  
+
   .section-communication-header {
     font: var(--font-h6-48b);
   }
-  
+
   .section-communication-header-p {
     margin-top: 13px;
-  
+
     width: 245px;
-  
+
     font: var(--font-16r);
   }
-  
+
   .section-communication-a-container {
     margin-top: 75px;
   }
-  
+
   .section-communication-a-container a {
     margin-right: 20px;
   }
-  
+
   .section-communication-right-container {
     margin-top: 190px;
     margin-right: 90px;
   }
-  
+
   .section-communication-form-upper-container {
     margin-bottom: 25px;
   }
@@ -559,21 +559,22 @@
   .section-communication-fieldset-name {
     height: 48px;
   }
-  
+
   .section-communication-fieldset-phone {
     margin-left: 20px;
 
     height: 48px;
   }
-  
+
   .section-communication-fieldset-message {
     height: 96px;
   }
-  
-  .section-communication-form input:not([type="checkbox"]), textarea {
+
+  .section-communication-form input:not([type="checkbox"]),
+  textarea {
     margin-left: 26px;
     margin-right: 26px;
-  
+
     font: var(--font-14r);
   }
 
@@ -584,7 +585,7 @@
   .section-communication-form-legend {
     font: var(--font-h14-12r);
   }
-  
+
   .section-communication-form-lower-container {
     margin-top: 36px;
   }
@@ -604,20 +605,20 @@
   .footer {
     height: 374px;
   }
-  
+
   .footer-container {
     padding: 80px 90px;
   }
 
   /* UI KIT */
 
-  .scroll-button svg{
+  .scroll-button svg {
     width: 32px;
     height: 32px;
   }
-  
+
   .scroll-button-left {
-    margin-right: 44px; 
+    margin-right: 44px;
   }
 
   .section-communication-form .phonenumber-input-container {

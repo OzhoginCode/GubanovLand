@@ -15,7 +15,7 @@
 
   .section-main-text {
     margin-top: 144px;
-  
+
     width: 550px;
     height: 276px;
   }
@@ -27,20 +27,20 @@
 
   .h2 {
     text-indent: unset;
-    width: 394px
+    width: 394px;
   }
-  
+
   .section-main-lower-text-span {
     position: absolute;
-  
+
     text-indent: 0;
 
     transform: translate(225px, 45px);
   }
-  
+
   .section-main-header-circles {
     position: absolute;
-  
+
     left: 10px;
     top: 85px;
   }
@@ -80,19 +80,19 @@
 
   .section-stages-lower-container ul {
     margin-left: 43px;
-  
+
     width: initial;
   }
-  
+
   .section-stages-video-cassette {
     margin-right: -212px;
   }
 
   /* SECTION PRICES */
 
-  .section-prices-lists-container > div:nth-child(-n+2)::after {
+  .section-prices-lists-container > div:nth-child(-n + 2)::after {
     left: -190px;
-  
+
     width: 94vw;
   }
 
@@ -154,26 +154,26 @@
 
   .section-communication-form-upper-container {
     flex-direction: column;
-  
+
     margin-bottom: 0;
   }
 
   .section-communication-fieldset-name {
     min-width: 300px;
   }
-  
+
   .section-communication-fieldset-phone {
     min-width: 300px;
   }
-  
+
   .section-communication-form-lower-container {
     margin-top: 31px;
   }
-  
+
   .section-communication-form-agreement-container {
     max-width: 300px;
   }
-  
+
   .section-communication-form-agreement-label {
     min-width: 270px;
   }
@@ -183,7 +183,7 @@
   .modal {
     width: 612px;
     height: 600px;
-  
+
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 100px;
@@ -198,7 +198,7 @@
     top: 29px;
     right: 29.32px;
   }
-  
+
   .modal.try-for-free .modal-header {
     font: var(--font-h19-30s);
   }
@@ -223,20 +223,20 @@
     margin-top: 124px;
     margin-left: 43px;
   }
-  
+
   .modal-right-container {
     margin-top: 124px;
     margin-right: 48px;
-  
+
     max-width: 364px;
   }
-  
+
   .modal-form-upper-container {
     flex-direction: column;
-  
+
     margin-bottom: 0;
   }
-  
+
   .modal-fieldset-name {
     min-width: 364px;
     margin-bottom: 21px;
@@ -245,47 +245,47 @@
   .modal .form-name {
     margin-top: 7px;
   }
-  
+
   .modal-fieldset-phone {
     min-width: 364px;
     margin-left: 0;
     margin-bottom: 0;
   }
-  
+
   .modal-form-lower-container {
     flex-direction: column;
-  
+
     margin-top: 20px;
   }
-  
+
   .modal-form-agreement-container {
     max-width: unset;
-    
+
     margin-right: unset;
   }
-  
+
   .modal-form-agreement-label {
     min-width: unset;
     max-width: unset;
 
     font: var(--font-12m);
   }
-  
+
   .modal-form-button {
     margin-top: 20px;
   }
 
   .modal-sent-p {
     margin-top: 24px;
-  
+
     width: 236px;
   }
-  
+
   .modal-sent-img {
     top: 136px;
     right: 50px;
   }
-  
+
   .modal-sent-button {
     bottom: 76px;
   }

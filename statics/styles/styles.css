@@ -2,21 +2,25 @@
 
 :root {
   --main-background: #111223;
-  --dark-grey-background: #1D1E2E;
-  --yellow: #FFCB5A;
-  --error-color: #EB5757;
+  --dark-grey-background: #1d1e2e;
+  --yellow: #ffcb5a;
+  --error-color: #eb5757;
   --dark-grey-elements-1: #444444;
-  --dark-grey-elements-2: #41414F;
+  --dark-grey-elements-2: #41414f;
   --light-grey: #888891;
-  --dark-white: #D2D2D2;
-  --white-1: #FFFFFF;
-  --white-2: #EBEBEB;
+  --dark-white: #d2d2d2;
+  --white-1: #ffffff;
+  --white-2: #ebebeb;
 }
 
 html {
   color-scheme: dark light;
-  &[data-theme=light] { color-scheme: light; }
-  &[data-theme=dark] { color-scheme: dark; }
+  &[data-theme="light"] {
+    color-scheme: light;
+  }
+  &[data-theme="dark"] {
+    color-scheme: dark;
+  }
 }
 
 html {
@@ -45,17 +49,17 @@ html {
 
 .head {
   position: fixed;
- 
+
   left: 0;
   right: 0;
   top: 0;
-  
+
   box-sizing: border-box;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   height: 90px;
 
   background: var(--main-background);
@@ -74,7 +78,7 @@ html {
   align-items: center;
 
   margin-left: 202px;
-  
+
   height: 100%;
 
   text-decoration: none;
@@ -88,7 +92,7 @@ html {
 
 .logo-name-header {
   margin-left: 20px;
-  
+
   color: var(--white-1);
 
   font: var(--font-28l);
@@ -113,7 +117,7 @@ html {
 .nav-ul {
   display: flex;
   align-items: center;
-  
+
   margin: 0;
   padding: 0;
 
@@ -231,7 +235,7 @@ html {
 
 .h1 {
   margin: 0;
-  
+
   height: 88px;
 
   color: var(--yellow);
@@ -552,7 +556,7 @@ html {
 .section-playlists-right-header {
   display: flex;
   flex-direction: column;
-  
+
   margin: 0;
   margin-top: 72px;
   gap: 12px;
@@ -639,7 +643,7 @@ html {
 
 .section-works-container {
   position: relative;
-  
+
   display: flex;
   flex-direction: column;
 }
@@ -654,12 +658,12 @@ html {
 .sections-works-header {
   display: flex;
   flex-direction: column;
-  
+
   margin-top: 140px;
   margin-left: 202px;
 
   width: 961px;
-  
+
   gap: 12px;
   color: var(--white-2);
 
@@ -698,7 +702,7 @@ html {
 .section-works-upper-right-text {
   display: flex;
   flex-direction: column;
-  
+
   margin-left: auto;
   margin-right: 202px;
   margin-top: 269px;
@@ -729,7 +733,7 @@ html {
   display: flex;
 
   overflow-x: scroll;
-  
+
   scroll-behavior: smooth;
 }
 
@@ -781,7 +785,7 @@ html {
 .section-works-audio-card-head-title-container {
   display: flex;
   flex-direction: column;
-  
+
   margin-left: 12px;
 }
 
@@ -810,7 +814,7 @@ html {
 .section-works-audio-card-site-img {
   margin-right: 8px;
   margin-top: 1px;
-  
+
   width: 14px;
   height: 14px;
 }
@@ -880,7 +884,7 @@ html {
 
   margin-left: -1px;
   margin-top: -6px;
-  
+
   width: 16px;
   height: 16px;
 
@@ -891,7 +895,7 @@ html {
 .section-works-audio-card-time-container {
   display: flex;
   justify-content: space-between;
-  
+
   margin-top: auto;
 
   color: var(--white-1);
@@ -905,7 +909,7 @@ html {
   position: absolute;
   left: 42.4796748%;
   bottom: 38px;
-  
+
   width: 96px;
   height: 50px;
 
@@ -923,7 +927,7 @@ html {
   margin-right: 20px;
 }
 
-.card-1  {
+.card-1 {
   margin-left: 10202px;
 }
 
@@ -994,7 +998,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
+
   flex-shrink: 0;
   margin-top: 140px;
   margin-left: 373px;
@@ -1002,7 +1006,7 @@ html {
 
   width: 1343px;
   height: 216px;
-  
+
   gap: 12px;
   color: var(--yellow);
 
@@ -1017,7 +1021,7 @@ html {
 
 .section-stages-lower-container {
   display: flex;
-  
+
   flex-shrink: 0;
 }
 
@@ -1226,7 +1230,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 
-  content: '';
+  content: "";
 }
 
 .section-prices-li-inactive {
@@ -1244,12 +1248,12 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 
-  content: '';
+  content: "";
 }
 
 .section-prices-price {
   margin-top: 56px;
-  
+
   color: var(--white-1);
   font: var(--font-40m);
 }
@@ -1264,7 +1268,7 @@ html {
 }
 
 .section-prices-warning-img:hover ~ .section-prices-warning-hover-text,
-.section-prices-warning-img:hover ~ .section-prices-warning-hover-img{
+.section-prices-warning-img:hover ~ .section-prices-warning-hover-img {
   opacity: 1;
 }
 
@@ -1326,7 +1330,7 @@ html {
 .section-reviews {
   height: 1016px;
   overflow-x: hidden;
-  
+
   background-color: var(--dark-grey-background);
 }
 
@@ -1349,7 +1353,7 @@ html {
 
 .section-reviews-quotes-img {
   margin-left: 165px;
-  
+
   width: 21.172px;
   height: 18.867px;
 }
@@ -1368,12 +1372,12 @@ html {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
+
   margin: 0;
 
   width: 920px;
   height: 216px;
-  
+
   gap: 12px;
   color: var(--yellow);
   font: var(--font-h5-56m);
@@ -1584,7 +1588,8 @@ html {
   height: 106px;
 }
 
-.section-communication-form input:not([type="checkbox"]), textarea {
+.section-communication-form input:not([type="checkbox"]),
+textarea {
   border: none;
   outline: none;
   resize: none;
@@ -1604,8 +1609,8 @@ html {
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input[type="number"] {
@@ -1622,9 +1627,9 @@ input[type="number"] {
 }
 
 :-webkit-autofill,
-:-webkit-autofill:hover, 
-:-webkit-autofill:focus, 
-:-webkit-autofill:active{
+:-webkit-autofill:hover,
+:-webkit-autofill:focus,
+:-webkit-autofill:active {
   -webkit-background-clip: text;
 }
 
@@ -1632,7 +1637,8 @@ input[type="number"] {
   border-color: var(--white-1);
 }
 
-.section-communication-fieldset:has(input:focus, textarea:focus) .section-communication-form-legend {
+.section-communication-fieldset:has(input:focus, textarea:focus)
+  .section-communication-form-legend {
   color: var(--white-1);
 }
 
@@ -1669,7 +1675,7 @@ input[type="number"] {
   min-width: 20px;
   height: 20px;
   appearance: none;
-  background-image: url('../assets/images/section-communication-checkbox-unchecked.svg');
+  background-image: url("../assets/images/section-communication-checkbox-unchecked.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1679,15 +1685,15 @@ input[type="number"] {
 }
 
 .section-communication-form-agreement-input:not(:checked):hover {
-  background-image: url('../assets/images/section-communication-checkbox-unchecked-hover.svg');
+  background-image: url("../assets/images/section-communication-checkbox-unchecked-hover.svg");
 }
 
 .section-communication-form-agreement-input:checked {
-  background-image: url('../assets/images/section-communication-checkbox-checked.svg');
+  background-image: url("../assets/images/section-communication-checkbox-checked.svg");
 }
 
 .section-communication-form-agreement-input:checked:hover {
-  background-image: url('../assets/images/section-communication-checkbox-checked-hover.svg');
+  background-image: url("../assets/images/section-communication-checkbox-checked-hover.svg");
 }
 
 .section-communication-form-agreement-label {
@@ -1722,7 +1728,7 @@ input[type="number"] {
 .footer-container {
   display: flex;
   justify-content: space-between;
-  
+
   padding: 92px 202px;
 
   box-sizing: border-box;
@@ -1751,7 +1757,7 @@ input[type="number"] {
   margin-left: 20px;
 
   height: 30px;
-  
+
   color: var(--white-1);
   font: var(--font-28l);
 }
@@ -1782,7 +1788,7 @@ input[type="number"] {
   font: var(--font-16r);
 }
 
-.footer-central-container-ul li{
+.footer-central-container-ul li {
   list-style: none;
 
   margin-bottom: 12px;
@@ -1831,11 +1837,11 @@ input[type="number"] {
   height: 40px;
 }
 
-.icon:hover path{
+.icon:hover path {
   fill: var(--yellow);
 }
 
-.icon:hover circle{
+.icon:hover circle {
   stroke: var(--yellow);
 }
 
@@ -2020,7 +2026,8 @@ input[type="number"] {
   height: 106px;
 }
 
-.modal-form input:not([type="checkbox"]), textarea {
+.modal-form input:not([type="checkbox"]),
+textarea {
   border: none;
   outline: none;
   resize: none;
@@ -2079,7 +2086,7 @@ input[type="number"] {
   min-width: 20px;
   height: 20px;
   appearance: none;
-  background-image: url('../assets/images/section-communication-checkbox-unchecked.svg');
+  background-image: url("../assets/images/section-communication-checkbox-unchecked.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2089,15 +2096,15 @@ input[type="number"] {
 }
 
 .modal-form-agreement-input:not(:checked):hover {
-  background-image: url('../assets/images/section-communication-checkbox-unchecked-hover.svg');
+  background-image: url("../assets/images/section-communication-checkbox-unchecked-hover.svg");
 }
 
 .modal-form-agreement-input:checked {
-  background-image: url('../assets/images/section-communication-checkbox-checked.svg');
+  background-image: url("../assets/images/section-communication-checkbox-checked.svg");
 }
 
 .modal-form-agreement-input:checked:hover {
-  background-image: url('../assets/images/section-communication-checkbox-checked-hover.svg');
+  background-image: url("../assets/images/section-communication-checkbox-checked-hover.svg");
 }
 
 .modal-form-agreement-label {
@@ -2138,7 +2145,7 @@ input[type="number"] {
 
 .modal-sent-img {
   position: absolute;
-  
+
   top: 92px;
   right: 137px;
 }
@@ -2155,13 +2162,6 @@ input[type="number"] {
 
   background-color: inherit;
 }
-
-
-
-
-
-
-
 
 /* <<<<< UI-Kit >>>>> */
 
@@ -2183,11 +2183,11 @@ input[type="number"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   height: 56px;
   width: 236px;
   min-width: 236px;
-  
+
   text-decoration: none;
   cursor: pointer;
 
@@ -2210,7 +2210,7 @@ input[type="number"] {
 
 .main-button:disabled {
   color: var(--light-grey);
-  
+
   cursor: not-allowed;
 }
 
@@ -2264,8 +2264,8 @@ input[type="number"] {
   background-color: var(--yellow);
 }
 
-.text-button-3:hover path{
-  stroke: var(--main-background)
+.text-button-3:hover path {
+  stroke: var(--main-background);
 }
 
 .scroll-button {
@@ -2281,7 +2281,7 @@ input[type="number"] {
   border: none;
   padding: 0;
 
-  margin-right: 40px; 
+  margin-right: 40px;
 }
 
 .scroll-button.scroll-button-enabled:hover circle {
@@ -2304,7 +2304,7 @@ input[type="number"] {
 .section-works-audio-card-controls-button:hover object rect,
 .section-works-audio-card-controls-button:hover object path,
 .section-works-audio-card-controls-button:hover rect,
-.section-works-audio-card-controls-button:hover path{
+.section-works-audio-card-controls-button:hover path {
   fill: var(--light-grey);
 }
 
@@ -2312,7 +2312,7 @@ input[type="number"] {
   display: none;
 }
 
-.iti { 
+.iti {
   width: 100%;
 }
 
