@@ -1822,6 +1822,10 @@ input[type="number"] {
 
 .footer-right-container-phone {
   font: var(--font-20r);
+
+  color: var(--white-2);
+
+  text-decoration: none;
 }
 
 .footer-right-container-mail {
@@ -1829,6 +1833,10 @@ input[type="number"] {
   text-align: right;
 
   font: var(--font-16r);
+
+  color: var(--white-2);
+
+  text-decoration: none;
 }
 
 .footer-right-container-img-container {
@@ -2320,6 +2328,10 @@ textarea {
 
 .iti {
   width: 100%;
+}
+
+.iti__selected-dial-code {
+  color: var(--white-1);
 }
 
 .iti__country-name {

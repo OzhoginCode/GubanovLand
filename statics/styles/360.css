@@ -9,9 +9,11 @@
     height: 76px;
   }
 
-  .logo-header {
+  .div-logo {
     margin-left: 22px;
+  }
 
+  .logo-header {
     max-width: 36px;
   }
 
@@ -29,10 +31,6 @@
     top: 80px;
 
     width: calc(100% - 44px);
-  }
-
-  .logo-header {
-    margin-left: 22px;
   }
 
   .header-menu-opened .div-logo {
