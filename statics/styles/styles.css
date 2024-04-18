@@ -1261,10 +1261,16 @@ html {
 .section-prices-warning-container {
   position: relative;
   display: flex;
+  align-items: center;
 
   margin-top: 4px;
 
   width: 126px;
+}
+
+.section-prices-warning-img {
+  width: 14px;
+  height: 14px;
 }
 
 .section-prices-warning-img:hover ~ .section-prices-warning-hover-text,
