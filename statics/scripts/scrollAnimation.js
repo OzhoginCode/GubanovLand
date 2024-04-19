@@ -190,8 +190,9 @@ links.forEach((link) => {
 
     if (id === '') {
       window.scrollTo({ top: 0 });
-      return;
+      return false;
     }
     scrollTarget.scrollIntoView();
+    return false;
   });
 });
