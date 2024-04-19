@@ -256,7 +256,7 @@ const i18n = {
 };
 
 const itiConfig = {
-  utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@21.1.4/build/js/utils.js',
+  utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.4/build/js/utils.js',
   showSelectedDialCode: true,
   nationalMode: false,
   autoPlaceholder: 'agressive',
