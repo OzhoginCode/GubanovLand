@@ -178,3 +178,20 @@ warningElements.forEach((element) => {
     element.style.left = `${rect.right - window.innerWidth - 300}px`;
   }
 });
+
+const links = document.querySelectorAll('a[href^="#"');
+
+links.forEach((link) => {
+  const id = link.getAttribute('href').substring(1);
+  const scrollTarget = document.getElementById(id);
+
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    if (id === '') {
+      window.scrollTo({ top: 0 });
+      return;
+    }
+    scrollTarget.scrollIntoView();
+  });
+});
