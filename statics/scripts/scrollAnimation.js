@@ -179,7 +179,7 @@ warningElements.forEach((element) => {
   }
 });
 
-const links = document.querySelectorAll('a[href^="#"');
+const links = document.querySelectorAll('a[href^="#"]');
 
 links.forEach((link) => {
   const id = link.getAttribute('href').substring(1);
