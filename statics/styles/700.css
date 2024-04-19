@@ -1,4 +1,4 @@
-@media (max-width: 833px) {
+@media (width <= 833px) {
   .sections-container {
     max-width: 700px;
   }
@@ -14,20 +14,19 @@
   }
 
   .section-main-text {
-    margin-top: 144px;
-
     width: 550px;
     height: 276px;
+    margin-top: 144px;
   }
 
   .section-main-lower-text-div {
-    text-indent: 265px;
     margin-top: 4px;
+    text-indent: 265px;
   }
 
   .h2 {
-    text-indent: unset;
     width: 394px;
+    text-indent: unset;
   }
 
   .section-main-lower-text-span {
@@ -40,9 +39,9 @@
 
   .section-main-header-circles {
     position: absolute;
+    top: 85px;
 
     left: 10px;
-    top: 85px;
   }
 
   .section-main-buttons {
@@ -64,8 +63,8 @@
   }
 
   .main-text-right-section-about {
-    margin-left: auto;
     margin-right: 62px;
+    margin-left: auto;
   }
 
   .lower-right-section-about {
@@ -79,9 +78,8 @@
   /* SECTION STAGES */
 
   .section-stages-lower-container ul {
-    margin-left: 43px;
-
     width: initial;
+    margin-left: 43px;
   }
 
   .section-stages-video-cassette {
@@ -115,18 +113,16 @@
   }
 
   .section-reviews-review {
-    padding-left: 32px;
-    padding-right: 33px;
-    padding-top: 20px;
-
     width: 316px;
     height: 410px;
+    padding-top: 20px;
+    padding-right: 33px;
+    padding-left: 32px;
   }
 
   .section-reviews-review-text {
-    margin-top: 28px;
-
     width: 251px;
+    margin-top: 28px;
   }
 
   .section-reviews-review-site-logo {
@@ -148,8 +144,8 @@
   }
 
   .section-communication-right-container {
-    margin-left: 30px;
     margin-right: auto;
+    margin-left: 30px;
   }
 
   .section-communication-form-upper-container {
@@ -183,11 +179,7 @@
   .modal {
     width: 612px;
     height: 600px;
-
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 60px;
   }
 
   .modal.modal-hash-active {
@@ -225,10 +217,9 @@
   }
 
   .modal-right-container {
+    max-width: 364px;
     margin-top: 124px;
     margin-right: 48px;
-
-    max-width: 364px;
   }
 
   .modal-form-upper-container {
@@ -248,8 +239,8 @@
 
   .modal-fieldset-phone {
     min-width: 364px;
-    margin-left: 0;
     margin-bottom: 0;
+    margin-left: 0;
   }
 
   .modal-form-lower-container {
@@ -276,9 +267,8 @@
   }
 
   .modal-sent-p {
-    margin-top: 24px;
-
     width: 236px;
+    margin-top: 24px;
   }
 
   .modal-sent-img {

@@ -6,6 +6,7 @@ install:
 
 lint:
 	npx eslint .
+	npx stylelint statics/styles/**.css
 
 start:
 	node app/bin/index.js

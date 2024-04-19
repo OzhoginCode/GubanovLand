@@ -1,6 +1,6 @@
 .main {
-  padding-left: 202px;
   padding-right: 208px;
+  padding-left: 202px;
 
   color: var(--white-1);
 }
@@ -41,10 +41,10 @@
   font: var(--font-16r);
 }
 
-@media (max-width: 1919px) {
+@media (width <= 1919px) {
   .main {
-    padding-left: 90px;
     padding-right: 89px;
+    padding-left: 90px;
   }
 
   .policy-h1 {
@@ -64,10 +64,10 @@
   }
 }
 
-@media (max-width: 1099px) {
+@media (width <= 1099px) {
   .main {
-    padding-left: 43px;
     padding-right: 43px;
+    padding-left: 43px;
   }
 
   .policy-h1 {
@@ -79,10 +79,10 @@
   }
 }
 
-@media (max-width: 579px) {
+@media (width <= 579px) {
   .main {
-    padding-left: 22px;
     padding-right: 22px;
+    padding-left: 22px;
   }
 
   .policy-h1 {

@@ -1,4 +1,4 @@
-@media (max-width: 579px) {
+@media (width <= 579px) {
   .sections-container {
     max-width: 360px;
   }
@@ -26,9 +26,9 @@
   }
 
   .header-menu-opened .header-menu-line {
-    left: 22px;
-    right: 22px;
     top: 80px;
+    right: 22px;
+    left: 22px;
 
     width: calc(100% - 44px);
   }
@@ -64,9 +64,8 @@
   }
 
   .header-contacts-phone {
-    font: var(--font-24m);
-
     min-width: 190px;
+    font: var(--font-24m);
   }
 
   .header-contacts-messangers {
@@ -84,10 +83,10 @@
   }
 
   .section-main-text {
-    margin-top: 89px;
+    width: unset;
 
     height: unset;
-    width: unset;
+    margin-top: 89px;
   }
 
   .h1 {
@@ -97,8 +96,8 @@
   }
 
   .h2 {
-    font: var(--font-h15-53s);
     width: unset;
+    font: var(--font-h15-53s);
   }
 
   .section-main-lower-text-div {
@@ -108,14 +107,14 @@
   .section-main-lower-text-span {
     width: 113px;
 
-    transform: translate(147px, 42px);
-
     font: var(--font-h16-14r);
+
+    transform: translate(147px, 42px);
   }
 
   .section-main-header-circles {
-    left: -74px;
     top: 29px;
+    left: -74px;
   }
 
   .section-main-buttons {
@@ -125,8 +124,8 @@
   }
 
   .section-main-button-2 {
-    margin-left: 0;
     margin-top: 16px;
+    margin-left: 0;
   }
 
   .section-main-right {
@@ -134,9 +133,8 @@
   }
 
   .section-main-video {
-    margin-top: 40px;
-
     width: 316px;
+    margin-top: 40px;
   }
 
   .section-main-right-text {
@@ -166,8 +164,8 @@
 
   .main-text-right-section-about {
     margin-top: 448px;
-    margin-left: 22px;
     margin-right: 22px;
+    margin-left: 22px;
 
     font: var(--font-14r);
   }
@@ -214,22 +212,21 @@
   }
 
   .sections-playlists-video {
-    margin-left: 22px;
-
     width: 316px;
     height: 324px;
+    margin-left: 22px;
   }
 
   .section-playlists-right-header {
-    margin-left: 22px;
     margin-top: 24.35px;
+    margin-left: 22px;
 
     font: var(--font-h18-32b);
   }
 
   .section-playlists-right-text {
-    left: 22px;
     top: 595px;
+    left: 22px;
 
     width: 323px;
     hyphens: auto;
@@ -267,12 +264,11 @@
   }
 
   .section-works-audio-card {
-    margin-left: 22px;
-    margin-right: 22px;
-    margin-bottom: 8px;
-
     width: 154px;
     height: 154px;
+    margin-right: 22px;
+    margin-bottom: 8px;
+    margin-left: 22px;
   }
 
   .section-works-audio-card-controls {
@@ -299,13 +295,13 @@
   }
 
   .card-4 {
-    transform: translate(162px, -162px);
     height: 320px;
+    transform: translate(162px, -162px);
   }
 
   .section-works-lower-text-container {
-    left: 184px;
     bottom: 49px;
+    left: 184px;
   }
 
   /* SECTION STAGES */
@@ -315,27 +311,26 @@
   }
 
   .sections-stages-header {
+    width: 333px;
+    height: 196px;
     margin-top: 60px;
     margin-left: 22px;
 
-    width: 333px;
-    height: 196px;
-
-    gap: 0px;
-
     font: var(--font-h18-32s);
-    line-height: 1.4;
+
+    gap: 0;
     letter-spacing: 0;
+    line-height: 1.4;
   }
 
   .section-stages-lower-container ul {
-    margin-left: 54px;
-    margin-top: 60px;
-
     width: 252px;
     height: 640px;
+    margin-top: 60px;
+    margin-left: 54px;
   }
 
+  /* stylelint-disable-next-line no-descending-specificity */
   .section-stages-lower-container ul li {
     position: relative;
 
@@ -351,9 +346,9 @@
     top: -6px;
     left: -21px;
 
-    margin: 0;
-
     width: 80px;
+
+    margin: 0;
 
     transform: rotate(90deg);
   }
@@ -376,9 +371,8 @@
   }
 
   .section-stages-ul-a {
-    margin-top: 7px;
-
     width: 173px;
+    margin-top: 7px;
 
     text-decoration: none;
   }
@@ -388,11 +382,10 @@
   }
 
   .section-stages-video-cassette {
-    margin-top: 0px;
-    margin-right: -144px;
-
     width: 310px;
     height: 491px;
+    margin-top: 0;
+    margin-right: -144px;
   }
 
   /* SECTION PRICES */
@@ -416,10 +409,10 @@
     top: -64px;
     left: -12px;
 
-    padding: 8px 12px;
-
     width: 290px;
     height: 72px;
+
+    padding: 8px 12px;
   }
 
   /* SECTION REVIEWS */
@@ -446,9 +439,9 @@
 
     margin-left: 22px;
 
-    gap: 4px;
-
     font: var(--font-h18-32s);
+
+    gap: 4px;
   }
 
   .section-reviews-reviews-container {
@@ -503,8 +496,8 @@
   }
 
   .section-communication-form-button {
-    margin-left: unset;
     margin-top: 44px;
+    margin-left: unset;
   }
 
   /* FOOTER */
@@ -547,18 +540,18 @@
 
   .footer-right-container-phone {
     position: absolute;
+    top: 105px;
 
     left: 22px;
-    top: 105px;
 
     margin: 0;
   }
 
   .footer-right-container-mail {
     position: absolute;
+    top: 137px;
 
     left: 22px;
-    top: 137px;
 
     margin: 0;
   }
@@ -566,8 +559,8 @@
   .footer-right-container-img-container {
     position: absolute;
     top: 293px;
-    left: 22px;
     right: 22px;
+    left: 22px;
 
     margin-top: auto;
   }
@@ -575,17 +568,13 @@
   /* MODAL */
 
   .modal {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
     width: unset;
     height: unset;
-
-    padding-left: max(22px, calc((100vw - 330px) / 2));
     padding-right: 22px;
     padding-bottom: unset;
+
+    padding-left: max(22px, calc((100vw - 330px) / 2));
+    inset: 0;
 
     transform: none;
   }
@@ -600,8 +589,8 @@
   }
 
   .modal-header {
-    font: var(--font-h6-48m);
     width: 300px;
+    font: var(--font-h6-48m);
   }
 
   .modal.try-for-free .modal-header {
@@ -613,10 +602,9 @@
   }
 
   .modal-demo-p {
+    width: 260px;
     margin-top: 40px;
     margin-left: 0;
-
-    width: 260px;
 
     font: var(--font-16s);
   }
@@ -630,12 +618,11 @@
   }
 
   .modal-p {
+    width: 260px;
     margin: 0;
     margin-top: 20px;
     margin-right: unset;
     margin-left: 0;
-
-    width: 260px;
 
     font: var(--font-16m);
   }
@@ -645,9 +632,9 @@
   }
 
   .modal-form-button {
-    margin-left: 0;
-
     width: 100%;
+    margin-top: 54px;
+    margin-left: unset;
   }
 
   .modal-fieldset-name {
@@ -661,31 +648,23 @@
   }
 
   .modal-form-lower-container {
-    margin-top: 16px;
-
     align-items: normal;
+    margin-top: 16px;
   }
 
   .modal-form-agreement-label {
     max-width: 245px;
   }
 
-  .modal-form-button {
-    margin-left: unset;
-    margin-top: 54px;
-  }
-
   .modal-sent-header {
-    font: var(--font-h6-48m);
-
     margin-left: 24px;
+    font: var(--font-h6-48m);
   }
 
   .modal-sent-p {
+    width: 314px;
     margin-top: 26px;
     margin-left: 24px;
-
-    width: 314px;
 
     font: var(--font-16m);
   }
@@ -693,20 +672,20 @@
   .modal-sent-img {
     position: unset;
 
-    margin-left: 72px;
-    margin-top: 46px;
-
     width: unset;
     height: unset;
+    margin-top: 46px;
+
+    margin-left: 72px;
   }
 
   .modal-sent-button {
     position: unset;
 
+    width: 317px;
+
     margin-top: 73.23px;
     margin-left: 21px;
-
-    width: 317px;
 
     transform: unset;
   }

@@ -1,4 +1,4 @@
-@media (max-width: 1099px) {
+@media (width <= 1099px) {
   .sections-container {
     max-width: 834px;
   }
@@ -10,28 +10,29 @@
   }
 
   .head.header-menu-opened {
-    flex-direction: column;
-
     bottom: 0;
+
     height: unset;
+
+    flex-direction: column;
 
     background-color: var(--dark-grey-background);
   }
 
   .header-menu-opened .header-menu-line {
-    display: block;
     position: absolute;
-    left: 43px;
-    right: 43px;
     top: 108px;
+    right: 43px;
+    left: 43px;
+    display: block;
     width: calc(100% - 86px);
 
     transform: rotateY(180deg);
   }
 
   .div-logo {
-    margin-left: 43px;
     margin-right: auto;
+    margin-left: 43px;
   }
 
   .header-menu-opened .div-logo {
@@ -44,8 +45,8 @@
     margin-right: 43px;
 
     background: transparent;
-    pointer-events: all;
     cursor: pointer;
+    pointer-events: all;
   }
 
   .header-menu-opened .header-menu-button {
@@ -63,10 +64,10 @@
     top: 29%;
 
     display: flex;
-    flex-direction: column;
+    width: auto;
 
     height: auto;
-    width: auto;
+    flex-direction: column;
   }
 
   .header-menu-opened .nav-ul {
@@ -86,38 +87,36 @@
   }
 
   .header-menu-opened .div-button-block {
-    display: flex;
     position: absolute;
-
-    height: 56px;
-    width: 236px;
+    right: 43px;
 
     bottom: 100px;
-    right: 43px;
+    display: flex;
+    width: 236px;
+
+    height: 56px;
   }
 
   .right-button-header {
-    margin: 0;
+    width: 236px;
 
     height: 56px;
-    width: 236px;
+    margin: 0;
   }
 
   .header-menu-opened .header-right-container-img-container {
-    display: flex;
-
     position: absolute;
     bottom: 116px;
     left: 43px;
+    display: flex;
 
     width: 236px;
   }
 
   .header-contacts {
-    display: none;
-
     right: 50%;
     bottom: 29%;
+    display: none;
 
     transform: translateX(50%);
   }
@@ -165,18 +164,16 @@
   }
 
   .section-main-left {
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-
     width: unset;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .section-main-text {
-    margin-top: 162px;
-
     width: 700px;
     height: 184px;
+    margin-top: 162px;
   }
 
   .section-main-lower-text-div {
@@ -184,23 +181,23 @@
   }
 
   .h2 {
-    text-indent: 0;
     width: 394px;
+    text-indent: 0;
   }
 
   .section-main-lower-text-span {
     position: unset;
-    transform: unset;
+    height: 76px;
 
     margin-left: 50px;
-    height: 76px;
+    transform: unset;
   }
 
   .section-main-header-circles {
     position: absolute;
+    top: 105px;
 
     left: 25px;
-    top: 105px;
   }
 
   .section-main-buttons {
@@ -208,14 +205,14 @@
 
     top: 973px;
     left: 50%;
-    transform: translateX(-50%);
 
     margin: 0;
+    transform: translateX(-50%);
   }
 
   .section-main-right {
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 
   .section-main-video {
@@ -252,10 +249,10 @@
   }
 
   .left-photos-section-about {
+    width: 480px;
+
     margin-top: 80px;
     margin-left: -127px;
-
-    width: 480px;
   }
 
   .info-block-photo-2 {
@@ -275,10 +272,9 @@
   }
 
   .main-text-right-section-about-2 {
-    margin-left: 0;
-    margin-top: 32px;
-
     width: 274px;
+    margin-top: 32px;
+    margin-left: 0;
   }
 
   .info-block-arrow {
@@ -287,10 +283,9 @@
   }
 
   .lower-right-section-about-text {
+    width: 217px;
     margin-top: 179px;
     margin-left: 23px;
-
-    width: 217px;
   }
 
   .lower-right-section-about-images {
@@ -314,8 +309,8 @@
   }
 
   .section-playlists-container {
-    flex-direction: column-reverse;
     height: unset;
+    flex-direction: column-reverse;
   }
 
   .sections-playlists-video {
@@ -324,19 +319,18 @@
   }
 
   .section-playlists-right-header {
-    margin-left: 43px;
-
     width: 800px;
-    height: unset;
     width: unset;
+    height: unset;
+    margin-left: 43px;
 
     letter-spacing: normal;
   }
 
   .section-playlists-right-header-1 {
-    text-indent: unset;
-    margin-left: auto;
     margin-right: 43px;
+    margin-left: auto;
+    text-indent: unset;
   }
 
   .section-playlists-right-images {
@@ -344,9 +338,9 @@
   }
 
   .section-playlists-right-text {
-    left: 427px;
     top: 336px;
     right: 43px;
+    left: 427px;
 
     width: unset;
 
@@ -364,8 +358,8 @@
   }
 
   .sections-works-header {
-    margin-left: 45px;
     margin-right: 51px;
+    margin-left: 45px;
   }
 
   .sections-works-header-1 {
@@ -398,8 +392,8 @@
   }
 
   .section-works-lower-text-container {
-    left: 34px;
     bottom: 80px;
+    left: 34px;
   }
 
   /* SECTION STAGES */
@@ -409,11 +403,11 @@
   }
 
   .sections-stages-header {
-    margin-top: 56px;
-    margin-left: 43px;
+    width: 600px;
 
     height: 316px;
-    width: 600px;
+    margin-top: 56px;
+    margin-left: 43px;
   }
 
   .sections-stages-header-1 {
@@ -421,9 +415,8 @@
   }
 
   .section-stages-lower-container ul {
-    margin-left: 43px;
-
     width: 748px;
+    margin-left: 43px;
   }
 
   .section-stages-video-cassette {
@@ -466,15 +459,15 @@
     position: absolute;
     bottom: -60px;
     left: -228px;
+    width: 100vw;
 
     max-width: 740px;
-    width: 100vw;
     height: 10px;
 
-    background-image: url(../assets/images/section-prices-dividing-line.svg);
+    background-image: url("../assets/images/section-prices-dividing-line.svg");
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center center;
 
     content: "";
   }
@@ -484,8 +477,8 @@
   }
 
   .section-prices-list-container-2 {
-    margin-right: 0;
     margin-top: 120px;
+    margin-right: 0;
   }
 
   .section-prices-list-container-3 {
@@ -497,8 +490,8 @@
   }
 
   .section-prices-button {
-    margin-top: 24px;
     width: 316px;
+    margin-top: 24px;
     margin-left: -33px;
   }
 
@@ -549,10 +542,9 @@
   }
 
   .section-communication-right-container {
+    max-width: 364px;
     margin-top: 124px;
     margin-right: 48px;
-
-    max-width: 364px;
   }
 
   .section-communication-form-upper-container {
@@ -572,8 +564,8 @@
 
   .section-communication-fieldset-phone {
     min-width: 364px;
-    margin-left: 0;
     margin-bottom: 21px;
+    margin-left: 0;
   }
 
   .section-communication-form-lower-container {
@@ -586,9 +578,9 @@
     max-width: 364px;
     height: 54px;
 
-    text-align: justify;
-
     margin-right: unset;
+
+    text-align: justify;
   }
 
   .section-communication-form-agreement-label {
