@@ -150,7 +150,10 @@ html {
 
 .right-button-header {
   width: 182px;
+
   margin-right: 202px;
+
+  background-color: inherit;
 }
 
 .header-contacts {
