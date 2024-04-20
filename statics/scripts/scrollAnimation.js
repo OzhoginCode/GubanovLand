@@ -186,6 +186,8 @@ links.forEach((link) => {
   const scrollTarget = document.getElementById(id);
 
   link.addEventListener('click', (e) => {
+    e.stopImmediatePropagation();
+    e.stopPropagation();
     e.preventDefault();
 
     if (id === '') {
