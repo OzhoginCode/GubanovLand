@@ -186,15 +186,13 @@ links.forEach((link) => {
   const scrollTarget = document.getElementById(id);
 
   link.addEventListener('click', (e) => {
-    e.stopImmediatePropagation();
-    e.stopPropagation();
     e.preventDefault();
 
-    if (id === '') {
-      window.scrollTo({ top: 0 });
-      return false;
-    }
-    scrollTarget.scrollIntoView();
-    return false;
+    // if (id === '') {
+    //   window.scrollTo({ top: 0 });
+    //   return false;
+    // }
+    // scrollTarget.scrollIntoView();
+    // return false;
   });
 });
