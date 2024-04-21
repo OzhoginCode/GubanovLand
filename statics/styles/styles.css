@@ -2340,6 +2340,10 @@ textarea {
   font: var(--font-16r);
 }
 
+.form-phone {
+  margin-left: 53px !important;
+}
+
 .form-input-error {
   position: absolute;
   bottom: -22px;
