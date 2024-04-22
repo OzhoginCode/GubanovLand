@@ -272,6 +272,7 @@ const formsState = {
   forms: {
     mainForm: {
       state: 'invalid',
+      triedSend: false,
       data: {
         name: '',
         phone: '',
@@ -279,7 +280,7 @@ const formsState = {
       isValid: {
         name: false,
         phone: false,
-        policy: true,
+        policy: false,
       },
       touched: {
         name: false,
@@ -288,6 +289,7 @@ const formsState = {
     },
     modalForm: {
       state: 'invalid',
+      triedSend: false,
       data: {
         name: '',
         phone: '',
@@ -295,7 +297,7 @@ const formsState = {
       isValid: {
         name: false,
         phone: false,
-        policy: true,
+        policy: false,
       },
       touched: {
         name: false,
@@ -360,10 +362,21 @@ const render = () => {
     case 'filling':
       Object.entries(formsState.forms).forEach(([form, state]) => {
         Object.entries(state.isValid).forEach(([field, isValid]) => {
-          if (field === 'policy') return;
-
           const touched = formsState.forms[form].touched[field];
-          if (!touched) return;
+          const { triedSend } = formsState.forms[form];
+
+          if (!touched && !triedSend) return;
+
+          if (field === 'policy') {
+            const input = elements.inputs[field][form];
+
+            input.classList.add('form-agreement-input-invalid');
+
+            if (isValid) {
+              input.classList.remove('form-agreement-input-invalid');
+            }
+            return;
+          }
 
           const input = elements.inputs[field][form];
           const fieldset = input.closest('fieldset');
@@ -380,11 +393,11 @@ const render = () => {
 
         enableForms();
 
-        const applyButton = elements.forms[form].querySelector('button');
-        applyButton.setAttribute('disabled', true);
-        if (state.state === 'valid') {
-          applyButton.removeAttribute('disabled');
-        }
+        // const applyButton = elements.forms[form].querySelector('button');
+        // applyButton.setAttribute('disabled', true);
+        // if (state.state === 'valid') {
+        //   applyButton.removeAttribute('disabled');
+        // }
       });
       break;
     case 'sending':
@@ -451,7 +464,17 @@ const routes = {
 const apply = async (button, e) => {
   e.preventDefault();
 
-  const form = button.closest('form');
+  const formEl = button.closest('form');
+  const { form } = formEl.dataset;
+  const isFormValid = Object.entries(formsState.forms[form].isValid).every(([, value]) => value);
+  formsState.forms[form].state = isFormValid ? 'valid' : 'invalid';
+
+  if (!isFormValid) {
+    formsState.forms[form].triedSend = 'yes';
+    render();
+    return;
+  }
+
   const formdata = new FormData(form);
   const formDataObject = Object.fromEntries(formdata.entries());
 

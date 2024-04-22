@@ -354,52 +354,6 @@
     margin-top: 40px;
   }
 
-  .section-communication-form-agreement-input[type="checkbox"] {
-    width: 20px;
-    min-width: 20px;
-    height: 20px;
-    border: none;
-    margin: 0;
-    appearance: none;
-    background-image: url("../assets/images/section-communication-checkbox-unchecked.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
-    outline: none;
-  }
-
-  .section-communication-form-agreement-input:checked {
-    background-image: url("../assets/images/section-communication-checkbox-checked.svg");
-  }
-  
-  .section-communication-form-agreement-input:not(:checked):hover {
-    background-image: url("../assets/images/section-communication-checkbox-unchecked-hover.svg");
-  }
-
-  .section-communication-form-agreement-input:checked:hover {
-    background-image: url("../assets/images/section-communication-checkbox-checked-hover.svg");
-  }
-
-  .section-communication-form-agreement-label {
-    min-width: 248px;
-
-    max-width: 372px;
-    padding-left: 12px;
-
-    color: var(--light-grey);
-    font: var(--font-14r);
-  }
-
-  .section-communication-form-agreement-label-a {
-    color: var(--white-2);
-    text-decoration: none;
-  }
-
-  .section-communication-form-button {
-    margin-left: auto;
-  }
-
   /* MODAL */
 
   .modal {

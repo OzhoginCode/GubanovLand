@@ -1653,7 +1653,7 @@ input[type="number"] {
   margin-right: 6px;
 }
 
-.section-communication-form-agreement-input[type="checkbox"] {
+.section-communication-form-agreement-input {
   width: 20px;
   min-width: 20px;
   height: 20px;
@@ -1668,6 +1668,9 @@ input[type="number"] {
   outline: none;
 }
 
+.section-communication-form-agreement-input.form-agreement-input-invalid{
+  background-image: url("../assets/images/section-communication-checkbox-unchecked-invalid.svg");
+}
 
 .section-communication-form-agreement-input:checked {
   background-image: url("../assets/images/section-communication-checkbox-checked.svg");
