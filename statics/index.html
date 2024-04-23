@@ -10,6 +10,26 @@
   <link rel="canonical" href="https://gubanovmusic.ru/">
   <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
   <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@20.3.0/build/js/intlTelInput.min.js" defer></script>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(97109322, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/97109322" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
 </head>
 
 <body class="body" id="body">
@@ -1039,8 +1059,7 @@
               <fieldset class="section-communication-fieldset section-communication-fieldset-phone">
                 <legend class="section-communication-form-legend">ТЕЛЕФОН *</legend>
                 <label for="section-communication-phone"></label>
-                <input autocomplete="tel" name="phone" class="form-phone"
-                  id="section-communication-phone"></input>
+                <input autocomplete="tel" name="phone" class="form-phone" id="section-communication-phone"></input>
                 <span class="form-input-error display-none">Некорректный формат номера</span>
               </fieldset>
             </div>
@@ -1085,8 +1104,7 @@
           <fieldset class="modal-fieldset modal-fieldset-name">
             <legend class="modal-form-legend">ИМЯ *</legend>
             <label for="modal-form-name"></label>
-            <input autocomplete="given-name" name="name" id="modal-form-name" type="text"
-              class="form-name"></input>
+            <input autocomplete="given-name" name="name" id="modal-form-name" type="text" class="form-name"></input>
             <span class="form-input-error display-none">Поле обязательно к заполнению</span>
           </fieldset>
           <fieldset class="modal-fieldset modal-fieldset-phone">
