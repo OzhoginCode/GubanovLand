@@ -2077,7 +2077,7 @@ textarea {
   outline: none;
 }
 
-.modal-form-agreement-input.modal-form-agreement-input-invalid{
+.modal-form-agreement-input.form-agreement-input-invalid{
   background-image: url("../assets/images/section-communication-checkbox-unchecked-invalid.svg");
 }
 
