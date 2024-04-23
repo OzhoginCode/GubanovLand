@@ -64,10 +64,6 @@
     top: 29%;
 
     display: flex;
-    width: auto;
-
-    height: auto;
-    flex-direction: column;
   }
 
   .header-menu-opened .nav-ul {
@@ -164,7 +160,6 @@
   }
 
   .section-main-left {
-    width: unset;
     padding: 0;
     margin-right: auto;
     margin-left: auto;
@@ -187,14 +182,10 @@
 
   .section-main-lower-text-span {
     position: unset;
-    height: 76px;
-
-    margin-left: 50px;
     transform: unset;
   }
 
   .section-main-header-circles {
-    position: absolute;
     top: 105px;
 
     left: 25px;
@@ -212,7 +203,6 @@
 
   .section-main-right {
     margin-right: auto;
-    margin-left: auto;
   }
 
   .section-main-video {
@@ -267,12 +257,7 @@
     margin-left: 132px;
   }
 
-  .main-text-right-section-about-1 {
-    width: 274px;
-  }
-
   .main-text-right-section-about-2 {
-    width: 274px;
     margin-top: 32px;
     margin-left: 0;
   }
@@ -285,7 +270,6 @@
   .lower-right-section-about-text {
     width: 217px;
     margin-top: 179px;
-    margin-left: 23px;
   }
 
   .lower-right-section-about-images {
@@ -319,7 +303,6 @@
   }
 
   .section-playlists-right-header {
-    width: 800px;
     width: unset;
     height: unset;
     margin-left: 43px;
@@ -544,7 +527,6 @@
   .section-communication-right-container {
     max-width: 364px;
     margin-top: 124px;
-    margin-right: 48px;
   }
 
   .section-communication-form-upper-container {
@@ -610,7 +592,6 @@
   }
 
   .footer-central-container-a {
-    margin-top: auto;
     transform: translateX(-250px);
   }
 

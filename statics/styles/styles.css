@@ -360,7 +360,7 @@ html {
 
 .scrolling-text-section-about {
   position: relative;
-  overflow: hidden hidden;
+  overflow: hidden;
 
   height: 182px;
 
@@ -575,9 +575,6 @@ html {
 }
 
 .section-playlists-right-header-1 {
-  /* margin-top: 90px; */
-  margin-top: 0;
-
   text-indent: 348px;
 }
 
@@ -775,7 +772,6 @@ html {
   height: 80px;
 
   border-radius: 10px;
-  background: lightgray 50% / cover no-repeat;
   user-select: none;
 }
 
@@ -979,7 +975,7 @@ html {
 /* SECTION STAGES */
 
 .section-stages {
-  overflow: hidden hidden;
+  overflow: hidden;
   height: 1128px;
   background-color: var(--dark-grey-background);
 }
@@ -991,7 +987,6 @@ html {
   height: 216px;
   flex-direction: column;
 
-  flex-shrink: 0;
   align-items: flex-start;
   margin-top: 140px;
   margin-bottom: 0;
@@ -1121,7 +1116,7 @@ html {
 .section-prices-header {
   position: relative;
 
-  overflow: hidden hidden;
+  overflow: hidden;
 
   height: 182px;
 
@@ -2067,7 +2062,7 @@ textarea {
   margin-right: 6px;
 }
 
-.modal-form-agreement-input[type="checkbox"] {
+.modal-form-agreement-input {
   width: 20px;
   min-width: 20px;
   height: 20px;
@@ -2080,6 +2075,10 @@ textarea {
   background-size: cover;
   cursor: pointer;
   outline: none;
+}
+
+.modal-form-agreement-input.modal-form-agreement-input-invalid{
+  background-image: url("../assets/images/section-communication-checkbox-unchecked-invalid.svg");
 }
 
 .modal-form-agreement-input:checked {

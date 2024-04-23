@@ -24,7 +24,6 @@
   }
 
   .section-main-left {
-    width: 685px;
     padding-left: 6.25%;
   }
 
@@ -51,7 +50,6 @@
 
   .section-main-right {
     margin-right: 63px;
-    margin-left: auto;
   }
 
   .section-main-video {
@@ -62,19 +60,11 @@
   .section-main-right-text {
     margin-top: 36px;
     margin-right: 102px;
-    margin-left: auto;
-  }
-
-  .section-main-right-text-2 {
-    text-indent: 67px;
   }
 
   .section-main-arrow {
     top: 659px;
     right: 102px;
-
-    width: 45px;
-    height: 29px;
   }
 
   /* SECTION ABOUT */
@@ -99,8 +89,6 @@
 
   .left-photos-section-about {
     position: relative;
-
-    width: 566px;
 
     margin-top: 80px;
     margin-left: 0;
@@ -127,7 +115,7 @@
   }
 
   .main-text-right-section-about-1 {
-    width: 274.265px;
+    width: 274px;
   }
 
   .text-indent-120 {
@@ -135,7 +123,7 @@
   }
 
   .main-text-right-section-about-2 {
-    width: 274.265px;
+    width: 274px;
     margin-left: 55.73px;
   }
 
@@ -156,7 +144,6 @@
     width: 287px;
     height: 96px;
     margin-top: 391px;
-    margin-left: 23px;
 
     font: var(--font-h8-28r);
   }
@@ -182,8 +169,6 @@
   }
 
   .sections-playlists-video {
-    width: 364px;
-    height: 376px;
     margin-top: 102px;
     margin-left: 90px;
   }
@@ -206,10 +191,6 @@
 
   .section-playlists-right-images {
     margin-top: 18px;
-  }
-
-  .section-playlists-right-images li {
-    margin-right: 24px;
   }
 
   .section-playlists-right-text {
@@ -310,13 +291,9 @@
 
   .sections-stages-header {
     width: 70%;
-
-    max-width: 1132px;
     height: 196px;
-    margin-top: 120px;
 
-    /* margin-left: auto; */
-    margin-right: 20px;
+    margin-top: 120px;
     margin-left: 218px;
 
     font: var(--font-h13-48r);
@@ -345,16 +322,11 @@
   }
 
   .section-stages-ul-description {
-    width: 182px;
-    height: 40px;
-
     font: var(--font-14r);
   }
 
   .section-stages-ul-numbers {
     margin-right: 16px;
-
-    font: var(--font-40l);
   }
 
   .section-stages-ul-header {
@@ -363,7 +335,6 @@
 
   .section-stages-ul-a {
     width: 155px;
-    margin-top: 7px;
 
     font: var(--font-14r);
   }
@@ -466,17 +437,12 @@
   }
 
   .section-reviews-review {
-    position: relative;
-
     width: 620px;
     height: 280px;
-    flex-shrink: 0;
+  
     padding-top: 33px;
     padding-right: 32px;
-
     padding-left: 32px;
-
-    margin-right: 20px;
   }
 
   .section-reviews-review-text {
@@ -486,7 +452,6 @@
   }
 
   .section-reviews-review-site-logo {
-    top: 20px;
     right: 32px;
   }
 
@@ -497,10 +462,6 @@
 
     margin: 0;
   }
-
-  /* .fixer2 {
-    transform: translateX(600px);
-  } */
 
   /* SECTION COMMUNICATION */
 
@@ -514,10 +475,6 @@
     margin-left: 90px;
   }
 
-  .section-communication-header {
-    font: var(--font-h6-48b);
-  }
-
   .section-communication-header-p {
     width: 245px;
     margin-top: 13px;
@@ -527,10 +484,6 @@
 
   .section-communication-a-container {
     margin-top: 75px;
-  }
-
-  .section-communication-a-container a {
-    margin-right: 20px;
   }
 
   .section-communication-right-container {
@@ -548,7 +501,6 @@
 
   .section-communication-fieldset-phone {
     height: 48px;
-    margin-left: 20px;
   }
 
   .section-communication-fieldset-message {

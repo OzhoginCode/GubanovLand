@@ -22,13 +22,6 @@
     margin-top: 0;
   }
 
-  .header-contacts-messangers-item img {
-    width: 18px;
-    height: 18px;
-
-    margin-left: 12px;
-  }
-
   /* SECTION MAIN */
 
   .section-main {
@@ -115,7 +108,6 @@
 
   .info-block-arrow {
     margin-top: 321.33px;
-    margin-left: 39px;
   }
 
   .lower-right-section-about-text {
@@ -212,14 +204,6 @@
     left: 38px;
   }
 
-  .section-works-lower-text-container > div {
-    width: 182px;
-  }
-
-  .section-works-lower-text-line {
-    margin-top: -3px;
-  }
-
   /* SECTION STAGES */
 
   .section-stages {
@@ -234,7 +218,6 @@
   .sections-stages-header {
     width: 100%;
 
-    height: 196px;
     margin-top: 95px;
     margin-left: 51px;
   }

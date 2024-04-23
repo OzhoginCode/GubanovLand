@@ -52,7 +52,6 @@
 
   .header-menu-opened .nav {
     top: 24.39%;
-    transform: unset;
   }
 
   .header-menu-opened .nav-ul {
@@ -159,7 +158,6 @@
 
   .info-block-photo-2 {
     width: 360px;
-    height: 337px;
   }
 
   .main-text-right-section-about {
@@ -255,8 +253,6 @@
 
   .sections-works-header-3 {
     margin-top: 46px;
-
-    line-height: 1.43;
   }
 
   .section-works-audio-cards-container {
@@ -288,10 +284,6 @@
 
   .card-1 {
     width: 316px;
-  }
-
-  .card-2 {
-    margin-left: auto;
   }
 
   .card-4 {
@@ -366,24 +358,11 @@
     left: 70px;
   }
 
-  .section-stages-ul-numbers {
-    margin-right: 16px;
-  }
-
   .section-stages-ul-a {
     width: 173px;
-    margin-top: 7px;
-
-    text-decoration: none;
-  }
-
-  .section-stages-ul-a-img {
-    margin-left: 8px;
   }
 
   .section-stages-video-cassette {
-    width: 310px;
-    height: 491px;
     margin-top: 0;
     margin-right: -144px;
   }
@@ -406,23 +385,14 @@
   }
 
   .section-prices-warning-hover-text {
-    top: -64px;
-    left: -12px;
-
     width: 290px;
     height: 72px;
-
-    padding: 8px 12px;
   }
 
   /* SECTION REVIEWS */
 
   .section-reviews {
     height: 980px;
-  }
-
-  .section-reviews-upper-part {
-    margin-top: 60px;
   }
 
   .section-reviews-upper-part-left-container {
@@ -530,10 +500,6 @@
     transform: translateX(-200px);
   }
 
-  .footer-central-container {
-    width: 0;
-  }
-
   .footer-right-container {
     width: 0;
   }
@@ -561,8 +527,6 @@
     top: 293px;
     right: 22px;
     left: 22px;
-
-    margin-top: auto;
   }
 
   /* MODAL */

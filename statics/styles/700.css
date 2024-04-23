@@ -20,25 +20,20 @@
   }
 
   .section-main-lower-text-div {
-    margin-top: 4px;
     text-indent: 265px;
   }
 
   .h2 {
-    width: 394px;
     text-indent: unset;
   }
 
   .section-main-lower-text-span {
     position: absolute;
 
-    text-indent: 0;
-
     transform: translate(225px, 45px);
   }
 
   .section-main-header-circles {
-    position: absolute;
     top: 85px;
 
     left: 10px;
@@ -79,11 +74,6 @@
 
   .section-stages-lower-container ul {
     width: initial;
-    margin-left: 43px;
-  }
-
-  .section-stages-video-cassette {
-    margin-right: -212px;
   }
 
   /* SECTION PRICES */
@@ -117,25 +107,15 @@
     height: 410px;
     padding-top: 20px;
     padding-right: 33px;
-    padding-left: 32px;
   }
 
   .section-reviews-review-text {
     width: 251px;
-    margin-top: 28px;
-  }
-
-  .section-reviews-review-site-logo {
-    right: 33px;
   }
 
   .section-reviews-scroll-buttons-container {
     bottom: 82px;
   }
-
-  /* .fixer2 {
-    transform: translateX(660px);
-  } */
 
   /* SECTION COMMUNICATION */
 
@@ -148,22 +128,12 @@
     margin-left: 30px;
   }
 
-  .section-communication-form-upper-container {
-    flex-direction: column;
-
-    margin-bottom: 0;
-  }
-
   .section-communication-fieldset-name {
     min-width: 300px;
   }
 
   .section-communication-fieldset-phone {
     min-width: 300px;
-  }
-
-  .section-communication-form-lower-container {
-    margin-top: 31px;
   }
 
   .section-communication-form-agreement-container {
@@ -264,11 +234,6 @@
 
   .modal-form-button {
     margin-top: 20px;
-  }
-
-  .modal-sent-p {
-    width: 236px;
-    margin-top: 24px;
   }
 
   .modal-sent-img {
