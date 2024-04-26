@@ -1639,10 +1639,11 @@ input[type="number"] {
 }
 
 .section-communication-form-agreement-container {
+  position: relative;
+
   display: flex;
 
   max-width: 404px;
-  height: 36px;
   align-items: center;
 
   margin-right: 6px;
@@ -2053,10 +2054,11 @@ textarea {
 }
 
 .modal-form-agreement-container {
+  position: relative;
+  
   display: flex;
 
   max-width: 404px;
-  height: 36px;
   align-items: center;
 
   margin-right: 6px;
@@ -2344,6 +2346,11 @@ textarea {
 
 .form-phone {
   margin-left: 53px !important;
+}
+
+.form-phone::placeholder {
+  color: var(--dark-grey-elements-2);
+  -webkit-text-fill-color: var(--dark-grey-elements-2);
 }
 
 .form-input-error {

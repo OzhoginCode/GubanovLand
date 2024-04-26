@@ -260,8 +260,6 @@ const itiConfig = {
   nationalMode: false,
   containerClass: 'phonenumber-input-container',
   preferredCountries: ['ru', 'am', 'by', 'kz', 'kg'],
-  // formatAsYouType: false,
-  // formatOnDisplay: false,
   // customPlaceholder: () => '+7',
   countrySearch: false,
   initialCountry: 'ru',
@@ -370,10 +368,14 @@ const render = () => {
 
           if (field === 'policy') {
             const input = elements.inputs[field][form];
+            const container = input.closest('div');
+            const error = container.querySelector('.form-input-error');
 
+            error.classList.remove('display-none');
             input.classList.add('form-agreement-input-invalid');
 
             if (isValid) {
+              error.classList.add('display-none');
               input.classList.remove('form-agreement-input-invalid');
             }
             return;
@@ -409,35 +411,9 @@ const render = () => {
 const handlePhoneInput = (input) => {
   const iti = window.intlTelInput(input, itiConfig);
 
-  // window.Inputmask('+7 (999) 999 99 99', {
-  //   clearIncomplete: false,
-  //   clearMaskOnLostFocus: false,
-  // }).mask(input);
-
-  // input.addEventListener('countrychange', () => {
-  //   const selectedCountry = iti.getSelectedCountryData();
-  //   const { dialCode } = selectedCountry;
-
-  //   iti.setNumber(`+${dialCode}`);
-  // });
-
-  // window.Inputmask({
-  //   mask: '+\\7\\ (999) 999-99-99',
-  //   clearIncomplete: false,
-  //   clearMaskOnLostFocus: false,
-  // }).mask(input);
-
   input.addEventListener('countrychange', () => {
     const selectedCountry = iti.getSelectedCountryData();
     const { dialCode } = selectedCountry;
-    // const newMask = `+${dialCode} (999) 999-99-99`;
-
-    // input.inputmask.remove();
-    // window.Inputmask({
-    //   mask: newMask,
-    //   clearIncomplete: false,
-    //   clearMaskOnLostFocus: false,
-    // }).mask(input);
 
     iti.setNumber(`+${dialCode}`);
   });

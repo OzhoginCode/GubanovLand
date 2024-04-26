@@ -245,12 +245,12 @@
     bottom: 76px;
   }
 
-  .form-input-error {
-    bottom: -30px;
-  }
-
   .modal .form-input-error {
     bottom: -35px;
+  }
+
+  .modal-form-agreement-container .form-input-error {
+    bottom: -20px;
   }
 
   /* FOOTER */

@@ -558,7 +558,6 @@
 
   .section-communication-form-agreement-container {
     max-width: 364px;
-    height: 54px;
 
     margin-right: unset;
 
@@ -599,6 +598,10 @@
 
   .form-input-error {
     bottom: -30px;
+  }
+
+  .section-communication-form-agreement-container .form-input-error {
+    bottom: -20px;
   }
 
   .modal .form-input-error {
