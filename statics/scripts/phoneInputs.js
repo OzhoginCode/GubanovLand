@@ -257,11 +257,12 @@ const i18n = {
 
 const itiConfig = {
   utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@20.3.0/build/js/utils.js',
-  // showSelectedDialCode: true,
   nationalMode: false,
-  autoPlaceholder: 'agressive',
   containerClass: 'phonenumber-input-container',
   preferredCountries: ['ru', 'am', 'by', 'kz', 'kg'],
+  formatAsYouType: false,
+  formatOnDisplay: false,
+  // customPlaceholder: () => '+7',
   countrySearch: false,
   initialCountry: 'ru',
   i18n: i18n.countries,
@@ -392,12 +393,6 @@ const render = () => {
         });
 
         enableForms();
-
-        // const applyButton = elements.forms[form].querySelector('button');
-        // applyButton.setAttribute('disabled', true);
-        // if (state.state === 'valid') {
-        //   applyButton.removeAttribute('disabled');
-        // }
       });
       break;
     case 'sending':
@@ -413,6 +408,41 @@ const render = () => {
 
 const handlePhoneInput = (input) => {
   const iti = window.intlTelInput(input, itiConfig);
+
+  // window.Inputmask('+7 (999) 999 99 99', {
+  //   clearIncomplete: false,
+  //   clearMaskOnLostFocus: false,
+  // }).mask(input);
+
+  // input.addEventListener('countrychange', () => {
+  //   const selectedCountry = iti.getSelectedCountryData();
+  //   const { dialCode } = selectedCountry;
+
+  //   iti.setNumber(`+${dialCode}`);
+  // });
+
+  window.Inputmask({
+    mask: '+\\7\\ (999) 999-99-99',
+    clearIncomplete: false,
+    clearMaskOnLostFocus: false,
+  }).mask(input);
+
+  input.addEventListener('countrychange', () => {
+    const selectedCountry = iti.getSelectedCountryData();
+    const { dialCode } = selectedCountry;
+    const newMask = `+${dialCode} (999) 999-99-99`;
+
+    input.inputmask.remove();
+    window.Inputmask({
+      mask: newMask,
+      clearIncomplete: false,
+      clearMaskOnLostFocus: false,
+    }).mask(input);
+
+    // iti.setNumber(`+${dialCode}`);
+  });
+
+  // iti.setNumber('+7');
   const formEl = input.closest('form');
   const { form } = formEl.dataset;
   input.addEventListener('input', () => {
