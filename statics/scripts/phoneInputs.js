@@ -260,8 +260,8 @@ const itiConfig = {
   nationalMode: false,
   containerClass: 'phonenumber-input-container',
   preferredCountries: ['ru', 'am', 'by', 'kz', 'kg'],
-  formatAsYouType: false,
-  formatOnDisplay: false,
+  // formatAsYouType: false,
+  // formatOnDisplay: false,
   // customPlaceholder: () => '+7',
   countrySearch: false,
   initialCountry: 'ru',
@@ -421,25 +421,25 @@ const handlePhoneInput = (input) => {
   //   iti.setNumber(`+${dialCode}`);
   // });
 
-  window.Inputmask({
-    mask: '+\\7\\ (999) 999-99-99',
-    clearIncomplete: false,
-    clearMaskOnLostFocus: false,
-  }).mask(input);
+  // window.Inputmask({
+  //   mask: '+\\7\\ (999) 999-99-99',
+  //   clearIncomplete: false,
+  //   clearMaskOnLostFocus: false,
+  // }).mask(input);
 
   input.addEventListener('countrychange', () => {
     const selectedCountry = iti.getSelectedCountryData();
     const { dialCode } = selectedCountry;
-    const newMask = `+${dialCode} (999) 999-99-99`;
+    // const newMask = `+${dialCode} (999) 999-99-99`;
 
-    input.inputmask.remove();
-    window.Inputmask({
-      mask: newMask,
-      clearIncomplete: false,
-      clearMaskOnLostFocus: false,
-    }).mask(input);
+    // input.inputmask.remove();
+    // window.Inputmask({
+    //   mask: newMask,
+    //   clearIncomplete: false,
+    //   clearMaskOnLostFocus: false,
+    // }).mask(input);
 
-    // iti.setNumber(`+${dialCode}`);
+    iti.setNumber(`+${dialCode}`);
   });
 
   // iti.setNumber('+7');
