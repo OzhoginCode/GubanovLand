@@ -256,11 +256,11 @@ const i18n = {
 };
 
 const itiConfig = {
-  utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@20.3.0/build/js/utils.js',
+  utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.7/build/js/utils.js',
   nationalMode: false,
   containerClass: 'phonenumber-input-container',
   preferredCountries: ['ru', 'am', 'by', 'kz', 'kg'],
-  // customPlaceholder: () => '+7',
+  customPlaceholder: (countryPlaceholder) => countryPlaceholder.replace(/(?<!\+\d*)\d/g, '0'),
   countrySearch: false,
   initialCountry: 'ru',
   i18n: i18n.countries,
