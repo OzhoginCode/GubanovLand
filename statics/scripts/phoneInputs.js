@@ -442,7 +442,7 @@ const handlePhoneInput = (input) => {
     iti.setNumber(`+${dialCode}`);
   });
 
-  // iti.setNumber('+7');
+  iti.setNumber('+7');
   const formEl = input.closest('form');
   const { form } = formEl.dataset;
   input.addEventListener('input', () => {
