@@ -34,6 +34,12 @@ export default {
       minify: true,
       chunks: ['policy'],
     }),
+    new HtmlWebpackPlugin({
+      filename: '404.html',
+      template: '/statics/404.html',
+      minify: true,
+      chunks: ['404'],
+    }),
     new MiniCssExtractPlugin(),
   ],
   optimization: {
@@ -46,6 +52,7 @@ export default {
   entry: {
     main: './statics/scripts/index.js',
     policy: './statics/scripts/policy.js',
+    404: './statics/scripts/404.js',
   },
   output: {
     clean: true,
