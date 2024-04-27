@@ -284,6 +284,10 @@ const formsState = {
       touched: {
         name: false,
         phone: false,
+        policy: false,
+      },
+      focused: {
+        phone: false,
       },
     },
     modalForm: {
@@ -300,6 +304,10 @@ const formsState = {
       },
       touched: {
         name: false,
+        phone: false,
+        policy: false,
+      },
+      focused: {
         phone: false,
       },
     },
@@ -388,7 +396,9 @@ const render = () => {
           error.classList.remove('display-none');
           fieldset.classList.add('fieldset-error');
 
-          if (isValid) {
+          const isFocused = formsState.forms[form].focused[field];
+
+          if (isValid || isFocused) {
             error.classList.add('display-none');
             fieldset.classList.remove('fieldset-error');
           }
@@ -431,6 +441,16 @@ const handlePhoneInput = (input) => {
     formsState.forms[form].state = isFormValid ? 'valid' : 'invalid';
     render();
   });
+
+  input.addEventListener('focus', () => {
+    formsState.forms[form].focused.phone = true;
+    render();
+  });
+
+  input.addEventListener('blur', () => {
+    formsState.forms[form].focused.phone = false;
+    render();
+  });
 };
 
 const handleNameinput = (input) => {
@@ -453,6 +473,7 @@ const handlePolicy = (input) => {
   const { form } = formEl.dataset;
   input.addEventListener('change', () => {
     formsState.forms[form].isValid.policy = input.checked;
+    formsState.forms[form].touched.policy = true;
     const isFormValid = Object.entries(formsState.forms[form].isValid).every(([, value]) => value);
     formsState.forms[form].state = isFormValid ? 'valid' : 'invalid';
     render();
@@ -481,12 +502,12 @@ const apply = async (button, e) => {
     return;
   }
 
-  const formdata = new FormData(form);
+  const formdata = new FormData(formEl);
   const formDataObject = Object.fromEntries(formdata.entries());
 
   formDataObject.message = formDataObject.message || null;
-  formDataObject.formType = form.dataset.form;
-  formDataObject.applicationType = form.dataset.applicationType;
+  formDataObject.formType = form;
+  formDataObject.applicationType = formEl.dataset.applicationType;
 
   const body = JSON.stringify(formDataObject);
 
