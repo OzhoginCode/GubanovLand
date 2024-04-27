@@ -1,6 +1,9 @@
 build:
 	npx webpack
 
+dev:
+	npx webpack-dev-server --open
+
 install:
 	npm ci
 

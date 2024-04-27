@@ -5,6 +5,9 @@ import TerserPlugin from 'terser-webpack-plugin';
 
 export default {
   mode: 'production',
+  performance: {
+    hints: false,
+  },
   module: {
     rules: [
       {
