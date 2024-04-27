@@ -367,6 +367,8 @@ const clearForms = () => {
 const render = () => {
   switch (formsState.state) {
     case 'filling':
+      enableForms();
+
       Object.entries(formsState.forms).forEach(([form, state]) => {
         Object.entries(state.isValid).forEach(([field, isValid]) => {
           const touched = formsState.forms[form].touched[field];
@@ -403,8 +405,6 @@ const render = () => {
             fieldset.classList.remove('fieldset-error');
           }
         });
-
-        enableForms();
       });
       break;
     case 'sending':
