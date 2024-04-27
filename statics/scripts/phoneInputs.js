@@ -352,7 +352,7 @@ const disableForms = () => {
 };
 
 const enableForms = () => {
-  const elems = [...phoneInputs, ...nameInputs, message];
+  const elems = [...phoneInputs, ...nameInputs, ...applyButtons, message];
 
   elems.forEach((el) => el.removeAttribute('disabled'));
 };
