@@ -1,0 +1,16 @@
+body, div, span,
+h1, h2, h3, h4, h5, h6, p, 
+a,
+img,
+ol, ul, li,
+fieldset, form, label, legend,
+header, nav, section, video,
+button, input, textarea {
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+a {
+  text-decoration: none;
+}

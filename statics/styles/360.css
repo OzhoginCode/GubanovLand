@@ -84,31 +84,20 @@
   .section-main-text {
     width: unset;
 
-    height: unset;
     margin-top: 89px;
   }
 
   .h1 {
-    height: 58px;
-
     font: var(--font-h15-53s);
-  }
-
-  .h2 {
-    width: unset;
-    font: var(--font-h15-53s);
-  }
-
-  .section-main-lower-text-div {
-    text-indent: 192px;
   }
 
   .section-main-lower-text-span {
+    top: 131px;
+    left: 191px;
+
     width: 113px;
 
     font: var(--font-h16-14r);
-
-    transform: translate(147px, 42px);
   }
 
   .section-main-header-circles {

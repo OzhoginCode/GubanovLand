@@ -27,12 +27,17 @@
     padding-left: 6.25%;
   }
 
+  .section-main-text {
+    margin-top: 231px;
+  }
+
   .h1 {
     font: var(--font-h11-72s);
   }
 
-  .h2 {
-    font: var(--font-h11-72s);
+  .section-main-lower-text-span {
+    top: 95px;
+    left: 398px;
   }
 
   .section-main-header-circles {
@@ -40,12 +45,6 @@
     left: 0.0278vw;
 
     width: 380px;
-  }
-
-  .section-main-text {
-    width: 731px;
-    height: 184px;
-    margin-top: 231px;
   }
 
   .section-main-right {

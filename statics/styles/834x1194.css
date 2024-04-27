@@ -167,22 +167,12 @@
 
   .section-main-text {
     width: 700px;
-    height: 184px;
     margin-top: 162px;
   }
 
-  .section-main-lower-text-div {
-    text-indent: 0;
-  }
-
-  .h2 {
-    width: 394px;
-    text-indent: 0;
-  }
-
   .section-main-lower-text-span {
-    position: unset;
-    transform: unset;
+    top: 95px;
+    left: 398px;
   }
 
   .section-main-header-circles {

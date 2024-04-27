@@ -37,13 +37,14 @@
   }
 
   .section-main-lower-text-span {
+    top: 200px;
+    left: 265px;
     width: 130px;
 
     font: var(--font-16r);
 
     hyphens: auto;
     overflow-wrap: break-word;
-    transform: translate(220px, 58px);
     word-wrap: break-word;
   }
 

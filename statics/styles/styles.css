@@ -28,10 +28,6 @@ html {
   }
 }
 
-.body {
-  margin: 0;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -81,7 +77,6 @@ html {
   margin-left: 202px;
 
   pointer-events: all;
-  text-decoration: none;
 }
 
 .logo-header {
@@ -99,9 +94,6 @@ html {
 
 .header-menu-button {
   display: none;
-
-  padding: 0;
-  border: none;
 
   background-color: var(--main-background);
 }
@@ -123,9 +115,6 @@ html {
 
   height: 100%;
   align-items: center;
-  padding: 0;
-
-  margin: 0;
 
   font: var(--font-16m);
 
@@ -167,7 +156,6 @@ html {
 
   font: var(--font-16r);
 
-  text-decoration: none;
   white-space: nowrap;
 }
 
@@ -229,40 +217,32 @@ html {
 }
 
 .section-main-text {
+  position: relative;
+
   z-index: 10;
   display: flex;
 
-  width: 875px;
-  height: 184px;
   flex-direction: column;
 
   margin-top: 302px;
 }
 
 .h1 {
-  height: 88px;
-  margin: 0;
-
   color: var(--yellow);
   font: var(--font-h3-88b);
 }
 
-.section-main-lower-text-div {
-  display: flex;
-  align-items: center;
-}
-
 .h2 {
-  margin: 0;
-
   color: var(--white-2);
-  font: var(--font-h3-88b);
 }
 
 .section-main-lower-text-span {
+  position: absolute;
+
+  top: 98px;
+  left: 470px;
+
   width: 325px;
-  height: 76px;
-  margin-left: 50px;
 
   color: var(--white-1);
 
@@ -457,11 +437,6 @@ html {
   text-align: justify;
 }
 
-.main-text-right-section-about-1 p,
-.main-text-right-section-about-2 p {
-  margin: 0;
-}
-
 .text-indent-193 {
   text-indent: 193px;
 }
@@ -560,7 +535,6 @@ html {
   height: 216px;
   flex-direction: column;
 
-  margin: 0;
   margin-top: 72px;
 
   color: var(--main-background);
@@ -570,7 +544,6 @@ html {
 }
 
 .section-playlists-right-header span {
-  /* FIXME: НИЖЕ ЕСТЬ 1, 2, 3 С ОДИНАКОВОЙ НАСТРОЙКОЙ */
   margin-bottom: 0;
 }
 
@@ -591,11 +564,8 @@ html {
 
 .section-playlists-right-images {
   display: flex;
-  padding: 0;
 
   margin-top: 24px;
-
-  list-style: none;
 }
 
 .section-playlists-right-images li {
@@ -624,10 +594,6 @@ html {
 
   color: var(--dark-grey-elements-1);
   font: var(--font-16m);
-}
-
-.section-playlists-right-text p {
-  margin: 0;
 }
 
 /* SECTION WORKS */
@@ -824,10 +790,6 @@ html {
 }
 
 .section-works-audio-card-controls button {
-  padding: 0;
-  border: 0;
-  margin: 0;
-
   background-color: unset;
 
   cursor: pointer;
@@ -965,7 +927,6 @@ html {
 
 .section-works-lower-text-container-button a {
   color: inherit;
-  text-decoration: none;
 }
 
 .section-works-lower-text-line {
@@ -1013,7 +974,7 @@ html {
 .section-stages-lower-container ul {
   width: 1004px;
   height: 446px;
-  padding: 0;
+
   margin-top: 120px;
   margin-left: 202px;
 }
@@ -1083,7 +1044,6 @@ html {
 
   color: var(--yellow);
   font: var(--font-16m);
-  text-decoration: none;
 }
 
 .section-stages-ul-a-img {
@@ -1171,16 +1131,11 @@ html {
 }
 
 .section-prices-lists-header {
-  margin: 0;
-
   color: var(--white-1);
   font: var(--font-28bb);
 }
 
 .section-prices-ul {
-  padding: 0;
-  margin: 0;
-
   margin-top: 46px;
 
   font: var(--font-16r);
@@ -1346,7 +1301,6 @@ html {
 
 .section-reviews-quote {
   width: 298px;
-  margin: 0;
   margin-left: 15.5px;
 
   color: var(--white-2);
@@ -1361,7 +1315,6 @@ html {
   flex-direction: column;
   align-items: flex-start;
 
-  margin: 0;
   color: var(--yellow);
   font: var(--font-h5-56m);
 
@@ -1493,8 +1446,6 @@ html {
 }
 
 .section-communication-header {
-  margin: 0;
-
   color: var(--white-2);
   font: var(--font-h6-48b);
 }
@@ -1532,12 +1483,9 @@ html {
 
 .section-communication-fieldset {
   position: relative;
-  padding: 0;
   border: 1px solid var(--light-grey);
 
   border-radius: 4px;
-
-  margin: 0;
 }
 
 .section-communication-form-legend {
@@ -1581,10 +1529,8 @@ html {
 .section-communication-form input:not([type="checkbox"]),
 textarea {
   width: 90%;
-
   height: 80%;
-  padding: 0;
-  border: none;
+
   margin-right: 20px;
   margin-left: 20px;
   background-color: inherit;
@@ -1653,8 +1599,6 @@ input[type="number"] {
   width: 20px;
   min-width: 20px;
   height: 20px;
-  border: none;
-  margin: 0;
   appearance: none;
   background-image: url("../assets/images/section-communication-checkbox-unchecked.svg");
   background-position: center;
@@ -1692,7 +1636,6 @@ input[type="number"] {
 
 .section-communication-form-agreement-label-a {
   color: var(--white-2);
-  text-decoration: none;
 }
 
 .section-communication-form-button {
@@ -1764,9 +1707,6 @@ input[type="number"] {
 }
 
 .footer-central-container-ul {
-  padding: 0;
-  margin: 0;
-
   font: var(--font-16r);
 }
 
@@ -1783,7 +1723,6 @@ input[type="number"] {
   color: var(--light-grey);
   font: var(--font-16r);
 
-  text-decoration: none;
   white-space: nowrap;
 }
 
@@ -1799,8 +1738,6 @@ input[type="number"] {
 .footer-right-container-phone {
   color: var(--white-2);
   font: var(--font-20r);
-
-  text-decoration: none;
 }
 
 .footer-right-container-mail {
@@ -1810,8 +1747,6 @@ input[type="number"] {
 
   font: var(--font-16r);
   text-align: right;
-
-  text-decoration: none;
 }
 
 .footer-right-container-img-container {
@@ -1865,7 +1800,6 @@ input[type="number"] {
 }
 
 .modal-header {
-  margin: 0;
   color: var(--white-1);
 
   font: var(--font-h6-48m);
@@ -1884,9 +1818,6 @@ input[type="number"] {
 
   top: 54px;
   right: 54.32px;
-  padding: 0;
-
-  border: none;
 
   background-color: inherit;
   cursor: pointer;
@@ -1932,7 +1863,6 @@ input[type="number"] {
 }
 
 .modal-demo-p {
-  margin: 0;
   margin-right: -30px;
   margin-bottom: 19px;
   margin-left: 12px;
@@ -1943,7 +1873,6 @@ input[type="number"] {
 }
 
 .modal-p {
-  margin: 0;
   margin-top: 8px;
   margin-right: 75px;
   margin-left: 12px;
@@ -1972,12 +1901,9 @@ input[type="number"] {
 
 .modal-fieldset {
   position: relative;
-  padding: 0;
   border: 1px solid var(--light-grey);
 
   border-radius: 4px;
-
-  margin: 0;
 }
 
 .modal-form-legend {
@@ -2023,8 +1949,6 @@ textarea {
   width: 90%;
 
   height: 80%;
-  padding: 0;
-  border: none;
   margin-right: 20px;
   margin-left: 20px;
   background-color: inherit;
@@ -2068,8 +1992,6 @@ textarea {
   width: 20px;
   min-width: 20px;
   height: 20px;
-  border: none;
-  margin: 0;
   appearance: none;
   background-image: url("../assets/images/section-communication-checkbox-unchecked.svg");
   background-position: center;
@@ -2107,7 +2029,6 @@ textarea {
 
 .modal-form-agreement-label-a {
   color: var(--white-2);
-  text-decoration: none;
 }
 
 .modal-form-button {
@@ -2157,12 +2078,8 @@ textarea {
   height: 48px;
   align-items: center;
   justify-content: center;
-  padding: 0;
-  border: none;
 
   cursor: pointer;
-
-  text-decoration: none;
 }
 
 .large-button {
@@ -2173,12 +2090,8 @@ textarea {
   height: 56px;
   align-items: center;
   justify-content: center;
-  padding: 0;
 
-  border: none;
   cursor: pointer;
-
-  text-decoration: none;
 }
 
 .main-button {
@@ -2221,7 +2134,6 @@ textarea {
 
 .text-button-1 {
   color: var(--white-1);
-  text-decoration: none;
 }
 
 .text-button-1:hover {
@@ -2254,19 +2166,11 @@ textarea {
   stroke: var(--main-background);
 }
 
-.scroll-button {
-  padding: 0;
-  border: none;
-}
-
 .scroll-button.scroll-button-enabled:hover {
   cursor: pointer;
 }
 
 .scroll-button-left {
-  padding: 0;
-  border: none;
-
   margin-right: 40px;
 }
 

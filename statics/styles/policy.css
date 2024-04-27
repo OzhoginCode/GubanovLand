@@ -6,14 +6,12 @@
 }
 
 .policy-h1 {
-  margin: 0;
   margin-top: 68px;
 
   font: var(--font-h6-48m);
 }
 
 .policy-header-p {
-  margin: 0;
   margin-top: 20px;
 
   font: var(--font-22r);
@@ -28,14 +26,12 @@
 }
 
 .policy-h2 {
-  margin: 0;
   margin-bottom: 1em;
 
   font: var(--font-20m);
 }
 
 .policy-section p {
-  margin: 0;
   margin-bottom: 1em;
 
   font: var(--font-16r);
