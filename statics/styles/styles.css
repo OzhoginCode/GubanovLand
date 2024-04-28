@@ -117,8 +117,6 @@ html {
   align-items: center;
 
   font: var(--font-16m);
-
-  list-style: none;
 }
 
 .nav-ul li {
@@ -791,8 +789,6 @@ html {
 
 .section-works-audio-card-controls button {
   background-color: unset;
-
-  cursor: pointer;
 }
 
 .section-works-audio-card-progress-bar-container {
@@ -985,8 +981,6 @@ html {
   align-items: center;
 
   color: var(--white-1);
-
-  list-style: none;
 }
 
 .section-stages-lower-container ul li:not(:first-of-type) {
@@ -1146,8 +1140,6 @@ html {
 
   margin-top: 14px;
   margin-left: 34px;
-
-  list-style: none;
 }
 
 .section-prices-li-active {
@@ -1716,7 +1708,6 @@ input[type="number"] {
   margin-bottom: 12px;
 
   color: var(--white-2);
-  list-style: none;
 }
 
 .footer-central-container-a {
@@ -1821,7 +1812,6 @@ input[type="number"] {
   right: 54.32px;
 
   background-color: inherit;
-  cursor: pointer;
 }
 
 .body.modal-open::before {
@@ -2080,8 +2070,6 @@ textarea {
   height: 48px;
   align-items: center;
   justify-content: center;
-
-  cursor: pointer;
 }
 
 .large-button {
@@ -2092,8 +2080,6 @@ textarea {
   height: 56px;
   align-items: center;
   justify-content: center;
-
-  cursor: pointer;
 }
 
 .main-button {
@@ -2168,8 +2154,8 @@ textarea {
   stroke: var(--main-background);
 }
 
-.scroll-button.scroll-button-enabled:hover {
-  cursor: pointer;
+.scroll-button:not(.scroll-button-enabled) {
+  cursor: default;
 }
 
 .scroll-button-left {

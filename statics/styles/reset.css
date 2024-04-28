@@ -14,3 +14,11 @@ button, input, textarea {
 a {
   text-decoration: none;
 }
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
