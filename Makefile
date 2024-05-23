@@ -9,6 +9,7 @@ install:
 
 lint:
 	npx eslint .
+	npx htmlhint statics/**.html
 	npx stylelint statics/styles/**.css
 
 start:
