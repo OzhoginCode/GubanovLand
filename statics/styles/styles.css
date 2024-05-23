@@ -94,45 +94,24 @@ html {
 
 .header-menu-button {
   display: none;
-
-  background-color: var(--main-background);
 }
 
 .nav {
   display: flex;
 
-  width: 100%;
-
-  height: 100%;
-
   align-items: center;
-
-  justify-content: center;
 }
 
 .nav-ul {
   display: flex;
 
-  height: 100%;
   align-items: center;
 
   font: var(--font-16m);
 }
 
 .nav-ul li {
-  width: max-content;
-
-  /* max-width: 12vw; */
-  height: 22px;
   margin: 0 20px;
-}
-
-.div-button-block {
-  display: flex;
-
-  height: 100%;
-  align-items: center;
-  justify-content: end;
 }
 
 .right-button-header {
@@ -177,22 +156,11 @@ html {
 
 .header-right-container-img-container {
   display: none;
-  justify-content: space-between;
-
-  margin-top: auto;
-}
-
-.header-right-container-img-container a {
-  width: 40px;
-  height: 40px;
 }
 
 /* SECTION MAIN */
 
 .main {
-  display: flex;
-  flex-direction: column;
-
   margin-top: 90px;
 }
 
@@ -206,21 +174,13 @@ html {
 }
 
 .section-main-left {
-  display: flex;
-  flex-direction: column;
-
   padding-left: 202px;
-
-  /* padding-left: 10.52083333vw; */
 }
 
 .section-main-text {
   position: relative;
 
   z-index: 10;
-  display: flex;
-
-  flex-direction: column;
 
   margin-top: 302px;
 }
@@ -251,7 +211,6 @@ html {
 .section-main-header-circles {
   position: absolute;
 
-  /* left: 2.8125vw; */
   top: 218px;
 
   left: 54px;
@@ -274,11 +233,7 @@ html {
 .section-main-right {
   position: relative;
 
-  display: flex;
-  flex-direction: column;
   margin-right: 132px;
-
-  margin-left: auto;
 }
 
 .section-main-video {
@@ -292,10 +247,7 @@ html {
   display: flex;
 
   width: 195px;
-  height: 76px;
   flex-direction: column;
-
-  flex-shrink: 0;
 
   margin-top: 26px;
   margin-right: 74px;
@@ -2079,6 +2031,8 @@ textarea {
   height: 56px;
   align-items: center;
   justify-content: center;
+
+  cursor: pointer;
 }
 
 .main-button {
