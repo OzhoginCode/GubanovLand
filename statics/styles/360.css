@@ -225,10 +225,6 @@
     height: 1559px;
   }
 
-  .section-works-upper {
-    height: 332px;
-  }
-
   .sections-works-header {
     margin-top: 48px;
     margin-left: 22px;
@@ -364,7 +360,7 @@
     width: 316px;
   }
 
-  .section-prices-list-container {
+  .section-prices-lists-container > div {
     box-sizing: border-box;
     padding-left: 40px;
   }

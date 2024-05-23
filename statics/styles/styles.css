@@ -362,12 +362,12 @@ html {
 
   color: var(--white-2);
   font: var(--font-18r);
+
+  text-align: justify;
 }
 
 .main-text-right-section-about-1 {
   width: 310px;
-
-  text-align: justify;
 }
 
 .main-text-right-section-about-1-p-1::after {
@@ -383,8 +383,6 @@ html {
 .main-text-right-section-about-2 {
   width: 310px;
   margin-left: 74px;
-
-  text-align: justify;
 }
 
 .text-indent-193 {
@@ -397,9 +395,6 @@ html {
 
 .lower-right-section-about {
   display: flex;
-  width: 100%;
-
-  height: 100%;
 }
 
 .info-block-arrow {
@@ -409,7 +404,6 @@ html {
 
 .lower-right-section-about-text {
   width: 330px;
-  height: 120px;
   margin-top: 303px;
   margin-left: 23px;
 
@@ -465,8 +459,6 @@ html {
 
 .section-playlists-right-div {
   position: relative;
-  display: flex;
-  flex-direction: column;
 }
 
 .sections-playlists-video {
@@ -481,8 +473,6 @@ html {
 .section-playlists-right-header {
   display: flex;
 
-  width: 767px;
-  height: 216px;
   flex-direction: column;
 
   margin-top: 72px;
@@ -493,23 +483,8 @@ html {
   letter-spacing: 2px;
 }
 
-.section-playlists-right-header span {
-  margin-bottom: 0;
-}
-
 .section-playlists-right-header-1 {
   text-indent: 348px;
-}
-
-.section-playlists-right-header-2 {
-  margin-top: 0;
-}
-
-.section-playlists-right-header-low {
-  margin-top: 10px;
-  margin-bottom: 0;
-
-  color: var(--main-background);
 }
 
 .section-playlists-right-images {
@@ -523,13 +498,11 @@ html {
 }
 
 .section-playlists-right-images li img {
-  width: 33px;
+  width: 32px;
+  height: 32px;
 }
 
 .playlists-block-image-yandex {
-  width: 32px;
-  height: 32px;
-
   border-radius: 12px;
   background-color: var(--white-1);
 }
@@ -540,7 +513,6 @@ html {
   left: 460px;
 
   width: 384px;
-  height: 280px;
 
   color: var(--dark-grey-elements-1);
   font: var(--font-16m);
@@ -556,16 +528,11 @@ html {
 
 .section-works-container {
   position: relative;
-
-  display: flex;
-  flex-direction: column;
 }
 
 .section-works-upper {
   position: relative;
   display: flex;
-
-  height: 533px;
 }
 
 .sections-works-header {
@@ -600,11 +567,8 @@ html {
   display: inline;
 
   width: 77px;
-  height: 56.289px;
-  flex-shrink: 0;
   align-self: center;
 
-  margin-top: 3px;
   color: var(--yellow);
   font: var(--font-24m);
 
@@ -613,11 +577,7 @@ html {
 }
 
 .section-works-upper-right-text {
-  display: flex;
-
   width: 230px;
-  flex-direction: column;
-  flex-shrink: 0;
   margin-top: 269px;
   margin-right: 202px;
 
@@ -634,7 +594,6 @@ html {
   top: 373px;
   right: 202px;
 
-  flex-shrink: 0;
   user-select: none;
 }
 
@@ -662,7 +621,6 @@ html {
   height: 300px;
   box-sizing: border-box;
   flex-direction: column;
-  flex-shrink: 0;
   padding: 20px 20px 38px;
   border: 0.5px solid var(--light-grey);
 
@@ -712,7 +670,6 @@ html {
 
 .section-works-audio-card-site-container {
   display: flex;
-  height: 18px;
 
   margin-left: auto;
 
@@ -810,7 +767,6 @@ html {
   display: flex;
 
   width: 96px;
-  height: 50px;
   align-items: end;
 
   color: var(--white-1);
@@ -914,13 +870,10 @@ html {
 
 .section-stages-lower-container {
   display: flex;
-
-  flex-shrink: 0;
 }
 
 .section-stages-lower-container ul {
   width: 1004px;
-  height: 446px;
 
   margin-top: 120px;
   margin-left: 202px;
@@ -928,7 +881,6 @@ html {
 
 .section-stages-lower-container ul li {
   display: flex;
-  flex-grow: 1;
   align-items: center;
 
   color: var(--white-1);
@@ -952,18 +904,10 @@ html {
 }
 
 .section-stages-ul-description {
-  display: flex;
-
   width: 182px;
-  height: 40px;
-  flex-direction: column;
-  margin-right: 0;
-
-  margin-left: auto;
 
   color: var(--white-2);
   font: var(--font-16r);
-  justify-self: end;
 }
 
 .section-stages-ul-numbers {
@@ -999,7 +943,6 @@ html {
   width: 362px;
   height: 572px;
   margin-top: 60px;
-  margin-right: 40px;
   margin-left: 148px;
 }
 
@@ -1058,21 +1001,10 @@ html {
   margin-top: 462px;
 }
 
-.section-prices-list-container-1 {
+.section-prices-lists-container > div {
   display: flex;
   flex-direction: column;
   margin-right: 25px;
-}
-
-.section-prices-list-container-2 {
-  display: flex;
-  flex-direction: column;
-  margin-right: 25px;
-}
-
-.section-prices-list-container-3 {
-  display: flex;
-  flex-direction: column;
 }
 
 .section-prices-lists-header {
@@ -1151,7 +1083,6 @@ html {
   height: 14px;
 }
 
-
 .section-prices-warning-text {
   margin-left: 8px;
 
@@ -1165,14 +1096,8 @@ html {
   top: -64px;
   left: -12px;
 
-  display: flex;
-
   width: 360px;
-  height: 52px;
   box-sizing: border-box;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
   padding: 8px 12px;
   background-color: var(--dark-grey-elements-2);
@@ -1189,11 +1114,6 @@ html {
 
   top: -12px;
   left: -12px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
   opacity: 0;
   transition: opacity 0.3s;
@@ -1256,7 +1176,6 @@ html {
   width: 920px;
   height: 216px;
   flex-direction: column;
-  align-items: flex-start;
 
   color: var(--yellow);
   font: var(--font-h5-56m);
@@ -1307,11 +1226,8 @@ html {
   width: 748px;
   height: 320px;
   box-sizing: border-box;
-  flex-shrink: 0;
-  padding-top: 40px;
-  padding-right: 54px;
+  padding: 40px 54px 0;
 
-  padding-left: 54px;
   border: 1px solid var(--light-grey);
   border-radius: 5px;
 
@@ -1348,7 +1264,6 @@ html {
 }
 
 .section-reviews-review-text {
-  width: 640px;
   margin-top: 28px;
 
   color: var(--white-2);
@@ -1396,7 +1311,6 @@ html {
 .section-communication-header-p {
   width: 357px;
   margin-top: 32px;
-  margin-bottom: 0;
 
   color: var(--white-2);
   font: var(--font-22r);
@@ -1604,17 +1518,14 @@ input[type="number"] {
   padding: 92px 202px;
 }
 
-.footer-left-container {
+.footer-container > div {
   display: flex;
-
-  height: 100%;
   flex-direction: column;
 }
 
 .footer-logo-container {
   display: flex;
 
-  width: 100%;
   align-items: center;
 }
 
@@ -1645,11 +1556,6 @@ input[type="number"] {
   font: var(--font-16r);
 }
 
-.footer-central-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .footer-central-container-ul {
   font: var(--font-16r);
 }
@@ -1670,9 +1576,6 @@ input[type="number"] {
 }
 
 .footer-right-container {
-  display: flex;
-  flex-direction: column;
-
   color: var(--white-2);
 
   text-align: right;
@@ -1714,7 +1617,6 @@ input[type="number"] {
 
 /* MODAL */
 
-
 .modal.modal-open {
   display: flex;
 }
@@ -1723,8 +1625,8 @@ input[type="number"] {
   position: fixed;
   z-index: 1000;
   top: 50%;
-
   left: 50%;
+
   display: none;
 
   width: 896px;

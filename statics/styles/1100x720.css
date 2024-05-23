@@ -142,20 +142,14 @@
     left: 371px;
 
     width: 236px;
-    height: 324px;
 
     font: var(--font-12m);
-    gap: 4px;
   }
 
   /* SECTION WORKS */
 
   .section-works {
     height: 941px;
-  }
-
-  .section-works-upper {
-    height: 412px;
   }
 
   .sections-works-header {

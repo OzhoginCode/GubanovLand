@@ -73,8 +73,6 @@
   }
 
   .scrolling-text-section-about {
-    height: 168px;
-
     font: var(--font-h2-100b);
   }
 
@@ -197,7 +195,6 @@
     left: 403px;
 
     width: 360px;
-    height: 252px;
 
     font: var(--font-14m);
   }
@@ -206,10 +203,6 @@
 
   .section-works {
     height: 1012px;
-  }
-
-  .section-works-upper {
-    height: 432px;
   }
 
   .sections-works-header {
@@ -237,7 +230,6 @@
 
   .sections-works-header-inside {
     width: 61px;
-    height: 50px;
 
     font: var(--font-20m);
   }
@@ -356,8 +348,6 @@
   }
 
   .section-prices-header {
-    height: 168px;
-
     font: var(--font-h2-100b);
   }
 
@@ -439,9 +429,7 @@
     width: 620px;
     height: 280px;
   
-    padding-top: 33px;
-    padding-right: 32px;
-    padding-left: 32px;
+    padding: 33px 32px 0;
   }
 
   .section-reviews-review-text {
