@@ -2077,6 +2077,10 @@ textarea {
   margin-left: 0 !important;
 }
 
+.iti__search-input {
+  display: none;
+}
+
 .section-communication-form .phonenumber-input-container {
   margin-top: 7px;
   margin-left: 5px;
