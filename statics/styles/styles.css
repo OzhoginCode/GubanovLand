@@ -2029,10 +2029,10 @@ textarea {
   stroke: none;
 }
 
-.section-works-audio-card-controls-button:hover rect,
-.section-works-audio-card-controls-button:hover path,
-.section-works-audio-card-controls-button:hover object rect,
-.section-works-audio-card-controls-button:hover object path {
+.section-works-audio-card-controls > button:hover rect,
+.section-works-audio-card-controls > button:hover path,
+.section-works-audio-card-controls > button:hover object rect,
+.section-works-audio-card-controls > button:hover object path {
   fill: var(--light-grey);
 }
 
