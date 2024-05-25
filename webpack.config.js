@@ -2,6 +2,8 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import TerserPlugin from 'terser-webpack-plugin';
+import pkg from 'html-inline-css-webpack-plugin';
+const HtmlInlineCssWebpackPlugin = pkg.default;
 
 export default {
   mode: 'production',
@@ -44,6 +46,7 @@ export default {
       chunks: ['404'],
     }),
     new MiniCssExtractPlugin(),
+    new HtmlInlineCssWebpackPlugin(),
   ],
   optimization: {
     minimize: true,
