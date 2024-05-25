@@ -118,8 +118,6 @@ html {
   width: 182px;
 
   margin-right: 202px;
-
-  background-color: inherit;
 }
 
 .header-contacts {
@@ -1910,8 +1908,6 @@ textarea {
 
   margin-left: auto;
 
-  background-color: inherit;
-
   transform: translateX(-50%);
 }
 
@@ -1965,6 +1961,8 @@ textarea {
 
   border: 1px solid var(--white-2);
   border-radius: 2px;
+
+  background-color: inherit;
   color: var(--white-2);
 
   font: var(--font-16r);
