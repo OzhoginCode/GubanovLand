@@ -3,6 +3,7 @@ import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import TerserPlugin from 'terser-webpack-plugin';
 import pkg from 'html-inline-css-webpack-plugin';
+import CompressionPlugin from 'compression-webpack-plugin';
 
 const HtmlInlineCssWebpackPlugin = pkg.default;
 
@@ -52,6 +53,14 @@ export default {
     }),
     new MiniCssExtractPlugin(),
     new HtmlInlineCssWebpackPlugin(),
+    new CompressionPlugin({
+      // filename: '[path][base].gz',
+      algorithm: 'gzip',
+      test: /\.(js|css|html|svg|ttf)$/,
+      threshold: 10240,
+      minRatio: 0.8,
+      compressionOptions: { level: 6 },
+    }),
   ],
   optimization: {
     minimize: true,
