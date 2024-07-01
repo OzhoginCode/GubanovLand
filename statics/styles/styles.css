@@ -2095,6 +2095,8 @@ textarea {
 }
 
 .form-phone {
+  width: 80% !important;
+  
   margin-left: 53px !important;
 }
 
