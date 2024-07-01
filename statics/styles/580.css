@@ -6,7 +6,7 @@
   /* HEADER */
   .header-menu-opened .div-button-block {
     right: 50%;
-    bottom: 136px;
+    bottom: 11%;
 
     width: 316px;
 
@@ -18,12 +18,16 @@
   }
 
   .header-menu-opened .header-right-container-img-container {
-    bottom: 48px;
+    bottom: 5%;
     left: 50%;
 
     width: 316px;
 
     transform: translateX(-50%);
+  }
+
+  .header-contacts {
+    bottom: 20%;
   }
 
   /* SECTION MAIN */

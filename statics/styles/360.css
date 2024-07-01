@@ -37,6 +37,14 @@
     height: 76px;
   }
 
+  .header-menu-opened .div-button-block {
+    bottom: 15%;
+  }
+
+  .header-contacts {
+    bottom: 26%;
+  }
+
   .header-menu-opened .logo-name-header {
     display: block;
 

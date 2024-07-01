@@ -86,7 +86,7 @@
     position: absolute;
     right: 43px;
 
-    bottom: 100px;
+    bottom: 8.375%;
     display: flex;
     width: 236px;
 
@@ -102,7 +102,7 @@
 
   .header-menu-opened .header-right-container-img-container {
     position: absolute;
-    bottom: 116px;
+    bottom: 9.715%;
     left: 43px;
     display: flex;
 
@@ -118,7 +118,7 @@
 
   .header-contacts {
     right: 50%;
-    bottom: 23%;
+    bottom: 17%;
     display: none;
 
     transform: translateX(50%);
