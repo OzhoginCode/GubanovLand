@@ -141,13 +141,13 @@
     display: none;
   }
 
-  .header-contacts-messangers {
+  .header-contacts-messengers {
     margin-top: 16px;
 
     gap: 26px;
   }
 
-  .header-contacts-messangers-item img {
+  .header-contacts-messengers-item img {
     width: 32px;
     height: 32px;
   }

@@ -138,14 +138,14 @@ html {
   display: none;
 }
 
-.header-contacts-messangers {
+.header-contacts-messengers {
   display: flex;
   flex-direction: row-reverse;
 
   margin-top: 4px;
 }
 
-.header-contacts-messangers-item img {
+.header-contacts-messengers-item img {
   width: 18px;
   height: 18px;
 
@@ -1540,7 +1540,7 @@ input[type="number"] {
   font: var(--font-28l);
 }
 
-.footer-left-container-adress {
+.footer-left-container-address {
   margin-top: 16px;
 
   color: var(--white-2);

@@ -188,7 +188,7 @@ const handlePhoneInput = (input) => {
   });
 };
 
-const handleNameinput = (input) => {
+const handleNameInput = (input) => {
   const formEl = input.closest('form');
   const { form } = formEl.dataset;
   input.addEventListener('input', () => {
@@ -216,7 +216,7 @@ const handlePolicy = (input) => {
 };
 
 phoneInputs.forEach(handlePhoneInput);
-nameInputs.forEach(handleNameinput);
+nameInputs.forEach(handleNameInput);
 policyCheckboxes.forEach(handlePolicy);
 
 const routes = {
@@ -237,8 +237,8 @@ const apply = async (button, e) => {
     return;
   }
 
-  const formdata = new FormData(formEl);
-  const formDataObject = Object.fromEntries(formdata.entries());
+  const formData = new FormData(formEl);
+  const formDataObject = Object.fromEntries(formData.entries());
 
   formDataObject.message = formDataObject.message || null;
   formDataObject.formType = form;

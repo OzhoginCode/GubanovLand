@@ -37,7 +37,7 @@ modalOpening();
 
 // MODAL SWITCHING
 
-const modalSwiching = () => {
+const modalSwitching = () => {
   const header = modal.querySelector('.modal-header');
   const hashtag = modal.querySelector('.modal-hashtag');
   const demoP = modal.querySelector('.modal-demo-p');
@@ -133,4 +133,4 @@ const modalSwiching = () => {
   });
 };
 
-modalSwiching();
+modalSwitching();
