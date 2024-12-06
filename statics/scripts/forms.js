@@ -262,6 +262,7 @@ const apply = async (button, e) => {
       throw new Error();
     }
 
+    window.ym(97109322, 'reachGoal', 'FORM_SENT');
     formsState.state = 'filling';
     render();
     const event = new Event('form-sent');
