@@ -1639,6 +1639,8 @@ input[type="number"] {
   background-color: var(--dark-grey-background);
   box-shadow: 8px 8px 4px 0 rgb(0 0 0 / 25%);
 
+  overflow-y: auto;
+
   transform: translate(-50%, -50%);
 }
 
