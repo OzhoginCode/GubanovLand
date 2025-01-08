@@ -1,7 +1,7 @@
 import ru from 'intl-tel-input/i18n/ru';
 
 export default {
-  utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/js/utils.js',
+  loadUtils: () => import('intl-tel-input/utils'),
   nationalMode: false,
   containerClass: 'phonenumber-input-container',
   countryOrder: ['ru', 'am', 'by', 'kz', 'kg'],
