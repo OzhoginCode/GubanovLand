@@ -498,8 +498,6 @@
   textarea {
     margin-right: 26px;
     margin-left: 26px;
-
-    font: var(--font-14r);
   }
 
   .section-communication-form .phonenumber-input-container {
