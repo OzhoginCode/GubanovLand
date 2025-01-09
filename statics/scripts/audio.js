@@ -1,31 +1,17 @@
 const audioCards = document.querySelectorAll('.section-works-audio-card');
 
-const audioCardObjects = Array.from(audioCards).map((audioCard, index) => {
-  const audio = audioCard.querySelector('.section-works-audio-card-player');
-  const playBtn = audioCard.querySelector('.section-works-audio-card-controls-play');
-  const backwardBtn = audioCard.querySelector('.section-works-audio-card-controls-backward');
-  const forwardBtn = audioCard.querySelector('.section-works-audio-card-controls-forward');
-  const progressBarContainer = audioCard.querySelector('.section-works-audio-card-progress-bar-container');
-  const progressBar = audioCard.querySelector('.section-works-audio-card-progress-bar');
-  const progressBarCircle = audioCard.querySelector('.section-works-audio-card-progress-bar-circle-inner');
-  const currentTimeElem = audioCard.querySelector('.section-works-audio-card-current-time');
-  const isDragging = false;
-  const songIndex = index;
-
-  return {
-    audio,
-    audioCard,
-    playBtn,
-    backwardBtn,
-    forwardBtn,
-    progressBarContainer,
-    progressBar,
-    progressBarCircle,
-    currentTimeElem,
-    isDragging,
-    songIndex,
-  };
-});
+const audioCardObjects = Array.from(audioCards).map((audioCard, index) => ({
+  audio: audioCard.querySelector('.section-works-audio-card-player'),
+  playBtn: audioCard.querySelector('.section-works-audio-card-controls-play'),
+  backwardBtn: audioCard.querySelector('.section-works-audio-card-controls-backward'),
+  forwardBtn: audioCard.querySelector('.section-works-audio-card-controls-forward'),
+  progressBarContainer: audioCard.querySelector('.section-works-audio-card-progress-bar-container'),
+  progressBar: audioCard.querySelector('.section-works-audio-card-progress-bar'),
+  progressBarCircle: audioCard.querySelector('.section-works-audio-card-progress-bar-circle-inner'),
+  currentTimeElem: audioCard.querySelector('.section-works-audio-card-current-time'),
+  isDragging: false,
+  songIndex: index,
+}));
 
 let isViewportBig = true;
 
